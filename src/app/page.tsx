@@ -25,7 +25,7 @@ export default function Home() {
   const dataPath = path.join(process.cwd(), 'public', 'data', 'local-info.json');
   const fileContents = fs.readFileSync(dataPath, 'utf8');
   const data: LocalData = JSON.parse(fileContents);
-  
+
   const { events, benefits } = data;
 
   // 현재 날짜 구하기 (업데이트 날짜 표시용)
@@ -47,7 +47,7 @@ export default function Home() {
       </section>
 
       <div className="max-w-5xl mx-auto px-6 py-12 flex flex-col gap-16">
-        
+
         {/* 2. 이번 달 행사/축제 카드 목록 */}
         <section>
           <div className="flex items-center gap-3 mb-8">
@@ -56,7 +56,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {events.map((item) => (
-              <a href={`/detail/${item.id}`} key={item.id} className="bg-white border border-orange-100 p-6 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group">
+              <a href="/blog" key={item.id} className="bg-white border border-orange-100 p-6 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group">
                 <div className="text-xs font-bold text-orange-600 bg-orange-100 rounded-full px-3 py-1 w-max mb-4">
                   {item.category}
                 </div>
@@ -89,7 +89,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {benefits.map((item) => (
-              <a href={`/detail/${item.id}`} key={item.id} className="bg-white border border-green-100 p-6 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group flex-1">
+              <a href="/blog" key={item.id} className="bg-white border border-green-100 p-6 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group flex-1">
                 <div className="text-xs font-bold text-green-700 bg-green-100 rounded-full px-3 py-1 w-max mb-4">
                   {item.category}
                 </div>
