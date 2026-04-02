@@ -1,7 +1,5 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 const DATA_FILE_PATH = path.join(process.cwd(), 'public', 'data', 'local-info.json');
 const POSTS_DIR = path.join(process.cwd(), 'src', 'content', 'posts');
@@ -139,8 +137,8 @@ tags: [태그1, 태그2, 태그3]
     // 프론트매터 아래 본문 끝에 혹시 추가적인 구문이 있다면 그걸 포함해서 저장
     fs.writeFileSync(filePath, finalContent, 'utf-8');
     console.log(`성공적으로 블로그 글이 작성되었습니다: ${filename}`);
-  } catch (e) {
-    console.error('마크다운 파일 저장 실패:', e);
+  } catch (ignore) {
+    console.error('마크다운 파일 저장 실패:');
     process.exit(1);
   }
 }

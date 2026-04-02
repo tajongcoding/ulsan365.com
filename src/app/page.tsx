@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { getAllPosts } from '../lib/posts';
+import AppSection from '../components/AppList';
+import CoupangBanner from '../components/CoupangBanner';
 
 export default function Home() {
   const latestPosts = getAllPosts().slice(0, 6); // 최신 글 6개 가져오기
@@ -45,21 +47,22 @@ export default function Home() {
       {/* Main Content Area */}
       <div className="max-w-6xl mx-auto px-6 py-16 flex flex-col gap-24 relative z-20">
         
-        {/* 2. 바로가기 카드 (Shortcut Cards) - 모바일 3열 지원, PC 6열 */}
+        {/* 2. 바로가기 카드 (Shortcut Cards) - 더 직관적이고 세련된 디자인 */}
         <section>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-5">
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-5">
             {shortcutCards.map((card, idx) => (
               <Link
                 key={idx}
                 href={card.link}
-                className="group bg-white border border-slate-200 rounded-[12px] p-6 flex flex-col items-center text-center shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:-translate-y-1 hover:border-[#C9A857] transition-all duration-300"
+                className="group bg-white border border-slate-200 rounded-[16px] p-5 md:p-7 flex flex-col items-center text-center shadow-sm hover:shadow-[0_15px_30px_rgba(0,0,0,0.08)] hover:-translate-y-2 hover:border-[#C9A857] transition-all duration-500"
               >
-                <div className="w-[52px] h-[52px] rounded-full bg-[#F5F7FA] text-[#0F1A2B] group-hover:bg-[#0F1A2B] group-hover:text-[#C9A857] text-2xl flex items-center justify-center transition-colors duration-300 mb-4">
+                <div className="w-[60px] h-[60px] md:w-[72px] md:h-[72px] rounded-2xl bg-[#F5F7FA] text-[#0F1A2B] group-hover:bg-[#0F1A2B] group-hover:text-[#C9A857] text-3xl md:text-4xl flex items-center justify-center transition-all duration-500 mb-4 shadow-inner group-hover:rotate-[10deg]">
                   {card.icon}
                 </div>
-                <h3 className="text-[16px] font-[600] text-[#1F2937] group-hover:text-[#0F1A2B] transition-colors">
+                <h3 className="text-[14px] md:text-[16px] font-[700] text-[#1F2937] group-hover:text-[#0F1A2B] transition-colors whitespace-nowrap">
                   {card.title}
                 </h3>
+                <div className="mt-2 w-0 h-[2px] bg-[#C9A857] group-hover:w-full transition-all duration-500"></div>
               </Link>
             ))}
           </div>
@@ -122,8 +125,10 @@ export default function Home() {
             </Link>
           </div>
         </section>
-
       </div>
+
+      {/* 앱 추천 섹션 추가 */}
+      <AppSection />
 
       {/* 4. 푸터 영역 */}
       <footer className="bg-[#0F1A2B] border-t-4 border-[#C9A857] py-14 text-center px-6 text-[#6B7280] flex flex-col items-center">

@@ -1,7 +1,5 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 const DATA_FILE_PATH = path.join(process.cwd(), 'public', 'data', 'local-info.json');
 
@@ -54,8 +52,8 @@ async function main() {
     try {
       const fileContent = fs.readFileSync(DATA_FILE_PATH, 'utf-8');
       localData = JSON.parse(fileContent);
-    } catch (e) {
-      console.error('기존 JSON 파일 읽기 실패:', e);
+    } catch (ignore) {
+      console.error('기존 JSON 파일 읽기 실패:');
       process.exit(1);
     }
   }
@@ -109,7 +107,7 @@ ${JSON.stringify(targetItem, null, 2)}`;
   let processedItem;
   try {
     processedItem = JSON.parse(text);
-  } catch (e) {
+  } catch (ignore) {
     console.error('Gemini 응답 JSON 파싱 실패:', text);
     // 에러 발생 시 기존 local-info.json을 변경하지 않고 종료
     process.exit(1);
@@ -127,8 +125,8 @@ ${JSON.stringify(targetItem, null, 2)}`;
   try {
     fs.writeFileSync(DATA_FILE_PATH, JSON.stringify(localData, null, 2), 'utf-8');
     console.log('완료: 기존 JSON 데이터에 새로운 항목이 추가되었습니다.');
-  } catch (e) {
-    console.error('JSON 파일 쓰기 실패:', e);
+  } catch (ignore) {
+    console.error('JSON 파일 쓰기 실패:');
     process.exit(1);
   }
 }
