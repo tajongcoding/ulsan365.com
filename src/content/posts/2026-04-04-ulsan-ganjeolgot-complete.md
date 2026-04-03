@@ -31,5 +31,7 @@ tags: [울산명소, 간절곶, 해돋이, 소망우체통, 주말여행]
 - **일출 시간**: 네이버에서 '간절곶 일출 시간'을 미리 검색하고 30분 정도 일찍 자리 잡으세요.
 - **주변 먹거리**: 서생포의 시원한 물회나 근처 대형 카페에서 오션뷰를 즐겨보세요!
 
+<img src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=80" alt="간절곶 일출" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+
 ---
 💡 **마무리**: 새해뿐만 아니라 평일에도 시원한 바다 기운을 받기에 더할 나위 없이 좋은 곳입니다.

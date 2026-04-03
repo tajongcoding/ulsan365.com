@@ -30,5 +30,7 @@ tags: [울산명소, 대왕암공원, 출렁다리, 힐링여행, 사진맛집]
 ## 3. 추천 코스
 주차장에서 시작해 **출렁다리 → 울기등대 → 대왕암 → 해안 산책로 → 슬도**까지 이어지는 길은 울산 최고의 걷기 코스입니다.
 
+<img src="https://images.unsplash.com/photo-1590559063414-069151c89078?w=800&q=80" alt="대왕암 해안길" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+
 ---
 💡 **팁**: 바람이 너무 강한 날에는 출렁다리 입장이 제한될 수 있으니 미리 확인해 보세요!
