@@ -85,27 +85,38 @@ export default function Home() {
                   href={`/blog/${post.slug}`}
                   className="bg-white rounded-[12px] border border-slate-200 shadow-sm hover:shadow-md hover:border-[#C9A857]/60 transition-all duration-300 flex flex-col overflow-hidden group h-full"
                 >
+                  {/* 통합된 고정 사이즈 이미지 영역 (16:9 비율) */}
+                  <div className="relative w-full h-48 bg-slate-100 overflow-hidden border-b border-slate-100">
+                    <img 
+                      src={`/images/${post.category === '복지' ? 'ulsan_welfare_main.png' : post.category === '경제' ? 'ulsan_economy_main.png' : post.category === '행사' ? 'ulsan_festival_main.png' : 'ulsan_sightseeing_main.png'}`} 
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <span className="text-[11px] font-bold text-white bg-[#0F1A2B]/80 backdrop-blur-sm px-2 py-1 rounded">
+                        {post.category}
+                      </span>
+                    </div>
+                  </div>
+
                   <div className="p-6 flex flex-col h-full">
-                    {/* Category & Date */}
-                    <div className="mb-4 flex flex-wrap justify-between items-center gap-2">
-                       <span className="text-[13px] font-[600] text-[#0F1A2B] bg-[#F5F7FA] px-2.5 py-1 rounded border border-slate-200 group-hover:border-[#C9A857] transition-colors">
-                         {post.category}
-                       </span>
-                       <span className="text-[13px] text-[#6B7280] font-medium">
+                    {/* Date */}
+                    <div className="mb-3 flex justify-between items-center">
+                       <span className="text-[12px] text-[#6B7280] font-medium">
                          {post.date}
                        </span>
                     </div>
 
-                    <h3 className="text-[18px] font-[700] text-[#1F2937] mb-3 group-hover:text-[#0F1A2B] transition-colors line-clamp-2 leading-snug break-keep">
+                    <h3 className="text-[18px] font-[700] text-[#1F2937] mb-2 group-hover:text-[#0F1A2B] transition-colors line-clamp-2 leading-snug break-keep">
                       {post.title}
                     </h3>
                     
-                    <p className="text-[#6B7280] text-[15px] leading-relaxed mb-6 line-clamp-3 break-keep flex-grow">
+                    <p className="text-[#6B7280] text-[14px] leading-relaxed mb-4 line-clamp-2 break-keep flex-grow">
                       {post.summary}
                     </p>
 
                     {/* Bottom read more */}
-                    <div className="mt-auto pt-4 border-t border-slate-100 flex items-center text-[#1F2937] font-[600] text-[14px] group-hover:text-[#C9A857] transition-colors">
+                    <div className="mt-auto pt-4 border-t border-slate-100 flex items-center text-[#1F2937] font-[600] text-[13px] group-hover:text-[#C9A857] transition-colors">
                       자세히 보기 <span className="ml-1 text-[#C9A857] tracking-tighter">--&gt;</span>
                     </div>
                   </div>
