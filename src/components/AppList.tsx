@@ -41,13 +41,13 @@ const apps = [
 
 export default function AppSection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-white to-slate-50 border-t border-slate-100 overflow-hidden relative">
+    <section className="py-6 bg-gradient-to-br from-white to-slate-50 border-t border-slate-100 overflow-hidden relative">
       <div className="absolute top-20 right-0 w-64 h-64 bg-[#C9A857]/5 rounded-full blur-[80px] pointer-events-none"></div>
       
       <div className="max-w-6xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 gap-4">
           <div className="flex-1">
-            <div className="text-[#C9A857] font-extrabold text-[14px] uppercase tracking-widest mb-3 flex items-center gap-2">
+            <div className="text-[#C9A857] font-extrabold text-[14px] uppercase tracking-widest mb-2 flex items-center gap-2">
                <span className="w-8 h-px bg-[#C9A857]"></span>
                Digital Ulsan Life
             </div>
@@ -56,12 +56,12 @@ export default function AppSection() {
               <span className="text-[#C9A857]">시민 필수 앱</span> 리스트 📱
             </h2>
           </div>
-          <p className="text-slate-500 max-w-sm text-[16px] leading-relaxed break-keep">
+          <p className="text-slate-500 max-w-sm text-[16px] leading-relaxed break-keep pb-2">
             울산 생활을 두 배 더 편안하게 만들어 줄 공식 앱들을 엄선하여 추천해 드립니다.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {apps.map((app, idx) => (
             <a
               key={idx}

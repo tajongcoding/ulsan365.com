@@ -70,19 +70,22 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
   };
 
   return (
-    <main className="max-w-3xl mx-auto px-4 py-10">
+    <main className="max-w-6xl mx-auto px-6 py-10 md:py-16">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
-      {/* 뒤로 가기 버튼 */}
-      <Link
-        href="/blog"
-        className="inline-flex items-center gap-1 text-sm text-blue-600 hover:underline mb-6"
-      >
-        ← 블로그 목록으로
-      </Link>
+      
+      {/* 본문 읽기 영역 (너무 넓어지면 가독성이 떨어지므로 가운데 4xl로 제한) */}
+      <div className="max-w-4xl mx-auto">
+        {/* 뒤로 가기 버튼 */}
+        <Link
+          href="/blog"
+          className="inline-flex items-center gap-1 text-[15px] font-bold text-slate-500 hover:text-[#0F1A2B] transition-colors mb-8"
+        >
+          ← 목록으로 돌아가기
+        </Link>
 
-      {/* 글 헤더 영역 */}
-      <header className="mb-8">
+        {/* 글 헤더 영역 */}
+        <header className="mb-10">
         {/* 카테고리 */}
         <span className="inline-block text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-0.5 rounded mb-3">
           {post.category}
@@ -103,32 +106,37 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
 
         {/* 요약 */}
         {post.summary && (
-          <p className="mt-4 text-gray-500 border-l-4 border-blue-300 pl-4 italic">
-            {post.summary}
-          </p>
+          <div className="mt-6 bg-[#F5F7FA] border-2 border-[#0F1A2B] rounded-xl p-5 shadow-sm hover:border-[#C9A857] transition-colors">
+            <p className="text-[15px] font-medium text-[#1F2937] leading-relaxed break-keep m-0">
+              {post.summary}
+            </p>
+          </div>
         )}
       </header>
 
-      {/* 구분선 */}
-      <hr className="mb-8 border-gray-200" />
+        {/* 구분선 */}
+        <hr className="mb-10 border-slate-200" />
 
-      {/* 마크다운 본문 렌더링 */}
-      <article className="prose prose-blue max-w-none">
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>
-          {post.content}
-        </ReactMarkdown>
-      </article>
+        {/* 마크다운 본문 렌더링 - 단락 여백 감소, 요약 박스 테두리 폭발적 디자인, 리스트 점 제거 */}
+        <article className="prose prose-lg prose-blue prose-slate max-w-none prose-p:my-4 prose-p:leading-relaxed prose-headings:font-black prose-headings:text-[#0F1A2B] prose-headings:mt-10 prose-a:text-[#C9A857] prose-blockquote:not-italic prose-blockquote:border-[3px] prose-blockquote:!border-l-[3px] prose-blockquote:border-[#0F1A2B] prose-blockquote:bg-slate-50 prose-blockquote:shadow-sm prose-blockquote:rounded-[20px] prose-blockquote:py-5 prose-blockquote:px-8 prose-blockquote:text-[#1F2937] prose-blockquote:mt-8 prose-ul:list-none prose-ul:pl-0 break-keep">
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            {post.content}
+          </ReactMarkdown>
+        </article>
+      </div>
 
-      {/* 쿠팡 파트너스 배너 (본문 하단) */}
-      <CoupangBanner />
+      {/* 쿠팡 파트너스 배너 (메인 페이지와 동일한 전체 폭(6xl) 적용을 위해 div 밖으로 분리) */}
+      <div className="mt-16">
+        <CoupangBanner />
+      </div>
 
       {/* 하단 뒤로 가기 */}
-      <div className="mt-12 pt-6 border-t border-gray-200">
+      <div className="max-w-4xl mx-auto mt-16 pt-8 border-t border-slate-200 flex justify-center">
         <Link
           href="/blog"
-          className="inline-flex items-center gap-1 text-sm text-blue-600 hover:underline"
+          className="bg-[#0F1A2B] text-white font-bold px-8 py-4 rounded-xl hover:bg-[#C9A857] transition-colors shadow-sm"
         >
-          ← 블로그 목록으로 돌아가기
+          목록으로 돌아가기
         </Link>
       </div>
     </main>

@@ -17,7 +17,7 @@ export default function Header() {
   }, []);
 
   const menuItems = [
-    { name: '아시나요', path: '/' },
+    { name: '아시나요', path: '/about' },
     { name: '복지 정보', path: '/blog?category=복지' },
     { name: '경제 정보', path: '/blog?category=경제' },
     { 
@@ -39,27 +39,31 @@ export default function Header() {
   ];
 
   return (
-    <header className={`bg-[#0F1A2B] text-white h-[60px] sticky top-0 z-50 flex items-center transition-all duration-300 ${scrolled ? 'shadow-[0_4px_15px_rgba(0,0,0,0.3)] border-b border-slate-700' : 'border-b border-slate-800/50'}`}>
+    <header className={`bg-[#0F1A2B] text-white h-[76px] md:h-[84px] sticky top-0 z-50 flex items-center transition-all duration-300 ${scrolled ? 'shadow-[0_4px_15px_rgba(0,0,0,0.3)] border-b border-slate-700' : 'border-b border-slate-800/50'}`}>
       <div className="max-w-6xl mx-auto w-full px-6 flex justify-between items-center h-full">
         {/* Logo - 포털 스타일 로고 디자인 */}
-        <Link href="/" className="flex items-center group flex-shrink-0">
+        <Link href="/" className="flex items-center group flex-shrink-0 gap-3">
+          {/* 로고 이미지 (크기 확대 및 반짝이는 움직임 효과 추가) */}
+          <div className="relative w-12 h-12 md:w-14 md:h-14 bg-white rounded-xl flex items-center justify-center p-2 shadow-[0_0_20px_rgba(201,168,87,0.4)] animate-[pulse_2s_infinite]">
+            <img src="/ulsan_logo.png" alt="울산 로고" className="w-full h-full object-contain relative z-10 group-hover:scale-110 transition-transform duration-300" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/60 to-transparent"></div>
+          </div>
           <div className="flex flex-col leading-none">
-            <span className="text-[22px] font-black tracking-tighter text-white group-hover:text-[#C9A857] transition-colors duration-300 uppercase">
-              ASINAYO<span className="text-[#C9A857]">.</span>ORG
+            <span className="text-[26px] md:text-[30px] font-black tracking-tighter text-white group-hover:text-[#C9A857] transition-colors duration-300 lowercase">
+              ulsan365<span className="text-[#C9A857]">.</span>com
             </span>
-            <span className="text-[10px] font-bold text-[#C9A857] tracking-[0.2em] mt-0.5 opacity-80 group-hover:opacity-100 transition-opacity">
+            <span className="text-[11px] md:text-[13px] font-bold text-[#C9A857] tracking-[0.25em] mt-1 opacity-80 group-hover:opacity-100 transition-opacity">
               ULSAN PORTAL
             </span>
           </div>
         </Link>
         
-        {/* Navigation - 메뉴 폰트 가독성 및 호버 효과 개선 */}
-        <nav className="hidden lg:flex items-center gap-[24px]">
+        <nav className="hidden lg:flex items-center gap-[30px]">
           {menuItems.map((item, idx) => (
-            <div key={idx} className="relative group/menu">
+            <div key={idx} className="relative group/menu h-full flex items-center">
               <Link 
                 href={item.path} 
-                className="relative text-[15px] font-[700] text-slate-300 hover:text-white transition-all duration-300 group/item whitespace-nowrap flex items-center gap-1"
+                className="relative text-[16px] md:text-[18px] font-extrabold text-slate-300 hover:text-white transition-all duration-300 group/item whitespace-nowrap flex items-center gap-1.5 py-6"
               >
                 {item.name}
                 {item.subMenu && (
@@ -72,8 +76,8 @@ export default function Header() {
 
               {/* Sub Menu (Dropdown) */}
               {item.subMenu && (
-                <div className="absolute top-[30px] left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover/menu:opacity-100 group-hover/menu:visible transition-all duration-300">
-                  <div className="bg-[#1F2937] border border-slate-700 rounded-xl py-3 px-2 shadow-2xl w-48">
+                <div className="absolute top-[100%] left-1/2 -translate-x-1/2 opacity-0 invisible group-hover/menu:opacity-100 group-hover/menu:visible transition-all duration-300 z-50">
+                  <div className="bg-[#1F2937] border border-slate-700 rounded-xl py-3 px-2 shadow-2xl w-48 -mt-2">
                     {item.subMenu.map((sub, sIdx) => (
                       <a 
                         key={sIdx} 
