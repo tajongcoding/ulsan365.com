@@ -1,9 +1,14 @@
+import type { Metadata } from 'next';
 import { getAllPosts } from '@/lib/posts';
 import BlogListPage from '@/components/BlogList';
+import { absoluteUrl } from '@/lib/site';
 
-export const metadata = {
-  title: '우리동네 블로그 | 울산광역시 생활 정보통',
-  description: '울산광역시 생활 정보와 유용한 이야기를 담은 블로그입니다.',
+export const metadata: Metadata = {
+  title: '울산 복지·지원금·생활정보 모음 | 아시나요 울산',
+  description: '울산광역시의 복지, 생활, 경제, 행사, 관광 정보를 카테고리별로 모아보는 블로그 목록입니다.',
+  alternates: {
+    canonical: absoluteUrl('/blog'),
+  },
 };
 
 export default function BlogPage() {

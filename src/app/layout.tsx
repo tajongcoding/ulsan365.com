@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import { absoluteUrl, siteConfig } from "@/lib/site";
 
 const notoSansKr = Noto_Sans_KR({
   subsets: ["latin"],
@@ -11,15 +12,43 @@ const notoSansKr = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: "울산광역시 생활 정보 | 행사·혜택·지원금 안내",
-  description: "울산광역시 주민을 위한 지역 행사, 축제, 지원금, 혜택 정보를 매일 업데이트합니다.",
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: '아시나요 울산 | 복지·지원금·행사·생활정보 포털',
+    template: '%s',
+  },
+  description: siteConfig.description,
+  keywords: ['울산 생활정보', '울산 지원금', '울산 복지', '울산 행사', '울산 야간약국', '울산 관광'],
+  alternates: {
+    canonical: absoluteUrl('/'),
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-snippet': -1,
+      'max-image-preview': 'large',
+      'max-video-preview': -1,
+    },
+  },
   openGraph: {
-    title: "울산시 생활 정보 | 행사·혜택·지원금 안내",
-    description: "울산시 주민을 위한 지역 행사, 축제, 지원금, 혜택 정보를 매일 업데이트합니다.",
-    url: "https://my-local-info.pages.dev",
-    siteName: "울산시 생활 정보통",
-    locale: "ko_KR",
-    type: "website",
+    title: '아시나요 울산 | 복지·지원금·행사·생활정보 포털',
+    description:
+      '울산광역시 시민을 위한 복지 혜택, 청년 지원금, 생활 정보, 행사·관광 소식을 매일 업데이트합니다.',
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    locale: 'ko_KR',
+    type: 'website',
+    images: [absoluteUrl(siteConfig.ogImage)],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '아시나요 울산 | 복지·지원금·행사·생활정보 포털',
+    description:
+      '울산광역시 시민을 위한 복지, 지원금, 생활 정보, 행사·관광 소식을 빠르게 확인하세요.',
+    images: [absoluteUrl(siteConfig.ogImage)],
   },
 };
 
@@ -32,17 +61,17 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': 'WebSite',
-        name: '울산광역시 생활 정보',
-        url: 'https://my-local-info.pages.dev',
-        description: '울산광역시 주민을 위한 지역 행사, 축제, 지원금, 혜택 정보',
+        '@type': 'Organization',
+        name: siteConfig.name,
+        url: siteConfig.url,
+        description: '울산광역시 시민을 위한 생활 밀착형 공공 정보 안내 포털',
       },
       {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: '홈', item: 'https://my-local-info.pages.dev' },
-          { '@type': 'ListItem', position: 2, name: '블로그', item: 'https://my-local-info.pages.dev/blog' },
-        ],
+        '@type': 'WebSite',
+        name: siteConfig.name,
+        url: siteConfig.url,
+        inLanguage: 'ko-KR',
+        description: '울산광역시 주민을 위한 복지, 지원금, 생활, 행사, 관광 정보',
       },
     ],
   };
@@ -56,6 +85,87 @@ export default function RootLayout({
   return (
     <html lang="ko" className={`${notoSansKr.variable}`} suppressHydrationWarning>
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function () {
+                if (typeof window === 'undefined') {
+                  return;
+                }
+
+                var canonicalHost = 'ulsan365.com';
+                var redirectHosts = ['asinayo.org', 'www.asinayo.org', 'www.ulsan365.com'];
+                var currentHost = window.location.hostname;
+                var currentPath = window.location.pathname + window.location.search + window.location.hash;
+                var isPreviewHost = /\.pages\.dev$|\.workers\.dev$/i.test(currentHost);
+                var shouldRedirectHost = redirectHosts.indexOf(currentHost) !== -1 || isPreviewHost;
+                var shouldUpgradeProtocol = currentHost === canonicalHost && window.location.protocol !== 'https:';
+
+                if (shouldRedirectHost || shouldUpgradeProtocol) {
+                  var nextUrl = 'https://' + canonicalHost + window.location.pathname + window.location.search + window.location.hash;
+                  if (window.location.href !== nextUrl) {
+                    window.location.replace(nextUrl);
+                  }
+                  return;
+                }
+
+                if (currentHost === canonicalHost) {
+                  var originalPushState = window.history.pushState.bind(window.history);
+                  var originalReplaceState = window.history.replaceState.bind(window.history);
+                  var normalizeVisibleUrl = function (url) {
+                    if (url == null || url === '') {
+                      return '/';
+                    }
+
+                    try {
+                      var parsedUrl = new URL(String(url), window.location.origin);
+                      if (parsedUrl.origin === window.location.origin) {
+                        return '/';
+                      }
+                    } catch (error) {
+                      if (typeof url === 'string' && url.charAt(0) === '/') {
+                        return '/';
+                      }
+                    }
+
+                    return url;
+                  };
+                  var forceRootUrl = function () {
+                    var visibleUrl = window.location.pathname + window.location.search + window.location.hash;
+                    if (visibleUrl !== '/') {
+                      originalReplaceState(window.history.state, '', '/');
+                    }
+                  };
+
+                  if (!window.__ulsan365UrlPinned) {
+                    window.__ulsan365UrlPinned = true;
+                    window.history.pushState = function (state, title, url) {
+                      return originalPushState(state, title, normalizeVisibleUrl(url));
+                    };
+                    window.history.replaceState = function (state, title, url) {
+                      return originalReplaceState(state, title, normalizeVisibleUrl(url));
+                    };
+
+                    window.addEventListener('popstate', function () {
+                      setTimeout(forceRootUrl, 0);
+                    });
+
+                    document.addEventListener('click', function () {
+                      setTimeout(forceRootUrl, 0);
+                      setTimeout(forceRootUrl, 120);
+                    }, true);
+                  }
+
+                  forceRootUrl();
+                }
+              })();
+            `,
+          }}
+        />
         {/* 에러 방지를 위해 메타 데이터 스크립트 일시 제거 */}
         {isAdSenseValid && (
           <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adSenseId}`} crossOrigin="anonymous" />

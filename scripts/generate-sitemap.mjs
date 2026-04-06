@@ -22,7 +22,7 @@ function getAllPosts() {
 }
 
 function generateSitemap() {
-  const baseUrl = 'https://my-local-info.pages.dev';
+  const baseUrl = 'https://ulsan365.com';
   const posts = getAllPosts();
 
   const blogUrls = posts.map((post) => `
@@ -38,7 +38,15 @@ function generateSitemap() {
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
   </url>
   <url>
+    <loc>${baseUrl}/about/</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+  </url>
+  <url>
     <loc>${baseUrl}/blog/</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+  </url>
+  <url>
+    <loc>${baseUrl}/qna/</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
   </url>
 ${blogUrls}

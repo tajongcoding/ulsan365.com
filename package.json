@@ -4,9 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/generate-sitemap.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "preview": "wrangler pages dev out",
+    "deploy": "npm run build && wrangler pages deploy out --project-name my-local-info"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",

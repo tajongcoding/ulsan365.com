@@ -1,0 +1,12 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0F1A2B"/>
+  <circle cx="1030" cy="120" r="180" fill="#C9A857" fill-opacity="0.12"/>
+  <circle cx="180" cy="520" r="140" fill="#3B82F6" fill-opacity="0.12"/>
+  <rect x="72" y="76" width="280" height="46" rx="23" fill="#1F2937" stroke="#C9A857" stroke-opacity="0.5"/>
+  <text x="100" y="106" fill="#C9A857" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">울산 생활정보 포털</text>
+  <text x="72" y="250" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="64" font-weight="800">아시나요 울산</text>
+  <text x="72" y="330" fill="#E5E7EB" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="500">복지 · 지원금 · 생활정보 · 행사 · 관광</text>
+  <text x="72" y="388" fill="#D1D5DB" font-family="Segoe UI, Arial, sans-serif" font-size="24">울산 시민에게 꼭 필요한 정보를 쉽고 빠르게 정리합니다.</text>
+  <rect x="72" y="462" width="310" height="64" rx="18" fill="#C9A857"/>
+  <text x="130" y="503" fill="#0F1A2B" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800">ulsan365.com</text>
+</svg>

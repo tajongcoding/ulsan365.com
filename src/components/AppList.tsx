@@ -44,14 +44,14 @@ export default function AppSection() {
     <section className="py-6 bg-gradient-to-br from-white to-slate-50 border-t border-slate-100 overflow-hidden relative">
       <div className="absolute top-20 right-0 w-64 h-64 bg-[#C9A857]/5 rounded-full blur-[80px] pointer-events-none"></div>
       
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 gap-4">
+      <div className="max-w-5xl mx-auto px-4 md:px-5">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-5 gap-3">
           <div className="flex-1">
             <div className="text-[#C9A857] font-extrabold text-[14px] uppercase tracking-widest mb-2 flex items-center gap-2">
                <span className="w-8 h-px bg-[#C9A857]"></span>
                Digital Ulsan Life
             </div>
-            <h2 className="text-[32px] md:text-[40px] font-black text-[#0F1A2B] leading-tight break-keep">
+            <h2 className="text-[28px] md:text-[34px] font-black text-[#0F1A2B] leading-tight break-keep">
               내 손안의 울산, <br/>
               <span className="text-[#C9A857]">시민 필수 앱</span> 리스트 📱
             </h2>
@@ -61,7 +61,7 @@ export default function AppSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3">
           {apps.map((app, idx) => (
             <a
               key={idx}

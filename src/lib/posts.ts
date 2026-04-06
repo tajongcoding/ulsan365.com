@@ -111,6 +111,10 @@ export function getPostBySlug(slug: string): Post | null {
 
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
+  const imgMatch = content.match(/<img[^>]+src=["']([^"']+)["']/i) || content.match(/!\[.*?\]\((.*?)\)/);
+  const thumbnailUrl = imgMatch ? imgMatch[1] : null;
+  const rawText = content.replace(/[#*>\-`]/g, '').replace(/\s+/g, ' ').trim();
+  const contentExcerpt = rawText ? `${rawText.slice(0, 160)}...` : '';
 
   return {
     slug,
@@ -119,6 +123,8 @@ export function getPostBySlug(slug: string): Post | null {
     summary: data.summary || '',
     category: data.category || '기타',
     tags: Array.isArray(data.tags) ? data.tags : [],
+    contentExcerpt,
+    thumbnailUrl,
     content,
   };
 }

@@ -12,7 +12,7 @@ tags:
 <img src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&q=80&w=800" alt="4월 울산 문화회관 공연 일정 총정리" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 📌 개요
-봄을 맞아 울산 문화예술회관에서는 다채로운 공연들이 줄지어 펼쳐집니다. 서울 못지않은 수준 높은 공연을 울산에서도 즐길 수 있는 4월 공연 일정을 소개합니다.
+봄을 맞아 울산 문화예술회관에서는 다채로운 공연들이 줄지어 펼쳐집니다. 수준 높은 공연을 울산에서도 즐길 수 있는 4월 공연 일정을 소개합니다.
 
 ## 💡 주요 공연 일정
 - **4월 10일 (목) 19:30**: 울산시립합창단 봄 정기연주회 - 대공연장 / 일반석 2만 원
