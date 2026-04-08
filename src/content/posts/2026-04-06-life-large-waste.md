@@ -14,7 +14,7 @@ tags:
 ## 📌 개요
 봄 이사철이 되면 안 쓰는 가구나 가전제품을 버려야 할 상황이 생깁니다. 대형 폐기물을 아무 곳에나 무단 투기하면 과태료가 부과될 수 있어요! 울산시의 올바른 대형 폐기물 신고 및 배출 방법을 꼭 알아두세요.
 
-<img src="https://picsum.photos/seed/323032361/800/450" alt="봄맞이 대청소! 울산시 대형 폐기물 배출 예약 방법 상세 정보 1" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1513635269975-59663e0acad5?auto=format&fit=crop&q=80&w=800" alt="봄맞이 대청소! 울산시 대형 폐기물 배출 예약 방법 상세 정보 1" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 💡 배출 방법 안내
 - **스마트폰 앱 신청**: '울산 대형폐기물' 앱 또는 KT 이파람 앱에서 언제든 24시간 간편 신청
@@ -28,7 +28,7 @@ tags:
 > - ✅ **주의**: 스티커 없이 내다 버리면 과태료 최대 100만 원 부과!
 
 ---
-<img src="https://picsum.photos/seed/323032362/800/450" alt="봄맞이 대청소! 울산시 대형 폐기물 배출 예약 방법 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1506804886640-39fb4eb1a473?auto=format&fit=crop&q=80&w=800" alt="봄맞이 대청소! 울산시 대형 폐기물 배출 예약 방법 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 💬 자주 묻는 질문
 
@@ -41,12 +41,12 @@ tags:
 **Q3. 멀쩡한 가구를 그냥 버리기 아깝습니다. 기증할 수 있나요?**
 ▶ 울산시 내 '아름다운 가게' 또는 '굿윌스토어'에 연락하시면 멀쩡한 중고 가구와 물품을 무상 수거해 가서 저소득층에게 저렴하게 판매하는 사회적 기업입니다. 버리기 전에 꼭 한번 문의해 보세요!
 
-<img src="https://picsum.photos/seed/323032363/800/450" alt="봄맞이 대청소! 울산시 대형 폐기물 배출 예약 방법 상세 정보 3" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&q=80&w=800" alt="봄맞이 대청소! 울산시 대형 폐기물 배출 예약 방법 상세 정보 3" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 🏆 마무리하며
 지금까지 울산시 대형 폐기물 배출 방법을 알아보았습니다.
 **울산 365 포털**은 알아두면 돈이 되고 힘이 되는 정보들을 모아 매일 전해드리고 있습니다. 앞으로도 많은 관심 부탁드립니다!
 
-<img src="https://picsum.photos/seed/323032364/800/450" alt="봄맞이 대청소! 울산시 대형 폐기물 배출 예약 방법 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=800" alt="봄맞이 대청소! 울산시 대형 폐기물 배출 예약 방법 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
-<img src="https://picsum.photos/seed/323032365/800/450" alt="봄맞이 대청소! 울산시 대형 폐기물 배출 예약 방법 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="봄맞이 대청소! 울산시 대형 폐기물 배출 예약 방법 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

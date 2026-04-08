@@ -30,7 +30,7 @@ tags:
 
 
 
-<img src="https://picsum.photos/seed/323032361/800/450" alt="제22회 울산 쇠부리축제! 철의 도시 울산의 매력을 느껴보세요
+<img src="https://images.unsplash.com/photo-1533174000222-1d54bd8c0e2c?auto=format&fit=crop&q=80&w=800" alt="제22회 울산 쇠부리축제! 철의 도시 울산의 매력을 느껴보세요
 date: 2026-04-02T00:00:00.000Z
 summary: 울산의 뜨거운 역사와 철 문화를 체험할 수 있는 쇠부리축제가 올해 더욱 풍성하게 돌아옵니다.
 category: 행사
@@ -54,7 +54,7 @@ tags:
 
 
 
-<img src="https://picsum.photos/seed/323032362/800/450" alt="제22회 울산 쇠부리축제! 철의 도시 울산의 매력을 느껴보세요
+<img src="https://images.unsplash.com/photo-1540039155732-68746868d22c?auto=format&fit=crop&q=80&w=800" alt="제22회 울산 쇠부리축제! 철의 도시 울산의 매력을 느껴보세요
 date: 2026-04-02T00:00:00.000Z
 summary: 울산의 뜨거운 역사와 철 문화를 체험할 수 있는 쇠부리축제가 올해 더욱 풍성하게 돌아옵니다.
 category: 행사
@@ -80,7 +80,7 @@ tags:
 ---
 💡 **추천**: 옛 철의 전설을 찾아 떠나는 특별한 시간 여행이 될 거예요.
 
-<img src="https://picsum.photos/seed/323032363/800/450" alt="제22회 울산 쇠부리축제! 철의 도시 울산의 매력을 느껴보세요
+<img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800" alt="제22회 울산 쇠부리축제! 철의 도시 울산의 매력을 느껴보세요
 date: 2026-04-02T00:00:00.000Z
 summary: 울산의 뜨거운 역사와 철 문화를 체험할 수 있는 쇠부리축제가 올해 더욱 풍성하게 돌아옵니다.
 category: 행사
@@ -96,7 +96,7 @@ tags:
 ## 🎁 놓치기 쉬운 숨은 꿀팁
 관공서나 공식 안내문에서는 잘 알려주지 않는 실전 팁을 하나 더 알려드릴게요. 폼이나 홈페이지에서 막힌다면, 지정된 고객센터나 담당 부서로 오전에 전화하시면 훨씬 더 빠르고 친절하게 안내받을 수 있습니다. 또한, 관련 증빙 서류는 미리 사진으로 찍어두시면 나중에도 유용하게 쓰일 수 있습니다.
 
-<img src="https://picsum.photos/seed/323032364/800/450" alt="제22회 울산 쇠부리축제! 철의 도시 울산의 매력을 느껴보세요
+<img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=800" alt="제22회 울산 쇠부리축제! 철의 도시 울산의 매력을 느껴보세요
 date: 2026-04-02T00:00:00.000Z
 summary: 울산의 뜨거운 역사와 철 문화를 체험할 수 있는 쇠부리축제가 올해 더욱 풍성하게 돌아옵니다.
 category: 행사
@@ -116,7 +116,7 @@ tags:
 - **Q**: 신청 기간을 놓치면 어떻게 되나요?
   - **A**: 다행히 상시 모집이나 추가 모집이 자주 진행되니, 꾸준히 포털을 확인해주시면 됩니다.
 
-<img src="https://picsum.photos/seed/323032365/800/450" alt="제22회 울산 쇠부리축제! 철의 도시 울산의 매력을 느껴보세요
+<img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=800" alt="제22회 울산 쇠부리축제! 철의 도시 울산의 매력을 느껴보세요
 date: 2026-04-02T00:00:00.000Z
 summary: 울산의 뜨거운 역사와 철 문화를 체험할 수 있는 쇠부리축제가 올해 더욱 풍성하게 돌아옵니다.
 category: 행사

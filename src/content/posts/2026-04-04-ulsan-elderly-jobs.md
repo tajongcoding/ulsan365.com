@@ -25,7 +25,7 @@ tags:
 
 
 
-<img src="https://picsum.photos/seed/323032361/800/450" alt="울산 어르신 일자리 지원사업, 활기찬 노후의 시작! 상세 정보 1" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1536640712-4d4c36ef0e4c?auto=format&fit=crop&q=80&w=800" alt="울산 어르신 일자리 지원사업, 활기찬 노후의 시작! 상세 정보 1" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 💡 활동 유형
 - **공익활동**: 초등학교 등굣길 안전 도우미, 공원 환경 정리 등 (월 30시간 내외)
@@ -36,7 +36,7 @@ tags:
 - **사회서비스형**: 복지 시설 업무 보조, 아동 보육 보조 등 조금 더 전문적인 업무
 - **시장형**: 노인 카페 운영, 반찬 제조 및 판매 등 수익 창출형 사업
 
-<img src="https://picsum.photos/seed/323032362/800/450" alt="울산 어르신 일자리 지원사업, 활기찬 노후의 시작! 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&q=80&w=800" alt="울산 어르신 일자리 지원사업, 활기찬 노후의 시작! 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## ✅ 신청 시기
 보통 연말(12월)부터 다음 해 초(1월)에 집중 모집하지만, 결원이 생기면 상시 모집하기도 하니 가까운 복지관에 문의해 보세요!
@@ -48,12 +48,12 @@ tags:
 ---
 💡 **문의**: 129 보건복지상담센터 또는 울산광역시 콜센터 120
 
-<img src="https://picsum.photos/seed/323032363/800/450" alt="울산 어르신 일자리 지원사업, 활기찬 노후의 시작! 상세 정보 3" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800" alt="울산 어르신 일자리 지원사업, 활기찬 노후의 시작! 상세 정보 3" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 🎁 놓치기 쉬운 숨은 꿀팁
 관공서나 공식 안내문에서는 잘 알려주지 않는 실전 팁을 하나 더 알려드릴게요. 폼이나 홈페이지에서 막힌다면, 지정된 고객센터나 담당 부서로 오전에 전화하시면 훨씬 더 빠르고 친절하게 안내받을 수 있습니다. 또한, 관련 증빙 서류는 미리 사진으로 찍어두시면 나중에도 유용하게 쓰일 수 있습니다.
 
-<img src="https://picsum.photos/seed/323032364/800/450" alt="울산 어르신 일자리 지원사업, 활기찬 노후의 시작! 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=800" alt="울산 어르신 일자리 지원사업, 활기찬 노후의 시작! 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 💬 자주 묻는 질문 베스트
 여러분과 같은 울산 시민분들이 가장 헷갈려 하시는 부분을 정리해보았습니다.
@@ -62,7 +62,7 @@ tags:
 - **Q**: 신청 기간을 놓치면 어떻게 되나요?
   - **A**: 다행히 상시 모집이나 추가 모집이 자주 진행되니, 꾸준히 포털을 확인해주시면 됩니다.
 
-<img src="https://picsum.photos/seed/323032365/800/450" alt="울산 어르신 일자리 지원사업, 활기찬 노후의 시작! 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=800" alt="울산 어르신 일자리 지원사업, 활기찬 노후의 시작! 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 🏆 마무리하며
 지금까지 우리 동네에서 꼭 알아야 할 가장 핵심적인 정보들을 알기 쉽게 풀어 설명해 드렸습니다. 

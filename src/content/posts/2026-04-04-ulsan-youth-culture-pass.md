@@ -25,7 +25,7 @@ tags:
 
 
 
-<img src="https://picsum.photos/seed/323032361/800/450" alt="2026년 신설! 울산청년 스포츠+문화패스란?
+<img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&q=80&w=800" alt="2026년 신설! 울산청년 스포츠+문화패스란?
 date: 2026-04-01T00:00:00.000Z
 summary: 울산 청년들을 위한 새로운 혜택! 스포츠 관람과 문화생활을 즐길 수 있는 특별한 패스를 소개합니다.
 category: 복지
@@ -54,7 +54,7 @@ tags:
 
 - **문화 향유**: 지역 내 주요 공연장과 미술관 체험 프로그램 이용 시 혜택이 제공됩니다.
 
-<img src="https://picsum.photos/seed/323032362/800/450" alt="2026년 신설! 울산청년 스포츠+문화패스란?
+<img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=800" alt="2026년 신설! 울산청년 스포츠+문화패스란?
 date: 2026-04-01T00:00:00.000Z
 summary: 울산 청년들을 위한 새로운 혜택! 스포츠 관람과 문화생활을 즐길 수 있는 특별한 패스를 소개합니다.
 category: 복지
@@ -85,7 +85,7 @@ tags:
 ---
 💡 **정리**: 문화생활 비용이 부담스러웠던 청년들에게는 단비 같은 소식입니다!
 
-<img src="https://picsum.photos/seed/323032363/800/450" alt="2026년 신설! 울산청년 스포츠+문화패스란?
+<img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=800" alt="2026년 신설! 울산청년 스포츠+문화패스란?
 date: 2026-04-01T00:00:00.000Z
 summary: 울산 청년들을 위한 새로운 혜택! 스포츠 관람과 문화생활을 즐길 수 있는 특별한 패스를 소개합니다.
 category: 복지
@@ -109,7 +109,7 @@ tags:
 ## 🎁 놓치기 쉬운 숨은 꿀팁
 관공서나 공식 안내문에서는 잘 알려주지 않는 실전 팁을 하나 더 알려드릴게요. 폼이나 홈페이지에서 막힌다면, 지정된 고객센터나 담당 부서로 오전에 전화하시면 훨씬 더 빠르고 친절하게 안내받을 수 있습니다. 또한, 관련 증빙 서류는 미리 사진으로 찍어두시면 나중에도 유용하게 쓰일 수 있습니다.
 
-<img src="https://picsum.photos/seed/323032364/800/450" alt="2026년 신설! 울산청년 스포츠+문화패스란?
+<img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800" alt="2026년 신설! 울산청년 스포츠+문화패스란?
 date: 2026-04-01T00:00:00.000Z
 summary: 울산 청년들을 위한 새로운 혜택! 스포츠 관람과 문화생활을 즐길 수 있는 특별한 패스를 소개합니다.
 category: 복지
@@ -137,7 +137,7 @@ tags:
 - **Q**: 신청 기간을 놓치면 어떻게 되나요?
   - **A**: 다행히 상시 모집이나 추가 모집이 자주 진행되니, 꾸준히 포털을 확인해주시면 됩니다.
 
-<img src="https://picsum.photos/seed/323032365/800/450" alt="2026년 신설! 울산청년 스포츠+문화패스란?
+<img src="https://images.unsplash.com/photo-1536640712-4d4c36ef0e4c?auto=format&fit=crop&q=80&w=800" alt="2026년 신설! 울산청년 스포츠+문화패스란?
 date: 2026-04-01T00:00:00.000Z
 summary: 울산 청년들을 위한 새로운 혜택! 스포츠 관람과 문화생활을 즐길 수 있는 특별한 패스를 소개합니다.
 category: 복지

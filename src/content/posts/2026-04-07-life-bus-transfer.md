@@ -14,7 +14,7 @@ tags:
 ## 📌 개요
 버스를 자주 이용한다면 환승 규칙과 실시간 도착 정보를 아는 것만으로도 이동 시간이 크게 줄어듭니다. 울산 시민들이 자주 헷갈려 하는 버스 이용 포인트를 쉽고 간단하게 정리했습니다.
 
-<img src="https://picsum.photos/seed/323032361/800/450" alt="안내 이미지 상세 정보 1" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" alt="안내 이미지 상세 정보 1" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 💡 꼭 알아둘 이용 팁
 - **실시간 버스 앱 활용**: 도착 예정 시간, 노선도, 정류장 위치 확인 가능
@@ -28,7 +28,7 @@ tags:
 > - ✅ **주의사항**: 막차 시간과 우회 노선은 행사·공사 상황에 따라 달라질 수 있습니다.
 
 ---
-<img src="https://picsum.photos/seed/323032362/800/450" alt="안내 이미지 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="안내 이미지 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 💬 자주 묻는 질문
 
@@ -41,11 +41,11 @@ tags:
 **Q3. 초행길인데 어떤 노선을 타야 할지 어렵습니다.**  
 ▶ 정류장 번호와 목적지를 앱에 입력하면 추천 경로를 확인할 수 있어 훨씬 편리합니다.
 
-<img src="https://picsum.photos/seed/323032363/800/450" alt="안내 이미지 상세 정보 3" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=800" alt="안내 이미지 상세 정보 3" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 🏆 마무리하며
 버스 정보만 잘 알아도 일상이 훨씬 여유로워집니다.  
 **울산 365 포털**은 시민 생활에 바로 도움이 되는 교통·생활 팁을 계속 전해드리겠습니다.
-<img src="https://picsum.photos/seed/323032364/800/450" alt="안내 이미지 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1513635269975-59663e0acad5?auto=format&fit=crop&q=80&w=800" alt="안내 이미지 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
-<img src="https://picsum.photos/seed/323032365/800/450" alt="안내 이미지 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1506804886640-39fb4eb1a473?auto=format&fit=crop&q=80&w=800" alt="안내 이미지 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

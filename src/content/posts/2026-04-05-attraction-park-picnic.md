@@ -14,7 +14,7 @@ tags:
 ## 📌 개요
 울산 남구에 위치한 선암호수공원은 사계절 내내 다양한 꽃들이 피어 시민들의 사랑을 듬뿍 받는 곳입니다. 길이 넓고 평평해서 유모차나 휠체어로 이동하기도 좋습니다.
 
-<img src="https://picsum.photos/seed/323032361/800/450" alt="도심 속 휴식처, 선암호수공원에서 즐기는 피크닉 상세 정보 1" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Seonam_Lake_Park%2C_Ulsan.jpg" alt="도심 속 휴식처, 선암호수공원에서 즐기는 피크닉 상세 정보 1" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 💡 즐길 거리
 - **미니 종교시설**: 성당, 교회, 사찰이 아주 작고 귀여운 미니어처 규모로 지어져 있어 사진 찍기 좋은 명소입니다.
@@ -26,7 +26,7 @@ tags:
 > - ✅ **자전거/전동킥보드**: 안전을 위해 호수 둘레길 내부는 출입이 제한될 수 있습니다.
 
 ---
-<img src="https://picsum.photos/seed/323032362/800/450" alt="도심 속 휴식처, 선암호수공원에서 즐기는 피크닉 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Inverted_House_Lookout_at_Seonam_Lake_Park%2C_Ulsan.jpg" alt="도심 속 휴식처, 선암호수공원에서 즐기는 피크닉 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 💬 자주 묻는 질문
 **Q1. 주차하기 편한가요?**
@@ -38,12 +38,12 @@ tags:
 **Q3. 아이들과 함께 방문하기 좋은 시간대가 있나요?**
 ▶ 오전 시간대(10시~12시)가 비교적 조용하고 쾌적합니다. 주말 오후에는 방문객이 많이 몰리므로, 가족 나들이는 오전 일찍 출발하시는 것을 추천합니다.
 
-<img src="https://picsum.photos/seed/323032363/800/450" alt="도심 속 휴식처, 선암호수공원에서 즐기는 피크닉 상세 정보 3" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Whale_at_Seonam_Lake_Park%2C_Ulsan.jpg" alt="도심 속 휴식처, 선암호수공원에서 즐기는 피크닉 상세 정보 3" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 🏆 마무리하며
 지금까지 우리 동네에서 꼭 알아야 할 가장 핵심적인 정보들을 알기 쉽게 풀어 설명해 드렸습니다.
 **울산 365 포털**은 알아두면 돈이 되고 힘이 되는 정보들을 모아 매일 전해드리고 있습니다. 앞으로도 많은 관심 부탁드립니다!
 
-<img src="https://picsum.photos/seed/323032364/800/450" alt="도심 속 휴식처, 선암호수공원에서 즐기는 피크닉 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Lotus_pond_at_Seonam_Lake_Park%2C_Ulsan.jpg" alt="도심 속 휴식처, 선암호수공원에서 즐기는 피크닉 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
-<img src="https://picsum.photos/seed/323032365/800/450" alt="도심 속 휴식처, 선암호수공원에서 즐기는 피크닉 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Gourd_trellis_Seonam_Lake_Park%2C_Ulsan.jpg" alt="도심 속 휴식처, 선암호수공원에서 즐기는 피크닉 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
