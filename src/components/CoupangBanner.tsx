@@ -62,7 +62,7 @@ export default function CoupangBanner({ variant = 'default' }: CoupangBannerProp
           <div className="text-[14px] md:text-[15px] text-slate-500 font-[600] text-center md:text-right leading-relaxed mt-2 md:mt-0 border-t md:border-t-0 md:border-l border-slate-100 pt-4 md:pt-0 md:pl-6">
             쿠팡 파트너스 활동의 일환으로
             수수료를 제공받으며, <br className="hidden lg:block" />
-            수익금은 <strong className="text-[#0F1A2B] text-[16px] md:text-[17px] font-extrabold">울산 365 포탈정보</strong> 서비스 운영비로 사용됩니다.
+            수익금은 <strong className="text-[#0F1A2B] text-[16px] md:text-[17px] font-extrabold">아시나요 울산</strong> 서비스 운영비로 사용됩니다.
           </div>
         </div>
       </a>

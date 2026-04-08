@@ -185,34 +185,6 @@ export default function RootLayout({
             />
           </>
         )}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function () {
-                document.addEventListener('mouseover', function (e) {
-                  var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
-                  if (!a) return;
-                  var href = a.getAttribute('href');
-                  if (!href || href === '#' || href.indexOf('javascript') === 0) return;
-                  a.setAttribute('data-rhref', href);
-                  a.setAttribute('href', '#');
-                }, true);
-                document.addEventListener('mouseout', function (e) {
-                  var a = e.target && e.target.closest ? e.target.closest('a') : null;
-                  if (!a) return;
-                  var orig = a.getAttribute('data-rhref');
-                  if (orig) { a.setAttribute('href', orig); a.removeAttribute('data-rhref'); }
-                }, true);
-                document.addEventListener('click', function (e) {
-                  var a = e.target && e.target.closest ? e.target.closest('a') : null;
-                  if (!a) return;
-                  var orig = a.getAttribute('data-rhref');
-                  if (orig) { a.setAttribute('href', orig); a.removeAttribute('data-rhref'); }
-                }, true);
-              })();
-            `,
-          }}
-        />
       </head>
       <body
         className={`antialiased min-h-screen flex flex-col font-sans`}

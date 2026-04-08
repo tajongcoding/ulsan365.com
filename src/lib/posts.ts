@@ -34,28 +34,6 @@ function formatDate(date: unknown): string {
   return '';
 }
 
-function buildContentExcerpt(content: string, maxLength = 200): string {
-  const rawText = content
-    .replace(/<img[^>]*>/gi, ' ')
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/!\[.*?\]\((.*?)\)/g, ' ')
-    .replace(/\[([^\]]+)\]\((.*?)\)/g, '$1')
-    .replace(/&nbsp;/gi, ' ')
-    .replace(/&amp;/gi, '&')
-    .replace(/&quot;/gi, '"')
-    .replace(/&#39;/gi, "'")
-    .replace(/[#>*_~`-]/g, ' ')
-    .replace(/(📌|💡|✅|🎁|💬|🏆|📝)/g, ' $1 ')
-    .replace(/\s+/g, ' ')
-    .trim();
-
-  if (!rawText) {
-    return '';
-  }
-
-  return rawText.length > maxLength ? `${rawText.slice(0, maxLength).trim()}...` : rawText;
-}
-
 // 모든 블로그 글의 메타 정보를 가져오는 함수 (목록 페이지에서 사용)
 export function getAllPosts(): PostMeta[] {
   // 폴더가 없으면 빈 배열 반환
@@ -87,7 +65,12 @@ export function getAllPosts(): PostMeta[] {
         }
 
         // 2. 일반 본문 추출 (미리보기용)
-        const contentExcerpt = buildContentExcerpt(content, 200);
+        const rawText = content
+            .replace(/[#*>\-`]/g, '') // 마크다운 기호 제거
+            .replace(/\s+/g, ' ')     // 일단 모든 공백을 스페이스 한 칸으로 압축
+            .replace(/(📌|💡|✅|🎁|💬|🏆|📝)/g, '\n$1') // 특수 이모지가 나오면 무조건 줄바꿈 추가!!
+            .trim();
+        const contentExcerpt = rawText.slice(0, 200) + '...';
 
         // 3. 본문 내의 첫 번째 이미지 추출
         const imgMatch = content.match(/<img[^>]+src=["']([^"']+)["']/i) || content.match(/!\[.*?\]\((.*?)\)/);
@@ -130,7 +113,8 @@ export function getPostBySlug(slug: string): Post | null {
   const { data, content } = matter(fileContents);
   const imgMatch = content.match(/<img[^>]+src=["']([^"']+)["']/i) || content.match(/!\[.*?\]\((.*?)\)/);
   const thumbnailUrl = imgMatch ? imgMatch[1] : null;
-  const contentExcerpt = buildContentExcerpt(content, 160);
+  const rawText = content.replace(/[#*>\-`]/g, '').replace(/\s+/g, ' ').trim();
+  const contentExcerpt = rawText ? `${rawText.slice(0, 160)}...` : '';
 
   return {
     slug,

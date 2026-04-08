@@ -63,7 +63,30 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
         <p className="text-slate-500 font-medium">{displaySubtitle}</p>
       </div>
 
-
+      <div className="mb-8 bg-white rounded-2xl border border-slate-200 p-4 md:p-5 shadow-sm">
+        <label htmlFor="blog-search" className="block text-[14px] font-bold text-[#0F1A2B] mb-2">
+          글 검색
+        </label>
+        <div className="flex flex-col md:flex-row gap-3">
+          <input
+            id="blog-search"
+            type="text"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            placeholder="예: 청년 지원금, 야간약국, 대형폐기물"
+            className="w-full rounded-xl border border-slate-300 px-4 py-3 text-[15px] text-[#1F2937] outline-none focus:border-[#C9A857] focus:ring-2 focus:ring-[#C9A857]/20"
+          />
+          {searchTerm && (
+            <button
+              type="button"
+              onClick={() => setSearchTerm('')}
+              className="rounded-xl border border-slate-300 px-4 py-3 text-[14px] font-bold text-[#0F1A2B] hover:bg-slate-50"
+            >
+              초기화
+            </button>
+          )}
+        </div>
+      </div>
 
       {posts.length === 0 ? (
         <div className="text-center py-24 bg-white rounded-2xl border-2 border-dashed border-slate-200">
@@ -73,6 +96,14 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
       ) : (
         <>
           <section className="mb-10">
+            <div className="flex items-end justify-between gap-4 mb-5 border-b border-slate-200 pb-3">
+              <div>
+                <h2 className="text-[22px] md:text-[26px] font-black text-[#0F1A2B]">대표 글 8개</h2>
+                <p className="text-[14px] text-slate-500 mt-1">상단은 4개씩 두 줄로, 총 8개를 크게 바로 보이도록 정리했습니다.</p>
+              </div>
+              <span className="text-[13px] md:text-[14px] font-bold text-[#C9A857] shrink-0">TOP {featuredPosts.length}</span>
+            </div>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {featuredPosts.map((post) => {
                 const { heroImage, categoryLabel, badgeClass, overlayClass, toneName } = getPostVisuals(post);
@@ -94,7 +125,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
 
                     <div className="relative z-10 p-4 md:p-5 flex flex-col h-full">
                       <div className="flex items-start">
-                        <span className={`inline-flex items-center rounded-lg px-2.5 py-1 text-[14px] md:text-[16px] font-extrabold border ${badgeClass} backdrop-blur-md shadow-sm transition-colors group-hover:border-[#C9A857]/50`}>
+                        <span className={`text-[12px] md:text-[13px] tracking-widest font-black backdrop-blur-md px-3 py-1.5 rounded-lg shadow-sm ${badgeClass}`}>
                           {categoryLabel}
                         </span>
                       </div>
@@ -123,7 +154,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
             <section>
               <div className="mb-5 border-b border-slate-200 pb-3">
                 <h2 className="text-[22px] md:text-[26px] font-black text-[#0F1A2B]">목록 리스트</h2>
-
+                <p className="text-[14px] text-slate-500 mt-1">한 페이지에 5개씩, 지금보다 더 작고 간결하게 보이도록 조정했습니다.</p>
               </div>
 
               <div className="flex flex-col gap-2.5">
@@ -143,7 +174,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
                             alt={post.title}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                           />
-                          <span className={`absolute left-2 top-2 inline-flex rounded-md px-2 py-1 text-[11px] font-extrabold border shadow-sm ${badgeClass} transition-colors group-hover:border-[#C9A857]/50`}>
+                          <span className={`absolute left-2 top-2 inline-flex rounded-full px-1.5 py-0.5 text-[9px] font-black shadow-sm ${badgeClass}`}>
                             {categoryLabel}
                           </span>
                         </div>

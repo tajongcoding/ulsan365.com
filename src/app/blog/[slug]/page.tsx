@@ -114,16 +114,16 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
             alt={post.title}
             className="w-full h-[180px] sm:h-[220px] md:h-[260px] object-cover"
           />
-          <div className={`px-5 py-5 bg-gradient-to-r ${visuals.surfaceClass} border-t border-slate-200`}>
-            <div className="flex flex-wrap items-center gap-3 mb-2">
-              <span className={`inline-flex items-center rounded-lg px-4 py-1.5 text-[14px] md:text-[16px] font-extrabold border shadow-sm ${visuals.badgeClass}`}>
+          <div className={`px-5 py-4 bg-gradient-to-r ${visuals.surfaceClass} border-t border-slate-200`}>
+            <div className="flex flex-wrap items-center gap-2 mb-1.5">
+              <span className={`inline-flex rounded-full px-2.5 py-1 text-[11px] font-black ${visuals.badgeClass}`}>
                 {visuals.categoryLabel}
               </span>
               <span className={`text-[11px] font-black tracking-[0.18em] uppercase ${visuals.accentClass}`}>
                 {visuals.toneName}
               </span>
             </div>
-            <p className="text-[14px] md:text-[15px] font-semibold text-slate-600 break-keep">
+            <p className="text-[13px] md:text-[14px] font-semibold text-slate-600 break-keep">
               {visuals.toneDescription} 중심으로 울산 느낌이 살아있는 이미지를 보여줍니다.
             </p>
           </div>
@@ -131,13 +131,19 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
 
         {/* 글 헤더 영역 */}
         <header className="mb-10">
+          {/* 상단 네비게이션 - 목록 가기 버튼과 카테고리 태그를 나란히 맨 왼쪽에 배치 */}
           <div className="flex flex-wrap items-center gap-3 mb-6">
             <Link
               href="/blog"
-              className="inline-flex items-center gap-1.5 text-[14px] md:text-[15px] font-extrabold text-[#0F1A2B] bg-white border border-slate-200 px-3 py-1 text-[14px] md:text-[16px] rounded-lg hover:bg-slate-50 hover:border-[#C9A857] transition-all shadow-sm"
+              className="inline-flex items-center gap-1.5 text-[14px] md:text-[15px] font-bold text-blue-700 bg-blue-50 border border-blue-200 px-4 py-1.5 rounded-full hover:bg-blue-100 hover:border-blue-300 transition-all shadow-sm"
             >
               ← 목록으로 돌아가기
             </Link>
+
+            {/* 카테고리 뱃지 - 목록 가기와 나란히 배치 */}
+            <span className="inline-flex items-center text-[15px] md:text-[16px] font-bold text-blue-700 bg-blue-50 border border-blue-200 px-4 py-1.5 rounded-full">
+              {visuals.categoryLabel}
+            </span>
           </div>
 
           {/* 제목 */}

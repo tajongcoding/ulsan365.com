@@ -1,14 +1,11 @@
 "use client";
 
 import Link from 'next/link';
-import { usePathname, useSearchParams } from 'next/navigation';
-import { useState, useEffect, Suspense } from 'react';
-import { siteConfig } from '@/lib/site';
+import { usePathname } from 'next/navigation';
+import { useState, useEffect } from 'react';
 
-function HeaderInner() {
+export default function Header() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const currentCategory = searchParams.get('category') || '';
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -36,12 +33,51 @@ function HeaderInner() {
   }, [pathname]);
 
   const menuItems = [
-    { name: '아시나요', path: '/about' },
-    { name: '복지 정보', path: '/blog?category=복지' },
-    { name: '경제 정보', path: '/blog?category=경제' },
-    { name: '생활 정보', path: '/blog?category=생활' },
-    { name: '행사·축제', path: '/blog?category=행사' },
-    { name: '명소·관광', path: '/blog?category=명소' },
+    {
+      name: '복지·지원',
+      path: '/blog?category=복지',
+      subMenu: [
+        { name: '📁 복지 정보 전체보기', path: '/blog?category=복지' },
+        { name: '👨‍👩‍👧 한부모가정 지원', path: '/blog/2026-04-07-welfare-single-parent' },
+        { name: '♿ 장애인 이동지원', path: '/blog/2026-04-07-welfare-disability-transport' },
+      ],
+    },
+    {
+      name: '일자리·경제',
+      path: '/blog?category=경제',
+      subMenu: [
+        { name: '📁 경제 정보 전체보기', path: '/blog?category=경제' },
+        { name: '💼 울산 채용박람회', path: '/blog/2026-04-07-economy-job-fair' },
+        { name: '🛍️ 전통시장 혜택', path: '/blog/2026-04-07-economy-traditional-market' },
+      ],
+    },
+    {
+      name: '민원·생활',
+      path: '/blog?category=생활',
+      subMenu: [
+        { name: '📁 생활 정보 전체보기', path: '/blog?category=생활' },
+        { name: '🚌 버스·환승 이용 팁', path: '/blog/2026-04-07-life-bus-transfer' },
+        { name: '📚 공공도서관 가이드', path: '/blog/2026-04-07-life-library-guide' },
+      ],
+    },
+    {
+      name: '문화·행사',
+      path: '/blog?category=행사',
+      subMenu: [
+        { name: '📁 행사·축제 전체보기', path: '/blog?category=행사' },
+        { name: '🌃 울산 야시장 모음', path: '/blog/2026-04-07-event-night-market' },
+        { name: '👨‍👩‍👧 가족 체험 행사', path: '/blog/2026-04-07-event-family-festival' },
+      ],
+    },
+    {
+      name: '명소·관광',
+      path: '/blog?category=명소',
+      subMenu: [
+        { name: '📁 명소·관광 전체보기', path: '/blog?category=명소' },
+        { name: '🚗 주전 드라이브 코스', path: '/blog/2026-04-07-attraction-jujeon-drive' },
+        { name: '🗿 반구대 산책 코스', path: '/blog/2026-04-07-attraction-bangudae' },
+      ],
+    },
     { name: 'FAQ', path: '/qna', highlight: true },
   ];
 
@@ -60,7 +96,7 @@ function HeaderInner() {
               ulsan365<span className="text-[#C9A857]">.</span>com
             </span>
             <div className="w-full flex justify-between items-center px-0.5">
-              {"ULSAN PORTAL INFO".split("").map((char, i) => (
+              {"ULSAN 365 INFO".split("").map((char, i) => (
                 <span key={i} className="text-[12px] md:text-[15.5px] font-black text-[#C9A857] leading-none uppercase">
                   {char === " " ? "\u00A0" : char}
                 </span>
@@ -71,69 +107,82 @@ function HeaderInner() {
         
         <nav className="hidden lg:flex flex-1 items-center justify-center gap-[24px] xl:gap-[30px]">
           {menuItems.map((item, idx) => {
-            const itemCategory = item.path.includes('category=') ? item.path.split('category=')[1] : '';
             const isActive = item.path === '/qna'
               ? pathname === '/qna'
               : item.path.startsWith('/blog')
-                ? pathname.startsWith('/blog') && itemCategory === currentCategory
+                ? pathname.startsWith('/blog')
                 : pathname === item.path;
 
             return (
               <div key={idx} className="relative group/menu h-full flex items-center">
                 <Link
                   href={item.path}
-                  className={`relative text-[16px] md:text-[19px] font-[900] transition-colors duration-200 group/item whitespace-nowrap flex items-center gap-1.5 py-6 ${
-                    isActive
-                      ? 'text-[#FFE08A] drop-shadow-[0_0_8px_rgba(255,224,138,0.5)]'
-                      : 'text-white hover:text-[#FFE08A]'
-                  }`}
+                  className={`relative text-[17px] md:text-[19px] font-extrabold transition-all duration-300 group/item whitespace-nowrap flex items-center gap-1.5 py-6 ${item.highlight
+                    ? isActive
+                      ? 'text-[#FFE08A]'
+                      : 'text-[#C9A857] hover:text-[#FFE08A]'
+                    : isActive
+                      ? 'text-white'
+                      : 'text-slate-100/90 hover:text-white'}`}
                 >
                   {item.highlight && <span className="text-[12px] font-black">✨</span>}
                   {item.name}
-                  <span className={`absolute bottom-4 left-0 h-[3px] bg-[#C9A857] shadow-[0_0_10px_rgba(201,168,87,0.5)] transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover/item:w-full'}`}></span>
+                  {item.subMenu && (
+                    <svg className="w-4 h-4 text-slate-500 group-hover/menu:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  )}
+                  <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#C9A857] transition-all duration-300 group-hover/item:w-full"></span>
                 </Link>
 
-                {/* {item.subMenu && (
+                {item.subMenu && (
                   <div className="absolute top-[100%] left-1/2 -translate-x-1/2 opacity-0 invisible group-hover/menu:opacity-100 group-hover/menu:visible transition-all duration-300 z-50">
                     <div className="bg-[#1F2937] border border-slate-700 rounded-xl py-3 px-2 shadow-2xl w-48 -mt-2">
-                      {item.subMenu.map((sub, sIdx) => (
-                        <a
-                          key={sIdx}
-                          href={sub.path}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block px-4 py-2 text-[14px] font-[600] text-slate-300 hover:text-[#C9A857] hover:bg-slate-800/50 rounded-lg transition-colors"
-                        >
-                          {sub.name}
-                        </a>
-                      ))}
+                      {item.subMenu.map((sub, sIdx) => {
+                        const isExternal = /^https?:\/\//.test(sub.path);
+
+                        return isExternal ? (
+                          <a
+                            key={sIdx}
+                            href={sub.path}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block px-4 py-2 text-[14px] font-bold text-slate-100 hover:text-[#C9A857] hover:bg-slate-800/50 rounded-lg transition-colors"
+                          >
+                            {sub.name}
+                          </a>
+                        ) : (
+                          <Link
+                            key={sIdx}
+                            href={sub.path}
+                            className="block px-4 py-2 text-[14px] font-bold text-slate-100 hover:text-[#C9A857] hover:bg-slate-800/50 rounded-lg transition-colors"
+                          >
+                            {sub.name}
+                          </Link>
+                        );
+                      })}
                     </div>
                   </div>
-                )} */}
+                )}
               </div>
             );
           })}
 
-          <a
-            href="https://www.google.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="구글 첫 화면 열기"
-            aria-label="구글 첫 화면 열기"
-            className="ml-1 relative inline-flex h-11 w-11 md:h-12 md:w-12 items-center justify-center rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(255,224,138,0.22),rgba(21,32,51,0.96)_58%)] text-[#FFE08A] shadow-[0_0_18px_rgba(201,168,87,0.28),0_8px_20px_rgba(0,0,0,0.2)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[radial-gradient(circle_at_30%_30%,rgba(255,240,180,0.34),rgba(26,41,66,1)_58%)] hover:text-[#FFF4BF] hover:shadow-[0_0_26px_rgba(255,224,138,0.45),0_12px_28px_rgba(0,0,0,0.24)]"
+          <Link
+            href="/blog"
+            title="전체 콘텐츠 보기"
+            aria-label="전체 콘텐츠 보기"
+            className="ml-1 inline-flex h-11 w-11 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-[#C9A857]/80 bg-[#152033] text-white shadow-[0_8px_20px_rgba(0,0,0,0.18)] transition-all duration-300 hover:border-[#C9A857] hover:bg-[#1A2942] hover:text-[#FFE08A] hover:shadow-[0_10px_24px_rgba(201,168,87,0.18)]"
           >
-            <span className="absolute right-1 top-1 text-[10px] text-[#FFF4BF] drop-shadow-[0_0_6px_rgba(255,224,138,0.8)] animate-[pulse_1.2s_ease-in-out_infinite]">
-              ✨
-            </span>
-            <svg className="w-5.5 h-5.5 md:w-6.5 md:h-6.5 animate-[pulse_1.4s_ease-in-out_infinite] drop-shadow-[0_0_8px_rgba(255,224,138,0.5)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3.2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            <svg className="w-5 h-5 md:w-6 md:h-6 animate-[pulse_1.8s_ease-in-out_infinite]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
-          </a>
+          </Link>
         </nav>
 
         {/* 모바일 햄버거 버튼 */}
         <button 
-          className="lg:hidden p-2 text-slate-300 hover:text-[#C9A857] focus:outline-none transition-colors"
+          className="lg:hidden p-2 text-slate-200 hover:text-[#C9A857] focus:outline-none transition-colors"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? (
@@ -158,23 +207,46 @@ function HeaderInner() {
                   {item.highlight && <span className="text-[12px]">✨</span>}
                   {item.name}
                 </Link>
-                {item.highlight && <span className="text-[12px] text-[#C9A857]">빠른 확인</span>}
+                {item.subMenu && <span className="text-[12px] text-[#C9A857]">추천 앱 포함</span>}
+                {item.highlight && !item.subMenu && <span className="text-[12px] text-[#C9A857]">빠른 확인</span>}
               </div>
+              
+              {item.subMenu && (
+                <div className="bg-slate-900/50 rounded-xl mt-2 p-2 grid grid-cols-2 gap-2">
+                  {item.subMenu.map((sub, sIdx) => {
+                    const isExternal = /^https?:\/\//.test(sub.path);
+
+                    return isExternal ? (
+                      <a
+                        key={sIdx}
+                        href={sub.path}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-3 text-[14px] font-bold text-slate-400 bg-slate-800/30 rounded-lg active:bg-[#C9A857] active:text-white transition-colors"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        {sub.name}
+                      </a>
+                    ) : (
+                      <Link
+                        key={sIdx}
+                        href={sub.path}
+                        className="p-3 text-[14px] font-bold text-slate-400 bg-slate-800/30 rounded-lg active:bg-[#C9A857] active:text-white transition-colors"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        {sub.name}
+                      </Link>
+                    );
+                  })}
+                </div>
+              )}
             </div>
           ))}
           <div className="mt-12 text-center text-slate-500 text-sm">
-            © 2026 울산 아시나요 포털
+            © 2026 울산365 포털
           </div>
         </div>
       </div>
     </header>
-  );
-}
-
-export default function Header() {
-  return (
-    <Suspense fallback={null}>
-      <HeaderInner />
-    </Suspense>
   );
 }
