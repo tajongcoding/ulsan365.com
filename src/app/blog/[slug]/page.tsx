@@ -65,10 +65,10 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
 
   const relatedPosts = getAllPosts()
     .filter((item) => item.slug !== post.slug && item.category === post.category)
-    .slice(0, 3);
+    .slice(0, 5);
   const visuals = getPostVisuals(post);
   const contentImagesMatches = Array.from(post.content.matchAll(/<img[^>]*src="([^"]+)"/ig));
-  const contentImages = contentImagesMatches.map(m => m[1]).slice(0, 6);
+  const galleryImages = [visuals.heroImage, ...contentImagesMatches.map(m => m[1])].slice(0, 6);
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -110,10 +110,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
       
       {/* 본문 읽기 영역 - 좌우 균형을 맞추기 위해 전체 폭을 조금 넓혀 통일 */}
       <div className={contentWidthClass}>
-          <section className="relative mb-8 overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm">
-            <span className="absolute left-4 top-4 rounded-full bg-[#0F1A2B]/80 px-3 py-1 text-[12px] md:text-[13px] font-bold text-white shadow-sm z-10">
-              1컷
-            </span>
+          <section className="mb-8 overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm">
             <img
               src={visuals.heroImage}
               alt={post.title}
@@ -168,19 +165,19 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
           )}
         </header>
 
-        {contentImages.length > 0 && (
+        {galleryImages.length > 0 && (
           <section className="mb-10">
             <div className={`bg-gradient-to-br ${visuals.surfaceClass} border border-slate-200 rounded-2xl p-4 md:p-6 shadow-sm`}>
               <div className="grid grid-cols-3 gap-3 md:gap-4">
-                {contentImages.map((image, index) => (
+                {galleryImages.map((image, index) => (
                   <figure key={`${image}-${index}`} className="relative overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition-shadow">
                     <img
                       src={image}
-                      alt={`${post.title} 관련 이미지 ${index + 2}`}
+                      alt={`${post.title} 관련 이미지 ${index + 1}`}
                       className="w-full h-[120px] md:h-[180px] object-cover"
                     />
                     <span className="absolute left-2 top-2 rounded-full bg-[#0F1A2B]/80 px-2 py-1 text-[11px] md:text-[12px] font-bold text-white shadow-sm">
-                      {index + 2}컷
+                      {index + 1}컷
                     </span>
                   </figure>
                 ))}
@@ -204,37 +201,37 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
         <section className={`${contentWidthClass} mt-12`}>
           <div className="flex items-end justify-between gap-4 mb-5 border-b border-slate-200 pb-3">
             <div>
-              <h2 className="text-[22px] md:text-[26px] font-black text-[#0F1A2B]">같이 보면 좋은 글</h2>
+              <h2 className="text-[22px] md:text-[26px] font-black text-[#0F1A2B]">📖 같이 보면 좋은 글</h2>
               <p className="text-slate-500 mt-1 break-keep">같은 주제의 관련 정보를 이어서 확인해 보세요.</p>
             </div>
-            <Link href={`/blog?category=${post.category}`} className="hidden md:inline-flex text-[15px] font-bold text-[#0F1A2B] hover:text-[#C9A857] transition-colors">
-              더 보기 →
-            </Link>
-          </div>
+              <Link href={`/blog?category=${post.category}`} className="hidden md:inline-flex items-center text-[14px] md:text-[15px] font-bold text-slate-700 bg-white border border-slate-300 px-4 py-1.5 rounded-md hover:bg-slate-50 hover:text-[#0F1A2B] transition-all shadow-sm">
+                더 보기 →
+              </Link>
+            </div>
 
-          <div className="flex flex-col gap-2.5">
-            {relatedPosts.map((item) => {
-              const { heroImage, categoryLabel, badgeClass } = getPostVisuals(item);
+            <div className="flex flex-col gap-2.5">
+              {relatedPosts.map((item) => {
+                const { heroImage, categoryLabel, badgeClass } = getPostVisuals(item);
 
-              return (
-                <Link
-                  key={item.slug}
-                  href={`/blog/${item.slug}`}
-                  className="group overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm hover:-translate-y-0.5 hover:border-[#C9A857] hover:shadow-md transition-all"
-                >
-                  <div className="flex flex-col sm:flex-row">
-                    <div className="relative h-[88px] sm:h-[92px] sm:w-[128px] sm:min-w-[128px] overflow-hidden bg-slate-100">
-                      <img
-                        src={heroImage}
-                        alt={item.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <span className={`absolute left-2 top-2 inline-flex rounded-full px-1.5 py-0.5 text-[9px] font-black shadow-sm ${badgeClass}`}>
-                        {categoryLabel}
-                      </span>
-                    </div>
+                return (
+                  <Link
+                    key={item.slug}
+                    href={`/blog/${item.slug}`}
+                    className="group overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm hover:-translate-y-0.5 hover:border-[#C9A857] hover:shadow-md transition-all"
+                  >
+                    <div className="flex flex-col sm:flex-row">
+                      <div className="relative h-[88px] sm:h-[92px] sm:w-[128px] sm:min-w-[128px] overflow-hidden bg-slate-100">
+                        <img
+                          src={heroImage}
+                          alt={item.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <span className={`absolute left-2 top-2 inline-flex rounded-md px-1.5 py-0.5 text-[9px] font-black shadow-sm ${badgeClass}`}>
+                          {categoryLabel}
+                        </span>
+                      </div>
 
-                    <div className="flex-1 p-2.5 sm:p-3">
+                      <div className="flex-1 p-2.5 sm:p-3">
                       <div className="flex flex-wrap items-center gap-1 mb-1.5 text-[10px] text-slate-500">
                         <span className="inline-flex rounded-full bg-slate-100 px-2 py-0.5 font-semibold">
                           📅 {item.date}

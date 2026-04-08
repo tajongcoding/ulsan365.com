@@ -340,18 +340,20 @@ export default function Home() {
                 <Link
                   key={item.question}
                   href="/qna"
-                  className="group bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#C9A857] transition-all"
+                  className="group bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-[#C9A857] transition-all flex flex-col"
                 >
-                  <div className={`inline-flex items-center rounded-lg px-4 py-2.5 text-[15px] md:text-[17px] font-extrabold mb-3 border ${badgeStyle} transition-colors group-hover:border-[#C9A857]/50`}>
-                    {item.category}
+                  <div className="flex-1">
+                    <div className={`inline-flex items-center rounded-lg px-4 py-2.5 text-[15px] md:text-[17px] font-extrabold mb-3 border ${badgeStyle} transition-colors group-hover:border-[#C9A857]/50`}>
+                      {item.category}
+                    </div>
+                    <h3 className="text-[18px] md:text-[19px] font-extrabold text-[#0F1A2B] leading-snug break-keep group-hover:text-[#C9A857] transition-colors mb-3">
+                      {item.question}
+                    </h3>
+                    <p className="text-[14px] text-slate-500 leading-relaxed break-keep">
+                      핵심 답변과 관련 정보를 FAQ 페이지에서 바로 확인할 수 있습니다.
+                    </p>
                   </div>
-                  <h3 className="text-[18px] md:text-[19px] font-extrabold text-[#0F1A2B] leading-snug break-keep group-hover:text-[#C9A857] transition-colors">
-                    {item.question}
-                  </h3>
-                  <p className="mt-3 text-[14px] text-slate-500 leading-relaxed break-keep">
-                    핵심 답변과 관련 정보를 FAQ 페이지에서 바로 확인할 수 있습니다.
-                  </p>
-                  <div className="pt-3 mt-4 border-t border-slate-100 text-[#0F1A2B] font-bold group-hover:text-[#C9A857] transition-colors">
+                  <div className="pt-4 mt-auto border-t border-slate-100 text-[#0F1A2B] font-bold group-hover:text-[#C9A857] transition-colors">
                     자세히 보기 →
                   </div>
                 </Link>
