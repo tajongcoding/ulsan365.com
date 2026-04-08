@@ -224,24 +224,51 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            {relatedPosts.map((item) => (
-              <Link
-                key={item.slug}
-                href={`/blog/${item.slug}`}
-                className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:-translate-y-1 hover:border-[#C9A857] hover:shadow-md transition-all"
-              >
-                <div className="inline-flex items-center rounded-full bg-slate-100 px-2.5 py-1 text-[12px] font-bold text-[#0F1A2B] mb-3">
-                  {item.category}
-                </div>
-                <h3 className="text-[17px] font-extrabold text-[#0F1A2B] leading-snug break-keep line-clamp-2">
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-[14px] text-slate-500 line-clamp-3 break-keep">
-                  {item.summary || item.contentExcerpt}
-                </p>
-              </Link>
-            ))}
+          <div className="flex flex-col gap-2.5">
+            {relatedPosts.map((item) => {
+              const { heroImage, categoryLabel, badgeClass } = getPostVisuals(item);
+
+              return (
+                <Link
+                  key={item.slug}
+                  href={`/blog/${item.slug}`}
+                  className="group overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm hover:-translate-y-0.5 hover:border-[#C9A857] hover:shadow-md transition-all"
+                >
+                  <div className="flex flex-col sm:flex-row">
+                    <div className="relative h-[88px] sm:h-[92px] sm:w-[128px] sm:min-w-[128px] overflow-hidden bg-slate-100">
+                      <img
+                        src={heroImage}
+                        alt={item.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <span className={`absolute left-2 top-2 inline-flex rounded-full px-1.5 py-0.5 text-[9px] font-black shadow-sm ${badgeClass}`}>
+                        {categoryLabel}
+                      </span>
+                    </div>
+
+                    <div className="flex-1 p-2.5 sm:p-3">
+                      <div className="flex flex-wrap items-center gap-1 mb-1.5 text-[10px] text-slate-500">
+                        <span className="inline-flex rounded-full bg-slate-100 px-2 py-0.5 font-semibold">
+                          📅 {item.date}
+                        </span>
+                        {item.tags?.slice(0, 2).map((tag) => (
+                          <span key={tag} className="inline-flex rounded-full bg-slate-50 px-1.5 py-0.5 text-[9px] font-medium text-slate-500">
+                            #{tag}
+                          </span>
+                        ))}
+                      </div>
+
+                      <h3 className="text-[14px] md:text-[15px] font-black text-[#0F1A2B] leading-snug break-keep line-clamp-2 group-hover:text-[#C9A857] transition-colors">
+                        {item.title}
+                      </h3>
+                      <p className="mt-1 text-[12px] md:text-[13px] text-slate-600 leading-relaxed break-keep line-clamp-2">
+                        {item.summary || item.contentExcerpt || '핵심 내용을 보기 쉽게 정리한 생활 정보 안내입니다.'}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </section>
       )}
