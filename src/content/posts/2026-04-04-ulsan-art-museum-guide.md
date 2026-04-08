@@ -26,7 +26,7 @@ tags:
 
 
 
-<img src="https://images.unsplash.com/photo-1506804886640-39fb4eb1a473?auto=format&fit=crop&q=80&w=800" alt="예술과 기술의 만남! 울산 시립미술관 방문 가이드
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="예술과 기술의 만남! 울산 시립미술관 방문 가이드
 date: 2026-04-04T00:00:00.000Z
 summary: 세계적인 미디어 아트부터 현대 미술까지! 울산의 문화 수준을 한 단계 높인 시립미술관을 소개합니다.
 category: 명소
@@ -52,7 +52,7 @@ tags:
 - **주변 조화**: 미술관 바로 옆에는 전통 가옥인 '울산 동헌'이 있어, 현대적인 미술관과 고즈넉한 옛 풍경의 조화를 감상할 수 있습니다.
 - **아이와 함께**: 어린이 전용 체험 전시도 자주 열리니 가족 나들이 장소로도 손색이 없습니다.
 
-<img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" alt="예술과 기술의 만남! 울산 시립미술관 방문 가이드
+<img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=800" alt="예술과 기술의 만남! 울산 시립미술관 방문 가이드
 date: 2026-04-04T00:00:00.000Z
 summary: 세계적인 미디어 아트부터 현대 미술까지! 울산의 문화 수준을 한 단계 높인 시립미술관을 소개합니다.
 category: 명소
@@ -123,7 +123,7 @@ tags:
 - **Q**: 신청 기간을 놓치면 어떻게 되나요?
   - **A**: 다행히 상시 모집이나 추가 모집이 자주 진행되니, 꾸준히 포털을 확인해주시면 됩니다.
 
-<img src="https://images.unsplash.com/photo-1513635269975-59663e0acad5?auto=format&fit=crop&q=80&w=800" alt="예술과 기술의 만남! 울산 시립미술관 방문 가이드
+<img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" alt="예술과 기술의 만남! 울산 시립미술관 방문 가이드
 date: 2026-04-04T00:00:00.000Z
 summary: 세계적인 미디어 아트부터 현대 미술까지! 울산의 문화 수준을 한 단계 높인 시립미술관을 소개합니다.
 category: 명소

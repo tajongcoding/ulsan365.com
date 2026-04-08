@@ -46,4 +46,4 @@ tags:
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Lotus_pond_at_Seonam_Lake_Park%2C_Ulsan.jpg" alt="도심 속 휴식처, 선암호수공원에서 즐기는 피크닉 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Gourd_trellis_Seonam_Lake_Park%2C_Ulsan.jpg" alt="도심 속 휴식처, 선암호수공원에서 즐기는 피크닉 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Lotus_Lookout_at_Seonam_Lake_Park%2C_Ulsan.jpg" alt="도심 속 휴식처, 선암호수공원에서 즐기는 피크닉 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

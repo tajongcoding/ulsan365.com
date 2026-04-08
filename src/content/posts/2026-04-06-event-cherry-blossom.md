@@ -28,7 +28,7 @@ tags:
 > - ✅ **준비물**: 돗자리, 간식, 따뜻한 겉옷(강변은 바람이 쌀쌀할 수 있음)
 
 ---
-<img src="https://images.unsplash.com/photo-1540039155732-68746868d22c?auto=format&fit=crop&q=80&w=800" alt="4월 울산 태화강 벚꽃 축제, 놓치지 마세요! 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=800" alt="4월 울산 태화강 벚꽃 축제, 놓치지 마세요! 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 💬 자주 묻는 질문
 
@@ -41,7 +41,7 @@ tags:
 **Q3. 반려견을 데리고 가도 되나요?**
 ▶ 네, 리드줄(목줄)을 반드시 착용하면 입장이 가능합니다. 단, 주요 행사장 및 음식 구역에는 반려견 입장이 제한될 수 있으니 안내판을 꼭 확인하세요.
 
-<img src="https://images.unsplash.com/photo-1533174000222-1d54bd8c0e2c?auto=format&fit=crop&q=80&w=800" alt="4월 울산 태화강 벚꽃 축제, 놓치지 마세요! 상세 정보 3" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800" alt="4월 울산 태화강 벚꽃 축제, 놓치지 마세요! 상세 정보 3" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 🏆 마무리하며
 지금까지 울산 태화강 벚꽃 축제 정보를 알아보았습니다.

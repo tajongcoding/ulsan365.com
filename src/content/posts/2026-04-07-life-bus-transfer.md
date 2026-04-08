@@ -41,11 +41,11 @@ tags:
 **Q3. 초행길인데 어떤 노선을 타야 할지 어렵습니다.**  
 ▶ 정류장 번호와 목적지를 앱에 입력하면 추천 경로를 확인할 수 있어 훨씬 편리합니다.
 
-<img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=800" alt="안내 이미지 상세 정보 3" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="안내 이미지 상세 정보 3" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 🏆 마무리하며
 버스 정보만 잘 알아도 일상이 훨씬 여유로워집니다.  
 **울산 365 포털**은 시민 생활에 바로 도움이 되는 교통·생활 팁을 계속 전해드리겠습니다.
-<img src="https://images.unsplash.com/photo-1513635269975-59663e0acad5?auto=format&fit=crop&q=80&w=800" alt="안내 이미지 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=800" alt="안내 이미지 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
-<img src="https://images.unsplash.com/photo-1506804886640-39fb4eb1a473?auto=format&fit=crop&q=80&w=800" alt="안내 이미지 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&q=80&w=800" alt="안내 이미지 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

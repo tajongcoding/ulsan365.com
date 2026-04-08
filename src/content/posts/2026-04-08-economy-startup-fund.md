@@ -10,7 +10,7 @@ tags:
 ## 📌 개요
 막 사업을 시작했지만 초기 운영비나 인테리어 비용 등 예상치 못한 지출에 직면한 소상공인을 위해, 2026년 울산신용보증재단에서 소상공인 특별 금융 지원을 확대합니다. 
 
-<img src="https://images.unsplash.com/photo-1507679722329-873db87de647?auto=format&fit=crop&q=80&w=800" alt="깔끔하게 정돈된 작은 카페 카운터" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800" alt="깔끔하게 정돈된 작은 카페 카운터" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 💡 특례보증 대출의 장점
 - **낮은 문턱**: 창업 초기라 신용등급이 다소 낮거나 실적이 부족해도 보증서를 통해 대출이 가능합니다.
@@ -25,17 +25,17 @@ tags:
 - 보증제한업종(도박, 사치 향락 등)이 아닐 것
 - 국세 및 지방세 체납이 없고, 연체 기록이 없을 것.
 
-<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="미소를 지으며 빵을 진열하는 사장님" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800" alt="미소를 지으며 빵을 진열하는 사장님" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ### 📝 필요 서류목록
 신청 시 신분증, 사업자등록증 사본, 사업장 임대차계약서, 부가가치세 과세표준증명원(또는 매출 증명 자료) 등이 필요합니다.
 
-<img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800" alt="서명하는 볼펜과 서류" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&q=80&w=800" alt="서명하는 볼펜과 서류" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 🚀 신청 절차
 상담 예약 → 서류 접수 → 현장 실사 및 보증 심사 → 보증서 발급 → 협약 은행 방문 대출 실행 순으로 진행됩니다. 자금 소진 시 조기 마감될 수 있으니 미리 예약하세요.
 
-<img src="https://images.unsplash.com/photo-1580519542036-ed47f3e42218?auto=format&fit=crop&q=80&w=800" alt="바쁘게 돌아가는 사무실 전경" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800" alt="바쁘게 돌아가는 사무실 전경" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ---
 ## 💬 자주 묻는 질문

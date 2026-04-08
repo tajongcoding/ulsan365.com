@@ -25,7 +25,7 @@ tags:
 
 
 
-<img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=800" alt="교육비 걱정 뚝! 울산 장애인 평생교육이용권 지원
+<img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=800" alt="교육비 걱정 뚝! 울산 장애인 평생교육이용권 지원
 date: 2026-04-04T00:00:00.000Z
 summary: 배움에 목마른 장애인분들을 위한 연간 35만원 상당의 교육 바우처 이용 안내입니다.
 category: 복지
@@ -56,7 +56,7 @@ tags:
 3. **카드 발급**: 농협(NH) 카드로 바우처 금액이 충전되어 발급됩니다.
 4. **사용**: 원하는 강의를 결제하고 수강합니다.
 
-<img src="https://images.unsplash.com/photo-1536640712-4d4c36ef0e4c?auto=format&fit=crop&q=80&w=800" alt="교육비 걱정 뚝! 울산 장애인 평생교육이용권 지원
+<img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=800" alt="교육비 걱정 뚝! 울산 장애인 평생교육이용권 지원
 date: 2026-04-04T00:00:00.000Z
 summary: 배움에 목마른 장애인분들을 위한 연간 35만원 상당의 교육 바우처 이용 안내입니다.
 category: 복지
@@ -111,7 +111,7 @@ tags:
 ## 🎁 놓치기 쉬운 숨은 꿀팁
 관공서나 공식 안내문에서는 잘 알려주지 않는 실전 팁을 하나 더 알려드릴게요. 폼이나 홈페이지에서 막힌다면, 지정된 고객센터나 담당 부서로 오전에 전화하시면 훨씬 더 빠르고 친절하게 안내받을 수 있습니다. 또한, 관련 증빙 서류는 미리 사진으로 찍어두시면 나중에도 유용하게 쓰일 수 있습니다.
 
-<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800" alt="교육비 걱정 뚝! 울산 장애인 평생교육이용권 지원
+<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=800" alt="교육비 걱정 뚝! 울산 장애인 평생교육이용권 지원
 date: 2026-04-04T00:00:00.000Z
 summary: 배움에 목마른 장애인분들을 위한 연간 35만원 상당의 교육 바우처 이용 안내입니다.
 category: 복지
@@ -139,7 +139,7 @@ tags:
 - **Q**: 신청 기간을 놓치면 어떻게 되나요?
   - **A**: 다행히 상시 모집이나 추가 모집이 자주 진행되니, 꾸준히 포털을 확인해주시면 됩니다.
 
-<img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800" alt="교육비 걱정 뚝! 울산 장애인 평생교육이용권 지원
+<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800" alt="교육비 걱정 뚝! 울산 장애인 평생교육이용권 지원
 date: 2026-04-04T00:00:00.000Z
 summary: 배움에 목마른 장애인분들을 위한 연간 35만원 상당의 교육 바우처 이용 안내입니다.
 category: 복지

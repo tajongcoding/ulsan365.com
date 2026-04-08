@@ -14,7 +14,7 @@ tags:
 ## 📌 개요
 매일 버리는 쓰레기, 재활용만 잘해도 쓰레기 봉투 값을 아끼고 환경도 살릴 수 있습니다. 알쏭달쏭한 분리배출 핵심만 짚어드립니다.
 
-<img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" alt="헷갈리는 재활용 분리수거, 울산시 분리배출 완벽 가이드 상세 정보 1" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&q=80&w=800" alt="헷갈리는 재활용 분리수거, 울산시 분리배출 완벽 가이드 상세 정보 1" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 💡 분리배출 핵심 포인트
 - **투명 페트병**: 라벨을 떼고 압착한 뒤 뚜껑을 닫아 전용 수거함에 버립니다.
@@ -26,7 +26,7 @@ tags:
 > - ✅ **종이류**: 비닐 코팅된 전단지나 영수증은 일반 쓰레기로 버립니다.
 
 ---
-<img src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&q=80&w=800" alt="헷갈리는 재활용 분리수거, 울산시 분리배출 완벽 가이드 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=800" alt="헷갈리는 재활용 분리수거, 울산시 분리배출 완벽 가이드 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 💬 자주 묻는 질문
 **Q1. 자세한 내용은 어디서 확인할 수 있나요?**
@@ -44,6 +44,6 @@ tags:
 지금까지 우리 동네에서 꼭 알아야 할 가장 핵심적인 정보들을 알기 쉽게 풀어 설명해 드렸습니다.
 **울산 365 포털**은 알아두면 돈이 되고 힘이 되는 정보들을 모아 매일 전해드리고 있습니다. 앞으로도 많은 관심 부탁드립니다!
 
-<img src="https://images.unsplash.com/photo-1506804886640-39fb4eb1a473?auto=format&fit=crop&q=80&w=800" alt="헷갈리는 재활용 분리수거, 울산시 분리배출 완벽 가이드 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=800" alt="헷갈리는 재활용 분리수거, 울산시 분리배출 완벽 가이드 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
-<img src="https://images.unsplash.com/photo-1513635269975-59663e0acad5?auto=format&fit=crop&q=80&w=800" alt="헷갈리는 재활용 분리수거, 울산시 분리배출 완벽 가이드 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="헷갈리는 재활용 분리수거, 울산시 분리배출 완벽 가이드 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

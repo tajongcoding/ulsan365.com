@@ -141,9 +141,6 @@ export default function Home() {
                       {item.categoryLabel}
                     </span>
                   </div>
-                  <p className="text-[10px] font-black tracking-[0.18em] text-[#FFE08A] uppercase mb-1">
-                    {item.toneName}
-                  </p>
                   <h2 className="text-[16px] font-black text-white break-keep line-clamp-2">
                     {item.title}
                   </h2>

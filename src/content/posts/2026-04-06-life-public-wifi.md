@@ -28,7 +28,7 @@ tags:
 > - ✅ **개인정보 주의**: 공공 와이파이에서는 금융 앱이나 중요한 로그인은 피하시는 것이 안전합니다.
 
 ---
-<img src="https://images.unsplash.com/photo-1513635269975-59663e0acad5?auto=format&fit=crop&q=80&w=800" alt="울산시 공공 와이파이 무료 사용, 내 동네 어디서 되나? 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&q=80&w=800" alt="울산시 공공 와이파이 무료 사용, 내 동네 어디서 되나? 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 💬 자주 묻는 질문
 
@@ -41,7 +41,7 @@ tags:
 **Q3. 와이파이가 설치된 장소를 지도로 확인할 수 있나요?**
 ▶ 지식재산포털 또는 정부24 사이트에서 '공공 와이파이 조회' 서비스를 통해 현재 위치 기반으로 가까운 와이파이 위치를 확인할 수 있습니다.
 
-<img src="https://images.unsplash.com/photo-1506804886640-39fb4eb1a473?auto=format&fit=crop&q=80&w=800" alt="울산시 공공 와이파이 무료 사용, 내 동네 어디서 되나? 상세 정보 3" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="울산시 공공 와이파이 무료 사용, 내 동네 어디서 되나? 상세 정보 3" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 🏆 마무리하며
 지금까지 울산 공공 와이파이 이용법을 알아보았습니다.
@@ -49,4 +49,4 @@ tags:
 
 <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="울산시 공공 와이파이 무료 사용, 내 동네 어디서 되나? 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
-<img src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&q=80&w=800" alt="울산시 공공 와이파이 무료 사용, 내 동네 어디서 되나? 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=800" alt="울산시 공공 와이파이 무료 사용, 내 동네 어디서 되나? 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

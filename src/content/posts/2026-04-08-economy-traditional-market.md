@@ -17,12 +17,12 @@ tags:
 - **소득공제 혜택**: 연말정산 시 결제액의 30% (전통시장의 경우 40%) 소득공제가 적용됩니다.
 - **착한 소비**: 수수료 부담이 없는 착한결제 서비스로 소상공인을 직접적으로 돕습니다.
 
-<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800" alt="신선한 채소가 가득한 좌판" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&q=80&w=800" alt="신선한 채소가 가득한 좌판" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 🔍 어느 시장에서 가장 유리할까?
 울산 남구 신정시장, 중구 수암시장, 동구 태화종합시장 등은 지정된 카카오페이/울산페이 가맹점이 많아 손쉽게 QR 결제가 가능합니다. 야시장이 열리는 날에는 즉석에서 다양한 간식을 반값 수준체감가로 즐길 수 있습니다.
 
-<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="시장 골목의 맛있는 길거리 음식" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800" alt="시장 골목의 맛있는 길거리 음식" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ### 📝 이용 전 필수 체크
 1. **구매 한도**: 매월 설정된 1인당 구매(할인적용) 한도액을 초과하지 않는지 체크하세요. (현재 기준 월 30만 원 상당)
@@ -33,7 +33,7 @@ tags:
 ## 🚀 스마트한 활용 노하우
 명절이나 명절이 임시특별 할인기간으로 지정될 때는 10% 캐시백 혜택이 적용됩니다. 이때 식재료나 생필품을 미리 구매해두시면 훌륭한 '짠테크(짠돌이 재테크)'가 됩니다.
 
-<img src="https://images.unsplash.com/photo-1580519542036-ed47f3e42218?auto=format&fit=crop&q=80&w=800" alt="동전이 담긴 돼지저금통과 계산기" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800" alt="동전이 담긴 돼지저금통과 계산기" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ---
 ## 💬 자주 묻는 질문

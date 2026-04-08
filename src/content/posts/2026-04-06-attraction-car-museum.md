@@ -14,7 +14,7 @@ tags:
 ## 📌 개요
 우리나라 자동차 산업의 심장이라 불리는 울산! 이 자랑스러운 도시에는 자동차의 역사와 문화를 한눈에 살펴볼 수 있는 국내 유일의 '울산 자동차박물관'이 있습니다. 아이들과 함께 방문하면 교육적인 재미까지 누릴 수 있는 알찬 나들이 코스입니다.
 
-<img src="https://images.unsplash.com/photo-1506804886640-39fb4eb1a473?auto=format&fit=crop&q=80&w=800" alt="울산 자동차박물관, 자동차 도시 울산의 자부심 상세 정보 1" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="울산 자동차박물관, 자동차 도시 울산의 자부심 상세 정보 1" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 💡 관람 포인트
 - **클래식 카 전시관**: 1세대 포니부터 최신 전기차까지 자동차의 역사를 한눈에 감상
@@ -28,7 +28,7 @@ tags:
 > - ✅ **입장료**: 어른 3,000원 / 청소년 2,000원 / 어린이 1,000원 (36개월 미만 무료)
 
 ---
-<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="울산 자동차박물관, 자동차 도시 울산의 자부심 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" alt="울산 자동차박물관, 자동차 도시 울산의 자부심 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 💬 자주 묻는 질문
 
@@ -47,6 +47,6 @@ tags:
 지금까지 울산 자동차박물관을 소개해 드렸습니다.
 **울산 365 포털**은 알아두면 돈이 되고 힘이 되는 정보들을 모아 매일 전해드리고 있습니다. 앞으로도 많은 관심 부탁드립니다!
 
-<img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" alt="울산 자동차박물관, 자동차 도시 울산의 자부심 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&q=80&w=800" alt="울산 자동차박물관, 자동차 도시 울산의 자부심 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
-<img src="https://images.unsplash.com/photo-1513635269975-59663e0acad5?auto=format&fit=crop&q=80&w=800" alt="울산 자동차박물관, 자동차 도시 울산의 자부심 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="울산 자동차박물관, 자동차 도시 울산의 자부심 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

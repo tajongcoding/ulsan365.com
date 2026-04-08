@@ -28,7 +28,7 @@ tags:
 > - ✅ **교통**: 울산 시외버스터미널에서 807번 버스 이용 또는 승용차 이용 (울산 시내에서 약 40분 소요)
 
 ---
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/190923_%EC%86%8C%EB%B0%A9%EB%88%84%EB%A6%ACTHE119_%EA%B0%80%EC%9D%84%ED%98%B8_%EB%82%B4%EC%A7%80_%EC%B5%9C%EC%A2%85%28%EC%8A%A4%ED%94%84%EB%A0%88%EB%93%9C%29.pdf" alt="울산 간절곶 해돋이 명소 완벽 가이드 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Ganjeolgot%2C_Ulsan_on_August_16th%2C_2018.jpg" alt="울산 간절곶 해돋이 명소 완벽 가이드 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 💬 자주 묻는 질문
 
@@ -41,12 +41,12 @@ tags:
 **Q3. 일출을 보려면 몇 시에 가야 하나요?**
 ▶ 4월 기준으로 일출은 오전 6시 10분 전후입니다. 주차 경쟁을 피하려면 30분~1시간 전에 도착하시는 것을 추천합니다. 동해안 바람이 차니 외투는 꼭 챙기세요!
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Ganjeolgot%2C_Ulsan_on_August_16th%2C_2018.jpg" alt="울산 간절곶 해돋이 명소 완벽 가이드 상세 정보 3" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="울산 간절곶 해돋이 명소 완벽 가이드 상세 정보 3" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 🏆 마무리하며
 지금까지 울산의 대표 명소 간절곶을 소개해 드렸습니다.
 **울산 365 포털**은 알아두면 돈이 되고 힘이 되는 정보들을 모아 매일 전해드리고 있습니다. 앞으로도 많은 관심 부탁드립니다!
 
-<img src="https://images.unsplash.com/photo-1506804886640-39fb4eb1a473?auto=format&fit=crop&q=80&w=800" alt="울산 간절곶 해돋이 명소 완벽 가이드 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=800" alt="울산 간절곶 해돋이 명소 완벽 가이드 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 <img src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&q=80&w=800" alt="울산 간절곶 해돋이 명소 완벽 가이드 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

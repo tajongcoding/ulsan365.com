@@ -14,7 +14,7 @@ tags:
 ## 📌 개요
 좋은 아이디어가 있어도 초기 자금 때문에 망설이고 계신 울산의 청년 창업 희망자분들 주목해 주세요! 울산시와 각종 기관에서 운영하는 창업 지원 프로그램을 잘 활용한다면 큰 자금 부담 없이 사업을 시작할 수 있습니다.
 
-<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800" alt="울산 청년 창업 지원금, 놓치면 아쉬운 최대 2,000만 원 상세 정보 1" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&q=80&w=800" alt="울산 청년 창업 지원금, 놓치면 아쉬운 최대 2,000만 원 상세 정보 1" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 💡 주요 지원 내용
 - **청년 창업 지원금**: 만 39세 이하 청년 창업자에게 최대 2,000만 원까지 사업화 자금 지원
@@ -28,7 +28,7 @@ tags:
 > - ✅ **팁**: 공고는 상반기(3~4월)와 하반기(8~9월)에 주로 올라오니 지금이 바로 신청 적기입니다!
 
 ---
-<img src="https://images.unsplash.com/photo-1580519542036-ed47f3e42218?auto=format&fit=crop&q=80&w=800" alt="울산 청년 창업 지원금, 놓치면 아쉬운 최대 2,000만 원 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="울산 청년 창업 지원금, 놓치면 아쉬운 최대 2,000만 원 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 💬 자주 묻는 질문
 
@@ -47,6 +47,6 @@ tags:
 지금까지 울산 청년 창업 지원 제도를 알아보았습니다.
 **울산 365 포털**은 알아두면 돈이 되고 힘이 되는 정보들을 모아 매일 전해드리고 있습니다. 앞으로도 많은 관심 부탁드립니다!
 
-<img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=800" alt="울산 청년 창업 지원금, 놓치면 아쉬운 최대 2,000만 원 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800" alt="울산 청년 창업 지원금, 놓치면 아쉬운 최대 2,000만 원 상세 정보 4" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
-<img src="https://images.unsplash.com/photo-1507679722329-873db87de647?auto=format&fit=crop&q=80&w=800" alt="울산 청년 창업 지원금, 놓치면 아쉬운 최대 2,000만 원 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=800" alt="울산 청년 창업 지원금, 놓치면 아쉬운 최대 2,000만 원 상세 정보 5" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

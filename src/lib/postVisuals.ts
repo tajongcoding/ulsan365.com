@@ -182,17 +182,20 @@ export function getPostVisuals(
     .filter((item) => item.keywords.some((keyword) => searchText.includes(keyword.toLowerCase())))
     .flatMap((item) => item.images);
 
-  const galleryImages = uniqueStrings([...matchedImages, ...theme.images, post.thumbnailUrl]).slice(0, 4);
+    // 썸네일(게시글 실제 이미지)이 최우선이 되도록 배열 맨 앞에 배치!
+    const galleryImages = uniqueStrings(
+      [post.thumbnailUrl, ...matchedImages, ...theme.images].filter((img): img is string => Boolean(img))
+    ).slice(0, 4);
 
-  return {
-    heroImage: galleryImages[0] || theme.images[0],
-    galleryImages,
-    categoryLabel: theme.label,
-    toneName: theme.toneName,
-    toneDescription: theme.toneDescription,
-    badgeClass: theme.badgeClass,
-    overlayClass: theme.overlayClass,
-    surfaceClass: theme.surfaceClass,
-    accentClass: theme.accentClass,
-  };
+    return {
+      heroImage: galleryImages[0] || theme.images[0],
+      galleryImages,
+      categoryLabel: theme.label,
+      toneName: theme.toneName,
+      toneDescription: theme.toneDescription,
+      badgeClass: theme.badgeClass,
+      overlayClass: theme.overlayClass,
+      surfaceClass: theme.surfaceClass,
+      accentClass: theme.accentClass,
+    };
 }

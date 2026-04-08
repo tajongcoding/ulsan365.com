@@ -25,7 +25,7 @@ tags:
 
 
 
-<img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" alt="울산 곳곳을 누비는 즐거움! 공유 전기자전거 이용 팁
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="울산 곳곳을 누비는 즐거움! 공유 전기자전거 이용 팁
 date: 2026-04-04T00:00:00.000Z
 summary: 버스 타기엔 가깝고 걷기엔 먼 거리! 울산에서 공유 전기자전거를 가장 스마트하게 이용하는 법을 알려드려요.
 category: 생활
@@ -62,7 +62,7 @@ tags:
 2. **스캔**: 자전거 뒷바퀴 쪽의 QR코드를 카메라로 비추면 잠금이 자동으로 스윽 풀립니다.
 3. **주행**: 전기 모터 방식이라 살짝만 페달을 밟아도 잘 나갑니다. 태화강 바람을 쐬며 달려보세요!
 
-<img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=800" alt="울산 곳곳을 누비는 즐거움! 공유 전기자전거 이용 팁
+<img src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&q=80&w=800" alt="울산 곳곳을 누비는 즐거움! 공유 전기자전거 이용 팁
 date: 2026-04-04T00:00:00.000Z
 summary: 버스 타기엔 가깝고 걷기엔 먼 거리! 울산에서 공유 전기자전거를 가장 스마트하게 이용하는 법을 알려드려요.
 category: 생활
@@ -100,7 +100,7 @@ tags:
 ---
 💡 **에티켓**: 다 탄 후에는 다음 사람이 찾기 쉽게 탁 트인 곳에 세워두고, 안전을 위해 헬멧 착용도 잊지 마세요!
 
-<img src="https://images.unsplash.com/photo-1513635269975-59663e0acad5?auto=format&fit=crop&q=80&w=800" alt="울산 곳곳을 누비는 즐거움! 공유 전기자전거 이용 팁
+<img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" alt="울산 곳곳을 누비는 즐거움! 공유 전기자전거 이용 팁
 date: 2026-04-04T00:00:00.000Z
 summary: 버스 타기엔 가깝고 걷기엔 먼 거리! 울산에서 공유 전기자전거를 가장 스마트하게 이용하는 법을 알려드려요.
 category: 생활
@@ -131,7 +131,7 @@ tags:
 ## 🎁 놓치기 쉬운 숨은 꿀팁
 관공서나 공식 안내문에서는 잘 알려주지 않는 실전 팁을 하나 더 알려드릴게요. 폼이나 홈페이지에서 막힌다면, 지정된 고객센터나 담당 부서로 오전에 전화하시면 훨씬 더 빠르고 친절하게 안내받을 수 있습니다. 또한, 관련 증빙 서류는 미리 사진으로 찍어두시면 나중에도 유용하게 쓰일 수 있습니다.
 
-<img src="https://images.unsplash.com/photo-1506804886640-39fb4eb1a473?auto=format&fit=crop&q=80&w=800" alt="울산 곳곳을 누비는 즐거움! 공유 전기자전거 이용 팁
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="울산 곳곳을 누비는 즐거움! 공유 전기자전거 이용 팁
 date: 2026-04-04T00:00:00.000Z
 summary: 버스 타기엔 가깝고 걷기엔 먼 거리! 울산에서 공유 전기자전거를 가장 스마트하게 이용하는 법을 알려드려요.
 category: 생활
@@ -166,7 +166,7 @@ tags:
 - **Q**: 신청 기간을 놓치면 어떻게 되나요?
   - **A**: 다행히 상시 모집이나 추가 모집이 자주 진행되니, 꾸준히 포털을 확인해주시면 됩니다.
 
-<img src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&q=80&w=800" alt="울산 곳곳을 누비는 즐거움! 공유 전기자전거 이용 팁
+<img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=800" alt="울산 곳곳을 누비는 즐거움! 공유 전기자전거 이용 팁
 date: 2026-04-04T00:00:00.000Z
 summary: 버스 타기엔 가깝고 걷기엔 먼 거리! 울산에서 공유 전기자전거를 가장 스마트하게 이용하는 법을 알려드려요.
 category: 생활

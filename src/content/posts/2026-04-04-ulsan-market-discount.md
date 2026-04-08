@@ -25,7 +25,7 @@ tags:
 
 
 
-<img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800" alt="지역 경제 활성화! 울산 전통시장 10% 페이백 이벤트 안내
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="지역 경제 활성화! 울산 전통시장 10% 페이백 이벤트 안내
 date: 2026-04-04T00:00:00.000Z
 summary: 울산 주요 전통시장에서 물건을 사면 10%를 온누리상품권으로 돌려받는 알뜰 쇼핑 찬스입니다.
 category: 경제
@@ -69,7 +69,7 @@ tags:
 3. 시장 내 마련된 '영수증 환급 부스'로 가서 영수증을 보여줍니다.
 4. 즉석에서 온누리상품권을 받습니다.
 
-<img src="https://images.unsplash.com/photo-1580519542036-ed47f3e42218?auto=format&fit=crop&q=80&w=800" alt="지역 경제 활성화! 울산 전통시장 10% 페이백 이벤트 안내
+<img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=800" alt="지역 경제 활성화! 울산 전통시장 10% 페이백 이벤트 안내
 date: 2026-04-04T00:00:00.000Z
 summary: 울산 주요 전통시장에서 물건을 사면 10%를 온누리상품권으로 돌려받는 알뜰 쇼핑 찬스입니다.
 category: 경제
@@ -113,7 +113,7 @@ tags:
 ---
 💡 **팁**: 주말에는 환급 부스가 붐빌 수 있으니 평일 오전 시간을 활용해 보세요!
 
-<img src="https://images.unsplash.com/photo-1507679722329-873db87de647?auto=format&fit=crop&q=80&w=800" alt="지역 경제 활성화! 울산 전통시장 10% 페이백 이벤트 안내
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800" alt="지역 경제 활성화! 울산 전통시장 10% 페이백 이벤트 안내
 date: 2026-04-04T00:00:00.000Z
 summary: 울산 주요 전통시장에서 물건을 사면 10%를 온누리상품권으로 돌려받는 알뜰 쇼핑 찬스입니다.
 category: 경제
@@ -150,7 +150,7 @@ tags:
 ## 🎁 놓치기 쉬운 숨은 꿀팁
 관공서나 공식 안내문에서는 잘 알려주지 않는 실전 팁을 하나 더 알려드릴게요. 폼이나 홈페이지에서 막힌다면, 지정된 고객센터나 담당 부서로 오전에 전화하시면 훨씬 더 빠르고 친절하게 안내받을 수 있습니다. 또한, 관련 증빙 서류는 미리 사진으로 찍어두시면 나중에도 유용하게 쓰일 수 있습니다.
 
-<img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=800" alt="지역 경제 활성화! 울산 전통시장 10% 페이백 이벤트 안내
+<img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800" alt="지역 경제 활성화! 울산 전통시장 10% 페이백 이벤트 안내
 date: 2026-04-04T00:00:00.000Z
 summary: 울산 주요 전통시장에서 물건을 사면 10%를 온누리상품권으로 돌려받는 알뜰 쇼핑 찬스입니다.
 category: 경제
@@ -191,7 +191,7 @@ tags:
 - **Q**: 신청 기간을 놓치면 어떻게 되나요?
   - **A**: 다행히 상시 모집이나 추가 모집이 자주 진행되니, 꾸준히 포털을 확인해주시면 됩니다.
 
-<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="지역 경제 활성화! 울산 전통시장 10% 페이백 이벤트 안내
+<img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&q=80&w=800" alt="지역 경제 활성화! 울산 전통시장 10% 페이백 이벤트 안내
 date: 2026-04-04T00:00:00.000Z
 summary: 울산 주요 전통시장에서 물건을 사면 10%를 온누리상품권으로 돌려받는 알뜰 쇼핑 찬스입니다.
 category: 경제

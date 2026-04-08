@@ -18,14 +18,14 @@ tags:
 - **에코 체험 부스**: 압화 만들기, 대나무 공예품 체험 등 아이들이 좋아하는 친환경 생태 체험장
 - **재즈 및 클래식 버스킹**: 꽃밭 곳곳에서 조용히 흘러나오는 낭만적인 어쿠스틱 공연
 
-<img src="https://images.unsplash.com/photo-1540039155732-68746868d22c?auto=format&fit=crop&q=80&w=800" alt="어쿠스틱 기타를 치는 거리 밴드" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=800" alt="어쿠스틱 기타를 치는 거리 밴드" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 🔍 베스트 산책 코스 제안
 초행길이시라면 다음 루트를 추천드립니다.
 ✨ **[만남의 광장] → [작약원] → [십리대숲 은하수길(야간)] → [무궁화정원] → [태화루전망대]**
 어두워지기 전 꽃들과 사진을 남긴 뒤, 해가 지면 십리대숲의 로맨틱한 은하수길 조명을 감상하는 코스가 으뜸입니다.
 
-<img src="https://images.unsplash.com/photo-1533174000222-1d54bd8c0e2c?auto=format&fit=crop&q=80&w=800" alt="하늘로 곧게 뻗은 푸른 대나무 숲" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800" alt="하늘로 곧게 뻗은 푸른 대나무 숲" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ### 📝 주차 및 대중교통 꿀팁
 축제 기간 주말에는 국가정원 주변 도로가 심하게 정체됩니다. 가급적 KTX 태화강역이나 고속버스터미널에서 셔틀버스, 일반 시내버스를 이용하시고, 차량 이용 시 임시 주차구역(남구 둔치, 태화강 고수부지 등) 위치를 사전에 확인하세요.

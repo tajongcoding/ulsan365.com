@@ -28,7 +28,7 @@ tags:
 > - ✅ **주의사항**: 주말에는 주변 도로와 주차 공간이 붐빌 수 있습니다.
 
 ---
-<img src="https://images.unsplash.com/photo-1513635269975-59663e0acad5?auto=format&fit=crop&q=80&w=800" alt="안내 이미지 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=800" alt="안내 이미지 상세 정보 2" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 💬 자주 묻는 질문
 
@@ -41,7 +41,7 @@ tags:
 **Q3. 사진 찍기 좋은 포인트가 있나요?**  
 ▶ 해안도로, 몽돌이 깔린 해변, 노을지는 시간대가 특히 인기 있는 포인트입니다.
 
-<img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" alt="안내 이미지 상세 정보 3" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="안내 이미지 상세 정보 3" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 🏆 마무리하며
 멀리 떠나지 않아도 울산 안에서 충분히 좋은 바다 풍경을 만날 수 있습니다.  

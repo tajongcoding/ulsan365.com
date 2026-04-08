@@ -20,7 +20,7 @@ tags:
 ## 🔍 자격 조건 요약
 신청을 위해서는 소득 및 재산 기준을 충족해야 합니다. 청년 독립가구의 소득이 기준 중위소득의 일정 비율 이하이며, 원가구(부모님 포함) 통산 소득도 기준을 넘지 않아야 합니다.
 
-<img src="https://images.unsplash.com/photo-1536640712-4d4c36ef0e4c?auto=format&fit=crop&q=80&w=800" alt="노트북을 보며 예산을 계산하는 청년" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=800" alt="노트북을 보며 예산을 계산하는 청년" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ### 📝 필수 준비 서류
 - 가족관계증명서 (청년 및 부모)
@@ -28,17 +28,17 @@ tags:
 - 최근 3개월간 월세 이체 증빙 서류
 - 통장 사본 (본인 명의)
 
-<img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=800" alt="책상 위 서류와 펜" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=800" alt="책상 위 서류와 펜" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ## 🚀 신청 방법 및 유의사항
 방문 신청은 거주지 관할 행정복지센터에서, 온라인 신청은 복지로(Bokjiro) 누리집이나 앱을 통해 가능합니다. 예산이 소진되기 전 연초에 서둘러 신청하는 것이 유리합니다.
 
-<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800" alt="온라인 신청을 하는 모습" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800" alt="온라인 신청을 하는 모습" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 > **놓치기 쉬운 팁!**
 > 전입신고가 완료되어 있어야 신청 가능하며, 공공임대주택 거주자나 다른 주거비 지원을 이미 받고 있는 경우 중복 수혜가 제한될 수 있으니 미리 확인해 주세요.
 
-<img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=800" alt="기뻐하는 청년" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
+<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800" alt="기뻐하는 청년" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
 ---
 ## 💬 자주 묻는 질문
