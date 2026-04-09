@@ -79,13 +79,19 @@ export default function Home() {
     },
   ];
 
-  // 현재 날짜 구하기
-  const getLocalDate = () => {
-    const today = new Date();
-    return `${today.getFullYear()}년 ${today.getMonth() + 1}월 ${today.getDate()}일`;
+  const formatDisplayDate = (dateValue: string) => {
+    const normalized = (dateValue || '').slice(0, 10);
+    const [year, month, day] = normalized.split('-').map(Number);
+
+    if (!year || !month || !day) {
+      return dateValue;
+    }
+
+    return `${year}년 ${month}월 ${day}일`;
   };
 
-  const todayLabel = getLocalDate();
+  const currentYear = new Date().getFullYear();
+  const latestDisplayDate = latestPosts[0] ? formatDisplayDate(latestPosts[0].date) : '';
 
   return (
     <main className="min-h-screen bg-[#F5F7FA] text-[#1F2937] font-sans selection:bg-[#C9A857]/30">
@@ -141,11 +147,11 @@ export default function Home() {
                 <div className={`absolute inset-0 bg-gradient-to-t ${item.overlayClass}`} />
                 <div className="absolute left-0 right-0 bottom-0 p-3.5">
                   <div className="mb-2 flex items-center gap-2 flex-wrap">
-                    <span className={`inline-flex items-center rounded-lg px-2.5 py-1 text-[14px] md:text-[16px] font-extrabold border ${item.badgeClass} backdrop-blur-md shadow-sm transition-colors group-hover:border-[#C9A857]/50`}>
+                    <span className={`inline-flex h-[34px] items-center rounded-lg px-2.5 py-1 text-[14px] md:text-[16px] font-extrabold border ${item.badgeClass} backdrop-blur-md shadow-sm transition-colors group-hover:border-[#C9A857]/50`}>
                       {item.categoryLabel}
                     </span>
-                    <span className="inline-flex items-center rounded-lg border border-white/15 bg-black/35 px-2.5 py-1 text-[11px] md:text-[12px] font-bold text-white/95 backdrop-blur-md shadow-sm">
-                      {todayLabel}
+                    <span className="inline-flex h-[34px] items-center px-0.5 text-[12px] md:text-[13px] font-extrabold text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.55)]">
+                      {formatDisplayDate(item.date)}
                     </span>
                   </div>
                   <h2 className="text-[16px] font-black text-white break-keep line-clamp-2">
@@ -211,13 +217,20 @@ export default function Home() {
               <Link
                 key={item.title}
                 href={item.href}
-                className="group bg-white rounded-2xl border-[2.5px] border-slate-300 p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-[#C9A857] transition-all duration-300"
+                className="group flex h-full flex-col bg-white rounded-2xl border-[2.5px] border-slate-300 p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-[#C9A857] transition-all duration-300"
               >
-                <div className={`inline-flex items-center rounded-lg px-2.5 py-1 text-[14px] md:text-[16px] font-extrabold mb-3 border ${badgeStyle} transition-colors group-hover:border-[#C9A857]/50`}>
-                  {item.category}
+                <div className="mb-3 flex items-center gap-2 flex-wrap min-h-[34px]">
+                  <div className={`inline-flex h-[34px] items-center rounded-lg px-2.5 py-1 text-[14px] md:text-[16px] font-extrabold border ${badgeStyle} transition-colors group-hover:border-[#C9A857]/50`}>
+                    {item.category}
+                  </div>
+                  {latestDisplayDate ? (
+                    <span className="inline-flex h-[34px] items-center px-0.5 text-[12px] md:text-[13px] font-extrabold text-slate-500">
+                      {latestDisplayDate}
+                    </span>
+                  ) : null}
                 </div>
                 <h3 className="text-[20px] md:text-[22px] font-black text-[#0F1A2B] mb-2 break-keep group-hover:text-[#C9A857] transition-colors">{item.title}</h3>
-                <p className="text-slate-600 text-[16px] leading-relaxed break-keep">{item.desc}</p>
+                <p className="flex-1 text-slate-600 text-[16px] leading-relaxed break-keep">{item.desc}</p>
                 <div className="mt-4 pt-3 border-t border-slate-200 text-[14px] font-extrabold text-[#0F1A2B] group-hover:text-[#C9A857] transition-colors">
                   바로 보기 →
                 </div>
@@ -256,11 +269,11 @@ export default function Home() {
                       />
                       <div className={`absolute inset-0 bg-gradient-to-t ${overlayClass}`} />
                       <div className="absolute top-4 left-4 right-4 flex items-center gap-2 flex-wrap">
-                        <span className={`inline-flex items-center rounded-lg px-2.5 py-1 text-[14px] md:text-[16px] font-extrabold border ${badgeClass} backdrop-blur-md shadow-sm transition-colors group-hover:border-[#C9A857]/50`}>
+                        <span className={`inline-flex h-[34px] items-center rounded-lg px-2.5 py-1 text-[14px] md:text-[16px] font-extrabold border ${badgeClass} backdrop-blur-md shadow-sm transition-colors group-hover:border-[#C9A857]/50`}>
                           {categoryLabel}
                         </span>
-                        <span className="inline-flex items-center rounded-lg border border-white/15 bg-black/35 px-2.5 py-1 text-[11px] md:text-[12px] font-bold text-white/95 backdrop-blur-md shadow-sm">
-                          {todayLabel}
+                        <span className="inline-flex h-[34px] items-center px-0.5 text-[12px] md:text-[13px] font-extrabold text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.55)]">
+                          {formatDisplayDate(post.date)}
                         </span>
                       </div>
                     </div>
@@ -396,7 +409,7 @@ export default function Home() {
           </div>
           <div className="h-px w-24 bg-slate-800 my-2"></div>
           <p className="text-[15px] md:text-[17px] font-medium text-white leading-relaxed max-w-lg break-keep mx-auto mt-2">
-            © {getLocalDate().split('년')[0]} 울산광역시 아시나요? All rights reserved. <br/>
+            © {currentYear} 울산광역시 아시나요? All rights reserved. <br/>
             본 웹사이트는 울산시의 생활, 복지, 경제 정보를 시민들에게 알기 쉽게 전달하는 비영리 공공안내 포털입니다.
           </p>
         </div>

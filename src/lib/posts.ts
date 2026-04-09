@@ -34,6 +34,18 @@ function formatDate(date: unknown): string {
   return '';
 }
 
+function normalizeCategory(category: unknown): string {
+  const value = String(category || '기타').trim();
+
+  if (value.includes('복지')) return '복지';
+  if (value.includes('경제')) return '경제';
+  if (value.includes('생활')) return '생활';
+  if (value.includes('행사')) return '행사';
+  if (value.includes('명소') || value.includes('관광')) return '명소';
+
+  return value || '기타';
+}
+
 // 모든 블로그 글의 메타 정보를 가져오는 함수 (목록 페이지에서 사용)
 export function getAllPosts(): PostMeta[] {
   // 폴더가 없으면 빈 배열 반환
@@ -80,8 +92,8 @@ export function getAllPosts(): PostMeta[] {
           slug,
           title: String(data.title || '제목 없음'),
           date: formatDate(data.date),
-          summary: String(data.summary || ''),
-          category: String(data.category || '기타'),
+          summary: String(data.summary || data.description || ''),
+          category: normalizeCategory(data.category),
           tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
           contentExcerpt,
           summaryBox,
@@ -96,7 +108,22 @@ export function getAllPosts(): PostMeta[] {
     .map(post => post as PostMeta); // 정상적으로 읽은 글만 필터링 후 캐스팅
 
   // 날짜 내림차순 정렬 (최신 글이 먼저)
-  posts.sort((a, b) => (a.date < b.date ? 1 : -1));
+  const categoryOrder = ['복지', '경제', '생활', '행사', '명소'];
+
+  posts.sort((a, b) => {
+    if (a.date === b.date) {
+      const aOrder = categoryOrder.indexOf(a.category);
+      const bOrder = categoryOrder.indexOf(b.category);
+
+      if (aOrder !== bOrder) {
+        return (aOrder === -1 ? 999 : aOrder) - (bOrder === -1 ? 999 : bOrder);
+      }
+
+      return a.slug.localeCompare(b.slug, 'ko');
+    }
+
+    return a.date < b.date ? 1 : -1;
+  });
 
   return posts;
 }
@@ -120,8 +147,8 @@ export function getPostBySlug(slug: string): Post | null {
     slug,
     title: data.title || '제목 없음',
     date: formatDate(data.date),
-    summary: data.summary || '',
-    category: data.category || '기타',
+    summary: data.summary || data.description || '',
+    category: normalizeCategory(data.category),
     tags: Array.isArray(data.tags) ? data.tags : [],
     contentExcerpt,
     thumbnailUrl,
