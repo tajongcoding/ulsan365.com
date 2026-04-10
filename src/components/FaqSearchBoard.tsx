@@ -7,27 +7,31 @@ type FaqItem = {
   question: string;
   answer: string;
   category: string;
+  district: string;
   href: string;
 };
 
 export default function FaqSearchBoard({ items }: { items: readonly FaqItem[] }) {
   const [query, setQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('전체');
+  const [selectedDistrict, setSelectedDistrict] = useState('전체');
 
   const categories = useMemo(() => ['전체', ...Array.from(new Set(items.map((item) => item.category)))], [items]);
+  const districts = useMemo(() => ['전체', ...Array.from(new Set(items.map((item) => item.district)))], [items]);
 
   const filteredItems = useMemo(() => {
     const normalized = query.trim().toLowerCase();
 
     return items.filter((item) => {
       const matchesCategory = selectedCategory === '전체' ? true : item.category === selectedCategory;
+      const matchesDistrict = selectedDistrict === '전체' ? true : item.district === selectedDistrict;
       const matchesQuery = normalized
-        ? [item.question, item.answer, item.category].join(' ').toLowerCase().includes(normalized)
+        ? [item.question, item.answer, item.category, item.district].join(' ').toLowerCase().includes(normalized)
         : true;
 
-      return matchesCategory && matchesQuery;
+      return matchesCategory && matchesDistrict && matchesQuery;
     });
-  }, [items, query, selectedCategory]);
+  }, [items, query, selectedCategory, selectedDistrict]);
 
   const popularKeywords = ['청년월세', '대형폐기물', '야간약국', '울산페이', '행사 일정'];
 
@@ -69,24 +73,48 @@ export default function FaqSearchBoard({ items }: { items: readonly FaqItem[] })
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-2">
-            {categories.map((category) => {
-              const isActive = selectedCategory === category;
-              return (
-                <button
-                  key={category}
-                  type="button"
-                  onClick={() => setSelectedCategory(category)}
-                  className={`rounded-full px-4 py-2 text-[14px] font-bold transition-all border ${
-                    isActive
-                      ? 'bg-[#0F1A2B] text-white border-[#0F1A2B]'
-                      : 'bg-white text-[#0F1A2B] border-slate-300 hover:border-[#C9A857] hover:text-[#C9A857]'
-                  }`}
-                >
-                  {category}
-                </button>
-              );
-            })}
+          <div className="space-y-3">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="text-[13px] font-bold text-slate-500">카테고리:</span>
+              {categories.map((category) => {
+                const isActive = selectedCategory === category;
+                return (
+                  <button
+                    key={category}
+                    type="button"
+                    onClick={() => setSelectedCategory(category)}
+                    className={`rounded-full px-4 py-2 text-[14px] font-bold transition-all border ${
+                      isActive
+                        ? 'bg-[#0F1A2B] text-white border-[#0F1A2B]'
+                        : 'bg-white text-[#0F1A2B] border-slate-300 hover:border-[#C9A857] hover:text-[#C9A857]'
+                    }`}
+                  >
+                    {category}
+                  </button>
+                );
+              })}
+            </div>
+
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="text-[13px] font-bold text-slate-500">지역:</span>
+              {districts.map((district) => {
+                const isActive = selectedDistrict === district;
+                return (
+                  <button
+                    key={district}
+                    type="button"
+                    onClick={() => setSelectedDistrict(district)}
+                    className={`rounded-full px-4 py-2 text-[14px] font-bold transition-all border ${
+                      isActive
+                        ? 'bg-[#C9A857] text-[#0F1A2B] border-[#C9A857]'
+                        : 'bg-white text-[#0F1A2B] border-slate-300 hover:border-[#C9A857] hover:text-[#C9A857]'
+                    }`}
+                  >
+                    {district}
+                  </button>
+                );
+              })}
+            </div>
           </div>
 
           <div className="flex flex-wrap items-center gap-2 text-[13px]">
@@ -119,9 +147,14 @@ export default function FaqSearchBoard({ items }: { items: readonly FaqItem[] })
                     {index + 1}
                   </span>
                   <div>
-                    <span className="inline-flex items-center rounded-full bg-[#0F1A2B]/5 px-2.5 py-1 text-[12px] font-bold text-[#0F1A2B] mb-2">
-                      {item.category}
-                    </span>
+                    <div className="mb-2 flex flex-wrap items-center gap-2">
+                      <span className="inline-flex items-center rounded-full bg-[#0F1A2B]/5 px-2.5 py-1 text-[12px] font-bold text-[#0F1A2B]">
+                        {item.category}
+                      </span>
+                      <span className="inline-flex items-center rounded-full bg-[#FFF7E1] px-2.5 py-1 text-[12px] font-bold text-[#8A6A1F]">
+                        {item.district}
+                      </span>
+                    </div>
                     <h3 className="text-[17px] md:text-[19px] font-extrabold text-[#0F1A2B] break-keep">
                       {item.question}
                     </h3>
@@ -156,6 +189,7 @@ export default function FaqSearchBoard({ items }: { items: readonly FaqItem[] })
               onClick={() => {
                 setQuery('');
                 setSelectedCategory('전체');
+                setSelectedDistrict('전체');
               }}
               className="mt-4 rounded-full border border-slate-300 bg-white px-4 py-2 text-[14px] font-bold text-[#0F1A2B] hover:border-[#C9A857] hover:text-[#C9A857]"
             >

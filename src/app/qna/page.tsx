@@ -26,6 +26,7 @@ const faqItems = [
     answer:
       '청년 월세 지원은 모집 시기마다 울산광역시 또는 정부24 공고를 통해 신청하는 경우가 많습니다. 신청 대상, 소득 기준, 제출 서류가 달라질 수 있으니 공고문과 접수 기간을 꼭 함께 확인해 주세요.',
     category: '경제',
+    district: '남구',
     href: '/blog?category=경제',
   },
   {
@@ -33,6 +34,7 @@ const faqItems = [
     answer:
       '거주 중인 구·군청 대형폐기물 신고 페이지 또는 지정 수거 접수 창구를 통해 신청합니다. 품목별 수수료가 다르므로 배출 전 신고번호와 수거일을 꼭 확인하는 것이 좋습니다.',
     category: '생활',
+    district: '중구',
     href: '/blog?category=생활',
   },
   {
@@ -40,6 +42,7 @@ const faqItems = [
     answer:
       '늦은 밤이나 휴일에는 응급의료포털 E-Gen, 119, 129를 통해 운영 중인 약국과 의료기관을 확인하는 것이 가장 빠릅니다. 방문 전 전화로 운영 여부를 다시 확인하면 더욱 안전합니다.',
     category: '생활',
+    district: '동구',
     href: '/blog?category=생활',
   },
   {
@@ -47,6 +50,7 @@ const faqItems = [
     answer:
       '임산부 교통 지원은 거주지, 임신 확인 서류, 신청 시기 등의 조건이 함께 안내되는 경우가 많습니다. 세부 요건은 연도별 정책에 따라 달라질 수 있어 최신 공고를 기준으로 확인하셔야 합니다.',
     category: '복지',
+    district: '북구',
     href: '/blog?category=복지',
   },
   {
@@ -54,6 +58,7 @@ const faqItems = [
     answer:
       '울산페이는 충전 할인율과 사용처가 시기별로 달라질 수 있습니다. 앱 설치 후 가맹점 여부를 확인하고, 충전 이벤트 기간에 맞춰 사용하면 체감 혜택이 커집니다.',
     category: '경제',
+    district: '울주군',
     href: '/blog?category=경제',
   },
   {
@@ -61,6 +66,7 @@ const faqItems = [
     answer:
       '울산시 공식 공지와 지역 행사 안내를 함께 보는 것이 좋습니다. 이 사이트의 행사·축제 카테고리에서도 자주 찾는 일정을 보기 쉽게 정리해두고 있습니다.',
     category: '행사',
+    district: '남구',
     href: '/blog?category=행사',
   },
   {
@@ -68,6 +74,7 @@ const faqItems = [
     answer:
       '다자녀 혜택은 교통, 공공시설, 문화이용, 보육 분야로 나뉘는 경우가 많습니다. 울산시와 각 구·군 공고를 함께 확인하면 적용 대상과 혜택 범위를 더 정확하게 볼 수 있습니다.',
     category: '복지',
+    district: '중구',
     href: '/blog?category=복지',
   },
   {
@@ -75,6 +82,7 @@ const faqItems = [
     answer:
       '소상공인 대상 지원은 경영안정자금, 컨설팅, 디지털 전환, 마케팅 지원처럼 여러 유형으로 나뉩니다. 사업 공고마다 업종과 매출 기준이 다르므로 조건을 먼저 확인하는 것이 좋습니다.',
     category: '경제',
+    district: '동구',
     href: '/blog?category=경제',
   },
   {
@@ -82,6 +90,7 @@ const faqItems = [
     answer:
       '울산버스정보 앱이나 버스정보 시스템을 이용하면 정류장별 실시간 도착 시간을 확인할 수 있습니다. 출퇴근 시간에는 실제 도로 상황에 따라 오차가 생길 수 있어 여유 있게 확인하는 것이 좋습니다.',
     category: '생활',
+    district: '북구',
     href: '/blog?category=생활',
   },
   {
@@ -89,6 +98,7 @@ const faqItems = [
     answer:
       '장마철이나 더운 날에는 실내 전시관, 체험관, 박물관, 키즈 친화형 공간을 함께 보는 것이 좋습니다. 이 사이트의 명소·관광 카테고리에서 가족 나들이 장소를 정리해두고 있습니다.',
     category: '명소',
+    district: '울주군',
     href: '/blog?category=명소',
   },
 ] as const;
@@ -117,6 +127,14 @@ const faqGuideCards = [
     desc: '헷갈리는 부분은 문의 폼과 공식 민원 채널을 함께 사용하면 보다 정확하게 확인할 수 있습니다.',
     icon: '💬',
   },
+];
+
+const districtGuideCards = [
+  { name: '남구', desc: '청년정책, 행사, 생활 밀집 정보 확인', icon: '🏙️' },
+  { name: '중구', desc: '행정민원, 복지, 생활 편의 정보', icon: '🏛️' },
+  { name: '동구', desc: '교통, 산업생활, 지역 실용 정보', icon: '⚓' },
+  { name: '북구', desc: '가정·복지·주거 관련 정보 체크', icon: '🌿' },
+  { name: '울주군', desc: '관광, 나들이, 생활 행정 정보', icon: '⛰️' },
 ];
 
 const faqJsonLd = {
@@ -201,6 +219,25 @@ export default function QnaBoard() {
         </section>
 
         <FaqSearchBoard items={faqItems} />
+
+        <section className="bg-white rounded-[24px] shadow-sm border border-slate-200 p-5 md:p-6">
+          <div className="mb-4">
+            <p className="text-[14px] font-bold text-[#C9A857] tracking-widest uppercase mb-2">District Guide</p>
+            <h2 className="text-[24px] md:text-[28px] font-black text-[#0F1A2B]">지역별로 FAQ 보기</h2>
+            <p className="mt-2 text-slate-500 break-keep">남구, 중구, 동구, 북구, 울주군 기준으로 자주 찾는 정보를 함께 분류했습니다.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-3">
+            {districtGuideCards.map((district) => (
+              <div key={district.name} className="rounded-2xl border border-slate-200 bg-slate-50/70 p-4">
+                <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-white text-[22px] shadow-sm border border-slate-200">
+                  {district.icon}
+                </div>
+                <h3 className="text-[16px] font-black text-[#0F1A2B]">{district.name}</h3>
+                <p className="mt-1 text-[13px] text-slate-500 leading-relaxed break-keep">{district.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
         <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {faqGuideCards.map((card) => (
