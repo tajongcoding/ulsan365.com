@@ -97,7 +97,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[#F5F7FA] text-[#1F2937] font-sans selection:bg-[#C9A857]/30">
-      <HomeNoticePopup enabled={false} />
+      <HomeNoticePopup enabled triggerDelayMs={2400} />
       
       {/* 1. 메인 비주얼 (Hero Section) - 좌측 정렬, 감청색 배경, 세로폭 축소 */}
       <section className="relative overflow-hidden bg-[#0F1A2B] text-white py-9 md:py-12 flex flex-col justify-center px-6 border-b-[4px] border-[#C9A857]">

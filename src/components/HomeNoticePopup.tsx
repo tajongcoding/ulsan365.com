@@ -4,9 +4,13 @@ import { useEffect, useMemo, useState } from 'react';
 
 type HomeNoticePopupProps = {
   enabled?: boolean;
+  triggerDelayMs?: number;
 };
 
-export default function HomeNoticePopup({ enabled = false }: HomeNoticePopupProps) {
+export default function HomeNoticePopup({
+  enabled = true,
+  triggerDelayMs = 2400,
+}: HomeNoticePopupProps) {
   const [isOpen, setIsOpen] = useState(false);
   const storageKey = useMemo(() => {
     const today = new Date().toISOString().slice(0, 10);
@@ -14,13 +18,33 @@ export default function HomeNoticePopup({ enabled = false }: HomeNoticePopupProp
   }, []);
 
   useEffect(() => {
-    if (typeof window === 'undefined') return;
+    if (!enabled || typeof window === 'undefined') return;
 
     const hiddenToday = window.localStorage.getItem(storageKey) === 'hidden';
-    if (!hiddenToday) {
+    if (hiddenToday) return;
+
+    let opened = false;
+
+    const openNotice = () => {
+      if (opened) return;
+      opened = true;
       setIsOpen(true);
-    }
-  }, [storageKey]);
+    };
+
+    const timer = window.setTimeout(openNotice, triggerDelayMs);
+    const handleScroll = () => {
+      if (window.scrollY > 140) {
+        openNotice();
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [enabled, storageKey, triggerDelayMs]);
 
   const closePopup = (hideToday = false) => {
     if (hideToday && typeof window !== 'undefined') {
@@ -32,53 +56,31 @@ export default function HomeNoticePopup({ enabled = false }: HomeNoticePopupProp
   if (!enabled || !isOpen) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-[100] flex items-end justify-center bg-slate-950/35 px-3 pb-[max(12px,env(safe-area-inset-bottom))] pt-16 md:inset-0 md:items-center md:bg-slate-950/55 md:px-4 md:pb-0 md:pt-0">
-      <div className="w-full max-w-[520px] max-h-[78vh] overflow-y-auto rounded-[20px] border border-[#C9A857]/40 bg-white shadow-2xl md:max-h-[85vh] md:rounded-2xl">
-        <div className="bg-[#0F1A2B] px-5 py-4 text-white">
-          <div className="flex items-center justify-between gap-3">
-            <div>
-              <p className="text-[12px] font-black tracking-[0.22em] text-[#C9A857] uppercase">Notice</p>
-              <h2 className="text-[22px] font-black">홈페이지 안내</h2>
-            </div>
-            <button
-              type="button"
-              onClick={() => closePopup(false)}
-              className="rounded-lg border-[2px] border-white/70 bg-transparent px-4 py-1.5 text-[12px] font-black text-white hover:border-[#C9A857] hover:text-[#C9A857]"
-            >
-              닫기
-            </button>
-          </div>
-        </div>
-
-        <div className="px-5 py-5 text-slate-700">
-          <p className="mb-3 text-[16px] font-bold text-[#0F1A2B] break-keep">
-            홈 이미지 매칭 및 전체 페이지 표시에 대해 아래 내용을 참고해 주세요.
-          </p>
-
-          <div className="mb-4 rounded-xl border-[2px] border-amber-300 bg-amber-50 px-4 py-3 text-[14px] md:text-[15px] leading-relaxed text-amber-900 break-keep">
-            이용에 불편을 드려 죄송합니다. 현재 홈 이미지 매칭, 일부 레이아웃, 상세페이지 표기 오류 가능성을 순차적으로 점검하고 있으며 빠르게 안정화하겠습니다.
+    <div className="fixed inset-x-0 top-3 z-[90] flex justify-center px-3 md:px-4">
+      <div className="w-full max-w-5xl rounded-2xl border border-[#C9A857]/40 bg-[#0F1A2B]/95 text-white shadow-2xl backdrop-blur">
+        <div className="flex flex-col gap-3 px-4 py-3 md:flex-row md:items-center md:justify-between md:px-5">
+          <div className="min-w-0">
+            <p className="text-[11px] font-black tracking-[0.22em] text-[#C9A857] uppercase">Notice</p>
+            <p className="mt-1 text-[13px] md:text-[14px] leading-relaxed text-slate-100 break-keep">
+              <span className="font-extrabold text-white">홈 이미지와 일부 상세 표기를 최종 점검 중입니다.</span>{' '}
+              새로고침 후 정상 반영되는 경우가 있으며, 순차적으로 안정화하고 있습니다.
+            </p>
           </div>
 
-          <ul className="space-y-2 text-[14px] md:text-[15px] leading-relaxed break-keep">
-            <li>• 자동 이미지 매칭 특성상 일부 글에서 이미지와 제목·내용이 완전히 일치하지 않을 수 있습니다.</li>
-            <li>• 홈 화면 및 일부 상세페이지에서 간헐적인 배치·표시 오류가 발생할 수 있습니다.</li>
-            <li>• 현재 순차 점검 및 수정 중이며, 새로고침 후 정상 반영되는 경우가 있습니다.</li>
-          </ul>
-
-          <div className="mt-5 flex flex-wrap justify-end gap-2">
+          <div className="flex flex-wrap items-center justify-end gap-2">
             <button
               type="button"
               onClick={() => closePopup(true)}
-              className="rounded-lg border-[2px] border-slate-400 bg-transparent px-4 py-2 text-[14px] font-black text-slate-700 hover:border-[#C9A857] hover:text-[#0F1A2B]"
+              className="rounded-full border border-white/30 px-3 py-1.5 text-[12px] font-black text-slate-100 hover:border-[#C9A857] hover:text-[#C9A857]"
             >
-              오늘 하루 보지 않기
+              오늘 숨기기
             </button>
             <button
               type="button"
               onClick={() => closePopup(false)}
-              className="rounded-lg border-[2px] border-slate-400 bg-transparent px-4 py-2 text-[14px] font-black text-slate-700 hover:border-[#C9A857] hover:text-[#0F1A2B]"
+              className="rounded-full border border-[#C9A857]/50 bg-[#C9A857]/10 px-3 py-1.5 text-[12px] font-black text-[#F6D98A] hover:bg-[#C9A857]/20"
             >
-              확인
+              닫기
             </button>
           </div>
         </div>
