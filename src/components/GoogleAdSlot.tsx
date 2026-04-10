@@ -16,11 +16,16 @@ type GoogleAdSlotProps = {
 
 export default function GoogleAdSlot({
   slot,
-  label = '추천 스폰서',
+  label = 'Google 광고',
   className = '',
 }: GoogleAdSlotProps) {
   const client = process.env.NEXT_PUBLIC_ADSENSE_ID;
   const isReady = !!client && client !== '나중에_입력' && !!slot && slot !== '나중에_입력';
+  const shouldPreviewPlaceholder = process.env.NODE_ENV !== 'production';
+
+  if (!isReady && !shouldPreviewPlaceholder) {
+    return null;
+  }
 
   useEffect(() => {
     if (!isReady || typeof window === 'undefined') {
@@ -57,11 +62,11 @@ export default function GoogleAdSlot({
           </div>
         ) : (
           <div className="px-5 py-5 md:px-6 md:py-6 text-center">
-            <p className="text-[17px] md:text-[18px] font-black text-[#0F1A2B] break-keep">
-              구글 배너 광고 자리 준비 완료
+            <p className="text-[16px] md:text-[17px] font-black text-[#0F1A2B] break-keep">
+              Google 광고 슬롯 준비중
             </p>
             <p className="mt-2 text-[13px] md:text-[14px] leading-relaxed text-slate-500 break-keep">
-              AdSense 승인 후 `slot ID`만 넣으면 이 위치에 자동으로 광고가 노출됩니다.
+              AdSense 승인 후 `slot ID`를 넣으면 이 위치에 반응형 배너가 자동 노출됩니다.
             </p>
           </div>
         )}

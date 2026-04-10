@@ -101,10 +101,15 @@ export default function CoupangBanner({ variant = 'default', topic = 'default' }
                 className="h-6 md:h-8 object-contain"
               />
             </div>
-            <p className="text-[20px] md:text-[24px] font-black text-[#0F1A2B] group-hover:text-[#C9A857] transition-colors m-0 break-keep mt-2 md:mt-0 text-center md:text-left leading-tight">
-              {currentStyle.text}<br />
-              <span className="text-[#C9A857]">{currentTopic.emphasis}</span>
-            </p>
+            <div className="text-center md:text-left">
+              <div className="mb-2 inline-flex items-center rounded-full bg-[#FFF7E1] px-2.5 py-1 text-[11px] font-black tracking-[0.16em] text-[#8A6A1F] uppercase">
+                Partner Link
+              </div>
+              <p className="text-[20px] md:text-[24px] font-black text-[#0F1A2B] group-hover:text-[#C9A857] transition-colors m-0 break-keep leading-tight">
+                {currentStyle.text}<br />
+                <span className="text-[#C9A857]">{currentTopic.emphasis}</span>
+              </p>
+            </div>
           </div>
           <div className="text-[14px] md:text-[15px] text-slate-500 font-[600] text-center md:text-right leading-relaxed mt-2 md:mt-0 border-t md:border-t-0 md:border-l border-slate-100 pt-4 md:pt-0 md:pl-6">
             이 포스팅은 쿠팡 파트너스 활동의 일환으로,<br />
