@@ -5,6 +5,7 @@ import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import { notFound } from 'next/navigation';
 import CoupangBanner from '@/components/CoupangBanner';
+import GoogleAdSlot from '@/components/GoogleAdSlot';
 import Link from 'next/link';
 import { getPostVisuals } from '@/lib/postVisuals';
 import { absoluteUrl, buildPostSeoTitle, siteConfig } from '@/lib/site';
@@ -200,6 +201,13 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
             {post.content}
           </ReactMarkdown>
         </article>
+      </div>
+
+      <div className={`${contentWidthClass} mt-10`}>
+        <GoogleAdSlot
+          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_POST}
+          label="본문 하단 스폰서 배너"
+        />
       </div>
 
       {relatedPosts.length > 0 && (

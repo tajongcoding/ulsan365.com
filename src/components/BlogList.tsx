@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import { Suspense, useEffect, useMemo, useState } from 'react';
 import { getCategoryLabel, getPostVisuals } from '@/lib/postVisuals';
 import CoupangBanner from './CoupangBanner';
+import GoogleAdSlot from './GoogleAdSlot';
 import SafeImage from './SafeImage';
 
 // 포스트 정보 타입 정의
@@ -118,6 +119,12 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
               })}
             </div>
           </section>
+
+          <GoogleAdSlot
+            slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG}
+            label="블로그 목록 스폰서 배너"
+            className="mb-8"
+          />
 
           {listPosts.length > 0 && (
             <section>

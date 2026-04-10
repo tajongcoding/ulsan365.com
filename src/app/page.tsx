@@ -5,6 +5,7 @@ import { getPostVisuals } from '../lib/postVisuals';
 import { absoluteUrl } from '../lib/site';
 import AppSection from '../components/AppList';
 import CoupangBanner from '../components/CoupangBanner';
+import GoogleAdSlot from '../components/GoogleAdSlot';
 import SafeImage from '../components/SafeImage';
 import HomeNoticePopup from '../components/HomeNoticePopup';
 
@@ -240,6 +241,11 @@ export default function Home() {
             );
           })}
         </section>
+
+        <GoogleAdSlot
+          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_HOME}
+          label="홈 메인 스폰서 배너"
+        />
 
         {/* 3. 최신 글 (Latest Posts) - 이미지 높이 260px로 축소하여 전체 박스 너비 조절 */}
         <section>
