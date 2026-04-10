@@ -265,7 +265,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
 
       {/* 쿠팡 파트너스 배너 (문맥형 버전) */}
       <div className="mt-16">
-        <CoupangBanner variant="compact" />
+        <CoupangBanner variant="compact" topic={post.category} />
       </div>
 
       {/* 하단 뒤로 가기 */}

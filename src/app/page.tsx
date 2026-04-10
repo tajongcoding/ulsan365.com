@@ -392,7 +392,7 @@ export default function Home() {
         </section>
 
         {/* 쿠팡 파트너스 배너 추가 */}
-        <CoupangBanner variant="default" />
+        <CoupangBanner variant="default" topic="생활" />
       </div>
 
       {/* 앱 추천 섹션 추가 */}

@@ -213,6 +213,9 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
           )}
         </>
       )}
+
+      {/* 리스트 하단 문맥형 배너 */}
+      <CoupangBanner variant="inline" topic={categoryFilter || '생활'} />
     </div>
   );
 }
@@ -224,8 +227,6 @@ export default function BlogListPage({ allPosts }: { allPosts: PostMeta[] }) {
       <Suspense fallback={<div className="text-center py-20 text-slate-400">데이터를 불러오는 중입니다...</div>}>
         <BlogListContent allPosts={allPosts} />
       </Suspense>
-      {/* 리스트 하단 문맥형 배너 */}
-      <CoupangBanner variant="inline" />
     </main>
   );
 }

@@ -1,41 +1,39 @@
-import Link from 'next/link';
-
 const apps = [
-  { 
-    name: '울산페이', 
-    desc: '지역 한정 7~10% 할인 혜택까지!', 
-    icon: '💳', 
-    link: 'https://play.google.com/store/apps/details?id=com.konai.parkland.ulsan' 
+  {
+    name: '울산페이',
+    desc: '지역 혜택과 캐시백 정보를 확인해 보세요',
+    icon: '💳',
+    link: 'https://play.google.com/store/apps/details?id=gov.ulsan.uspay'
   },
-  { 
-    name: '울산 버스정보', 
-    desc: '실시간 도착 정보 가장 정확함', 
-    icon: '🚌', 
-    link: 'https://play.google.com/store/apps/details?id=com.unibus.ulsan' 
+  {
+    name: '울산버스정보',
+    desc: '실시간 도착·노선·정류장 정보 확인',
+    icon: '🚌',
+    link: 'https://play.google.com/store/apps/details?id=com.ulsanbus.city2023'
   },
-  { 
-    name: '울산 관광 가이드', 
-    desc: '명소부터 맛집까지 한눈에!', 
-    icon: '🏰', 
-    link: 'https://play.google.com/store/apps/details?id=com.ulsankr.tour' 
+  {
+    name: '왔어 울산?',
+    desc: '울산 관광·명소·여행 코스 정보 보기',
+    icon: '🏰',
+    link: 'https://play.google.com/store/apps/details?id=com.ulsantourist.whale'
   },
-  { 
-    name: '모바일 울산', 
-    desc: '시정 소식부터 예약까지 포털', 
-    icon: '🏙️', 
-    link: 'https://play.google.com/store/apps/details?id=kr.go.ulsan.mobile' 
+  {
+    name: '모바일 울산',
+    desc: '시정 소식과 민원·예약 포털 바로가기',
+    icon: '🏙️',
+    link: 'https://www.ulsan.go.kr/u/rep/'
   },
-  { 
-    name: '똑똑 울산', 
-    desc: '나에게 딱 맞는 시정 소식 알림', 
-    icon: '🔔', 
-    link: 'https://play.google.com/store/apps/details?id=kr.go.ulsan.ddp' 
+  {
+    name: '울산 스마트맵',
+    desc: '지도 기반 행정·교통·생활정보 확인',
+    icon: '🗺️',
+    link: 'https://map.ulsan.go.kr/'
   },
-  { 
-    name: '착한배달 울산', 
-    desc: '소상공인을 돕는 착한 주문 서비스', 
-    icon: '🍱', 
-    link: 'https://play.google.com/store/apps/details?id=com.good.delivery.ulsan' 
+  {
+    name: '울산페달·울산몰',
+    desc: '공공배달·지역상생 서비스 안내 보기',
+    icon: '🍱',
+    link: 'https://www.ulsan.go.kr/u/rep/bbs/view.ulsan?bbsId=BBS_0000000000000003&mId=001004001001000000&dataId=180385'
   }
 ];
 
@@ -44,43 +42,56 @@ export default function AppSection() {
     <section className="py-6 bg-gradient-to-br from-white to-slate-50 border-t border-slate-100 overflow-hidden relative">
       <div className="absolute top-20 right-0 w-64 h-64 bg-[#C9A857]/5 rounded-full blur-[80px] pointer-events-none"></div>
       
-      <div className="max-w-5xl mx-auto px-4 md:px-5">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-5 gap-3">
-          <div className="flex-1">
-            <div className="text-[#C9A857] font-extrabold text-[14px] uppercase tracking-widest mb-2 flex items-center gap-2">
-               <span className="w-8 h-px bg-[#C9A857]"></span>
-               Digital Ulsan Life
+      <div className="w-full max-w-6xl mx-auto px-6">
+        <div className="w-full grid grid-cols-1 md:[grid-template-columns:minmax(0,1fr)_minmax(0,1fr)] gap-4 mb-5">
+          <div className="group h-full rounded-[24px] border-[2px] border-[#0F1A2B] bg-white p-5 md:p-6 shadow-sm hover:shadow-md hover:border-[#C9A857] hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+            <div className="text-[#C9A857] font-extrabold text-[14px] uppercase tracking-widest mb-3 flex items-center gap-2">
+              <span className="w-8 h-px bg-[#C9A857]"></span>
+              Digital Ulsan Life
             </div>
-            <h2 className="text-[28px] md:text-[34px] font-black text-[#0F1A2B] leading-tight break-keep">
-              내 손안의 울산, <br/>
-              <span className="text-[#C9A857]">시민 필수 앱</span> 리스트 📱
-            </h2>
+            <div className="flex items-center gap-4">
+              <div className="flex h-[88px] w-[88px] items-center justify-center rounded-[22px] border-[2px] border-slate-200 bg-[#F5F7FA] text-[46px] shadow-inner md:h-[104px] md:w-[104px] md:text-[56px] group-hover:bg-[#0F1A2B] group-hover:text-[#C9A857] transition-colors duration-300">
+                📱
+              </div>
+              <h2 className="text-[28px] md:text-[34px] font-black text-[#0F1A2B] leading-tight break-keep group-hover:text-[#C9A857] transition-colors duration-300">
+                내 손안의 울산, <br/>
+                <span className="text-[#C9A857]">시민 필수 앱</span> 리스트
+              </h2>
+            </div>
           </div>
-          <p className="text-slate-500 max-w-sm text-[16px] leading-relaxed break-keep pb-2">
-            울산 생활을 두 배 더 편안하게 만들어 줄 공식 앱들을 엄선하여 추천해 드립니다.
-          </p>
+
+          <div className="group h-full rounded-[24px] border-[2px] border-[#0F1A2B] bg-white p-5 md:p-6 shadow-sm flex flex-col justify-center hover:shadow-md hover:border-[#C9A857] hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+            <p className="text-slate-600 text-[16px] md:text-[17px] font-semibold leading-relaxed break-keep group-hover:text-slate-700 transition-colors">
+              울산 생활을 두 배 더 편안하게 만들어 줄 공식 앱들을 엄선하여 추천해 드립니다.
+            </p>
+            <p className="mt-3 inline-flex w-fit rounded-xl border-[2px] border-[#C9A857]/40 bg-[#FFF9EC] px-3 py-2 text-[13px] md:text-[14px] font-black text-[#8A6A1F] break-keep">
+              ↗ 모든 앱 링크는 <span className="ml-1 text-[#0F1A2B]">새 창</span>에서 열립니다.
+            </p>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
           {apps.map((app, idx) => (
             <a
               key={idx}
               href={app.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white border border-slate-200 rounded-[20px] p-6 flex items-center gap-5 hover:border-[#C9A857] hover:shadow-[0_20px_40px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-all duration-300"
+              title={`${app.name} 새창 열기`}
+              aria-label={`${app.name} 새창 열기`}
+              className="group min-h-[106px] bg-white border-[2px] border-[#0F1A2B] rounded-[24px] p-4 md:p-4.5 flex items-center gap-4 hover:shadow-md hover:border-[#C9A857] hover:-translate-y-1 transition-all duration-300 overflow-hidden"
             >
-              <div className="w-[64px] h-[64px] bg-[#F5F7FA] rounded-2xl flex items-center justify-center text-3xl group-hover:bg-[#0F1A2B] group-hover:text-[#C9A857] shadow-inner transition-colors duration-300">
+              <div className="w-[58px] h-[58px] md:w-[62px] md:h-[62px] bg-[#F5F7FA] rounded-[18px] border-[2px] border-slate-200 flex items-center justify-center text-[28px] group-hover:bg-[#0F1A2B] group-hover:text-[#C9A857] shadow-inner transition-colors duration-300">
                 {app.icon}
               </div>
               <div className="flex-1">
-                <h3 className="font-bold text-[18px] text-[#0F1A2B] mb-1 flex items-center group-hover:text-[#C9A857] transition-colors gap-2">
+                <h3 className="font-bold text-[16px] md:text-[17px] text-[#0F1A2B] mb-1 flex items-center group-hover:text-[#C9A857] transition-colors gap-2">
                   {app.name}
                   <svg className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
                 </h3>
-                <p className="text-slate-400 text-[14px] line-clamp-1 group-hover:text-slate-600 transition-colors">
+                <p className="text-slate-400 text-[13px] line-clamp-1 group-hover:text-slate-600 transition-colors">
                   {app.desc}
                 </p>
               </div>
