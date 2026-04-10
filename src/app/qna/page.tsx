@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import FaqSearchBoard from '@/components/FaqSearchBoard';
 import QnaInquiryForm from '@/components/QnaInquiryForm';
 import { absoluteUrl, siteConfig } from '@/lib/site';
 
@@ -61,6 +62,34 @@ const faqItems = [
       '울산시 공식 공지와 지역 행사 안내를 함께 보는 것이 좋습니다. 이 사이트의 행사·축제 카테고리에서도 자주 찾는 일정을 보기 쉽게 정리해두고 있습니다.',
     category: '행사',
     href: '/blog?category=행사',
+  },
+  {
+    question: '울산 다자녀 가정 혜택은 어디서 확인하나요?',
+    answer:
+      '다자녀 혜택은 교통, 공공시설, 문화이용, 보육 분야로 나뉘는 경우가 많습니다. 울산시와 각 구·군 공고를 함께 확인하면 적용 대상과 혜택 범위를 더 정확하게 볼 수 있습니다.',
+    category: '복지',
+    href: '/blog?category=복지',
+  },
+  {
+    question: '울산 소상공인 지원사업은 어떤 것이 있나요?',
+    answer:
+      '소상공인 대상 지원은 경영안정자금, 컨설팅, 디지털 전환, 마케팅 지원처럼 여러 유형으로 나뉩니다. 사업 공고마다 업종과 매출 기준이 다르므로 조건을 먼저 확인하는 것이 좋습니다.',
+    category: '경제',
+    href: '/blog?category=경제',
+  },
+  {
+    question: '울산 시내버스 도착 정보는 어디서 확인하나요?',
+    answer:
+      '울산버스정보 앱이나 버스정보 시스템을 이용하면 정류장별 실시간 도착 시간을 확인할 수 있습니다. 출퇴근 시간에는 실제 도로 상황에 따라 오차가 생길 수 있어 여유 있게 확인하는 것이 좋습니다.',
+    category: '생활',
+    href: '/blog?category=생활',
+  },
+  {
+    question: '울산 아이와 가볼 만한 실내 명소는 어디가 좋나요?',
+    answer:
+      '장마철이나 더운 날에는 실내 전시관, 체험관, 박물관, 키즈 친화형 공간을 함께 보는 것이 좋습니다. 이 사이트의 명소·관광 카테고리에서 가족 나들이 장소를 정리해두고 있습니다.',
+    category: '명소',
+    href: '/blog?category=명소',
   },
 ] as const;
 
@@ -171,53 +200,7 @@ export default function QnaBoard() {
           </div>
         </section>
 
-        <section className="bg-white rounded-[24px] shadow-sm border-[2px] border-slate-200 overflow-hidden">
-          <div className="px-6 md:px-8 py-6 border-b border-slate-200 bg-gradient-to-r from-slate-50 to-white">
-            <h2 className="text-[24px] md:text-[28px] font-black text-[#0F1A2B]">자주 묻는 질문 {faqItems.length}선</h2>
-            <p className="text-slate-500 mt-2 break-keep">
-              아래 질문을 눌러 핵심 답변을 바로 확인하실 수 있습니다.
-            </p>
-          </div>
-
-          <div className="p-4 md:p-6 space-y-4">
-            {faqItems.map((item, index) => (
-              <details
-                key={item.question}
-                open={index === 0}
-                className="group rounded-[22px] border-[2px] border-slate-200 bg-white p-5 shadow-sm open:border-[#C9A857]/60 open:shadow-md transition-all"
-              >
-                <summary className="flex cursor-pointer list-none items-start justify-between gap-4">
-                  <div className="flex items-start gap-3">
-                    <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#0F1A2B] text-[12px] font-black text-white">
-                      {index + 1}
-                    </span>
-                    <div>
-                      <span className="inline-flex items-center rounded-full bg-[#0F1A2B]/5 px-2.5 py-1 text-[12px] font-bold text-[#0F1A2B] mb-2">
-                        {item.category}
-                      </span>
-                      <h3 className="text-[17px] md:text-[19px] font-extrabold text-[#0F1A2B] break-keep">
-                        {item.question}
-                      </h3>
-                    </div>
-                  </div>
-                  <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#FFF7E1] text-[#8A6A1F] text-xl font-bold group-open:rotate-45 transition-transform">＋</span>
-                </summary>
-
-                <div className="mt-4 rounded-2xl border border-slate-200 bg-slate-50/70 p-4 text-slate-600 leading-relaxed break-keep">
-                  <p>{item.answer}</p>
-                  <div className="mt-4">
-                    <Link
-                      href={item.href}
-                      className="inline-flex items-center gap-1 rounded-full border border-slate-300 bg-white px-3.5 py-2 text-[14px] font-bold text-[#0F1A2B] hover:border-[#C9A857] hover:text-[#C9A857] transition-colors"
-                    >
-                      관련 정보 더 보기 →
-                    </Link>
-                  </div>
-                </div>
-              </details>
-            ))}
-          </div>
-        </section>
+        <FaqSearchBoard items={faqItems} />
 
         <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {faqGuideCards.map((card) => (
