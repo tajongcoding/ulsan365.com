@@ -24,49 +24,49 @@ const ulsanLocalPhotos = {
 };
 
 const localFallbackGallery = [
-  ulsanLocalPhotos.city,
   ulsanLocalPhotos.taehwagang,
   ulsanLocalPhotos.taehwaru,
   ulsanLocalPhotos.ganjeolgot,
   ulsanLocalPhotos.bangudae,
-  ulsanLocalPhotos.port,
-  ulsanLocalPhotos.industry,
   ulsanLocalPhotos.uljugun,
   ulsanLocalPhotos.banner,
+  ulsanLocalPhotos.port,
+  ulsanLocalPhotos.industry,
+  ulsanLocalPhotos.city,
 ];
 
 const defaultUlsanGalleryByCategory: Record<string, string[]> = {
   복지: [
-    ulsanLocalPhotos.city,
     ulsanLocalPhotos.taehwagang,
-    ulsanLocalPhotos.uljugun,
     ulsanLocalPhotos.taehwaru,
+    ulsanLocalPhotos.uljugun,
     ulsanLocalPhotos.banner,
     ulsanLocalPhotos.port,
+    ulsanLocalPhotos.city,
   ],
   경제: [
     ulsanLocalPhotos.industry,
     ulsanLocalPhotos.port,
-    ulsanLocalPhotos.city,
     ulsanLocalPhotos.banner,
     ulsanLocalPhotos.taehwaru,
     ulsanLocalPhotos.taehwagang,
+    ulsanLocalPhotos.city,
   ],
   생활: [
-    ulsanLocalPhotos.city,
     ulsanLocalPhotos.taehwaru,
     ulsanLocalPhotos.taehwagang,
     ulsanLocalPhotos.uljugun,
     ulsanLocalPhotos.banner,
     ulsanLocalPhotos.port,
+    ulsanLocalPhotos.city,
   ],
   행사: [
     ulsanLocalPhotos.banner,
-    ulsanLocalPhotos.taehwagang,
     ulsanLocalPhotos.ganjeolgot,
+    ulsanLocalPhotos.taehwagang,
     ulsanLocalPhotos.taehwaru,
-    ulsanLocalPhotos.city,
     ulsanLocalPhotos.uljugun,
+    ulsanLocalPhotos.city,
   ],
   명소: [
     ulsanLocalPhotos.ganjeolgot,
@@ -390,6 +390,19 @@ function isTrustedUlsanImage(image: string) {
   return image.includes('commons.wikimedia.org/wiki/Special:FilePath/');
 }
 
+function getDeterministicIndex(seed: string, length: number) {
+  if (length <= 1) {
+    return 0;
+  }
+
+  let hash = 0;
+  for (const char of seed) {
+    hash = (hash * 31 + char.charCodeAt(0)) >>> 0;
+  }
+
+  return hash % length;
+}
+
 export function getCategoryTheme(category: string) {
   return categoryThemes[category] || categoryThemes['생활'];
 }
@@ -410,15 +423,19 @@ export function getPostVisuals(
   const categoryLocalImages = defaultUlsanGalleryByCategory[post.category] || localFallbackGallery;
 
   const stableImages = uniqueStrings(
-    [...categoryLocalImages, ...matchedImages, ...theme.images, post.thumbnailUrl]
+    [...matchedImages, ...theme.images, ...categoryLocalImages, post.thumbnailUrl]
       .filter((img): img is string => typeof img === 'string' && isTrustedUlsanImage(img))
   );
 
   const galleryImages = uniqueStrings([...stableImages, ...localFallbackGallery]).slice(0, 6);
+  const heroPool = galleryImages.slice(0, 4);
+  const heroIndex = getDeterministicIndex(`${post.slug}-${post.title}-${post.category}`, heroPool.length || galleryImages.length);
+  const heroImage = heroPool[heroIndex] || galleryImages[0] || localFallbackGallery[0];
+  const fallbackImage = galleryImages.find((image) => image !== heroImage) || heroImage || localFallbackGallery[0] || '';
 
   return {
-    heroImage: galleryImages[0] || stableImages[0] || localFallbackGallery[0],
-    fallbackImage: galleryImages[0] || localFallbackGallery[0] || '',
+    heroImage,
+    fallbackImage,
     galleryImages,
     categoryLabel: theme.label,
     toneName: theme.toneName,
