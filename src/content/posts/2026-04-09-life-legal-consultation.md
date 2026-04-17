@@ -48,7 +48,3 @@ tags:
 - **상담 횟수**: 연 5회까지 무료
 - **전담 변호사가 배정**되어 지속적인 사후 관리가 가능
 
-## 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Port_Terminal_Of_Ulsan.JPG" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

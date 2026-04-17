@@ -46,7 +46,3 @@ A. 태화강 국가정원 관람 및 축제장 입장은 전면 **무료**입니
 **Q. 반려견을 데려가도 되나요?**  
 A. 목줄 착용 및 배변 봉투를 지참하시면 입장 가능합니다. 단, 꽃밭 한가운데나 사람 밀집 구역에서는 펫티켓을 철저히 지켜야 합니다.
 
-## 문의
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/%EC%9A%B8%EC%A3%BC%EA%B5%B0,_Ulsan,_South_Korea_(Unsplash).jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;"  />

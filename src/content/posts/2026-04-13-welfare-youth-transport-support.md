@@ -47,7 +47,3 @@ tags:
 - 울산페이 앱을 미리 설치하고 회원가입을 완료해 두면 환급 처리 속도가 빨라집니다.
 - 신청 기간을 놓친 경우에도 수시 신청 여부를 구·군청에 꼭 문의해 보세요.
 
-## 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ulsan-banner.jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

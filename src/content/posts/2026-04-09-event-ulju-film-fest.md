@@ -51,7 +51,3 @@ tags:
 - **셔틀버스**: 울산역·태화강역에서 영화제 기간 무료 셔틀 운행
 - **자차**: 경부고속도로 언양IC → 국도24호선 (약 30분)
 
-## 문의
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/%EC%9A%B8%EC%A3%BC%EA%B5%B0,_Ulsan,_South_Korea_(Unsplash).jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;"  />

@@ -48,7 +48,3 @@ tags:
 ## 꿀팁
 미세먼지가 심한 날에는 운동을 아예 포기하기보다 **실내 걷기나 가벼운 스트레칭**으로 바꾸는 것이 좋습니다. 또 차량 이동이 많은 날에는 차 안 공조 필터 상태도 함께 점검하면 체감이 좋아집니다.
 
-## 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Port_Terminal_Of_Ulsan.JPG" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

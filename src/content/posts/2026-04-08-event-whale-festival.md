@@ -42,7 +42,3 @@ A. 고래바다여행선은 축제 기간 중 빠르게 매진되므로, 방문 
 **Q. 유모차 대여 시설이 있나요?**  
 A. 축제장 종합안내소 및 고래박물관 입구에서 신분증 보관 후 무료로 유모차 및 휠체어를 대여받으실 수 있습니다.
 
-## 문의
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/%EC%9A%B8%EC%A3%BC%EA%B5%B0,_Ulsan,_South_Korea_(Unsplash).jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;"  />

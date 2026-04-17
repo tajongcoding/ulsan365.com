@@ -42,7 +42,3 @@ tags:
 ## 놓치기 쉬운 포인트
 가정 내 갈등이나 긴급 상황이 발생하면 **다누리콜센터(☎ 1577-1366)**에서 13개 언어로 24시간 상담이 가능합니다. 필요 시 법률 상담, 긴급 쉼터 입소도 연계해 줍니다.
 
-## 문의 및 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ulsan-banner.jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

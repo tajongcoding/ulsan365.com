@@ -35,7 +35,3 @@ tags:
 
 울산광역시는 단순한 산업도시가 아니라 산업, 자연, 관광, 생활 인프라가 함께 성장하는 도시입니다. 풍부한 일자리와 아름다운 자연 환경이 조화를 이루는 매력적인 곳입니다.
 
-## 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Port_Terminal_Of_Ulsan.JPG" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

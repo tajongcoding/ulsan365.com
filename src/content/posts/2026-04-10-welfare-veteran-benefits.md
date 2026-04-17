@@ -45,7 +45,3 @@ tags:
 - 의료·생활·돌봄 혜택은 각 부처가 나뉘어 있으므로 한 곳에서 모두 확인하는 것이 중요합니다.
 - 울산의 경로복지 서비스와 함께 중복 연계될 수 있는 항목도 있습니다.
 
-## 문의 및 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ulsan-banner.jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

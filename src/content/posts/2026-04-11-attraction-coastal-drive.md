@@ -53,7 +53,3 @@ tags:
 
 해안 지역은 같은 울산 안에서도 체감 바람이 꽤 다르니, 생각보다 따뜻하게 챙겨가는 편이 좋습니다.
 
-## 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ulsan-banner.jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

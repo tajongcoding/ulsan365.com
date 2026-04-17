@@ -54,7 +54,3 @@ tags:
 
 실제로는 ‘열심히’보다 ‘지속적으로’ 참여하는 사람이 만족도가 높은 편입니다.
 
-## 문의 및 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ulsan-banner.jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

@@ -41,7 +41,3 @@ tags:
 - 계단 이동이 있어 유모차는 동선 확인 필요
 - 전시 일정은 수시로 바뀔 수 있으니 공식 안내 확인 권장
 
-## 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ulsan-banner.jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

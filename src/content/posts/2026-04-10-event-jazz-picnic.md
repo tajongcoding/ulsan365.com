@@ -43,7 +43,3 @@ tags:
 - 비가 오면 연기 또는 실내 대체 가능성 있음
 - 주변 주차장 혼잡이 심할 수 있어 대중교통 이용 추천
 
-## 문의
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/%EC%9A%B8%EC%A3%BC%EA%B5%B0,_Ulsan,_South_Korea_(Unsplash).jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;"  />

@@ -53,7 +53,3 @@ tags:
 - **유기동물 입양**: 센터에서 보호 중인 유기동물을 무료로 입양 가능
 - **입양 후 지원**: 예방접종 1회 + 마이크로칩 무료 시술
 
-## 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Port_Terminal_Of_Ulsan.JPG" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

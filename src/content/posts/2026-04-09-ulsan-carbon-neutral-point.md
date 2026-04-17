@@ -41,7 +41,3 @@ tags:
 ## 꿀팁
 지급받은 포인트는 현금(계좌 입금), 기부, 또는 울산페이(지자체별 상이) 등으로 활용할 수 있습니다. 단, 이사를 하거나 주소지가 변경된 경우에는 반드시 홈페이지에서 정보 수정을 해야 포인트가 정상적으로 지급된다는 점 잊지 마세요!
 
-## 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Port_Terminal_Of_Ulsan.JPG" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

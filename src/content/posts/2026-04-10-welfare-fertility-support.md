@@ -54,7 +54,3 @@ tags:
 - **중구·동구·북구·울주군 보건소**에서도 동일 문의 가능
 - 병원 예약 전에 지원 가능 여부와 횟수를 먼저 체크하면 예산 계획에 도움이 됩니다.
 
-## 문의 및 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ulsan-banner.jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

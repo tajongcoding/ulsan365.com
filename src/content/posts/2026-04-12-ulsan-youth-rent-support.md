@@ -44,7 +44,3 @@ tags:
 - 신분증, 통장사본, 주민등록 관련 서류는 미리 준비해 두세요.
 - 비슷한 정책이 동시에 열리는 시기에는 중복 가능 여부를 꼭 확인하세요.
 
-## 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Port_Terminal_Of_Ulsan.JPG" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
