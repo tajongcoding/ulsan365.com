@@ -1,7 +1,5 @@
 "use client";
 
-import React from 'react';
-
 type CoupangBannerProps = {
   variant?: 'default' | 'inline' | 'compact';
   topic?: string;
@@ -52,7 +50,7 @@ export default function CoupangBanner({ variant = 'default', topic = 'default' }
   const topicMap = {
     default: {
       href: process.env.NEXT_PUBLIC_COUPANG_LINK_DEFAULT || 'https://www.coupang.com/np/search?q=%EC%83%9D%ED%99%9C%EC%9A%A9%ED%92%88',
-      emphasis: currentStyleMap(variant).emphasis,
+      emphasis: styleMap[variant].emphasis,
     },
     welfare: {
       href: process.env.NEXT_PUBLIC_COUPANG_LINK_WELFARE || 'https://www.coupang.com/np/search?q=%EC%9C%A1%EC%95%84%EC%9A%A9%ED%92%88',
@@ -75,10 +73,6 @@ export default function CoupangBanner({ variant = 'default', topic = 'default' }
       emphasis: '장갑·목도리 추천 →',
     },
   } as const;
-
-  function currentStyleMap(currentVariant: 'default' | 'inline' | 'compact') {
-    return styleMap[currentVariant];
-  }
 
   const currentStyle = styleMap[variant];
   const currentTopic = topicMap[topicKey as keyof typeof topicMap] || topicMap.default;

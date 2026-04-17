@@ -21,20 +21,6 @@ function HeaderInner() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // 현재 페이지 내용은 유지하면서 주소창에는 루트 도메인만 보이도록 정리
-  useEffect(() => {
-    if (typeof window === 'undefined') {
-      return;
-    }
-
-    const currentHost = window.location.hostname;
-    const currentUrl = `${window.location.pathname}${window.location.search}${window.location.hash}`;
-
-    if (currentHost === 'ulsan365.com' && currentUrl !== '/') {
-      window.history.replaceState(window.history.state, '', '/');
-    }
-  }, [pathname]);
-
   const menuItems = [
     { name: '아시나요', path: '/about' },
     { name: '복지 정보', path: '/blog?category=복지' },
@@ -93,23 +79,6 @@ function HeaderInner() {
                   <span className={`absolute bottom-4 left-0 h-[3px] bg-[#C9A857] shadow-[0_0_10px_rgba(201,168,87,0.5)] transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover/item:w-full'}`}></span>
                 </Link>
 
-                {/* {item.subMenu && (
-                  <div className="absolute top-[100%] left-1/2 -translate-x-1/2 opacity-0 invisible group-hover/menu:opacity-100 group-hover/menu:visible transition-all duration-300 z-50">
-                    <div className="bg-[#1F2937] border border-slate-700 rounded-xl py-3 px-2 shadow-2xl w-48 -mt-2">
-                      {item.subMenu.map((sub, sIdx) => (
-                        <a
-                          key={sIdx}
-                          href={sub.path}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block px-4 py-2 text-[14px] font-[600] text-slate-300 hover:text-[#C9A857] hover:bg-slate-800/50 rounded-lg transition-colors"
-                        >
-                          {sub.name}
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                )} */}
               </div>
             );
           })}
@@ -132,9 +101,10 @@ function HeaderInner() {
         </nav>
 
         {/* 모바일 햄버거 버튼 */}
-        <button 
+        <button
           className="lg:hidden p-2 text-slate-300 hover:text-[#C9A857] focus:outline-none transition-colors"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label={isMobileMenuOpen ? '메뉴 닫기' : '메뉴 열기'}
         >
           {isMobileMenuOpen ? (
             <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">

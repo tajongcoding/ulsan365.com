@@ -160,7 +160,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
                             <span className="inline-flex rounded-full bg-slate-100 px-2 py-0.5 font-semibold">
                               📅 {post.date}
                             </span>
-                            {post.tags.slice(0, 2).map((tag) => (
+                            {(post.tags || []).slice(0, 2).map((tag) => (
                               <span key={tag} className="inline-flex rounded-full bg-slate-50 px-1.5 py-0.5 text-[9px] font-medium text-slate-500">
                                 #{tag}
                               </span>
