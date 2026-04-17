@@ -37,7 +37,6 @@ tags:
 
 ## 이용 방법
 가까운 도서관만 잘 활용해도 생활의 만족도가 꽤 높아집니다.  
-**울산 365 포털**은 일상에 바로 도움이 되는 생활 정보를 계속 정리해 드립니다.
 
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ulsan-banner.jpg" alt="꿀팁 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 

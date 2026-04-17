@@ -37,7 +37,6 @@ tags:
 
 ## 신청 방법
 채용박람회는 준비한 만큼 성과가 달라집니다.  
-**울산 365 포털**은 취업과 지역 경제에 도움 되는 실전 정보를 꾸준히 소개해 드립니다.
 
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Port_Terminal_Of_Ulsan.JPG" alt="주의 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 

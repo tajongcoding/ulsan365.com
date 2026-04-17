@@ -37,7 +37,6 @@ tags:
 
 ## 신청 방법
 전통시장은 장보기와 지역 상권 살리기를 함께 할 수 있는 좋은 선택입니다.  
-**울산 365 포털**은 시민 경제에 도움이 되는 알뜰 정보를 쉽게 전해드리고 있습니다.
 
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Port_Terminal_Of_Ulsan.JPG" alt="주의 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 

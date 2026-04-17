@@ -16,14 +16,14 @@ tags:
 
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Shade%20Of%20Taehwagang%20(71978891).jpeg" alt="요약 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;"  />
 
-## 이런 분께 해당돼요
+## 지원 금액 및 거주 조건
 - **지원 금액**: 매달 최대 20만원씩, 총 24회까지 지원받을 수 있습니다.
 
 - **거주 조건**: 임차보증금 5천만원 이하 및 월세 70만원 이하의 건물에 거주해야 합니다.
 
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/%EC%9A%B8%EC%A3%BC%EA%B5%B0,_Ulsan,_South_Korea_(Unsplash).jpg" alt="대상 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;"  />
 
-## 얼마나, 어떻게 받나요
+## 신청 전 꼭 확인하세요
 부모님과 함께 거주하거나, 이미 주택을 소유한 경우, 정부의 다른 주거 지원을 받고 있는 경우에는 중복 신청이 제한될 수 있으니 꼭 미리 확인하세요!
 
 💡 **팁**: 신청 전 '복지로' 사이트의 '자산 자가진단'을 이용하면 내가 대상인지 빠르게 알 수 있습니다.

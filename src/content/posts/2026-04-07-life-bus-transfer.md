@@ -37,7 +37,6 @@ tags:
 
 ## 이용 방법
 버스 정보만 잘 알아도 일상이 훨씬 여유로워집니다.  
-**울산 365 포털**은 시민 생활에 바로 도움이 되는 교통·생활 팁을 계속 전해드리겠습니다.
 
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ulsan-banner.jpg" alt="꿀팁 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
