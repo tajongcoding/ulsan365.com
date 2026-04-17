@@ -37,13 +37,6 @@ tags:
 
 ## 참여 방법
 가족과 함께하는 주말은 가까운 행사 하나만 잘 골라도 훨씬 즐거워집니다.  
-**울산 365 포털**은 계절별로 가볼 만한 행사 정보를 쉽게 정리해 전해드리고 있습니다.
 
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ulsan_129.30972E_35.52012N.jpg" alt="참여 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
-## 주의사항
-
-## 문의
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/%EC%9A%B8%EC%A3%BC%EA%B5%B0,_Ulsan,_South_Korea_(Unsplash).jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;"  />

@@ -49,7 +49,3 @@ tags:
 - **범서 맛집 거리**: 공원에서 차로 5분 거리에 한식·양식·카페 다양
 - **도시락 피크닉**: 호수변 잔디광장에서 돗자리 피크닉 가능 (텐트 설치 가능 구역 별도)
 
-## 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ulsan-banner.jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

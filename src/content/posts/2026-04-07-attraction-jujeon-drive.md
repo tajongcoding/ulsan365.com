@@ -37,13 +37,6 @@ tags:
 
 ## 주변 볼거리
 멀리 떠나지 않아도 울산 안에서 충분히 좋은 바다 풍경을 만날 수 있습니다.  
-**울산 365 포털**은 시민이 즐기기 좋은 지역 명소를 계속 소개해 드리겠습니다.
 
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ulsan%20taehwaru.jpg" alt="꿀팁 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
-## 꿀팁
-
-## 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ulsan-banner.jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

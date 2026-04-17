@@ -43,7 +43,3 @@ tags:
 - 강변은 바람이 있으니 얇은 겉옷 준비
 - 늦은 시간에는 사람이 많은 동선을 중심으로 걷기
 
-## 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ulsan-banner.jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

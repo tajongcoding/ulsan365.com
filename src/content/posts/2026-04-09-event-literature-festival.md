@@ -48,7 +48,3 @@ tags:
 - **울산 중앙전통시장** (도보 10분): 문학주간 기간 특별 할인 이벤트
 - **울산광역시립미술관** (차량 15분): 동시기 봄 기획전 "빛의 언어" 개최
 
-## 문의
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/%EC%9A%B8%EC%A3%BC%EA%B5%B0,_Ulsan,_South_Korea_(Unsplash).jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;"  />

@@ -49,7 +49,3 @@ tags:
 ## 꿀팁
 호우 예보가 있으면 베란다 물건을 안쪽으로 들이고, 배수구 위를 다시 한 번 살피는 것만으로도 도움이 됩니다. 차량이 있는 경우 저지대 주차는 피하고, 반려식물이나 전기제품은 물 튐이 없는 위치로 옮겨두는 것이 좋습니다.
 
-## 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Port_Terminal_Of_Ulsan.JPG" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

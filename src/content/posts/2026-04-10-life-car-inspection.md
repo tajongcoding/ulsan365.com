@@ -47,7 +47,3 @@ tags:
 ## 꿀팁
 검사기간이 끝난 뒤 오래 지날수록 과태료가 늘어날 수 있습니다. 출장, 장기입원 등 부득이한 사유가 있더라도 증빙이 필요할 수 있으니 반드시 사전 문의를 해두세요.
 
-## 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Port_Terminal_Of_Ulsan.JPG" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

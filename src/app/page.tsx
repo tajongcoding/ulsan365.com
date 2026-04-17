@@ -23,12 +23,19 @@ export const metadata: Metadata = {
       '울산광역시 시민을 위한 복지 혜택, 청년 지원금, 생활 꿀팁, 야간약국, 행사·관광 정보를 한눈에 확인해 보세요.',
     url: absoluteUrl('/'),
     type: 'website',
-    images: [absoluteUrl('/og-default.svg')],
   },
 };
 
+const categoryColorMap: Record<string, string> = {
+  '복지': 'bg-rose-50/95 text-rose-700 border-rose-200',
+  '경제': 'bg-indigo-50/95 text-indigo-700 border-indigo-200',
+  '생활': 'bg-sky-50/95 text-sky-700 border-sky-200',
+  '행사': 'bg-amber-50/95 text-amber-700 border-amber-200',
+  '명소': 'bg-emerald-50/95 text-emerald-700 border-emerald-200',
+};
+
 export default function Home() {
-  const latestPosts = getAllPosts().slice(0, 3); // 3개 박스로 고정
+  const latestPosts = getAllPosts().slice(0, 3);
 
   // 6개의 바로가기 링크
   const shortcutCards = [
@@ -40,7 +47,7 @@ export default function Home() {
     { title: 'FAQ 안내', icon: '🤔', link: '/qna' },
   ];
 
-  const featuredVisuals = latestPosts.slice(0, 3).map((post) => ({
+  const featuredVisuals = latestPosts.map((post) => ({
     ...post,
     ...getPostVisuals(post),
   }));
@@ -206,15 +213,8 @@ export default function Home() {
         <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {siteBenefits.map((item) => {
             // 카테고리별 스타일 결정
-            const categoryKey = item.category.split(' ')[0]; // '경제 정보' -> '경제'
-            const colorMap: Record<string, string> = {
-              '복지': 'bg-rose-50/95 text-rose-700 border-rose-200',
-              '경제': 'bg-indigo-50/95 text-indigo-700 border-indigo-200',
-              '생활': 'bg-sky-50/95 text-sky-700 border-sky-200',
-              '행사': 'bg-amber-50/95 text-amber-700 border-amber-200',
-              '명소': 'bg-emerald-50/95 text-emerald-700 border-emerald-200',
-            };
-            const badgeStyle = colorMap[categoryKey] || 'bg-slate-50/95 text-slate-700 border-slate-200';
+            const categoryKey = item.category.split(' ')[0];
+            const badgeStyle = categoryColorMap[categoryKey] || 'bg-slate-50/95 text-slate-700 border-slate-200';
 
             return (
               <Link
@@ -256,10 +256,10 @@ export default function Home() {
             </Link>
           </div>
 
-          {latestPosts.length > 0 ? (
+          {featuredVisuals.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {latestPosts.map((post) => {
-                const { heroImage, fallbackImage, categoryLabel, badgeClass, overlayClass, toneName } = getPostVisuals(post);
+              {featuredVisuals.map((post) => {
+                const { heroImage, fallbackImage, categoryLabel, badgeClass, overlayClass, toneName } = post;
 
                 return (
                   <Link
@@ -355,15 +355,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {faqPreviewItems.map((item) => {
               // 카테고리별 스타일 결정
-              const categoryKey = item.category.split(' ')[0]; // '경제 정보' -> '경제'
-              const colorMap: Record<string, string> = {
-                '복지': 'bg-rose-50/95 text-rose-700 border-rose-200',
-                '경제': 'bg-indigo-50/95 text-indigo-700 border-indigo-200',
-                '생활': 'bg-sky-50/95 text-sky-700 border-sky-200',
-                '행사': 'bg-amber-50/95 text-amber-700 border-amber-200',
-                '명소': 'bg-emerald-50/95 text-emerald-700 border-emerald-200',
-              };
-              const badgeStyle = colorMap[categoryKey] || 'bg-slate-50/95 text-slate-700 border-slate-200';
+              const categoryKey = item.category.split(' ')[0];
+              const badgeStyle = categoryColorMap[categoryKey] || 'bg-slate-50/95 text-slate-700 border-slate-200';
 
               return (
                 <Link
@@ -411,9 +404,9 @@ export default function Home() {
             ulsan365.com
           </p>
           <div className="flex flex-wrap justify-center gap-6 text-[15px] md:text-[16px] font-[600] text-slate-300">
-            <span className="cursor-pointer hover:text-white transition-colors">개인정보처리방침</span>
-            <span className="cursor-pointer hover:text-white transition-colors">홈페이지이용약관</span>
-            <span className="cursor-pointer hover:text-white transition-colors">이메일무단수집거부</span>
+            <Link href="/privacy" className="hover:text-white transition-colors">개인정보처리방침</Link>
+            <Link href="/terms" className="hover:text-white transition-colors">홈페이지이용약관</Link>
+            <Link href="/no-email" className="hover:text-white transition-colors">이메일무단수집거부</Link>
           </div>
           <div className="h-px w-24 bg-slate-800 my-2"></div>
           <p className="text-[15px] md:text-[17px] font-medium text-white leading-relaxed max-w-lg break-keep mx-auto mt-2">

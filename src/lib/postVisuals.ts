@@ -386,10 +386,6 @@ function uniqueStrings(items: Array<string | null | undefined>) {
   return Array.from(new Set(items.filter(Boolean) as string[]));
 }
 
-function isTrustedUlsanImage(image: string) {
-  return image.includes('commons.wikimedia.org/wiki/Special:FilePath/');
-}
-
 function getDeterministicIndex(seed: string, length: number) {
   if (length <= 1) {
     return 0;
@@ -431,9 +427,21 @@ export function getPostVisuals(
 
   const categoryLocalImages = defaultUlsanGalleryByCategory[post.category] || localFallbackGallery;
 
+  const isUnsplash = (img: unknown): img is string =>
+    typeof img === 'string' && img.includes('unsplash.com');
+
+  const unsplashFirst = [
+    ...matchedImages.filter(isUnsplash),
+    ...theme.images.filter(isUnsplash),
+    ...matchedImages.filter((img) => !isUnsplash(img)),
+    ...theme.images.filter((img) => !isUnsplash(img)),
+    ...categoryLocalImages,
+    ...localFallbackGallery,
+    post.thumbnailUrl,
+  ];
+
   const stableImages = uniqueStrings(
-    [...matchedImages, ...theme.images, ...categoryLocalImages, ...localFallbackGallery, post.thumbnailUrl]
-      .filter((img): img is string => typeof img === 'string' && isTrustedUlsanImage(img))
+    unsplashFirst.filter((img): img is string => typeof img === 'string' && img.startsWith('http'))
   );
 
   const rotatedImages = rotateBySeed(stableImages, `${post.slug}-${post.title}-${post.category}`);

@@ -43,7 +43,3 @@ tags:
 - **전문가 컨설팅**: 회계·세무·법률·디자인·마케팅 분야 전문가 1:1 매칭 (무료)
 - **네트워킹 모임**: 분기별 울산 사회적경제 기업 간 정보 교류회
 
-## 문의 및 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ulsan-banner.jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

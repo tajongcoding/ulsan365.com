@@ -49,7 +49,3 @@ tags:
 ## 주의사항
 우산, 얇은 겉옷, 보조배터리 정도만 챙겨도 훨씬 편합니다. 아이와 함께라면 대기시간을 고려해 간단한 간식과 작은 장난감도 준비하면 좋습니다.
 
-## 문의
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/%EC%9A%B8%EC%A3%BC%EA%B5%B0,_Ulsan,_South_Korea_(Unsplash).jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;"  />

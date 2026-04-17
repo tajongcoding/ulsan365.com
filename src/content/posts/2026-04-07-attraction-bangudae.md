@@ -37,13 +37,6 @@ tags:
 
 ## 주변 볼거리
 울산에는 산업도시 이미지 외에도 이렇게 조용하고 깊이 있는 역사 명소가 많습니다.  
-**울산 365 포털**은 울산의 숨은 매력을 쉽게 찾을 수 있도록 계속 소개해 드리겠습니다.
 
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ulsan%20taehwaru.jpg" alt="꿀팁 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
-## 꿀팁
-
-## 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ulsan-banner.jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

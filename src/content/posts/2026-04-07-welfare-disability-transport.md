@@ -37,13 +37,6 @@ tags:
 
 ## 신청 방법
 이동이 편해지면 병원 진료와 일상 외출도 훨씬 수월해집니다.  
-**울산 365 포털**은 시민 생활에 꼭 필요한 복지·생활 정보를 꾸준히 정리해 드립니다.
 
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Port_Terminal_Of_Ulsan.JPG" alt="주의 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />
 
-## 놓치기 쉬운 포인트
-
-## 문의 및 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ulsan-banner.jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

@@ -48,7 +48,3 @@ tags:
 ## 주의사항
 친구나 가족과 목표를 너무 크게 잡기보다, **완주보다 완참**을 목표로 잡으면 부담이 적습니다. 행사 후에는 근처 카페나 공원에서 쉬는 일정까지 묶으면 훨씬 만족도가 높습니다.
 
-## 문의
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/%EC%9A%B8%EC%A3%BC%EA%B5%B0,_Ulsan,_South_Korea_(Unsplash).jpg" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;"  />

@@ -59,7 +59,3 @@ tags:
 *   **중복 혜택 확인:** 이 외에도 울산시나 국가에서 제공하는 다른 출산·육아 관련 혜택(예: 첫만남이용권, 영아수당 등)이 있을 수 있습니다. 모든 혜택을 놓치지 않도록 꼼꼼히 확인하고 신청하세요.
 *   **지역화폐 활용:** 지급받은 지역화폐는 울산시 내 다양한 가맹점에서 현금처럼 사용할 수 있습니다. 육아용품 구매, 병원비, 생활비 등으로 유용하게 활용할 수 있으니, 지역화폐 사용처를 미리 확인해보세요.
 
-## 관련 링크
-울산광역시 공식 홈페이지 및 관련 기관에서 상세 정보를 확인하세요.
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Port_Terminal_Of_Ulsan.JPG" alt="마무리 이미지" style="width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:12px; margin: 20px 0;" />

@@ -61,7 +61,7 @@ export default async function ItemDetail({ params }: { params: Promise<{ id: str
   return (
     <main className="min-h-screen bg-[#fffdfa] py-16 px-6 font-sans">
       <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-sm border border-gray-100 p-8 md:p-12">
-        <div className={`text-sm font-bold text-${colorTheme}-600 bg-${colorTheme}-50 rounded-full px-4 py-1.5 w-max mb-6`}>
+        <div className={`text-sm font-bold rounded-full px-4 py-1.5 w-max mb-6 ${isEvent ? 'text-orange-600 bg-orange-50' : 'text-green-600 bg-green-50'}`}>
           {item.category}
         </div>
         

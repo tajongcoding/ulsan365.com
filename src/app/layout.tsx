@@ -110,7 +110,6 @@ export default function RootLayout({
                 var canonicalHost = 'ulsan365.com';
                 var redirectHosts = ['asinayo.org', 'www.asinayo.org', 'www.ulsan365.com'];
                 var currentHost = window.location.hostname;
-                var currentPath = window.location.pathname + window.location.search + window.location.hash;
                 var isPreviewHost = /\.pages\.dev$|\.workers\.dev$/i.test(currentHost);
                 var shouldRedirectHost = redirectHosts.indexOf(currentHost) !== -1 || isPreviewHost;
                 var shouldUpgradeProtocol = currentHost === canonicalHost && window.location.protocol !== 'https:';
@@ -120,57 +119,6 @@ export default function RootLayout({
                   if (window.location.href !== nextUrl) {
                     window.location.replace(nextUrl);
                   }
-                  return;
-                }
-
-                if (currentHost === canonicalHost) {
-                  var originalPushState = window.history.pushState.bind(window.history);
-                  var originalReplaceState = window.history.replaceState.bind(window.history);
-                  var normalizeVisibleUrl = function (url) {
-                    if (url == null || url === '') {
-                      return '/';
-                    }
-
-                    try {
-                      var parsedUrl = new URL(String(url), window.location.origin);
-                      if (parsedUrl.origin === window.location.origin) {
-                        return '/';
-                      }
-                    } catch (error) {
-                      if (typeof url === 'string' && url.charAt(0) === '/') {
-                        return '/';
-                      }
-                    }
-
-                    return url;
-                  };
-                  var forceRootUrl = function () {
-                    var visibleUrl = window.location.pathname + window.location.search + window.location.hash;
-                    if (visibleUrl !== '/') {
-                      originalReplaceState(window.history.state, '', '/');
-                    }
-                  };
-
-                  if (!window.__ulsan365UrlPinned) {
-                    window.__ulsan365UrlPinned = true;
-                    window.history.pushState = function (state, title, url) {
-                      return originalPushState(state, title, normalizeVisibleUrl(url));
-                    };
-                    window.history.replaceState = function (state, title, url) {
-                      return originalReplaceState(state, title, normalizeVisibleUrl(url));
-                    };
-
-                    window.addEventListener('popstate', function () {
-                      setTimeout(forceRootUrl, 0);
-                    });
-
-                    document.addEventListener('click', function () {
-                      setTimeout(forceRootUrl, 0);
-                      setTimeout(forceRootUrl, 120);
-                    }, true);
-                  }
-
-                  forceRootUrl();
                 }
               })();
             `,
@@ -216,7 +164,6 @@ export default function RootLayout({
         className={`antialiased min-h-screen flex flex-col font-sans`}
         suppressHydrationWarning
       >
-        {/* 서버 동기화 강제 유도: 2026-04-04 09:48 최종 수정됨 */}
         <Header />
         <div className="flex-1 bg-[#f8f9fa]">
           {children}
