@@ -9,6 +9,13 @@ tags:
   - 생활정보
 ---
 
+![울산 대왕암이 대표 명소가 된 배경 1](https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&q=80&w=1400)
+![울산 대왕암이 대표 명소가 된 배경 2](https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&q=80&w=1400)
+![울산 대왕암이 대표 명소가 된 배경 3](https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=1400)
+![울산 대왕암이 대표 명소가 된 배경 4](https://images.unsplash.com/photo-1470004914212-05527e49370b?auto=format&fit=crop&q=80&w=1400)
+![울산 대왕암이 대표 명소가 된 배경 5](https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&q=80&w=1400)
+![울산 대왕암이 대표 명소가 된 배경 6](https://images.unsplash.com/photo-1465447142348-e9952c393450?auto=format&fit=crop&q=80&w=1400)
+
 ## 핵심 요약
 울산 대왕암이 대표 명소가 된 배경이 필요한 분들을 위해 꼭 알아야 할 내용만 먼저 정리했습니다. 실제 신청이나 이용 전에 대상 조건, 운영 시간, 준비물, 접수 경로를 함께 확인하면 훨씬 수월합니다.
 
