@@ -1,5 +1,5 @@
 ---
-title: "울산 강과 하천 이야기"
+title: 울산 강변 산책길, locals만 아는 코스 공개
 pubDate: "2026-04-18"
 category: "울산 아시나요"
 summary: "울산 강과 하천 이야기"
