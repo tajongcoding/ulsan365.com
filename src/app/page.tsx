@@ -9,33 +9,24 @@ import GoogleAdSlot from '../components/GoogleAdSlot';
 import SafeImage from '../components/SafeImage';
 import HomeNoticePopup from '../components/HomeNoticePopup';
 
-export const metadata: Metadata = {
-  title: '울산 생활정보 아시나요? | 복지·지원금·행사·생활정보 안내',
+export const metadata: Metadata = { title: '울산 생활정보 아시나요? | 복지·지원금·행사·생활정보 안내',
   description:
     '울산광역시 시민을 위한 복지 혜택, 청년 지원금, 생활 꿀팁, 야간약국, 행사·관광 정보를 한눈에 정리한 지역 정보 포털입니다.',
-  alternates: {
-    canonical: '/',
-  },
+  alternates: { canonical: '/', },
   keywords: ['울산 생활정보', '울산 지원금', '울산 복지', '울산 야간약국', '울산 행사', '울산 관광'],
-  openGraph: {
-    title: '울산 생활정보 아시나요? | 복지·지원금·행사·생활정보 안내',
+  openGraph: { title: '울산 생활정보 아시나요? | 복지·지원금·행사·생활정보 안내',
     description:
       '울산광역시 시민을 위한 복지 혜택, 청년 지원금, 생활 꿀팁, 야간약국, 행사·관광 정보를 한눈에 확인해 보세요.',
     url: absoluteUrl('/'),
-    type: 'website',
-  },
-};
+    type: 'website', }, };
 
-const categoryColorMap: Record<string, string> = {
-  '복지': 'bg-rose-50/95 text-rose-700 border-rose-200',
+const categoryColorMap: Record<string, string> = { '복지': 'bg-rose-50/95 text-rose-700 border-rose-200',
   '경제': 'bg-indigo-50/95 text-indigo-700 border-indigo-200',
   '생활': 'bg-sky-50/95 text-sky-700 border-sky-200',
   '행사': 'bg-amber-50/95 text-amber-700 border-amber-200',
-  '명소': 'bg-emerald-50/95 text-emerald-700 border-emerald-200',
-};
+  '명소': 'bg-emerald-50/95 text-emerald-700 border-emerald-200', };
 
-export default function Home() {
-  const latestPosts = getAllPosts().slice(0, 3);
+export default function Home() { const latestPosts = getAllPosts().slice(0, 3);
 
   // 6개의 바로가기 링크
   const shortcutCards = [
@@ -47,10 +38,8 @@ export default function Home() {
     { title: 'FAQ 안내', icon: '🤔', link: '/qna' },
   ];
 
-  const featuredVisuals = latestPosts.map((post) => ({
-    ...post,
-    ...getPostVisuals(post),
-  }));
+  const featuredVisuals = latestPosts.map((post) => ({ ...post,
+    ...getPostVisuals(post), }));
 
   const faqPreviewItems = [
     { question: '울산 청년월세 지원은 어디서 신청하나요?', category: '경제 정보' },
@@ -68,36 +57,26 @@ export default function Home() {
   ];
 
   const siteBenefits = [
-    {
-      title: '복지·지원금 빠른 확인',
+    { title: '복지·지원금 빠른 확인',
       category: '복지 정보',
       desc: '청년, 임산부, 어르신, 소상공인 정보를 시민 눈높이로 쉽게 정리합니다.',
-      href: '/blog?category=복지',
-    },
-    {
-      title: '생활정보 실전형 안내',
+      href: '/blog?category=복지', },
+    { title: '생활정보 실전형 안내',
       category: '생활 정보',
       desc: '야간약국, 교통, 앱, 대형폐기물 등 자주 찾는 생활 정보를 한곳에서 확인할 수 있습니다.',
-      href: '/blog?category=생활',
-    },
-    {
-      title: '행사·명소 최신 업데이트',
+      href: '/blog?category=생활', },
+    { title: '행사·명소 최신 업데이트',
       category: '행사·관광',
       desc: '주말 나들이와 지역 축제, 관광 코스를 빠르게 모아 보여드립니다.',
-      href: '/blog?category=행사',
-    },
+      href: '/blog?category=행사', },
   ];
 
-  const formatDisplayDate = (dateValue: string) => {
-    const normalized = (dateValue || '').slice(0, 10);
+  const formatDisplayDate = (dateValue: string) => { const normalized = (dateValue || '').slice(0, 10);
     const [year, month, day] = normalized.split('-').map(Number);
 
-    if (!year || !month || !day) {
-      return dateValue;
-    }
+    if (!year || !month || !day) { return dateValue; }
 
-    return `${year}년 ${month}월 ${day}일`;
-  };
+    return `${year}년 ${month}월 ${day}일`; };
 
   const currentYear = new Date().getFullYear();
   const latestDisplayDate = latestPosts[0] ? formatDisplayDate(latestPosts[0].date) : '';
@@ -157,7 +136,7 @@ export default function Home() {
                 <div className={`absolute inset-0 bg-gradient-to-t ${item.overlayClass}`} />
                 <div className="absolute top-3 left-3 right-3 z-10 flex items-center gap-2 flex-wrap">
                   <span className={`inline-flex h-[34px] items-center rounded-lg px-2.5 py-1 text-[14px] md:text-[16px] font-extrabold border ${item.badgeClass} backdrop-blur-md shadow-sm transition-colors group-hover:border-[#C9A857]/50`}>
-                    {item.categoryLabel}
+                    {item.category}
                   </span>
                   <span className="inline-flex h-[34px] items-center px-0.5 text-[12px] md:text-[13px] font-extrabold text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.55)]">
                     {formatDisplayDate(item.date)}
@@ -192,9 +171,7 @@ export default function Home() {
                     </span>
                   </div>
                   <h3
-                    className={`text-[14px] md:text-[18px] font-black text-[#1F2937] group-hover:text-[#0F1A2B] transition-colors text-center ${
-                      card.title === '행사·축제' ? 'whitespace-normal leading-[1.05]' : 'whitespace-nowrap leading-tight'
-                    }`}
+                    className={`text-[14px] md:text-[18px] font-black text-[#1F2937] group-hover:text-[#0F1A2B] transition-colors text-center ${ card.title === '행사·축제' ? 'whitespace-normal leading-[1.05]' : 'whitespace-nowrap leading-tight' }`}
                   >
                     {card.title === '행사·축제' ? (
                       <>
@@ -211,8 +188,7 @@ export default function Home() {
         </section>
 
         <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {siteBenefits.map((item) => {
-            // 카테고리별 스타일 결정
+          {siteBenefits.map((item) => { // 카테고리별 스타일 결정
             const categoryKey = item.category.split(' ')[0];
             const badgeStyle = categoryColorMap[categoryKey] || 'bg-slate-50/95 text-slate-700 border-slate-200';
 
@@ -238,8 +214,7 @@ export default function Home() {
                   바로 보기 →
                 </div>
               </Link>
-            );
-          })}
+            ); })}
         </section>
 
         <GoogleAdSlot
@@ -258,8 +233,7 @@ export default function Home() {
 
           {featuredVisuals.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {featuredVisuals.map((post) => {
-                const { heroImage, fallbackImage, categoryLabel, badgeClass, overlayClass, toneName } = post;
+              {featuredVisuals.map((post) => { const { heroImage, fallbackImage, badgeClass, overlayClass } = post;
 
                 return (
                   <Link
@@ -278,7 +252,7 @@ export default function Home() {
                       <div className={`absolute inset-0 bg-gradient-to-t ${overlayClass}`} />
                       <div className="absolute top-4 left-4 right-4 flex items-center gap-2 flex-wrap">
                         <span className={`inline-flex h-[34px] items-center rounded-lg px-2.5 py-1 text-[14px] md:text-[16px] font-extrabold border ${badgeClass} backdrop-blur-md shadow-sm transition-colors group-hover:border-[#C9A857]/50`}>
-                          {categoryLabel}
+                          {post.category}
                         </span>
                         <span className="inline-flex h-[34px] items-center px-0.5 text-[12px] md:text-[13px] font-extrabold text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.55)]">
                           {formatDisplayDate(post.date)}
@@ -295,9 +269,7 @@ export default function Home() {
                           <div className="text-[12px] text-slate-500 font-bold bg-slate-100 px-2.5 py-0.5 rounded-full w-fit">
                             📅 {post.date}
                           </div>
-                          <span className="text-[10px] font-black tracking-[0.18em] text-[#C9A857] uppercase">
-                            {toneName}
-                          </span>
+                          <span className="text-[10px] font-black tracking-[0.18em] text-[#C9A857] uppercase"></span>
                         </div>
 
                         <h3 className="text-[20px] md:text-[22px] font-black text-[#1F2937] mb-1.5 group-hover:text-[#C9A857] transition-colors line-clamp-2 leading-snug break-keep shrink-0">
@@ -323,8 +295,7 @@ export default function Home() {
                       </div>
                     </div>
                   </Link>
-                );
-              })}
+                ); })}
             </div>
           ) : (
              <div className="text-center py-24 bg-white rounded-[12px] border border-slate-200">
@@ -353,8 +324,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {faqPreviewItems.map((item) => {
-              // 카테고리별 스타일 결정
+            {faqPreviewItems.map((item) => { // 카테고리별 스타일 결정
               const categoryKey = item.category.split(' ')[0];
               const badgeStyle = categoryColorMap[categoryKey] || 'bg-slate-50/95 text-slate-700 border-slate-200';
 
@@ -379,8 +349,7 @@ export default function Home() {
                     자세히 보기 →
                   </div>
                 </Link>
-              );
-            })}
+              ); })}
           </div>
 
           <div className="mt-5 text-center md:hidden">
@@ -416,5 +385,4 @@ export default function Home() {
         </div>
       </footer>
     </main>
-  );
-}
+  ); }

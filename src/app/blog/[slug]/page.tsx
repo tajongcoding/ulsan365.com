@@ -149,15 +149,9 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
           <div className={`px-5 py-4 bg-gradient-to-r ${visuals.surfaceClass} border-t border-slate-200`}>
             <div className="flex flex-wrap items-center gap-2 mb-1.5">
               <span className={`inline-flex rounded-full px-2.5 py-1 text-[11px] font-black ${visuals.badgeClass}`}>
-                {visuals.categoryLabel}
-              </span>
-              <span className={`text-[11px] font-black tracking-[0.18em] uppercase ${visuals.accentClass}`}>
-                {visuals.toneName}
+                {post.category}
               </span>
             </div>
-            <p className="text-[13px] md:text-[14px] font-semibold text-slate-600 break-keep">
-              {visuals.toneDescription} 중심으로 울산 느낌이 살아있는 이미지를 보여줍니다.
-            </p>
           </div>
         </section>
 
@@ -172,7 +166,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
             </Link>
 
             <span className="inline-flex items-center text-[15px] md:text-[16px] font-bold text-blue-700 bg-blue-50 border border-blue-200 px-4 py-1.5 rounded-full">
-              {visuals.categoryLabel}
+              {post.category}
             </span>
           </div>
 

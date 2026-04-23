@@ -9,28 +9,23 @@ import GoogleAdSlot from './GoogleAdSlot';
 import SafeImage from './SafeImage';
 
 // 포스트 정보 타입 정의
-interface PostMeta {
-  slug: string;
+interface PostMeta { slug: string;
   title: string;
   date: string;
   summary: string;
   category: string;
   tags: string[];
-  thumbnailUrl?: string | null;
-}
+  thumbnailUrl?: string | null; }
 
 // 실제 리스트를 보여주는 내부 컴포넌트
-function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
-  const searchParams = useSearchParams();
+function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchParams = useSearchParams();
   const categoryFilter = searchParams.get('category') || '';
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
 
-  const posts = useMemo(() => {
-    const normalized = searchTerm.trim().toLowerCase();
+  const posts = useMemo(() => { const normalized = searchTerm.trim().toLowerCase();
 
-    return allPosts.filter((post) => {
-      const matchesCategory = categoryFilter ? post.category === categoryFilter : true;
+    return allPosts.filter((post) => { const matchesCategory = categoryFilter ? post.category === categoryFilter : true;
       const matchesSearch = normalized
         ? [post.title, post.summary, ...(post.tags || [])]
             .join(' ')
@@ -38,9 +33,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
             .includes(normalized)
         : true;
 
-      return matchesCategory && matchesSearch;
-    });
-  }, [allPosts, categoryFilter, searchTerm]);
+      return matchesCategory && matchesSearch; }); }, [allPosts, categoryFilter, searchTerm]);
 
   const featuredPosts = posts.slice(0, 8);
   const listPosts = posts.slice(8);
@@ -52,9 +45,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
     ? `${getCategoryLabel(categoryFilter)} 대표 글 8개와 하단 목록을 페이지별로 확인하세요.`
     : '울산광역시의 유용한 생활·복지·행사 정보를 대표 글 8개와 페이지형 목록으로 정리했습니다.';
 
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [categoryFilter, searchTerm]);
+  useEffect(() => { setCurrentPage(1); }, [categoryFilter, searchTerm]);
 
   return (
     <div className="flex flex-col">
@@ -74,8 +65,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
         <>
           <section className="mb-10">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {featuredPosts.map((post) => {
-                const { heroImage, fallbackImage, categoryLabel, badgeClass, overlayClass, toneName } = getPostVisuals(post);
+              {featuredPosts.map((post) => { const { heroImage, fallbackImage, badgeClass, overlayClass } = getPostVisuals(post);
 
                 return (
                   <Link
@@ -96,7 +86,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
                     <div className="relative z-10 p-4 md:p-5 flex flex-col h-full">
                       <div className="flex items-start">
                         <span className={`text-[12px] md:text-[13px] tracking-widest font-black backdrop-blur-md px-3 py-1.5 rounded-lg shadow-sm ${badgeClass}`}>
-                          {categoryLabel}
+                          {post.category}
                         </span>
                       </div>
 
@@ -105,9 +95,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
                           <span className="text-[11px] font-semibold text-white/90 bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-full border border-white/10">
                             📅 {post.date}
                           </span>
-                          <span className="text-[10px] font-black tracking-[0.16em] text-[#FFE08A] uppercase">
-                            {toneName}
-                          </span>
+                          <span className="text-[10px] font-black tracking-[0.16em] text-[#FFE08A] uppercase"></span>
                         </div>
                         <h3 className="text-[16px] md:text-[18px] font-extrabold text-white leading-snug line-clamp-2 group-hover:text-[#C9A857] transition-colors break-keep">
                           {post.title}
@@ -115,8 +103,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
                       </div>
                     </div>
                   </Link>
-                );
-              })}
+                ); })}
             </div>
           </section>
 
@@ -133,8 +120,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
               </div>
 
               <div className="flex flex-col gap-2.5">
-                {paginatedListPosts.map((post) => {
-                  const { heroImage, fallbackImage, categoryLabel, badgeClass } = getPostVisuals(post);
+                {paginatedListPosts.map((post) => { const { heroImage, fallbackImage, badgeClass } = getPostVisuals(post);
 
                   return (
                     <Link
@@ -151,7 +137,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                           />
                           <span className={`absolute left-2 top-2 inline-flex rounded-full px-1.5 py-0.5 text-[9px] font-black shadow-sm ${badgeClass}`}>
-                            {categoryLabel}
+                            {post.category}
                           </span>
                         </div>
 
@@ -176,8 +162,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
                         </div>
                       </div>
                     </Link>
-                  );
-                })}
+                  ); })}
               </div>
 
               {totalListPages > 1 && (
@@ -196,11 +181,9 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
                       key={pageNumber}
                       type="button"
                       onClick={() => setCurrentPage(pageNumber)}
-                      className={`rounded-lg px-3 py-1.5 text-[13px] font-bold transition-colors ${
-                        currentPage === pageNumber
+                      className={`rounded-lg px-3 py-1.5 text-[13px] font-bold transition-colors ${ currentPage === pageNumber
                           ? 'bg-[#0F1A2B] text-white'
-                          : 'border border-slate-300 text-[#0F1A2B] hover:bg-slate-50'
-                      }`}
+                          : 'border border-slate-300 text-[#0F1A2B] hover:bg-slate-50' }`}
                     >
                       {pageNumber}
                     </button>
@@ -224,16 +207,13 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
       {/* 리스트 하단 문맥형 배너 */}
       <CoupangBanner variant="inline" topic={categoryFilter || '생활'} />
     </div>
-  );
-}
+  ); }
 
 // 메인 페이지 컴포넌트
-export default function BlogListPage({ allPosts }: { allPosts: PostMeta[] }) {
-  return (
+export default function BlogListPage({ allPosts }: { allPosts: PostMeta[] }) { return (
     <main className="max-w-6xl mx-auto px-4 md:px-5 py-10 md:py-12 flex flex-col gap-10 md:gap-12">
       <Suspense fallback={<div className="text-center py-20 text-slate-400">데이터를 불러오는 중입니다...</div>}>
         <BlogListContent allPosts={allPosts} />
       </Suspense>
     </main>
-  );
-}
+  ); }
