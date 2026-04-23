@@ -65,7 +65,14 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
         <>
           <section className="mb-10">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {featuredPosts.map((post) => { const { heroImage, fallbackImage, badgeClass, overlayClass } = getPostVisuals(post);
+              {featuredPosts.map((post) => { 
+                const { heroImage, fallbackImage, badgeClass, overlayClass } = getPostVisuals(post);
+                const promoText =
+                  post.category === '복지' ? '놓치면 손해' :
+                  post.category === '생활' ? '오늘 꼭 확인' :
+                  post.category === '행사' ? '이번 주 추천' :
+                  post.category === '경제' ? '지원금 체크' :
+                  '읽을수록 재밌음';
 
                 return (
                   <Link
@@ -92,6 +99,9 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
 
                       <div className="mt-auto">
                         <div className="mb-2 flex items-center gap-2 flex-wrap">
+                                <span className="text-[10px] font-black text-[#0F1A2B] bg-[#FFE08A] px-2.5 py-1 rounded-full shadow-sm">
+                                  {promoText}
+                                </span>
                           <span className="text-[11px] font-semibold text-white/90 bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-full border border-white/10">
                             📅 {post.date}
                           </span>
