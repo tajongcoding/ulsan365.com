@@ -17,7 +17,7 @@ function getAllPosts() {
       const fullPath = path.join(postsDirectory, fileName);
       const fileContents = fs.readFileSync(fullPath, 'utf8');
       const { data } = matter(fileContents);
-      return { slug, date: data.date };
+      return { slug, date: data.pubDate || data.date };
     });
 }
 
