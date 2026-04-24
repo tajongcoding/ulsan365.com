@@ -97,9 +97,14 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 3);
               오늘 울산에서 꼭 알아야 할 정보
             </div>
             <h1 className="text-[32px] md:text-[46px] lg:text-[54px] font-extrabold tracking-tight text-white leading-[1.12] break-keep">
-              오늘 꼭 챙겨야 할 울산 정보, <br className="hidden md:block" />
-              지원금·생활정보·행사 소식까지 <br className="hidden md:block" />
-              <span className="text-[#C9A857]">매일 빠르게 확인하세요</span>
+              <span className="hidden md:inline">
+                지원금·행사·생활정보 <br />
+                울산365에서 한 번에
+              </span>
+              <span className="md:hidden">
+                오늘 필요한 울산정보 <br />
+                1분 만에 확인
+              </span>
             </h1>
             <p className="text-[16px] md:text-[18px] text-slate-300 font-[400] max-w-xl break-keep mt-1 leading-relaxed">
               청년정책, 복지혜택, 생활 꿀팁, 야간약국, 행사·명소 정보를
