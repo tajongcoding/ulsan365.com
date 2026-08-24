@@ -130,6 +130,21 @@ const categoryThemes: Record<string, CategoryTheme> = {
 };
 
 const LOCAL_IMAGES: Record<string, string> = {
+  '2026-08-17-life-09-ulsan-public-parking-must-check': 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-17-economy-10-ulsan-youth-support-summary': 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-16-welfare-09-ulsan-senior-welfare': 'https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-16-ulsan-10-ulsan-hidden-spots-story': ulsanLocalPhotos.bangudae,
+  '2026-08-16-ulsan-09-ulsan-special-city-reasons': ulsanLocalPhotos.taehwaru,
+  '2026-08-16-event-10-ulsan-family-event': ulsanLocalPhotos.taehwagang,
+  '2026-08-15-welfare-09-ulsan-welfare-support': 'https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-15-life-10-ulsan-public-parking-must-check': 'https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-15-economy-10-ulsan-youth-support-summary': 'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-15-economy-09-ulsan-youth-support-summary': 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-14-welfare-11-ulsan-welfare-support-11': 'https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-14-welfare-10-ulsan-welfare-support': 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-14-welfare-09-ulsan-senior-welfare': 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-14-event-09-ulsan-weekly-event': 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-13-ulsan-09-ulsan-special-city-reasons': ulsanLocalPhotos.ganjeolgot,
   '2026-08-21-event-09-ulsan-family-event': ulsanLocalPhotos.taehwagang,
   '2026-08-20-ulsan-10-ulsan-special-city-reasons': ulsanLocalPhotos.industry,
   '2026-08-20-ulsan-10-ulsan-hidden-spots-story': ulsanLocalPhotos.ganjeolgot,
