@@ -794,26 +794,36 @@ export function getPostVisualsForList(posts: PostMeta[]) {
     const category = post.category || '기타';
     const theme = categoryThemes[category] || categoryThemes['기타'];
     const listPool = listImagePools[category] || listImagePools['명소'] || [];
-    const candidates = uniqueImages([
-      visuals.heroImage,
+    const categoryCandidates = uniqueImages([
       ...listPool,
       ...theme.images,
       ...visuals.galleryImages,
-      ...sharedListImagePool,
       visuals.fallbackImage,
+      visuals.heroImage,
+    ]);
+    const fallbackCandidates = uniqueImages([
+      ...sharedListImagePool,
+      visuals.heroImage,
+    ]);
+    const candidates = uniqueImages([
+      ...categoryCandidates,
+      ...fallbackCandidates,
     ]);
 
-    const duplicateHero = usedImages.has(visuals.heroImage);
-    const candidatePool = duplicateHero
-      ? candidates.filter((image) => image !== visuals.heroImage)
-      : candidates;
     const seed = getStableSeed(post.slug || post.title || String(index));
-    const offset = candidatePool.length ? seed % candidatePool.length : 0;
-    const orderedCandidates = [
-      ...candidatePool.slice(offset),
-      ...candidatePool.slice(0, offset),
+    const primaryOffset = categoryCandidates.length ? seed % categoryCandidates.length : 0;
+    const orderedPrimaryCandidates = [
+      ...categoryCandidates.slice(primaryOffset),
+      ...categoryCandidates.slice(0, primaryOffset),
     ];
-    const heroImage = orderedCandidates.find((image) => !usedImages.has(image)) || visuals.heroImage;
+    const fallbackOffset = fallbackCandidates.length ? seed % fallbackCandidates.length : 0;
+    const orderedFallbackCandidates = [
+      ...fallbackCandidates.slice(fallbackOffset),
+      ...fallbackCandidates.slice(0, fallbackOffset),
+    ];
+    const heroImage = orderedPrimaryCandidates.find((image) => !usedImages.has(image))
+      || orderedFallbackCandidates.find((image) => !usedImages.has(image))
+      || visuals.heroImage;
 
     usedImages.add(heroImage);
 
