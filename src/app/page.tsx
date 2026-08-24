@@ -26,7 +26,7 @@ const categoryColorMap: Record<string, string> = { '복지': 'bg-rose-50/95 text
   '행사': 'bg-amber-50/95 text-amber-700 border-amber-200',
   '명소': 'bg-emerald-50/95 text-emerald-700 border-emerald-200', };
 
-export default function Home() { const latestPosts = getAllPosts().slice(0, 3);
+export default function Home() { const latestPosts = getAllPosts().slice(0, 4);
 
   // 6개의 바로가기 링크
   const shortcutCards = [
@@ -46,6 +46,7 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 3);
     { question: '울산 청년월세 지원은 어디서 신청하나요?', category: '경제 정보' },
     { question: '울산 대형폐기물 신고는 어떻게 하나요?', category: '생활 정보' },
     { question: '울산 야간약국은 어디서 찾을 수 있나요?', category: '생활 정보' },
+    { question: '울산 주말 행사는 어디서 확인하나요?', category: '행사 정보' },
   ];
 
   const topKeywords = [
@@ -127,7 +128,7 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 3);
           </div>
 
           <div className="hidden lg:grid grid-cols-2 gap-3 self-stretch">
-            {featuredVisuals.map((item, index) => (
+            {featuredVisuals.slice(0, 3).map((item, index) => (
               <Link
                 key={item.slug}
                 href={`/blog/${item.slug}`}
@@ -231,12 +232,12 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 3);
         
 <section className="mb-8 bg-white border-[2px] border-[#0F1A2B] rounded-2xl p-5 shadow-sm">
   <div className="flex items-center justify-between mb-4">
-    <h2 className="text-[22px] md:text-[24px] font-black text-[#0F1A2B]">🔥 오늘 인기글 TOP5</h2>
+    <h2 className="text-[22px] md:text-[24px] font-black text-[#0F1A2B]">🔥 오늘 인기글 TOP4</h2>
     <span className="text-[13px] font-bold text-slate-500">실시간 관심 콘텐츠</span>
   </div>
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-    {featuredVisuals.slice(0,5).map((post, idx) => (
+    {featuredVisuals.slice(0, 4).map((post, idx) => (
       <Link
         key={post.slug}
         href={`/blog/${post.slug}`}
@@ -263,7 +264,7 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 3);
           </div>
 
           {featuredVisuals.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {latestCardVisuals.map((post) => { const { heroImage, fallbackImage, badgeClass, overlayClass } = post;
 
                 return (
@@ -273,7 +274,7 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 3);
                     className="bg-white rounded-[12px] border-[3px] border-[#0F1A2B] shadow-sm hover:shadow-lg hover:border-[#C9A857] hover:-translate-y-1 transition-all duration-300 flex flex-col overflow-hidden group h-full"
                   >
                     {/* 이미지 창 280px 유지 */}
-                    <div className="relative w-full h-[230px] md:h-[260px] bg-slate-100 overflow-hidden border-b-[3px] border-[#0F1A2B] shrink-0">
+                    <div className="relative w-full h-[220px] md:h-[230px] bg-slate-100 overflow-hidden border-b-[3px] border-[#0F1A2B] shrink-0">
                       <SafeImage 
                         src={heroImage}
                         fallbackSrc={fallbackImage}
@@ -354,7 +355,7 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 3);
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {faqPreviewItems.map((item) => { // 카테고리별 스타일 결정
               const categoryKey = item.category.split(' ')[0];
               const badgeStyle = categoryColorMap[categoryKey] || 'bg-slate-50/95 text-slate-700 border-slate-200';
