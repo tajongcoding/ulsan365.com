@@ -960,7 +960,8 @@ export function getPostVisualsForList(posts: PostMeta[]) {
       ...fallbackCandidates.slice(fallbackOffset),
       ...fallbackCandidates.slice(0, fallbackOffset),
     ];
-    const heroImage = orderedPrimaryCandidates.find((image) => !usedImages.has(image))
+    const heroImage = (!usedImages.has(visuals.heroImage) ? visuals.heroImage : undefined)
+      || orderedPrimaryCandidates.find((image) => !usedImages.has(image))
       || orderedFallbackCandidates.find((image) => !usedImages.has(image))
       || visuals.heroImage;
 
