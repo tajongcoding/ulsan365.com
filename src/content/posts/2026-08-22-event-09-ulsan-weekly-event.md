@@ -13,8 +13,8 @@ tags:
 ![울산 이번 주 행사, 가기 전 체크할 것 2](https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=1400)
 ![울산 이번 주 행사, 가기 전 체크할 것 3](https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=1400)
 ![울산 이번 주 행사, 가기 전 체크할 것 4](https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=1400)
-![울산 이번 주 행사, 가기 전 체크할 것 5](https://upload.wikimedia.org/wikipedia/commons/7/76/Shade_Of_Taehwagang_%2871978891%29.jpeg)
-![울산 이번 주 행사, 가기 전 체크할 것 6](https://upload.wikimedia.org/wikipedia/commons/d/dd/Ulsan_taehwaru.jpg)
+![울산 이번 주 행사, 가기 전 체크할 것 5](https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=1400)
+![울산 이번 주 행사, 가기 전 체크할 것 6](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=1400)
 
 ## 핵심 요약
 울산 이번 주 행사, 가기 전 체크할 것은 날짜만 보는 것보다 장소, 예약 여부, 우천 시 변경, 주차 정보를 함께 확인해야 합니다. 울산 행사는 공원, 문화시설, 전시장, 전통시장 등 장소가 다양해 이동 동선까지 미리 보는 것이 좋습니다.
