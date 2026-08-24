@@ -1,7 +1,7 @@
 ---
 title: 울산 숨은 명소 6곳, 아는 사람만 갑니다
 pubDate: "2026-04-22"
-category: "울산 아시나요"
+category: 명소
 summary: "울산 숨은 명소 5곳 추천"
 draft: false
 ---

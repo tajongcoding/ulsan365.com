@@ -1,7 +1,7 @@
 ---
 title: 울산 항구, 알고 보면 한국 경제 핵심입니다
 pubDate: "2026-04-21"
-category: "울산 아시나요"
+category: 명소
 summary: "울산 항구와 산업도시의 성장 이야기"
 draft: false
 ---

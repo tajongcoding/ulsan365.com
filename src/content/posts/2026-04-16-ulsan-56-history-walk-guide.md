@@ -1,7 +1,7 @@
 ---
 title: "울산 역사 산책 코스 추천"
 pubDate: "2026-04-16"
-category: "울산 아시나요"
+category: 명소
 summary: "울산 역사 산책 코스 추천"
 draft: false
 ---

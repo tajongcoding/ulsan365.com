@@ -1,7 +1,7 @@
 ---
 title: 울산 야경 다리 명소, 밤에 가면 놀랍니다
 pubDate: "2026-04-19"
-category: "울산 아시나요"
+category: 명소
 summary: "울산 다리와 도시 연결 이야기"
 draft: false
 ---
