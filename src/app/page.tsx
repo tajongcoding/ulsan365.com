@@ -249,9 +249,6 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 4);
         <span className={`shrink-0 rounded-lg px-2.5 py-1 text-[11px] font-black border ${post.badgeClass}`}>
           {post.category}
         </span>
-        <span className="min-w-0 flex-1 font-bold text-[15px] text-[#0F1A2B] line-clamp-1 break-keep">
-          {post.title}
-        </span>
         <div className="relative h-12 w-16 shrink-0 overflow-hidden rounded-lg border border-slate-200 bg-slate-100">
           <SafeImage
             src={post.heroImage}
@@ -260,6 +257,9 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 4);
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           />
         </div>
+        <span className="min-w-0 flex-1 font-bold text-[15px] text-[#0F1A2B] line-clamp-1 break-keep">
+          {post.title}
+        </span>
       </Link>
     ))}
   </div>
