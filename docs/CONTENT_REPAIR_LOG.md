@@ -41,3 +41,34 @@
 - 같은 기준으로 다음 15개 묶음 처리
 - 반복 제목 글의 중복 노출 여부 점검
 - 실제 최신 기관 정보가 필요한 글은 공식 출처 확인 후 본문 심화
+
+## 2026-08-24 2차 교체 작업
+
+기준: 카테고리별 다음 최신 3개씩 15개와 어르신 복지 최신 글 2개 보정.
+
+처리 내용:
+- 다음 묶음 15개 본문·summary·이미지 재정렬
+- 어르신 복지 글은 복지 일반 문단에서 어르신 혜택 전용 문단으로 재보정
+
+작업 전 main:
+- 269c2d0c29f36e3485acc85cd9a4f70efc558736
+
+처리 파일:
+- 생활 / parking: src/content/posts/2026-08-19-life-09-ulsan-public-parking-must-check.md
+- 생활 / parking: src/content/posts/2026-08-17-life-10-ulsan-public-parking-must-check.md
+- 생활 / parking: src/content/posts/2026-08-17-life-09-ulsan-public-parking-must-check.md
+- 복지 / welfare: src/content/posts/2026-08-22-welfare-10-ulsan-welfare-support.md
+- 복지 / welfare: src/content/posts/2026-08-21-welfare-10-ulsan-welfare-support.md
+- 복지 / senior: src/content/posts/2026-08-21-welfare-09-ulsan-senior-welfare.md
+- 경제 / youth: src/content/posts/2026-08-17-economy-10-ulsan-youth-support-summary.md
+- 경제 / youth: src/content/posts/2026-08-15-economy-10-ulsan-youth-support-summary.md
+- 경제 / youth: src/content/posts/2026-08-15-economy-09-ulsan-youth-support-summary.md
+- 행사 / event: src/content/posts/2026-08-20-event-09-ulsan-weekly-event.md
+- 행사 / family: src/content/posts/2026-08-18-event-10-ulsan-family-event.md
+- 행사 / family: src/content/posts/2026-08-16-event-10-ulsan-family-event.md
+- 명소 / city: src/content/posts/2026-08-20-ulsan-10-ulsan-special-city-reasons.md
+- 명소 / scenic: src/content/posts/2026-08-20-ulsan-10-ulsan-hidden-spots-story.md
+- 명소 / city: src/content/posts/2026-08-20-ulsan-09-ulsan-special-city-reasons.md
+- 복지 / senior: src/content/posts/2026-08-23-welfare-09-ulsan-senior-welfare.md
+- 복지 / senior: src/content/posts/2026-08-23-welfare-10-ulsan-senior-welfare.md
+
