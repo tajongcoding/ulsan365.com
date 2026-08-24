@@ -42,6 +42,7 @@ function normalizeCategory(category: unknown): string {
   if (value.includes('생활')) return '생활';
   if (value.includes('행사')) return '행사';
   if (value.includes('명소') || value.includes('관광')) return '명소';
+  if (value.includes('울산 아시나요')) return '명소';
 
   return value || '기타';
 }
