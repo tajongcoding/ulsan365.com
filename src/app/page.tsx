@@ -38,7 +38,9 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 3);
     { title: 'FAQ', icon: '🤔', link: '/qna' },
   ];
 
-  const featuredVisuals = getPostVisualsForList(latestPosts);
+  const homeVisuals = getPostVisualsForList([...latestPosts, ...latestPosts]);
+  const featuredVisuals = homeVisuals.slice(0, latestPosts.length);
+  const latestCardVisuals = homeVisuals.slice(latestPosts.length);
 
   const faqPreviewItems = [
     { question: '울산 청년월세 지원은 어디서 신청하나요?', category: '경제 정보' },
@@ -262,7 +264,7 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 3);
 
           {featuredVisuals.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {featuredVisuals.map((post) => { const { heroImage, fallbackImage, badgeClass, overlayClass } = post;
+              {latestCardVisuals.map((post) => { const { heroImage, fallbackImage, badgeClass, overlayClass } = post;
 
                 return (
                   <Link
