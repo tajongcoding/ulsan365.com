@@ -129,6 +129,73 @@ const categoryThemes: Record<string, CategoryTheme> = {
   },
 };
 
+const listImagePools: Record<string, string[]> = {
+  복지: [
+    'https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&q=80&w=1400',
+  ],
+  경제: [
+    'https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&q=80&w=1400',
+    ulsanLocalPhotos.industry,
+    ulsanLocalPhotos.port,
+  ],
+  생활: [
+    'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=1400',
+    ulsanLocalPhotos.city,
+  ],
+  행사: [
+    'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1478147427282-58a87a120781?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&q=80&w=1400',
+    ulsanLocalPhotos.taehwagang,
+  ],
+  명소: [
+    ulsanLocalPhotos.ganjeolgot,
+    ulsanLocalPhotos.taehwagang,
+    ulsanLocalPhotos.taehwaru,
+    ulsanLocalPhotos.bangudae,
+    ulsanLocalPhotos.city,
+    ulsanLocalPhotos.port,
+    ulsanLocalPhotos.industry,
+    'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&q=80&w=1400',
+  ],
+};
+
 const LOCAL_IMAGES: Record<string, string> = {
   '2026-08-09-welfare-10-ulsan-senior-welfare': 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&q=80&w=1400',
   '2026-08-09-welfare-09-ulsan-welfare-support': 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1400',
@@ -715,4 +782,44 @@ export function getPostVisuals(post: PostMeta) {
     galleryImages,
     coverImage: heroImage,
   };
+}
+
+export function getPostVisualsForList(posts: PostMeta[]) {
+  const usedImages = new Set<string>();
+
+  return posts.map((post, index) => {
+    const visuals = getPostVisuals(post);
+    const category = post.category || '기타';
+    const theme = categoryThemes[category] || categoryThemes['기타'];
+    const listPool = listImagePools[category] || listImagePools['명소'] || [];
+    const candidates = uniqueImages([
+      visuals.heroImage,
+      ...listPool,
+      ...theme.images,
+      ...visuals.galleryImages,
+      visuals.fallbackImage,
+    ]);
+
+    const duplicateHero = usedImages.has(visuals.heroImage);
+    const candidatePool = duplicateHero
+      ? candidates.filter((image) => image !== visuals.heroImage)
+      : candidates;
+    const seed = getStableSeed(post.slug || post.title || String(index));
+    const offset = candidatePool.length ? seed % candidatePool.length : 0;
+    const orderedCandidates = [
+      ...candidatePool.slice(offset),
+      ...candidatePool.slice(0, offset),
+    ];
+    const heroImage = orderedCandidates.find((image) => !usedImages.has(image)) || visuals.heroImage;
+
+    usedImages.add(heroImage);
+
+    return {
+      ...post,
+      ...visuals,
+      heroImage,
+      coverImage: heroImage,
+      galleryImages: uniqueImages([heroImage, ...visuals.galleryImages, ...candidates]).slice(0, 4),
+    };
+  });
 }
