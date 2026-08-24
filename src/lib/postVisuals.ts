@@ -129,7 +129,23 @@ const categoryThemes: Record<string, CategoryTheme> = {
   },
 };
 
-const LOCAL_IMAGES: Record<string, string> = {};
+const LOCAL_IMAGES: Record<string, string> = {
+  '2026-08-24-ulsan-10-ulsan-hidden-spots-story': ulsanLocalPhotos.bangudae,
+  '2026-08-24-ulsan-09-ulsan-special-city-reasons': ulsanLocalPhotos.city,
+  '2026-08-24-life-09-ulsan-public-parking-must-check': 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-24-economy-10-ulsan-smallbiz-support-key-points': 'https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-23-welfare-10-ulsan-welfare-support': 'https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-23-welfare-10-ulsan-senior-welfare': 'https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-23-welfare-09-ulsan-senior-welfare': 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-23-ulsan-09-ulsan-special-city-reasons': ulsanLocalPhotos.port,
+  '2026-08-22-welfare-10-ulsan-welfare-support': 'https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-22-life-09-ulsan-night-pharmacy-fast-guide': 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-22-event-10-ulsan-family-event': 'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-22-event-09-ulsan-weekly-event': 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-21-welfare-10-ulsan-welfare-support': 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-21-welfare-09-ulsan-senior-welfare': 'https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-21-ulsan-10-ulsan-hidden-spots-story': ulsanLocalPhotos.taehwaru,
+};
 
 function getStableSeed(value: string) {
   return value.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
