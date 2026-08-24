@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { Suspense, useEffect, useMemo, useState } from 'react';
-import { getCategoryLabel, getPostVisuals } from '@/lib/postVisuals';
+import { getCategoryLabel, getPostVisualsForList } from '@/lib/postVisuals';
 import CoupangBanner from './CoupangBanner';
 import GoogleAdSlot from './GoogleAdSlot';
 import SafeImage from './SafeImage';
@@ -35,8 +35,9 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
 
       return matchesCategory && matchesSearch; }); }, [allPosts, categoryFilter, searchTerm]);
 
-  const featuredPosts = posts.slice(0, 8);
-  const listPosts = posts.slice(8);
+  const visualPosts = useMemo(() => getPostVisualsForList(posts), [posts]);
+  const featuredPosts = visualPosts.slice(0, 8);
+  const listPosts = visualPosts.slice(8);
   const itemsPerPage = 5;
   const totalListPages = Math.ceil(listPosts.length / itemsPerPage);
   const paginatedListPosts = listPosts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
@@ -66,7 +67,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
           <section className="mb-10">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {featuredPosts.map((post) => { 
-                const { heroImage, fallbackImage, badgeClass, overlayClass } = getPostVisuals(post);
+                const { heroImage, fallbackImage, badgeClass, overlayClass } = post;
                 const promoText =
                   post.category === '복지' ? '놓치면 손해' :
                   post.category === '생활' ? '오늘 꼭 확인' :
@@ -130,7 +131,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
               </div>
 
               <div className="flex flex-col gap-2.5">
-                {paginatedListPosts.map((post) => { const { heroImage, fallbackImage, badgeClass } = getPostVisuals(post);
+                {paginatedListPosts.map((post) => { const { heroImage, fallbackImage, badgeClass } = post;
 
                   return (
                     <Link
