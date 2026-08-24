@@ -130,6 +130,21 @@ const categoryThemes: Record<string, CategoryTheme> = {
 };
 
 const LOCAL_IMAGES: Record<string, string> = {
+  '2026-08-21-event-09-ulsan-family-event': ulsanLocalPhotos.taehwagang,
+  '2026-08-20-ulsan-10-ulsan-special-city-reasons': ulsanLocalPhotos.industry,
+  '2026-08-20-ulsan-10-ulsan-hidden-spots-story': ulsanLocalPhotos.ganjeolgot,
+  '2026-08-20-ulsan-09-ulsan-special-city-reasons': ulsanLocalPhotos.taehwagang,
+  '2026-08-20-event-09-ulsan-weekly-event': 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-19-ulsan-09-ulsan-special-city-reasons': ulsanLocalPhotos.port,
+  '2026-08-19-life-10-ulsan-night-pharmacy-fast-guide': 'https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-19-life-09-ulsan-public-parking-must-check': 'https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-19-economy-10-ulsan-youth-support-summary': 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-18-ulsan-09-ulsan-special-city-reasons': ulsanLocalPhotos.ganjeolgot,
+  '2026-08-18-event-10-ulsan-family-event': ulsanLocalPhotos.taehwagang,
+  '2026-08-18-economy-10-ulsan-youth-support-summary': 'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-18-economy-09-ulsan-smallbiz-support-key-points': 'https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-17-ulsan-09-ulsan-special-city-reasons': ulsanLocalPhotos.city,
+  '2026-08-17-life-10-ulsan-public-parking-must-check': 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&q=80&w=1400',
   '2026-08-24-ulsan-10-ulsan-hidden-spots-story': ulsanLocalPhotos.bangudae,
   '2026-08-24-ulsan-09-ulsan-special-city-reasons': ulsanLocalPhotos.city,
   '2026-08-24-life-09-ulsan-public-parking-must-check': 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&q=80&w=1400',
