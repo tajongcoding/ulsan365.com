@@ -175,17 +175,19 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
                       className="group overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm hover:-translate-y-0.5 hover:border-[#C9A857] hover:shadow-md transition-all"
                     >
                       <div className="flex flex-col sm:flex-row">
-                        <div className="relative h-[88px] sm:h-[92px] sm:w-[128px] sm:min-w-[128px] overflow-hidden bg-slate-100">
-                          <SafeImage
-                            src={heroImage}
-                            fallbackSrc={fallbackImage}
-                            alt={post.title}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                          />
-                          <span className={`absolute left-2 top-2 inline-flex rounded-full px-1.5 py-0.5 text-[9px] font-black shadow-sm ${badgeClass}`}>
-                            {post.category}
-                          </span>
-                        </div>
+                        {!showAllList && (
+                          <div className="relative h-[88px] sm:h-[92px] sm:w-[128px] sm:min-w-[128px] overflow-hidden bg-slate-100">
+                            <SafeImage
+                              src={heroImage}
+                              fallbackSrc={fallbackImage}
+                              alt={post.title}
+                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            />
+                            <span className={`absolute left-2 top-2 inline-flex rounded-full px-1.5 py-0.5 text-[9px] font-black shadow-sm ${badgeClass}`}>
+                              {post.category}
+                            </span>
+                          </div>
+                        )}
 
                         <div className="flex-1 p-2.5 sm:p-3">
                           <div className="flex flex-wrap items-center gap-1 mb-1.5 text-[10px] text-slate-500">
