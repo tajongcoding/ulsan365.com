@@ -57,7 +57,7 @@ function HeaderInner() {
         
         <nav className="hidden lg:flex flex-1 items-center justify-center gap-[24px] xl:gap-[30px]">
           {menuItems.map((item, idx) => {
-            const itemCategory = item.path.includes('category=') ? item.path.split('category=')[1] : '';
+            const itemCategory = item.path.includes('category=') ? decodeURIComponent(item.path.split('category=')[1]) : '';
             const isActive = item.path === '/qna'
               ? pathname === '/qna'
               : item.path.startsWith('/blog')
