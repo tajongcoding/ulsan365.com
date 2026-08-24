@@ -217,7 +217,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
               <h2 className="text-[22px] md:text-[26px] font-black text-[#0F1A2B]">같이 보면 좋은 글</h2>
               <p className="text-slate-500 mt-1 break-keep">같은 주제의 관련 정보를 이어서 확인해 보세요.</p>
             </div>
-            <Link href={`/blog?category=${post.category}`} className="hidden md:inline-flex text-[15px] font-bold text-[#0F1A2B] hover:text-[#C9A857] transition-colors">
+            <Link href={`/blog?category=${encodeURIComponent(post.category)}`} className="hidden md:inline-flex text-[15px] font-bold text-[#0F1A2B] hover:text-[#C9A857] transition-colors">
               더 보기 →
             </Link>
           </div>

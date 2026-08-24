@@ -9,12 +9,12 @@ import GoogleAdSlot from '../components/GoogleAdSlot';
 import SafeImage from '../components/SafeImage';
 import HomeNoticePopup from '../components/HomeNoticePopup';
 
-export const metadata: Metadata = { title: '울산 생활정보 아시나요? | 복지·지원금·행사·생활정보 안내',
+export const metadata: Metadata = { title: '울산365 | 복지·지원금·행사·생활정보 안내',
   description:
     '울산광역시 시민을 위한 복지 혜택, 청년 지원금, 생활 꿀팁, 야간약국, 행사·관광 정보를 한눈에 정리한 지역 정보 포털입니다.',
   alternates: { canonical: '/', },
   keywords: ['울산 생활정보', '울산 지원금', '울산 복지', '울산 야간약국', '울산 행사', '울산 관광'],
-  openGraph: { title: '울산 생활정보 아시나요? | 복지·지원금·행사·생활정보 안내',
+  openGraph: { title: '울산365 | 복지·지원금·행사·생활정보 안내',
     description:
       '울산광역시 시민을 위한 복지 혜택, 청년 지원금, 생활 꿀팁, 야간약국, 행사·관광 정보를 한눈에 확인해 보세요.',
     url: absoluteUrl('/'),
@@ -30,11 +30,11 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 3);
 
   // 6개의 바로가기 링크
   const shortcutCards = [
-    { title: '복지 정보', icon: '💝', link: '/blog?category=복지' },
-    { title: '경제 정보', icon: '📈', link: '/blog?category=경제' },
-    { title: '생활 정보', icon: '🏘️', link: '/blog?category=생활' },
-    { title: '행사·축제', icon: '🎉', link: '/blog?category=행사' },
-    { title: '명소·관광', icon: '📸', link: '/blog?category=명소' },
+    { title: '복지 정보', icon: '💝', link: '/blog?category=%EB%B3%B5%EC%A7%80' },
+    { title: '경제 정보', icon: '📈', link: '/blog?category=%EA%B2%BD%EC%A0%9C' },
+    { title: '생활 정보', icon: '🏘️', link: '/blog?category=%EC%83%9D%ED%99%9C' },
+    { title: '행사·축제', icon: '🎉', link: '/blog?category=%ED%96%89%EC%82%AC' },
+    { title: '명소·관광', icon: '📸', link: '/blog?category=%EB%AA%85%EC%86%8C' },
     { title: 'FAQ', icon: '🤔', link: '/qna' },
   ];
 
@@ -48,27 +48,27 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 3);
   ];
 
   const topKeywords = [
-    { label: '어르신 일자리', href: '/blog?category=복지' },
-    { label: '청년 지원금', href: '/blog?category=경제' },
-    { label: '야간 약국', href: '/blog?category=생활' },
-    { label: '대형 폐기물', href: '/blog?category=생활' },
-    { label: '행사·축제', href: '/blog?category=행사' },
-    { label: '명소·관광', href: '/blog?category=명소' },
+    { label: '어르신 일자리', href: '/blog?category=%EB%B3%B5%EC%A7%80' },
+    { label: '청년 지원금', href: '/blog?category=%EA%B2%BD%EC%A0%9C' },
+    { label: '야간 약국', href: '/blog?category=%EC%83%9D%ED%99%9C' },
+    { label: '대형 폐기물', href: '/blog?category=%EC%83%9D%ED%99%9C' },
+    { label: '행사·축제', href: '/blog?category=%ED%96%89%EC%82%AC' },
+    { label: '명소·관광', href: '/blog?category=%EB%AA%85%EC%86%8C' },
   ];
 
   const siteBenefits = [
     { title: '복지·지원금 빠른 확인',
       category: '복지 정보',
       desc: '청년, 임산부, 어르신, 소상공인 정보를 시민 눈높이로 쉽게 정리합니다.',
-      href: '/blog?category=복지', },
+      href: '/blog?category=%EB%B3%B5%EC%A7%80', },
     { title: '생활정보 실전형 안내',
       category: '생활 정보',
       desc: '야간약국, 교통, 앱, 대형폐기물 등 자주 찾는 생활 정보를 한곳에서 확인할 수 있습니다.',
-      href: '/blog?category=생활', },
+      href: '/blog?category=%EC%83%9D%ED%99%9C', },
     { title: '행사·명소 최신 업데이트',
       category: '행사·관광',
       desc: '주말 나들이와 지역 축제, 관광 코스를 빠르게 모아 보여드립니다.',
-      href: '/blog?category=행사', },
+      href: '/blog?category=%ED%96%89%EC%82%AC', },
   ];
 
   const formatDisplayDate = (dateValue: string) => { const normalized = (dateValue || '').slice(0, 10);
@@ -409,7 +409,7 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 3);
           </div>
           <div className="h-px w-24 bg-slate-800 my-2"></div>
           <p className="text-[15px] md:text-[17px] font-medium text-white leading-relaxed max-w-lg break-keep mx-auto mt-2">
-            © {currentYear} 울산광역시 아시나요? All rights reserved. <br/>
+            © {currentYear} 울산365 All rights reserved. <br/>
             본 웹사이트는 울산시의 생활, 복지, 경제 정보를 시민들에게 알기 쉽게 전달하는 비영리 공공안내 포털입니다.
           </p>
         </div>

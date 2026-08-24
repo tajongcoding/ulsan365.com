@@ -1,10 +1,10 @@
 export const siteConfig = {
-  name: '아시나요 울산',
+  name: '울산365',
   description:
     '울산광역시 시민을 위한 복지 혜택, 청년 지원금, 생활 정보, 야간약국, 행사·관광 소식을 알기 쉽게 정리하는 지역 정보 포털입니다.',
   url: 'https://ulsan365.com',
-  ogImage: '/opengraph-image',
-  email: 'help@asinayo.org',
+  ogImage: '/og-default.svg',
+  email: 'help@ulsan365.com',
   searchDomain: 'ulsan365.com',
 } as const;
 

@@ -14,7 +14,7 @@ const notoSansKr = Noto_Sans_KR({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: '아시나요 울산 | 복지·지원금·행사·생활정보 포털',
+    default: '울산365 | 복지·지원금·행사·생활정보 포털',
     template: '%s',
   },
   description: siteConfig.description,
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: '아시나요 울산 | 복지·지원금·행사·생활정보 포털',
+    title: '울산365 | 복지·지원금·행사·생활정보 포털',
     description:
       '울산광역시 시민을 위한 복지 혜택, 청년 지원금, 생활 정보, 행사·관광 소식을 매일 업데이트합니다.',
     url: siteConfig.url,
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '아시나요 울산 | 복지·지원금·행사·생활정보 포털',
+    title: '울산365 | 복지·지원금·행사·생활정보 포털',
     description:
       '울산광역시 시민을 위한 복지, 지원금, 생활 정보, 행사·관광 소식을 빠르게 확인하세요.',
     images: [absoluteUrl(siteConfig.ogImage)],
@@ -108,7 +108,7 @@ export default function RootLayout({
                 }
 
                 var canonicalHost = 'ulsan365.com';
-                var redirectHosts = ['asinayo.org', 'www.asinayo.org', 'www.ulsan365.com'];
+                var redirectHosts = ['www.ulsan365.com'];
                 var currentHost = window.location.hostname;
                 var isPreviewHost = /\.pages\.dev$|\.workers\.dev$/i.test(currentHost);
                 var shouldRedirectHost = redirectHosts.indexOf(currentHost) !== -1 || isPreviewHost;

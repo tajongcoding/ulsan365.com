@@ -91,7 +91,7 @@ export function getAllPosts(): PostMeta[] {
         return {
           slug,
           title: String(data.title || '제목 없음'),
-          date: formatDate(data.date),
+          date: formatDate(data.date || data.pubDate),
           summary: String(data.summary || data.description || ''),
           category: normalizeCategory(data.category),
           tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
@@ -146,7 +146,7 @@ export function getPostBySlug(slug: string): Post | null {
   return {
     slug,
     title: data.title || '제목 없음',
-    date: formatDate(data.date),
+    date: formatDate(data.date || data.pubDate),
     summary: data.summary || data.description || '',
     category: normalizeCategory(data.category),
     tags: Array.isArray(data.tags) ? data.tags : [],

@@ -22,12 +22,12 @@ function HeaderInner() {
   }, []);
 
   const menuItems = [
-    { name: '아시나요', path: '/about' },
-    { name: '복지 정보', path: '/blog?category=복지' },
-    { name: '경제 정보', path: '/blog?category=경제' },
-    { name: '생활 정보', path: '/blog?category=생활' },
-    { name: '행사·축제', path: '/blog?category=행사' },
-    { name: '명소·관광', path: '/blog?category=명소' },
+    { name: '울산365 소개', path: '/about' },
+    { name: '복지 정보', path: '/blog?category=%EB%B3%B5%EC%A7%80' },
+    { name: '경제 정보', path: '/blog?category=%EA%B2%BD%EC%A0%9C' },
+    { name: '생활 정보', path: '/blog?category=%EC%83%9D%ED%99%9C' },
+    { name: '행사·축제', path: '/blog?category=%ED%96%89%EC%82%AC' },
+    { name: '명소·관광', path: '/blog?category=%EB%AA%85%EC%86%8C' },
     { name: 'FAQ', path: '/qna', highlight: true },
   ];
 
@@ -133,7 +133,7 @@ function HeaderInner() {
             </div>
           ))}
           <div className="mt-12 text-center text-slate-500 text-sm">
-            © 2026 울산 아시나요 포털
+            © 2026 {siteConfig.name} 포털
           </div>
         </div>
       </div>

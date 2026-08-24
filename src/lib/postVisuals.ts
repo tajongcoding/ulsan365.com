@@ -46,10 +46,10 @@ const categoryThemes: Record<string, CategoryTheme> = {
     surfaceClass: 'from-indigo-50 via-white to-slate-50',
     accentClass: 'text-indigo-600',
     images: [
-      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1400',
+      ulsanLocalPhotos.industry,
+      ulsanLocalPhotos.port,
       'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1400',
       'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1400',
-      'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1400',
     ],
   },
   생활: {
@@ -61,10 +61,40 @@ const categoryThemes: Record<string, CategoryTheme> = {
     surfaceClass: 'from-emerald-50 via-white to-teal-50',
     accentClass: 'text-emerald-600',
     images: [
-      'https://images.unsplash.com/photo-1501183315669-44621ee235d2?auto=format&fit=crop&q=80&w=1400',
-      'https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&q=80&w=1400',
-      'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&q=80&w=1400',
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1400',
+      'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1400',
+      'https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?auto=format&fit=crop&q=80&w=1400',
+      'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&q=80&w=1400',
+      ulsanLocalPhotos.city,
+    ],
+  },
+  행사: {
+    label: '행사·축제 정보',
+    toneName: 'Festival Amber',
+    toneDescription: '밝은 행사 안내 톤',
+    badgeClass: 'bg-amber-50/95 text-amber-700 border border-amber-200',
+    overlayClass: 'from-amber-950/72 via-slate-900/30 to-transparent',
+    surfaceClass: 'from-amber-50 via-white to-orange-50',
+    accentClass: 'text-amber-600',
+    images: [
+      'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1400',
+      'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=1400',
+      'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=1400',
+      ulsanLocalPhotos.taehwagang,
+    ],
+  },
+  명소: {
+    label: '명소·관광 정보',
+    toneName: 'Ulsan Scenic',
+    toneDescription: '울산 여행지 안내 톤',
+    badgeClass: 'bg-emerald-50/95 text-emerald-700 border border-emerald-200',
+    overlayClass: 'from-emerald-950/72 via-slate-900/30 to-transparent',
+    surfaceClass: 'from-emerald-50 via-white to-cyan-50',
+    accentClass: 'text-emerald-600',
+    images: [
+      ulsanLocalPhotos.ganjeolgot,
+      ulsanLocalPhotos.taehwagang,
+      ulsanLocalPhotos.taehwaru,
+      ulsanLocalPhotos.bangudae,
     ],
   },
   교육: {
@@ -101,6 +131,14 @@ const categoryThemes: Record<string, CategoryTheme> = {
 
 const LOCAL_IMAGES: Record<string, string> = {};
 
+function getStableSeed(value: string) {
+  return value.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+}
+
+function uniqueImages(images: Array<string | null | undefined>) {
+  return images.filter((image, index, source): image is string => Boolean(image) && source.indexOf(image) === index);
+}
+
 export function getCategoryLabel(category: string) {
   return categoryThemes[category]?.label || categoryThemes['기타'].label;
 }
@@ -108,13 +146,18 @@ export function getCategoryLabel(category: string) {
 export function getPostVisuals(post: PostMeta) {
   const category = post.category || '기타';
   const theme = categoryThemes[category] || categoryThemes['기타'];
-  
-  const seed = post.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
-  const imageIndex = seed % theme.images.length;
-  const coverImage = LOCAL_IMAGES[post.id] || theme.images[imageIndex];
+  const seedKey = post.slug || post.title || category;
+  const imageIndex = getStableSeed(seedKey) % theme.images.length;
+  const fallbackImage = theme.images[imageIndex] || categoryThemes['기타'].images[0];
+  const heroImage = LOCAL_IMAGES[post.slug] || post.thumbnailUrl || fallbackImage;
+  const galleryImages = uniqueImages([heroImage, ...theme.images, fallbackImage]).slice(0, 4);
 
   return {
     ...theme,
-    coverImage,
+    categoryLabel: theme.label,
+    heroImage,
+    fallbackImage,
+    galleryImages,
+    coverImage: heroImage,
   };
 }
