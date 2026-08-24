@@ -13,13 +13,6 @@ draft: false
 ![울산 장애인 지원 서비스 한눈에 보기 5](https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1400)
 ![울산 장애인 지원 서비스 한눈에 보기 6](https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&q=80&w=1400)
 
-![울산 장애인 지원 서비스 한눈에 보기 2](https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=1400)
-![울산 장애인 지원 서비스 한눈에 보기 4](https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1400)
-![울산 장애인 지원 서비스 한눈에 보기 6](https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&q=80&w=1400)
-![울산 장애인 지원 서비스 한눈에 보기 2](https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&q=80&w=1400)
-![울산 장애인 지원 서비스 한눈에 보기 4](https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=1400)
-![울산 장애인 지원 서비스 한눈에 보기 6](https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1400)
-
 ## 왜 중요한가
 
 울산 장애인 지원 서비스 한눈에 보기는 울산 시민이 실제 생활에서 자주 찾는 정보입니다. 필요한 시점에 빠르게 확인하면 시간과 비용을 줄이는 데 도움이 됩니다.

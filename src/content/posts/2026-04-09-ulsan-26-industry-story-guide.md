@@ -16,13 +16,6 @@ tags:
 ![울산은 왜 산업도시가 됐을까, 쉽게 정리했습니다 5](https://upload.wikimedia.org/wikipedia/commons/1/1f/%EA%B0%84%EC%A0%88%EA%B3%B6%ED%92%8D%EA%B2%BD_-_panoramio.jpg)
 ![울산은 왜 산업도시가 됐을까, 쉽게 정리했습니다 6](https://upload.wikimedia.org/wikipedia/commons/7/76/Shade_Of_Taehwagang_%2871978891%29.jpeg)
 
-![울산은 왜 산업도시가 됐을까, 쉽게 정리했습니다 2](https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&q=80&w=1400)
-![울산은 왜 산업도시가 됐을까, 쉽게 정리했습니다 4](https://upload.wikimedia.org/wikipedia/commons/7/76/Shade_Of_Taehwagang_%2871978891%29.jpeg)
-![울산은 왜 산업도시가 됐을까, 쉽게 정리했습니다 6](https://upload.wikimedia.org/wikipedia/commons/2/29/Bangudae_Petroglyphs_from_Ulsan_%285329613206%29.jpg)
-![울산은 왜 산업도시가 됐을까, 쉽게 정리했습니다 2](https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&q=80&w=1400)
-![울산은 왜 산업도시가 됐을까, 쉽게 정리했습니다 4](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=1400)
-![울산은 왜 산업도시가 됐을까, 쉽게 정리했습니다 6](https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1400)
-
 ## 핵심 요약
 울산이 산업도시로 성장한 이유 쉽게 이해하기이 필요한 분들을 위해 꼭 알아야 할 내용만 먼저 정리했습니다. 실제 신청이나 이용 전에 대상 조건, 운영 시간, 준비물, 접수 경로를 함께 확인하면 훨씬 수월합니다.
 

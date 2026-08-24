@@ -13,13 +13,6 @@ draft: false
 ![울산 바다 드라이브 코스 추천 5](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1400)
 ![울산 바다 드라이브 코스 추천 6](https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=1400)
 
-![울산 바다 드라이브 코스 추천 2](https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1400)
-![울산 바다 드라이브 코스 추천 4](https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&q=80&w=1400)
-![울산 바다 드라이브 코스 추천 6](https://upload.wikimedia.org/wikipedia/commons/7/76/Shade_Of_Taehwagang_%2871978891%29.jpeg)
-![울산 바다 드라이브 코스 추천 2](https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&q=80&w=1400)
-![울산 바다 드라이브 코스 추천 4](https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?auto=format&fit=crop&q=80&w=1400)
-![울산 바다 드라이브 코스 추천 6](https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&q=80&w=1400)
-
 ## 왜 중요한가
 
 울산 바다 드라이브 코스 추천는 울산 시민이 실제 생활에서 자주 찾는 정보입니다. 필요한 시점에 빠르게 확인하면 시간과 비용을 줄이는 데 도움이 됩니다.

@@ -16,13 +16,6 @@ tags:
 ![울산 현지인이 좋아하는 숨은 장소 이야기 5](https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1400)
 ![울산 현지인이 좋아하는 숨은 장소 이야기 6](https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&q=80&w=1400)
 
-![울산 현지인이 좋아하는 숨은 장소 이야기 2](https://upload.wikimedia.org/wikipedia/commons/1/1f/%EA%B0%84%EC%A0%88%EA%B3%B6%ED%92%8D%EA%B2%BD_-_panoramio.jpg)
-![울산 현지인이 좋아하는 숨은 장소 이야기 4](https://upload.wikimedia.org/wikipedia/commons/d/dd/Ulsan_taehwaru.jpg)
-![울산 현지인이 좋아하는 숨은 장소 이야기 6](https://upload.wikimedia.org/wikipedia/commons/3/3a/Ulsan_129.30972E_35.52012N.jpg)
-![울산 현지인이 좋아하는 숨은 장소 이야기 2](https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&q=80&w=1400)
-![울산 현지인이 좋아하는 숨은 장소 이야기 4](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=1400)
-![울산 현지인이 좋아하는 숨은 장소 이야기 6](https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1400)
-
 ## 핵심 요약
 울산 현지인이 좋아하는 숨은 장소 이야기는 울산을 실제로 방문하거나 생활 속에서 활용할 때 도움이 되는 기준으로 정리했습니다. 장소의 분위기만 보는 것보다 이동, 주차, 운영시간, 주변 동선을 함께 확인하면 훨씬 실용적으로 계획할 수 있습니다.
 

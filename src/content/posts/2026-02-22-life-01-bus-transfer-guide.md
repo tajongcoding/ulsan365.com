@@ -16,13 +16,6 @@ tags:
 ![울산 버스 환승, 이것 모르면 할인 놓칩니다 5](https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&q=80&w=1400)
 ![울산 버스 환승, 이것 모르면 할인 놓칩니다 6](https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&q=80&w=1400)
 
-![울산 버스 환승, 이것 모르면 할인 놓칩니다 2](https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&q=80&w=1400)
-![울산 버스 환승, 이것 모르면 할인 놓칩니다 4](https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&q=80&w=1400)
-![울산 버스 환승, 이것 모르면 할인 놓칩니다 6](https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&q=80&w=1400)
-![울산 버스 환승, 이것 모르면 할인 놓칩니다 2](https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&q=80&w=1400)
-![울산 버스 환승, 이것 모르면 할인 놓칩니다 4](https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?auto=format&fit=crop&q=80&w=1400)
-![울산 버스 환승, 이것 모르면 할인 놓칩니다 6](https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&q=80&w=1400)
-
 ## 핵심 요약
 울산 시내버스 환승 할인 제대로 받는 법이 필요한 분들을 위해 꼭 알아야 할 내용만 먼저 정리했습니다. 실제 신청이나 이용 전에 대상 조건, 운영 시간, 준비물, 접수 경로를 함께 확인하면 훨씬 수월합니다.
 

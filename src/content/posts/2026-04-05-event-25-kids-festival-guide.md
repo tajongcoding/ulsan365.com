@@ -16,13 +16,6 @@ tags:
 ![울산 아이와 가기 좋은 축제, 가족 나들이용으로 골랐습니다 5](https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&q=80&w=1400)
 ![울산 아이와 가기 좋은 축제, 가족 나들이용으로 골랐습니다 6](https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&q=80&w=1400)
 
-![울산 아이와 가기 좋은 축제, 가족 나들이용으로 골랐습니다 2](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=1400)
-![울산 아이와 가기 좋은 축제, 가족 나들이용으로 골랐습니다 4](https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&q=80&w=1400)
-![울산 아이와 가기 좋은 축제, 가족 나들이용으로 골랐습니다 6](https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=1400)
-![울산 아이와 가기 좋은 축제, 가족 나들이용으로 골랐습니다 2](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=1400)
-![울산 아이와 가기 좋은 축제, 가족 나들이용으로 골랐습니다 4](https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&q=80&w=1400)
-![울산 아이와 가기 좋은 축제, 가족 나들이용으로 골랐습니다 6](https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=1400)
-
 ## 핵심 요약
 울산 아이와 함께 가기 좋은 축제 추천이 필요한 분들을 위해 꼭 알아야 할 내용만 먼저 정리했습니다. 실제 신청이나 이용 전에 대상 조건, 운영 시간, 준비물, 접수 경로를 함께 확인하면 훨씬 수월합니다.
 

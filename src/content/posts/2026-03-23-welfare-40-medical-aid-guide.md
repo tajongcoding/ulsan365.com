@@ -13,13 +13,6 @@ draft: false
 ![울산 의료급여와 건강 지원 제도 안내 5](https://images.unsplash.com/photo-1583912267550-75846eb5bbf6?auto=format&fit=crop&q=80&w=1400)
 ![울산 의료급여와 건강 지원 제도 안내 6](https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=1400)
 
-![울산 의료급여와 건강 지원 제도 안내 2](https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=1400)
-![울산 의료급여와 건강 지원 제도 안내 4](https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&q=80&w=1400)
-![울산 의료급여와 건강 지원 제도 안내 6](https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=1400)
-![울산 의료급여와 건강 지원 제도 안내 2](https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1400)
-![울산 의료급여와 건강 지원 제도 안내 4](https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&q=80&w=1400)
-![울산 의료급여와 건강 지원 제도 안내 6](https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=1400)
-
 ## 왜 중요한가
 
 울산 의료급여와 건강 지원 제도 안내는 울산 시민이 실제 생활에서 자주 찾는 정보입니다. 필요한 시점에 빠르게 확인하면 시간과 비용을 줄이는 데 도움이 됩니다.

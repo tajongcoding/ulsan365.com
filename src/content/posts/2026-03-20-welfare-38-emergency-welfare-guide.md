@@ -13,13 +13,6 @@ draft: false
 ![울산 긴급복지 지원 신청 방법 5](https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&q=80&w=1400)
 ![울산 긴급복지 지원 신청 방법 6](https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&q=80&w=1400)
 
-![울산 긴급복지 지원 신청 방법 2](https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=1400)
-![울산 긴급복지 지원 신청 방법 4](https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&q=80&w=1400)
-![울산 긴급복지 지원 신청 방법 6](https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&q=80&w=1400)
-![울산 긴급복지 지원 신청 방법 2](https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=1400)
-![울산 긴급복지 지원 신청 방법 4](https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1400)
-![울산 긴급복지 지원 신청 방법 6](https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&q=80&w=1400)
-
 ## 왜 중요한가
 
 울산 긴급복지 지원 신청 방법는 울산 시민이 실제 생활에서 자주 찾는 정보입니다. 필요한 시점에 빠르게 확인하면 시간과 비용을 줄이는 데 도움이 됩니다.

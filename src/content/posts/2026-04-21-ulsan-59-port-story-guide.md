@@ -13,13 +13,6 @@ draft: false
 ![울산 항구, 알고 보면 한국 경제 핵심입니다 5](https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&q=80&w=1400)
 ![울산 항구, 알고 보면 한국 경제 핵심입니다 6](https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=1400)
 
-![울산 항구, 알고 보면 한국 경제 핵심입니다 2](https://upload.wikimedia.org/wikipedia/commons/d/de/Port_Terminal_Of_Ulsan.JPG)
-![울산 항구, 알고 보면 한국 경제 핵심입니다 4](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1400)
-![울산 항구, 알고 보면 한국 경제 핵심입니다 6](https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=1400)
-![울산 항구, 알고 보면 한국 경제 핵심입니다 2](https://upload.wikimedia.org/wikipedia/commons/7/76/Shade_Of_Taehwagang_%2871978891%29.jpeg)
-![울산 항구, 알고 보면 한국 경제 핵심입니다 4](https://upload.wikimedia.org/wikipedia/commons/2/29/Bangudae_Petroglyphs_from_Ulsan_%285329613206%29.jpg)
-![울산 항구, 알고 보면 한국 경제 핵심입니다 6](https://upload.wikimedia.org/wikipedia/commons/d/de/Port_Terminal_Of_Ulsan.JPG)
-
 ## 왜 중요한가
 
 울산 항구와 산업도시의 성장 이야기는 울산 시민이 실제 생활에서 자주 찾는 정보입니다. 필요한 시점에 빠르게 확인하면 시간과 비용을 줄이는 데 도움이 됩니다.

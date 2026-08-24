@@ -13,13 +13,6 @@ draft: false
 ![울산 청년 대상 행사 모아보기 5](https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=1400)
 ![울산 청년 대상 행사 모아보기 6](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=1400)
 
-![울산 청년 대상 행사 모아보기 2](https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=1400)
-![울산 청년 대상 행사 모아보기 4](https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&q=80&w=1400)
-![울산 청년 대상 행사 모아보기 6](https://upload.wikimedia.org/wikipedia/commons/d/dd/Ulsan_taehwaru.jpg)
-![울산 청년 대상 행사 모아보기 2](https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&q=80&w=1400)
-![울산 청년 대상 행사 모아보기 4](https://upload.wikimedia.org/wikipedia/commons/7/76/Shade_Of_Taehwagang_%2871978891%29.jpeg)
-![울산 청년 대상 행사 모아보기 6](https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1400)
-
 ## 왜 중요한가
 
 울산 청년 대상 행사 모아보기는 울산 시민이 실제 생활에서 자주 찾는 정보입니다. 필요한 시점에 빠르게 확인하면 시간과 비용을 줄이는 데 도움이 됩니다.

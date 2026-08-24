@@ -16,13 +16,6 @@ tags:
 ![울산 공영주차장 이용 전 꼭 확인할 것 5](https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&q=80&w=1400)
 ![울산 공영주차장 이용 전 꼭 확인할 것 6](https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=1400)
 
-![울산 공영주차장 이용 전 꼭 확인할 것 2](https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=1400)
-![울산 공영주차장 이용 전 꼭 확인할 것 4](https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&q=80&w=1400)
-![울산 공영주차장 이용 전 꼭 확인할 것 6](https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=1400)
-![울산 공영주차장 이용 전 꼭 확인할 것 2](https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1400)
-![울산 공영주차장 이용 전 꼭 확인할 것 4](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1600&crop=entropy)
-![울산 공영주차장 이용 전 꼭 확인할 것 6](https://upload.wikimedia.org/wikipedia/commons/7/76/Shade_Of_Taehwagang_%2871978891%29.jpeg)
-
 ## 핵심 요약
 울산 공영주차장 이용 전 꼭 확인할 것은 목적지 근처 주차장만 찾는 것보다 요금, 운영시간, 감면 기준, 혼잡 시간을 함께 확인하는 것이 중요합니다. 방문 목적이 뚜렷한 곳은 공영주차장과 민영주차장의 차이를 먼저 구분하면 헛걸음을 줄일 수 있습니다.
 

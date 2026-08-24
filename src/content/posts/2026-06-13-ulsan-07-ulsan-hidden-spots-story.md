@@ -16,13 +16,6 @@ tags:
 ![울산 현지인이 좋아하는 숨은 장소 이야기 5](https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&q=80&w=1400)
 ![울산 현지인이 좋아하는 숨은 장소 이야기 6](https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1400)
 
-![울산 현지인이 좋아하는 숨은 장소 이야기 2](https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&q=80&w=1400)
-![울산 현지인이 좋아하는 숨은 장소 이야기 4](https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?auto=format&fit=crop&q=80&w=1400)
-![울산 현지인이 좋아하는 숨은 장소 이야기 6](https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&q=80&w=1400)
-![울산 현지인이 좋아하는 숨은 장소 이야기 2](https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&q=80&w=1400)
-![울산 현지인이 좋아하는 숨은 장소 이야기 4](https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&q=80&w=1600&crop=entropy)
-![울산 현지인이 좋아하는 숨은 장소 이야기 6](https://upload.wikimedia.org/wikipedia/commons/1/1f/%EA%B0%84%EC%A0%88%EA%B3%B6%ED%92%8D%EA%B2%BD_-_panoramio.jpg)
-
 ## 핵심 요약
 울산 현지인이 좋아하는 숨은 장소 이야기에 대해 울산 시민 기준으로 꼭 알아야 할 내용만 먼저 정리했습니다.
 

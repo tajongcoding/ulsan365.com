@@ -16,13 +16,6 @@ tags:
 ![울산 가족 산책, 걷기 편한 강변 코스만 정리 5](https://upload.wikimedia.org/wikipedia/commons/7/76/Shade_Of_Taehwagang_%2871978891%29.jpeg)
 ![울산 가족 산책, 걷기 편한 강변 코스만 정리 6](https://upload.wikimedia.org/wikipedia/commons/d/dd/Ulsan_taehwaru.jpg)
 
-![울산 가족 산책, 걷기 편한 강변 코스만 정리 2](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1400)
-![울산 가족 산책, 걷기 편한 강변 코스만 정리 4](https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&q=80&w=1400)
-![울산 가족 산책, 걷기 편한 강변 코스만 정리 6](https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?auto=format&fit=crop&q=80&w=1400)
-![울산 가족 산책, 걷기 편한 강변 코스만 정리 2](https://upload.wikimedia.org/wikipedia/commons/d/de/Port_Terminal_Of_Ulsan.JPG)
-![울산 가족 산책, 걷기 편한 강변 코스만 정리 4](https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=1400)
-![울산 가족 산책, 걷기 편한 강변 코스만 정리 6](https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=1400)
-
 ## 핵심 요약
 울산 가족과 함께 걷기 좋은 강변 코스이 필요한 분들을 위해 꼭 알아야 할 내용만 먼저 정리했습니다. 실제 신청이나 이용 전에 대상 조건, 운영 시간, 준비물, 접수 경로를 함께 확인하면 훨씬 수월합니다.
 

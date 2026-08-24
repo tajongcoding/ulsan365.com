@@ -16,13 +16,6 @@ tags:
 ![울산 복지 지원금, 신청 전에 꼭 확인할 기준 5](https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&q=80&w=1400)
 ![울산 복지 지원금, 신청 전에 꼭 확인할 기준 6](https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&q=80&w=1400)
 
-![울산 복지 지원금, 신청 전에 꼭 확인할 기준 2](https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=1400)
-![울산 복지 지원금, 신청 전에 꼭 확인할 기준 4](https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1400)
-![울산 복지 지원금, 신청 전에 꼭 확인할 기준 6](https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&q=80&w=1400)
-![울산 복지 지원금, 신청 전에 꼭 확인할 기준 2](https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=1400)
-![울산 복지 지원금, 신청 전에 꼭 확인할 기준 4](https://images.unsplash.com/photo-1469571486292-b53e58fd5a5d?auto=format&fit=crop&q=80&w=1400)
-![울산 복지 지원금, 신청 전에 꼭 확인할 기준 6](https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&q=80&w=1400)
-
 ## 핵심 요약
 울산 복지 지원금, 신청 전에 꼭 확인할 기준에 대해 울산 시민 기준으로 꼭 알아야 할 내용만 먼저 정리했습니다.
 

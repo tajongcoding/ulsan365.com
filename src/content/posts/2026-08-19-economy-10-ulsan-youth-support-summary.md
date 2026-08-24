@@ -16,13 +16,6 @@ tags:
 ![울산 청년 지원사업, 지금 보기 좋은 핵심 정리 5](https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1400)
 ![울산 청년 지원사업, 지금 보기 좋은 핵심 정리 6](https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1400)
 
-![울산 청년 지원사업, 지금 보기 좋은 핵심 정리 2](https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1400)
-![울산 청년 지원사업, 지금 보기 좋은 핵심 정리 4](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1400)
-![울산 청년 지원사업, 지금 보기 좋은 핵심 정리 6](https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1400)
-![울산 청년 지원사업, 지금 보기 좋은 핵심 정리 2](https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&q=80&w=1400)
-![울산 청년 지원사업, 지금 보기 좋은 핵심 정리 4](https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=1400)
-![울산 청년 지원사업, 지금 보기 좋은 핵심 정리 6](https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=1400)
-
 ## 핵심 요약
 울산 청년 지원사업, 지금 보기 좋은 핵심 정리는 모집 기간과 자격 기준을 놓치지 않는 것이 가장 중요합니다. 울산 청년 지원사업은 취업, 주거, 창업, 교육, 문화 활동처럼 분야가 넓기 때문에 먼저 본인 상황에 맞는 사업을 추려야 합니다.
 

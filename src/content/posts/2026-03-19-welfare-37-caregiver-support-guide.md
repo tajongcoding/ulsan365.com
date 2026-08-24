@@ -13,13 +13,6 @@ draft: false
 ![울산 가족돌봄 지원 제도 정리 5](https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&q=80&w=1400)
 ![울산 가족돌봄 지원 제도 정리 6](https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&q=80&w=1400)
 
-![울산 가족돌봄 지원 제도 정리 2](https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1400)
-![울산 가족돌봄 지원 제도 정리 4](https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=1400)
-![울산 가족돌봄 지원 제도 정리 6](https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&q=80&w=1400)
-![울산 가족돌봄 지원 제도 정리 2](https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=1400)
-![울산 가족돌봄 지원 제도 정리 4](https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1400)
-![울산 가족돌봄 지원 제도 정리 6](https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&q=80&w=1400)
-
 ## 왜 중요한가
 
 울산 가족돌봄 지원 제도 정리는 울산 시민이 실제 생활에서 자주 찾는 정보입니다. 필요한 시점에 빠르게 확인하면 시간과 비용을 줄이는 데 도움이 됩니다.

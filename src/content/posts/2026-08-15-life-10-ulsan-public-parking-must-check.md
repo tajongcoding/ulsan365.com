@@ -16,13 +16,6 @@ tags:
 ![울산 공영주차장 이용 전 꼭 확인할 것 5](https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1400)
 ![울산 공영주차장 이용 전 꼭 확인할 것 6](https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?auto=format&fit=crop&q=80&w=1400)
 
-![울산 공영주차장 이용 전 꼭 확인할 것 2](https://upload.wikimedia.org/wikipedia/commons/3/3a/Ulsan_129.30972E_35.52012N.jpg)
-![울산 공영주차장 이용 전 꼭 확인할 것 4](https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&q=80&w=1400)
-![울산 공영주차장 이용 전 꼭 확인할 것 6](https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?auto=format&fit=crop&q=80&w=1400)
-![울산 공영주차장 이용 전 꼭 확인할 것 2](https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?auto=format&fit=crop&q=80&w=1400)
-![울산 공영주차장 이용 전 꼭 확인할 것 4](https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&q=80&w=1400)
-![울산 공영주차장 이용 전 꼭 확인할 것 6](https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&q=80&w=1600&crop=entropy)
-
 ## 핵심 요약
 울산 공영주차장 이용 전 꼭 확인할 것에 대해 울산 시민 기준으로 꼭 알아야 할 내용만 먼저 정리했습니다.
 

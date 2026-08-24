@@ -16,13 +16,6 @@ tags:
 ![울산 전통시장 할인행사, 장보기 전에 꼭 확인할 것 5](https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1400)
 ![울산 전통시장 할인행사, 장보기 전에 꼭 확인할 것 6](https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1400)
 
-![울산 전통시장 할인행사, 장보기 전에 꼭 확인할 것 2](https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&q=80&w=1400)
-![울산 전통시장 할인행사, 장보기 전에 꼭 확인할 것 4](https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1400)
-![울산 전통시장 할인행사, 장보기 전에 꼭 확인할 것 6](https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1400)
-![울산 전통시장 할인행사, 장보기 전에 꼭 확인할 것 2](https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&q=80&w=1400)
-![울산 전통시장 할인행사, 장보기 전에 꼭 확인할 것 4](https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=1400)
-![울산 전통시장 할인행사, 장보기 전에 꼭 확인할 것 6](https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=1400)
-
 ## 핵심 요약
 울산 전통시장 할인 행사 활용법이 필요한 분들을 위해 꼭 알아야 할 내용만 먼저 정리했습니다. 실제 신청이나 이용 전에 대상 조건, 운영 시간, 준비물, 접수 경로를 함께 확인하면 훨씬 수월합니다.
 

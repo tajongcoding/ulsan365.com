@@ -16,13 +16,6 @@ tags:
 ![울산 무인민원발급기, 가까운 곳과 이용시간 바로 확인 5](https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=1400)
 ![울산 무인민원발급기, 가까운 곳과 이용시간 바로 확인 6](https://upload.wikimedia.org/wikipedia/commons/3/3a/Ulsan_129.30972E_35.52012N.jpg)
 
-![울산 무인민원발급기, 가까운 곳과 이용시간 바로 확인 2](https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&q=80&w=1400)
-![울산 무인민원발급기, 가까운 곳과 이용시간 바로 확인 4](https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&q=80&w=1400)
-![울산 무인민원발급기, 가까운 곳과 이용시간 바로 확인 6](https://upload.wikimedia.org/wikipedia/commons/3/3a/Ulsan_129.30972E_35.52012N.jpg)
-![울산 무인민원발급기, 가까운 곳과 이용시간 바로 확인 2](https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&q=80&w=1400)
-![울산 무인민원발급기, 가까운 곳과 이용시간 바로 확인 4](https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1400)
-![울산 무인민원발급기, 가까운 곳과 이용시간 바로 확인 6](https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=1400)
-
 ## 핵심 요약
 울산 무인민원발급기 위치와 이용 시간 총정리이 필요한 분들을 위해 꼭 알아야 할 내용만 먼저 정리했습니다. 실제 신청이나 이용 전에 대상 조건, 운영 시간, 준비물, 접수 경로를 함께 확인하면 훨씬 수월합니다.
 

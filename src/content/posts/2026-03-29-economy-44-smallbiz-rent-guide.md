@@ -13,13 +13,6 @@ draft: false
 ![울산 소상공인 임차료 지원 정보 5](https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=1400)
 ![울산 소상공인 임차료 지원 정보 6](https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=1400)
 
-![울산 소상공인 임차료 지원 정보 2](https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 임차료 지원 정보 4](https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 임차료 지원 정보 6](https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 임차료 지원 정보 2](https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 임차료 지원 정보 4](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 임차료 지원 정보 6](https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1400)
-
 ## 왜 중요한가
 
 울산 소상공인 임차료 지원 정보는 울산 시민이 실제 생활에서 자주 찾는 정보입니다. 필요한 시점에 빠르게 확인하면 시간과 비용을 줄이는 데 도움이 됩니다.

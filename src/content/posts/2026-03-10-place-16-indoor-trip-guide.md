@@ -16,13 +16,6 @@ tags:
 ![울산 주말 실내 나들이, 실패 적은 장소만 골랐습니다 5](https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=1400)
 ![울산 주말 실내 나들이, 실패 적은 장소만 골랐습니다 6](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=1400)
 
-![울산 주말 실내 나들이, 실패 적은 장소만 골랐습니다 2](https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=1400)
-![울산 주말 실내 나들이, 실패 적은 장소만 골랐습니다 4](https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&q=80&w=1400)
-![울산 주말 실내 나들이, 실패 적은 장소만 골랐습니다 6](https://upload.wikimedia.org/wikipedia/commons/d/dd/Ulsan_taehwaru.jpg)
-![울산 주말 실내 나들이, 실패 적은 장소만 골랐습니다 2](https://upload.wikimedia.org/wikipedia/commons/7/76/Shade_Of_Taehwagang_%2871978891%29.jpeg)
-![울산 주말 실내 나들이, 실패 적은 장소만 골랐습니다 4](https://upload.wikimedia.org/wikipedia/commons/2/29/Bangudae_Petroglyphs_from_Ulsan_%285329613206%29.jpg)
-![울산 주말 실내 나들이, 실패 적은 장소만 골랐습니다 6](https://upload.wikimedia.org/wikipedia/commons/d/de/Port_Terminal_Of_Ulsan.JPG)
-
 ## 핵심 요약
 울산 주말에 가기 좋은 실내 나들이 장소이 필요한 분들을 위해 꼭 알아야 할 내용만 먼저 정리했습니다. 실제 신청이나 이용 전에 대상 조건, 운영 시간, 준비물, 접수 경로를 함께 확인하면 훨씬 수월합니다.
 

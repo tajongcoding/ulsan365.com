@@ -16,13 +16,6 @@ tags:
 ![울산 소상공인 지원정책, 놓치기 쉬운 포인트 5](https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1400)
 ![울산 소상공인 지원정책, 놓치기 쉬운 포인트 6](https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1400)
 
-![울산 소상공인 지원정책, 놓치기 쉬운 포인트 2](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 지원정책, 놓치기 쉬운 포인트 4](https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 지원정책, 놓치기 쉬운 포인트 6](https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 지원정책, 놓치기 쉬운 포인트 2](https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 지원정책, 놓치기 쉬운 포인트 4](https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 지원정책, 놓치기 쉬운 포인트 6](https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=1400)
-
 ## 핵심 요약
 울산 소상공인 지원정책, 놓치기 쉬운 포인트는 지원금 이름보다 사업 목적과 대상 업종을 먼저 확인해야 합니다. 울산 소상공인 지원은 정책자금, 경영 컨설팅, 판로 지원, 디지털 전환, 시설 개선처럼 성격이 다르기 때문에 내 가게 상황에 맞는 항목을 골라야 합니다.
 

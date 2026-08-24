@@ -16,13 +16,6 @@ tags:
 ![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 5](https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1400)
 ![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 6](https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1400)
 
-![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 2](https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=80&w=1400)
-![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 4](https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1400)
-![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 6](https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1400)
-![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 2](https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=1400)
-![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 4](https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1400)
-![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 6](https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=80&w=1400)
-
 ## 핵심 요약
 울산 야간 진료 병원 찾는 순서이 필요한 분들을 위해 꼭 알아야 할 내용만 먼저 정리했습니다. 실제 신청이나 이용 전에 대상 조건, 운영 시간, 준비물, 접수 경로를 함께 확인하면 훨씬 수월합니다.
 

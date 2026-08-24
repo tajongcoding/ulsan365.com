@@ -16,13 +16,6 @@ tags:
 ![울산 복지 지원금, 신청 전에 꼭 확인할 기준 5](https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&q=80&w=1400)
 ![울산 복지 지원금, 신청 전에 꼭 확인할 기준 6](https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&q=80&w=1400)
 
-![울산 복지 지원금, 신청 전에 꼭 확인할 기준 2](https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=1400)
-![울산 복지 지원금, 신청 전에 꼭 확인할 기준 4](https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1400)
-![울산 복지 지원금, 신청 전에 꼭 확인할 기준 6](https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&q=80&w=1400)
-![울산 복지 지원금, 신청 전에 꼭 확인할 기준 2](https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&q=80&w=1400)
-![울산 복지 지원금, 신청 전에 꼭 확인할 기준 4](https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=1400)
-![울산 복지 지원금, 신청 전에 꼭 확인할 기준 6](https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1400)
-
 ## 핵심 요약
 울산 복지 지원금, 신청 전에 꼭 확인할 기준은 금액보다 신청 자격과 접수 기간을 먼저 확인해야 합니다. 같은 복지 지원처럼 보여도 대상, 소득 기준, 필요 서류가 다를 수 있습니다.
 

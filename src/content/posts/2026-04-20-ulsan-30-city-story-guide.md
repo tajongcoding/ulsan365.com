@@ -16,13 +16,6 @@ tags:
 ![울산은 왜 살기 좋은 도시로 꼽힐까? 5](https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?auto=format&fit=crop&q=80&w=1400)
 ![울산은 왜 살기 좋은 도시로 꼽힐까? 6](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=1400)
 
-![울산은 왜 살기 좋은 도시로 꼽힐까? 2](https://upload.wikimedia.org/wikipedia/commons/3/3a/Ulsan_129.30972E_35.52012N.jpg)
-![울산은 왜 살기 좋은 도시로 꼽힐까? 4](https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&q=80&w=1400)
-![울산은 왜 살기 좋은 도시로 꼽힐까? 6](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1400)
-![울산은 왜 살기 좋은 도시로 꼽힐까? 2](https://upload.wikimedia.org/wikipedia/commons/1/1f/%EA%B0%84%EC%A0%88%EA%B3%B6%ED%92%8D%EA%B2%BD_-_panoramio.jpg)
-![울산은 왜 살기 좋은 도시로 꼽힐까? 4](https://upload.wikimedia.org/wikipedia/commons/d/dd/Ulsan_taehwaru.jpg)
-![울산은 왜 살기 좋은 도시로 꼽힐까? 6](https://upload.wikimedia.org/wikipedia/commons/3/3a/Ulsan_129.30972E_35.52012N.jpg)
-
 ## 핵심 요약
 울산이 살기 좋은 도시로 불리는 이유이 필요한 분들을 위해 꼭 알아야 할 내용만 먼저 정리했습니다. 실제 신청이나 이용 전에 대상 조건, 운영 시간, 준비물, 접수 경로를 함께 확인하면 훨씬 수월합니다.
 

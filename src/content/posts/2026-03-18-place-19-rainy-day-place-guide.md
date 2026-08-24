@@ -16,13 +16,6 @@ tags:
 ![울산 비 오는 날, 실내에서 가기 좋은 곳만 모았습니다 5](https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&q=80&w=1400)
 ![울산 비 오는 날, 실내에서 가기 좋은 곳만 모았습니다 6](https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&q=80&w=1400)
 
-![울산 비 오는 날, 실내에서 가기 좋은 곳만 모았습니다 2](https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&q=80&w=1400)
-![울산 비 오는 날, 실내에서 가기 좋은 곳만 모았습니다 4](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=1400)
-![울산 비 오는 날, 실내에서 가기 좋은 곳만 모았습니다 6](https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1400)
-![울산 비 오는 날, 실내에서 가기 좋은 곳만 모았습니다 2](https://upload.wikimedia.org/wikipedia/commons/3/3a/Ulsan_129.30972E_35.52012N.jpg)
-![울산 비 오는 날, 실내에서 가기 좋은 곳만 모았습니다 4](https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&q=80&w=1400)
-![울산 비 오는 날, 실내에서 가기 좋은 곳만 모았습니다 6](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1400)
-
 ## 핵심 요약
 울산 비 오는 날 가기 좋은 전시·실내 명소이 필요한 분들을 위해 꼭 알아야 할 내용만 먼저 정리했습니다. 실제 신청이나 이용 전에 대상 조건, 운영 시간, 준비물, 접수 경로를 함께 확인하면 훨씬 수월합니다.
 

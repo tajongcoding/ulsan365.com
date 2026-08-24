@@ -16,13 +16,6 @@ tags:
 ![울산 소상공인 정책자금, 준비 안 하면 놓치는 체크포인트 5](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1400)
 ![울산 소상공인 정책자금, 준비 안 하면 놓치는 체크포인트 6](https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1400)
 
-![울산 소상공인 정책자금, 준비 안 하면 놓치는 체크포인트 2](https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 정책자금, 준비 안 하면 놓치는 체크포인트 4](https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 정책자금, 준비 안 하면 놓치는 체크포인트 6](https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 정책자금, 준비 안 하면 놓치는 체크포인트 2](https://upload.wikimedia.org/wikipedia/commons/d/de/Port_Terminal_Of_Ulsan.JPG)
-![울산 소상공인 정책자금, 준비 안 하면 놓치는 체크포인트 4](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 정책자금, 준비 안 하면 놓치는 체크포인트 6](https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=1400)
-
 ## 핵심 요약
 울산 소상공인 정책자금 준비 체크리스트이 필요한 분들을 위해 꼭 알아야 할 내용만 먼저 정리했습니다. 실제 신청이나 이용 전에 대상 조건, 운영 시간, 준비물, 접수 경로를 함께 확인하면 훨씬 수월합니다.
 

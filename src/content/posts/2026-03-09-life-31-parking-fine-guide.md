@@ -13,13 +13,6 @@ draft: false
 ![울산 공영주차장과 주정차 과태료 확인 방법 5](https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1400)
 ![울산 공영주차장과 주정차 과태료 확인 방법 6](https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&q=80&w=1400)
 
-![울산 공영주차장과 주정차 과태료 확인 방법 2](https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?auto=format&fit=crop&q=80&w=1400)
-![울산 공영주차장과 주정차 과태료 확인 방법 4](https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&q=80&w=1400)
-![울산 공영주차장과 주정차 과태료 확인 방법 6](https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&q=80&w=1400)
-![울산 공영주차장과 주정차 과태료 확인 방법 2](https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&q=80&w=1400)
-![울산 공영주차장과 주정차 과태료 확인 방법 4](https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&q=80&w=1400)
-![울산 공영주차장과 주정차 과태료 확인 방법 6](https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&q=80&w=1400)
-
 ## 왜 중요한가
 
 울산 공영주차장과 주정차 과태료 확인 방법는 울산 시민이 실제 생활에서 자주 찾는 정보입니다. 필요한 시점에 빠르게 확인하면 시간과 비용을 줄이는 데 도움이 됩니다.

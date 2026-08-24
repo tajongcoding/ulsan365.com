@@ -16,13 +16,6 @@ tags:
 ![울산 야간약국 찾을 때 가장 빠른 방법 5](https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&q=80&w=1400)
 ![울산 야간약국 찾을 때 가장 빠른 방법 6](https://images.unsplash.com/photo-1583912267550-75846eb5bbf6?auto=format&fit=crop&q=80&w=1400)
 
-![울산 야간약국 찾을 때 가장 빠른 방법 2](https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1400)
-![울산 야간약국 찾을 때 가장 빠른 방법 4](https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&q=80&w=1400)
-![울산 야간약국 찾을 때 가장 빠른 방법 6](https://images.unsplash.com/photo-1583912267550-75846eb5bbf6?auto=format&fit=crop&q=80&w=1400)
-![울산 야간약국 찾을 때 가장 빠른 방법 2](https://upload.wikimedia.org/wikipedia/commons/3/3a/Ulsan_129.30972E_35.52012N.jpg)
-![울산 야간약국 찾을 때 가장 빠른 방법 4](https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&q=80&w=1400)
-![울산 야간약국 찾을 때 가장 빠른 방법 6](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1400)
-
 ## 핵심 요약
 울산 야간약국 찾을 때 가장 빠른 방법에 대해 울산 시민 기준으로 꼭 알아야 할 내용만 먼저 정리했습니다.
 

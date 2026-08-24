@@ -16,13 +16,6 @@ tags:
 ![울산 이번 주 행사, 가기 전 체크할 것 5](https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&q=80&w=1400)
 ![울산 이번 주 행사, 가기 전 체크할 것 6](https://images.unsplash.com/photo-1496024840928-4c417adf211d?auto=format&fit=crop&q=80&w=1400)
 
-![울산 이번 주 행사, 가기 전 체크할 것 2](https://upload.wikimedia.org/wikipedia/commons/7/76/Shade_Of_Taehwagang_%2871978891%29.jpeg)
-![울산 이번 주 행사, 가기 전 체크할 것 4](https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1400)
-![울산 이번 주 행사, 가기 전 체크할 것 6](https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=1400)
-![울산 이번 주 행사, 가기 전 체크할 것 2](https://upload.wikimedia.org/wikipedia/commons/7/76/Shade_Of_Taehwagang_%2871978891%29.jpeg)
-![울산 이번 주 행사, 가기 전 체크할 것 4](https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1400)
-![울산 이번 주 행사, 가기 전 체크할 것 6](https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=1400)
-
 ## 핵심 요약
 울산 이번 주 행사, 가기 전 체크할 것에 대해 울산 시민 기준으로 꼭 알아야 할 내용만 먼저 정리했습니다.
 

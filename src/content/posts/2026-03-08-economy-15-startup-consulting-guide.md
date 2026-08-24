@@ -16,13 +16,6 @@ tags:
 ![울산 창업상담, 그냥 가면 아쉬운 준비사항 정리 5](https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=1400)
 ![울산 창업상담, 그냥 가면 아쉬운 준비사항 정리 6](https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=1400)
 
-![울산 창업상담, 그냥 가면 아쉬운 준비사항 정리 2](https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1400)
-![울산 창업상담, 그냥 가면 아쉬운 준비사항 정리 4](https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&q=80&w=1400)
-![울산 창업상담, 그냥 가면 아쉬운 준비사항 정리 6](https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=1400)
-![울산 창업상담, 그냥 가면 아쉬운 준비사항 정리 2](https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=1400)
-![울산 창업상담, 그냥 가면 아쉬운 준비사항 정리 4](https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=1400)
-![울산 창업상담, 그냥 가면 아쉬운 준비사항 정리 6](https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1400)
-
 ## 핵심 요약
 울산 창업 상담 받을 때 준비할 것들이 필요한 분들을 위해 꼭 알아야 할 내용만 먼저 정리했습니다. 실제 신청이나 이용 전에 대상 조건, 운영 시간, 준비물, 접수 경로를 함께 확인하면 훨씬 수월합니다.
 

@@ -13,13 +13,6 @@ draft: false
 ![울산 지역 소비 혜택과 지역경제 활용법 5](https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1400)
 ![울산 지역 소비 혜택과 지역경제 활용법 6](https://upload.wikimedia.org/wikipedia/commons/e/eb/Hyundai_Heavy_Industries_Ulsan_Shipyard_from_Jujeon_Beacon_Mound_-_2023-07-24.jpg)
 
-![울산 지역 소비 혜택과 지역경제 활용법 2](https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1400)
-![울산 지역 소비 혜택과 지역경제 활용법 4](https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1400)
-![울산 지역 소비 혜택과 지역경제 활용법 6](https://upload.wikimedia.org/wikipedia/commons/e/eb/Hyundai_Heavy_Industries_Ulsan_Shipyard_from_Jujeon_Beacon_Mound_-_2023-07-24.jpg)
-![울산 지역 소비 혜택과 지역경제 활용법 2](https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=1400)
-![울산 지역 소비 혜택과 지역경제 활용법 4](https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=1400)
-![울산 지역 소비 혜택과 지역경제 활용법 6](https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&q=80&w=1400)
-
 ## 왜 중요한가
 
 울산 지역 소비 혜택과 지역경제 활용법는 울산 시민이 실제 생활에서 자주 찾는 정보입니다. 필요한 시점에 빠르게 확인하면 시간과 비용을 줄이는 데 도움이 됩니다.
