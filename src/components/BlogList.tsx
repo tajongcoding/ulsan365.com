@@ -38,7 +38,13 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
   const featuredPosts = useMemo(() => getPostVisualsForList(posts.slice(0, 8)), [posts]);
   const listPosts = posts.slice(8);
   const itemsPerPage = 5;
+  const pageWindowSize = 10;
   const totalListPages = Math.ceil(listPosts.length / itemsPerPage);
+  const pageWindowStart = Math.floor((currentPage - 1) / pageWindowSize) * pageWindowSize + 1;
+  const visiblePageNumbers = Array.from(
+    { length: Math.min(pageWindowSize, Math.max(totalListPages - pageWindowStart + 1, 0)) },
+    (_, index) => pageWindowStart + index,
+  );
   const paginatedRawListPosts = listPosts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
   const paginatedListPosts = useMemo(
     () => getPostVisualsForList(paginatedRawListPosts),
@@ -183,14 +189,14 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
                 <div className="mt-5 flex flex-wrap items-center justify-center gap-2">
                   <button
                     type="button"
-                    onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-                    disabled={currentPage === 1}
+                    onClick={() => setCurrentPage(Math.max(pageWindowStart - pageWindowSize, 1))}
+                    disabled={pageWindowStart === 1}
                     className="rounded-lg border border-slate-300 px-3 py-1.5 text-[13px] font-bold text-[#0F1A2B] disabled:cursor-not-allowed disabled:opacity-40 hover:bg-slate-50"
                   >
                     이전
                   </button>
 
-                  {Array.from({ length: totalListPages }, (_, index) => index + 1).map((pageNumber) => (
+                  {visiblePageNumbers.map((pageNumber) => (
                     <button
                       key={pageNumber}
                       type="button"
@@ -205,8 +211,8 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
 
                   <button
                     type="button"
-                    onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalListPages))}
-                    disabled={currentPage === totalListPages}
+                    onClick={() => setCurrentPage(Math.min(pageWindowStart + pageWindowSize, totalListPages))}
+                    disabled={pageWindowStart + pageWindowSize > totalListPages}
                     className="rounded-lg border border-slate-300 px-3 py-1.5 text-[13px] font-bold text-[#0F1A2B] disabled:cursor-not-allowed disabled:opacity-40 hover:bg-slate-50"
                   >
                     다음
