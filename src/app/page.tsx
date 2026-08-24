@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getAllPosts } from '../lib/posts';
-import { getPostVisuals } from '../lib/postVisuals';
+import { getPostVisualsForList } from '../lib/postVisuals';
 import { absoluteUrl } from '../lib/site';
 import AppSection from '../components/AppList';
 import CoupangBanner from '../components/CoupangBanner';
@@ -38,8 +38,7 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 3);
     { title: 'FAQ', icon: '🤔', link: '/qna' },
   ];
 
-  const featuredVisuals = latestPosts.map((post) => ({ ...post,
-    ...getPostVisuals(post), }));
+  const featuredVisuals = getPostVisualsForList(latestPosts);
 
   const faqPreviewItems = [
     { question: '울산 청년월세 지원은 어디서 신청하나요?', category: '경제 정보' },
