@@ -2,19 +2,19 @@
 title: 울산 현지인이 좋아하는 숨은 장소 이야기
 pubDate: "2026-08-12"
 summary: "울산 시민들이 좋아하는 장소를 중심으로 정리했습니다."
-category: 울산 아시나요
+category: 명소
 tags:
   - 울산
   - 울산 아시나요
   - 자동생성
 ---
 
-![울산 현지인이 좋아하는 숨은 장소 이야기 1](https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1400)
-![울산 현지인이 좋아하는 숨은 장소 이야기 2](https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1400)
-![울산 현지인이 좋아하는 숨은 장소 이야기 3](https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?auto=format&fit=crop&q=80&w=1400)
-![울산 현지인이 좋아하는 숨은 장소 이야기 4](https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&q=80&w=1400)
-![울산 현지인이 좋아하는 숨은 장소 이야기 5](https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&q=80&w=1400)
-![울산 현지인이 좋아하는 숨은 장소 이야기 6](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=1400)
+![울산 현지인이 좋아하는 숨은 장소 이야기 1](https://upload.wikimedia.org/wikipedia/commons/1/1f/%EA%B0%84%EC%A0%88%EA%B3%B6%ED%92%8D%EA%B2%BD_-_panoramio.jpg)
+![울산 현지인이 좋아하는 숨은 장소 이야기 2](https://upload.wikimedia.org/wikipedia/commons/7/76/Shade_Of_Taehwagang_%2871978891%29.jpeg)
+![울산 현지인이 좋아하는 숨은 장소 이야기 3](https://upload.wikimedia.org/wikipedia/commons/d/dd/Ulsan_taehwaru.jpg)
+![울산 현지인이 좋아하는 숨은 장소 이야기 4](https://upload.wikimedia.org/wikipedia/commons/2/29/Bangudae_Petroglyphs_from_Ulsan_%285329613206%29.jpg)
+![울산 현지인이 좋아하는 숨은 장소 이야기 5](https://upload.wikimedia.org/wikipedia/commons/3/3a/Ulsan_129.30972E_35.52012N.jpg)
+![울산 현지인이 좋아하는 숨은 장소 이야기 6](https://upload.wikimedia.org/wikipedia/commons/d/de/Port_Terminal_Of_Ulsan.JPG)
 
 ## 핵심 요약
 울산 현지인이 좋아하는 숨은 장소 이야기에 대해 울산 시민 기준으로 꼭 알아야 할 내용만 먼저 정리했습니다.
