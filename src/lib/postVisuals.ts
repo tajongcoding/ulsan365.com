@@ -220,6 +220,21 @@ const LOCAL_IMAGES: Record<string, string> = {
   '2026-08-03-life-10-ulsan-night-pharmacy-fast-guide': 'https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&q=80&w=1400',
   '2026-08-02-life-09-ulsan-night-pharmacy-fast-guide': 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=1400',
   '2026-08-02-event-11-ulsan-weekly-event-11': 'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-02-event-10-ulsan-weekly-event': 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-02-event-09-ulsan-family-event': 'https://images.unsplash.com/photo-1478147427282-58a87a120781?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-01-ulsan-09-ulsan-special-city-reasons': ulsanLocalPhotos.industry,
+  '2026-08-01-life-08-ulsan-public-parking-must-check': 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-01-event-10-ulsan-family-event': ulsanLocalPhotos.taehwagang,
+  '2026-08-01-event-09-ulsan-weekly-event': 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1400',
+  '2026-07-31-welfare-08-ulsan-senior-welfare': 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&q=80&w=1400',
+  '2026-07-31-event-09-ulsan-weekly-event': 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=1400',
+  '2026-07-31-event-09-ulsan-family-event': 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=1400',
+  '2026-07-31-economy-08-ulsan-smallbiz-support-key-points': 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1400',
+  '2026-07-30-welfare-09-ulsan-senior-welfare': 'https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&q=80&w=1400',
+  '2026-07-30-welfare-08-ulsan-welfare-support': 'https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1400',
+  '2026-07-30-economy-09-ulsan-youth-support-summary': 'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=1400',
+  '2026-07-30-economy-08-ulsan-smallbiz-support-key-points': 'https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&q=80&w=1400',
+  '2026-07-29-life-08-ulsan-night-pharmacy-fast-guide': 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=1400',
 };
 
 function getStableSeed(value: string) {
