@@ -35,12 +35,15 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
 
       return matchesCategory && matchesSearch; }); }, [allPosts, categoryFilter, searchTerm]);
 
-  const visualPosts = useMemo(() => getPostVisualsForList(posts), [posts]);
-  const featuredPosts = visualPosts.slice(0, 8);
-  const listPosts = visualPosts.slice(8);
+  const featuredPosts = useMemo(() => getPostVisualsForList(posts.slice(0, 8)), [posts]);
+  const listPosts = posts.slice(8);
   const itemsPerPage = 5;
   const totalListPages = Math.ceil(listPosts.length / itemsPerPage);
-  const paginatedListPosts = listPosts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+  const paginatedRawListPosts = listPosts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+  const paginatedListPosts = useMemo(
+    () => getPostVisualsForList(paginatedRawListPosts),
+    [paginatedRawListPosts],
+  );
   const displayTitle = categoryFilter ? getCategoryLabel(categoryFilter) : '울산 생활정보 모음';
   const displaySubtitle = categoryFilter
     ? `${getCategoryLabel(categoryFilter)} 대표 글 8개와 하단 목록을 페이지별로 확인하세요.`
