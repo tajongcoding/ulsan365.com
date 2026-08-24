@@ -83,7 +83,7 @@ const categoryThemes: Record<string, CategoryTheme> = {
     ],
   },
   명소: {
-    label: '명소·관광 정보',
+    label: '관광·명소 정보',
     toneName: 'Ulsan Scenic',
     toneDescription: '울산 여행지 안내 톤',
     badgeClass: 'bg-emerald-50/95 text-emerald-700 border border-emerald-200',
