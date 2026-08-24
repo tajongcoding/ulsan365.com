@@ -205,6 +205,21 @@ const LOCAL_IMAGES: Record<string, string> = {
   '2026-08-21-welfare-10-ulsan-welfare-support': 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1400',
   '2026-08-21-welfare-09-ulsan-senior-welfare': 'https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1400',
   '2026-08-21-ulsan-10-ulsan-hidden-spots-story': ulsanLocalPhotos.taehwaru,
+  '2026-08-06-economy-09-ulsan-smallbiz-support-key-points': 'https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-05-life-10-ulsan-public-parking-must-check': 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-05-life-10-ulsan-night-pharmacy-fast-guide': 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-05-event-09-ulsan-weekly-event': 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-05-economy-09-ulsan-youth-support-summary': 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-04-ulsan-09-ulsan-hidden-spots-story': ulsanLocalPhotos.taehwaru,
+  '2026-08-04-life-10-ulsan-public-parking-must-check': 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-04-life-10-ulsan-night-pharmacy-fast-guide': 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-04-economy-09-ulsan-smallbiz-support-key-points': 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-03-welfare-09-ulsan-welfare-support': 'https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-03-welfare-09-ulsan-senior-welfare': 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-03-life-10-ulsan-public-parking-must-check': 'https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-03-life-10-ulsan-night-pharmacy-fast-guide': 'https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-02-life-09-ulsan-night-pharmacy-fast-guide': 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-02-event-11-ulsan-weekly-event-11': 'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=1400',
 };
 
 function getStableSeed(value: string) {
