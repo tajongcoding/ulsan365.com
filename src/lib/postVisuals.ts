@@ -141,6 +141,10 @@ const listImagePools: Record<string, string[]> = {
     'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1400',
     'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1400',
     'https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&q=80&w=1400',
   ],
   경제: [
     'https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&q=80&w=1400',
@@ -170,6 +174,10 @@ const listImagePools: Record<string, string[]> = {
     'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&q=80&w=1400',
     'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=1400',
     ulsanLocalPhotos.city,
+    'https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1573164574511-73c773193279?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1573497491765-dccce02b29df?auto=format&fit=crop&q=80&w=1400',
   ],
   행사: [
     'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1400',
@@ -181,6 +189,10 @@ const listImagePools: Record<string, string[]> = {
     'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=1400',
     'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&q=80&w=1400',
     ulsanLocalPhotos.taehwagang,
+    'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=1400',
   ],
   명소: [
     ulsanLocalPhotos.ganjeolgot,
@@ -193,6 +205,11 @@ const listImagePools: Record<string, string[]> = {
     'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=1400',
     'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1400',
     'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=1400',
+    'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1400',
   ],
 };
 
@@ -797,12 +814,11 @@ export function getPostVisualsForList(posts: PostMeta[]) {
     const categoryCandidates = uniqueImages([
       ...listPool,
       ...theme.images,
-      ...visuals.galleryImages,
       visuals.fallbackImage,
-      visuals.heroImage,
     ]);
     const fallbackCandidates = uniqueImages([
       ...sharedListImagePool,
+      ...visuals.galleryImages,
       visuals.heroImage,
     ]);
     const candidates = uniqueImages([
@@ -810,13 +826,12 @@ export function getPostVisualsForList(posts: PostMeta[]) {
       ...fallbackCandidates,
     ]);
 
-    const seed = getStableSeed(post.slug || post.title || String(index));
-    const primaryOffset = categoryCandidates.length ? seed % categoryCandidates.length : 0;
+    const primaryOffset = categoryCandidates.length ? index % categoryCandidates.length : 0;
     const orderedPrimaryCandidates = [
       ...categoryCandidates.slice(primaryOffset),
       ...categoryCandidates.slice(0, primaryOffset),
     ];
-    const fallbackOffset = fallbackCandidates.length ? seed % fallbackCandidates.length : 0;
+    const fallbackOffset = fallbackCandidates.length ? index % fallbackCandidates.length : 0;
     const orderedFallbackCandidates = [
       ...fallbackCandidates.slice(fallbackOffset),
       ...fallbackCandidates.slice(0, fallbackOffset),
