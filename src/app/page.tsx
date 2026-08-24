@@ -263,7 +263,7 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 4);
           <span className="w-11 h-11 rounded-lg bg-[#0F1A2B] text-white text-[18px] font-black flex items-center justify-center shrink-0 shadow-sm">
             {idx + 1}
           </span>
-          <span className={`grid h-11 w-12 shrink-0 place-items-center rounded-lg border px-1 text-center text-[11px] font-black leading-[1.05] ${post.badgeClass}`}>
+          <span className={`grid h-12 w-14 shrink-0 place-items-center rounded-lg border px-1 text-center text-[14px] font-black leading-[1.02] tracking-tight ${post.badgeClass}`}>
             <span>
               <span className="block">{categoryTop}</span>
               <span className="block">{categoryBottom}</span>
