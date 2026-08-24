@@ -1,10 +1,3 @@
-![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 1](https://images.unsplash.com/photo-1576671081837-49000212a370?auto=format&fit=crop&q=80&w=1400)
-![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 2](https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=80&w=1400)
-![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 3](https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&q=80&w=1400)
-![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 4](https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1400)
-![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 5](https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1400)
-![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 6](https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1400)
-
 ---
 title: 울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다
 pubDate: "2026-02-23"
@@ -16,11 +9,18 @@ tags:
   - 생활정보
 ---
 
-![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 1](https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=1400)
+![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 1](https://images.unsplash.com/photo-1576671081837-49000212a370?auto=format&fit=crop&q=80&w=1400)
+![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 2](https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=80&w=1400)
+![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 3](https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&q=80&w=1400)
+![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 4](https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1400)
+![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 5](https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1400)
+![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 6](https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1400)
+
+![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 2](https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=80&w=1400)
+![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 4](https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1400)
+![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 6](https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1400)
 ![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 2](https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=1400)
-![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 3](https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1400)
 ![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 4](https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1400)
-![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 5](https://images.unsplash.com/photo-1576671081837-49000212a370?auto=format&fit=crop&q=80&w=1400)
 ![울산 야간 병원, 급할 때 이렇게 찾으면 빠릅니다 6](https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=80&w=1400)
 
 ## 핵심 요약

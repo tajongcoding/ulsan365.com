@@ -1,10 +1,3 @@
-![울산 의료급여와 건강 지원 제도 안내 1](https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1400)
-![울산 의료급여와 건강 지원 제도 안내 2](https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=1400)
-![울산 의료급여와 건강 지원 제도 안내 3](https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&q=80&w=1400)
-![울산 의료급여와 건강 지원 제도 안내 4](https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&q=80&w=1400)
-![울산 의료급여와 건강 지원 제도 안내 5](https://images.unsplash.com/photo-1583912267550-75846eb5bbf6?auto=format&fit=crop&q=80&w=1400)
-![울산 의료급여와 건강 지원 제도 안내 6](https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=1400)
-
 ---
 title: "울산 의료급여와 건강 지원 제도 안내"
 pubDate: "2026-03-23"
@@ -13,11 +6,18 @@ summary: "울산 의료급여와 건강 지원 제도 안내"
 draft: false
 ---
 
-![울산 의료급여와 건강 지원 제도 안내 1](https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1400)
+![울산 의료급여와 건강 지원 제도 안내 1](https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1400)
+![울산 의료급여와 건강 지원 제도 안내 2](https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=1400)
+![울산 의료급여와 건강 지원 제도 안내 3](https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&q=80&w=1400)
+![울산 의료급여와 건강 지원 제도 안내 4](https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&q=80&w=1400)
+![울산 의료급여와 건강 지원 제도 안내 5](https://images.unsplash.com/photo-1583912267550-75846eb5bbf6?auto=format&fit=crop&q=80&w=1400)
+![울산 의료급여와 건강 지원 제도 안내 6](https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=1400)
+
+![울산 의료급여와 건강 지원 제도 안내 2](https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=1400)
+![울산 의료급여와 건강 지원 제도 안내 4](https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&q=80&w=1400)
+![울산 의료급여와 건강 지원 제도 안내 6](https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=1400)
 ![울산 의료급여와 건강 지원 제도 안내 2](https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1400)
-![울산 의료급여와 건강 지원 제도 안내 3](https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&q=80&w=1400)
 ![울산 의료급여와 건강 지원 제도 안내 4](https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&q=80&w=1400)
-![울산 의료급여와 건강 지원 제도 안내 5](https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=1400)
 ![울산 의료급여와 건강 지원 제도 안내 6](https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=1400)
 
 ## 왜 중요한가

@@ -1,10 +1,3 @@
-![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 1](https://upload.wikimedia.org/wikipedia/commons/3/3a/Ulsan_129.30972E_35.52012N.jpg)
-![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 2](https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&q=80&w=1400)
-![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 3](https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&q=80&w=1400)
-![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 4](https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1400)
-![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 5](https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?auto=format&fit=crop&q=80&w=1400)
-![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 6](https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&q=80&w=1400)
-
 ---
 title: 울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인
 pubDate: "2026-02-28"
@@ -16,11 +9,18 @@ tags:
   - 생활정보
 ---
 
-![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 1](https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&q=80&w=1400)
+![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 1](https://upload.wikimedia.org/wikipedia/commons/3/3a/Ulsan_129.30972E_35.52012N.jpg)
+![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 2](https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&q=80&w=1400)
+![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 3](https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&q=80&w=1400)
+![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 4](https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1400)
+![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 5](https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?auto=format&fit=crop&q=80&w=1400)
+![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 6](https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&q=80&w=1400)
+
+![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 2](https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&q=80&w=1400)
+![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 4](https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1400)
+![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 6](https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&q=80&w=1400)
 ![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 2](https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1400)
-![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 3](https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=1400)
 ![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 4](https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=1400)
-![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 5](https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&q=80&w=1400)
 ![울산 어르신 교통비 지원, 놓치기 쉬운 기준부터 확인 6](https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&q=80&w=1400)
 
 ## 핵심 요약

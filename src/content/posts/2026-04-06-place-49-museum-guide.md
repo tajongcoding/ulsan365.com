@@ -1,10 +1,3 @@
-![울산 박물관과 전시관 나들이 가이드 1](https://upload.wikimedia.org/wikipedia/commons/7/76/Shade_Of_Taehwagang_%2871978891%29.jpeg)
-![울산 박물관과 전시관 나들이 가이드 2](https://upload.wikimedia.org/wikipedia/commons/d/dd/Ulsan_taehwaru.jpg)
-![울산 박물관과 전시관 나들이 가이드 3](https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1400)
-![울산 박물관과 전시관 나들이 가이드 4](https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=1400)
-![울산 박물관과 전시관 나들이 가이드 5](https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=1400)
-![울산 박물관과 전시관 나들이 가이드 6](https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=1400)
-
 ---
 title: "울산 박물관과 전시관 나들이 가이드"
 pubDate: "2026-04-06"
@@ -13,11 +6,18 @@ summary: "울산 박물관과 전시관 나들이 가이드"
 draft: false
 ---
 
-![울산 박물관과 전시관 나들이 가이드 1](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1400)
+![울산 박물관과 전시관 나들이 가이드 1](https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=1400)
+![울산 박물관과 전시관 나들이 가이드 2](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=1400)
+![울산 박물관과 전시관 나들이 가이드 3](https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&q=80&w=1400)
+![울산 박물관과 전시관 나들이 가이드 4](https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&q=80&w=1400)
+![울산 박물관과 전시관 나들이 가이드 5](https://images.unsplash.com/photo-1496024840928-4c417adf211d?auto=format&fit=crop&q=80&w=1400)
+![울산 박물관과 전시관 나들이 가이드 6](https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=1400)
+
+![울산 박물관과 전시관 나들이 가이드 2](https://upload.wikimedia.org/wikipedia/commons/d/dd/Ulsan_taehwaru.jpg)
+![울산 박물관과 전시관 나들이 가이드 4](https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=1400)
+![울산 박물관과 전시관 나들이 가이드 6](https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=1400)
 ![울산 박물관과 전시관 나들이 가이드 2](https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=1400)
-![울산 박물관과 전시관 나들이 가이드 3](https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&q=80&w=1400)
 ![울산 박물관과 전시관 나들이 가이드 4](https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&q=80&w=1400)
-![울산 박물관과 전시관 나들이 가이드 5](https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?auto=format&fit=crop&q=80&w=1400)
 ![울산 박물관과 전시관 나들이 가이드 6](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=1400)
 
 ## 왜 중요한가

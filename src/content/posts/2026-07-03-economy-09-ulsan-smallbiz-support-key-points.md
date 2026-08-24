@@ -1,10 +1,3 @@
-![울산 소상공인 지원정책, 놓치기 쉬운 포인트 1](https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 지원정책, 놓치기 쉬운 포인트 2](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 지원정책, 놓치기 쉬운 포인트 3](https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 지원정책, 놓치기 쉬운 포인트 4](https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 지원정책, 놓치기 쉬운 포인트 5](https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 지원정책, 놓치기 쉬운 포인트 6](https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1400)
-
 ---
 title: 울산 소상공인 지원정책, 놓치기 쉬운 포인트
 pubDate: "2026-07-03"
@@ -16,11 +9,18 @@ tags:
   - 자동생성
 ---
 
-![울산 소상공인 지원정책, 놓치기 쉬운 포인트 1](https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1400)
+![울산 소상공인 지원정책, 놓치기 쉬운 포인트 1](https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&q=80&w=1400)
+![울산 소상공인 지원정책, 놓치기 쉬운 포인트 2](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1400)
+![울산 소상공인 지원정책, 놓치기 쉬운 포인트 3](https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1400)
+![울산 소상공인 지원정책, 놓치기 쉬운 포인트 4](https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1400)
+![울산 소상공인 지원정책, 놓치기 쉬운 포인트 5](https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1400)
+![울산 소상공인 지원정책, 놓치기 쉬운 포인트 6](https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1400)
+
+![울산 소상공인 지원정책, 놓치기 쉬운 포인트 2](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1400)
+![울산 소상공인 지원정책, 놓치기 쉬운 포인트 4](https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1400)
+![울산 소상공인 지원정책, 놓치기 쉬운 포인트 6](https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1400)
 ![울산 소상공인 지원정책, 놓치기 쉬운 포인트 2](https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1400)
-![울산 소상공인 지원정책, 놓치기 쉬운 포인트 3](https://upload.wikimedia.org/wikipedia/commons/e/eb/Hyundai_Heavy_Industries_Ulsan_Shipyard_from_Jujeon_Beacon_Mound_-_2023-07-24.jpg)
 ![울산 소상공인 지원정책, 놓치기 쉬운 포인트 4](https://upload.wikimedia.org/wikipedia/commons/d/de/Port_Terminal_Of_Ulsan.JPG)
-![울산 소상공인 지원정책, 놓치기 쉬운 포인트 5](https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1400)
 ![울산 소상공인 지원정책, 놓치기 쉬운 포인트 6](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1400)
 
 ## 핵심 요약
