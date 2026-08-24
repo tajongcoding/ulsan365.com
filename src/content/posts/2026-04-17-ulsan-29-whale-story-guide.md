@@ -2,19 +2,19 @@
 title: 울산 고래문화, 왜 전국에서 사람들이 찾을까?
 pubDate: "2026-04-17"
 summary: "울산 고래문화가 유명한 이유 정리에 필요한 핵심 정보와 준비 사항을 울산 시민 기준으로 알기 쉽게 정리했습니다."
-category: 울산 아시나요
+category: 명소
 tags:
   - 울산
   - 울산 아시나요
   - 생활정보
 ---
 
-![울산 고래문화가 유명한 이유 정리 1](https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&q=80&w=1400)
-![울산 고래문화가 유명한 이유 정리 2](https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&q=80&w=1400)
-![울산 고래문화가 유명한 이유 정리 3](https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=1400)
-![울산 고래문화가 유명한 이유 정리 4](https://images.unsplash.com/photo-1470004914212-05527e49370b?auto=format&fit=crop&q=80&w=1400)
-![울산 고래문화가 유명한 이유 정리 5](https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&q=80&w=1400)
-![울산 고래문화가 유명한 이유 정리 6](https://images.unsplash.com/photo-1465447142348-e9952c393450?auto=format&fit=crop&q=80&w=1400)
+![울산 고래문화, 왜 전국에서 사람들이 찾을까? 1](https://upload.wikimedia.org/wikipedia/commons/1/1f/%EA%B0%84%EC%A0%88%EA%B3%B6%ED%92%8D%EA%B2%BD_-_panoramio.jpg)
+![울산 고래문화, 왜 전국에서 사람들이 찾을까? 2](https://upload.wikimedia.org/wikipedia/commons/7/76/Shade_Of_Taehwagang_%2871978891%29.jpeg)
+![울산 고래문화, 왜 전국에서 사람들이 찾을까? 3](https://upload.wikimedia.org/wikipedia/commons/d/dd/Ulsan_taehwaru.jpg)
+![울산 고래문화, 왜 전국에서 사람들이 찾을까? 4](https://upload.wikimedia.org/wikipedia/commons/2/29/Bangudae_Petroglyphs_from_Ulsan_%285329613206%29.jpg)
+![울산 고래문화, 왜 전국에서 사람들이 찾을까? 5](https://upload.wikimedia.org/wikipedia/commons/3/3a/Ulsan_129.30972E_35.52012N.jpg)
+![울산 고래문화, 왜 전국에서 사람들이 찾을까? 6](https://upload.wikimedia.org/wikipedia/commons/d/de/Port_Terminal_Of_Ulsan.JPG)
 
 ## 핵심 요약
 울산 고래문화가 유명한 이유 정리이 필요한 분들을 위해 꼭 알아야 할 내용만 먼저 정리했습니다. 실제 신청이나 이용 전에 대상 조건, 운영 시간, 준비물, 접수 경로를 함께 확인하면 훨씬 수월합니다.
