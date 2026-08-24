@@ -1,0 +1,3 @@
+Deploy trigger for ulsan365.com
+Last requested: 2026-08-24T18:00:00+09:00
+Reason: rebuild after post image normalization
