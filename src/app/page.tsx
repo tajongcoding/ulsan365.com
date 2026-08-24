@@ -26,6 +26,20 @@ const categoryColorMap: Record<string, string> = { '복지': 'bg-rose-50/95 text
   '행사': 'bg-amber-50/95 text-amber-700 border-amber-200',
   '명소': 'bg-emerald-50/95 text-emerald-700 border-emerald-200', };
 
+const popularCategoryLabelMap: Record<string, string> = {
+  '복지': '복지정보',
+  '경제': '경제정보',
+  '생활': '생활정보',
+  '행사': '행사축제',
+  '명소': '명소관광',
+};
+
+function splitPopularCategoryLabel(category: string): [string, string] {
+  const label = popularCategoryLabelMap[category] || `${category}정보`;
+
+  return [label.slice(0, 2), label.slice(2, 4) || label.slice(0, 2)];
+}
+
 export default function Home() { const latestPosts = getAllPosts().slice(0, 4);
 
   // 6개의 바로가기 링크
@@ -237,31 +251,38 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 4);
   </div>
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-    {featuredVisuals.slice(0, 4).map((post, idx) => (
-      <Link
-        key={post.slug}
-        href={`/blog/${post.slug}`}
-        className="group flex items-center gap-2.5 rounded-xl border border-slate-200 p-2.5 hover:border-[#C9A857] hover:bg-slate-50 transition-all"
-      >
-        <span className="w-8 h-8 rounded-full bg-[#0F1A2B] text-white text-[14px] font-black flex items-center justify-center shrink-0">
-          {idx + 1}
-        </span>
-        <span className={`shrink-0 rounded-lg px-2.5 py-1 text-[11px] font-black border ${post.badgeClass}`}>
-          {post.category}
-        </span>
-        <div className="relative h-12 w-16 shrink-0 overflow-hidden rounded-lg border border-slate-200 bg-slate-100">
-          <SafeImage
-            src={post.heroImage}
-            fallbackSrc={post.fallbackImage}
-            alt={post.title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          />
-        </div>
-        <span className="min-w-0 flex-1 font-bold text-[15px] text-[#0F1A2B] line-clamp-1 break-keep">
-          {post.title}
-        </span>
-      </Link>
-    ))}
+    {featuredVisuals.slice(0, 4).map((post, idx) => {
+      const [categoryTop, categoryBottom] = splitPopularCategoryLabel(post.category);
+
+      return (
+        <Link
+          key={post.slug}
+          href={`/blog/${post.slug}`}
+          className="group flex items-center gap-3 rounded-xl border border-slate-200 p-2.5 hover:border-[#C9A857] hover:bg-slate-50 transition-all"
+        >
+          <span className="w-11 h-11 rounded-lg bg-[#0F1A2B] text-white text-[18px] font-black flex items-center justify-center shrink-0 shadow-sm">
+            {idx + 1}
+          </span>
+          <span className={`grid h-11 w-12 shrink-0 place-items-center rounded-lg border px-1 text-center text-[11px] font-black leading-[1.05] ${post.badgeClass}`}>
+            <span>
+              <span className="block">{categoryTop}</span>
+              <span className="block">{categoryBottom}</span>
+            </span>
+          </span>
+          <span className="min-w-0 flex-1 font-bold text-[15px] text-[#0F1A2B] line-clamp-1 break-keep">
+            {post.title}
+          </span>
+          <div className="relative h-14 w-20 shrink-0 overflow-hidden rounded-lg border border-slate-200 bg-slate-100">
+            <SafeImage
+              src={post.heroImage}
+              fallbackSrc={post.fallbackImage}
+              alt={post.title}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        </Link>
+      );
+    })}
   </div>
 </section>
 
