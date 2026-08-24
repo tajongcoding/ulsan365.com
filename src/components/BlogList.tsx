@@ -39,7 +39,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
   const visualPosts = useMemo(() => getPostVisualsForList(posts), [posts]);
   const featuredPosts = visualPosts.slice(0, 8);
   const listPosts = visualPosts;
-  const itemsPerPage = 10;
+  const itemsPerPage = 5;
   const pageWindowSize = 10;
   const totalListPages = Math.ceil(listPosts.length / itemsPerPage);
   const pageWindowStart = Math.floor((currentPage - 1) / pageWindowSize) * pageWindowSize + 1;
@@ -145,7 +145,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
                   <p className="mt-1 text-[13px] font-semibold text-slate-500">
                     {showAllList
                       ? '현재 카테고리의 모든 글을 한 화면에서 확인하세요.'
-                      : '10개씩 페이지로 확인하고, 전체보기 버튼으로 한 번에 펼쳐보세요.'}
+                      : '5개씩 페이지로 확인하고, 전체보기 버튼으로 한 번에 펼쳐보세요.'}
                   </p>
                 </div>
                 <div className="ml-auto flex items-center gap-2">
