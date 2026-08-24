@@ -34,8 +34,9 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
 
       return matchesCategory && matchesSearch; }); }, [allPosts, categoryFilter, searchTerm]);
 
-  const featuredPosts = useMemo(() => getPostVisualsForList(posts.slice(0, 8)), [posts]);
-  const listPosts = useMemo(() => getPostVisualsForList(posts.slice(8)), [posts]);
+  const visualPosts = useMemo(() => getPostVisualsForList(posts), [posts]);
+  const featuredPosts = visualPosts.slice(0, 8);
+  const listPosts = visualPosts.slice(8);
   const listTitle = categoryFilter ? '카테고리 전체보기' : '전체 리스트';
   const displayTitle = categoryFilter ? getCategoryLabel(categoryFilter) : '울산 생활정보 모음';
   const displaySubtitle = categoryFilter
