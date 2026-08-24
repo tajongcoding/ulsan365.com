@@ -17,9 +17,81 @@ topics = [
     ("economy", "경제", "울산 청년 지원사업, 지금 보기 좋은 핵심 정리", "울산 청년 대상 지원사업 핵심만 모았습니다."),
     ("event", "행사", "울산 이번 주 행사, 가기 전 체크할 것", "울산 이번 주 행사 일정과 방문 팁을 정리했습니다."),
     ("event", "행사", "울산 가족 나들이 행사, 주말 전에 볼 정리", "가족과 함께 가기 좋은 행사 정보를 모았습니다."),
-    ("ulsan", "울산 아시나요", "울산이 특별한 도시로 불리는 이유", "울산만의 특징과 매력을 쉽게 정리했습니다."),
-    ("ulsan", "울산 아시나요", "울산 현지인이 좋아하는 숨은 장소 이야기", "울산 시민들이 좋아하는 장소를 중심으로 정리했습니다."),
+    ("ulsan", "명소", "울산이 특별한 도시로 불리는 이유", "울산만의 특징과 매력을 쉽게 정리했습니다."),
+    ("ulsan", "명소", "울산 현지인이 좋아하는 숨은 장소 이야기", "울산 시민들이 좋아하는 장소를 중심으로 정리했습니다."),
 ]
+
+IMAGE_POOLS = {
+    "parking": [
+        "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&q=80&w=1400",
+        "https://upload.wikimedia.org/wikipedia/commons/3/3a/Ulsan_129.30972E_35.52012N.jpg",
+    ],
+    "pharmacy": [
+        "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1576671081837-49000212a370?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=80&w=1400",
+    ],
+    "welfare": [
+        "https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&q=80&w=1400",
+    ],
+    "economy": [
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Hyundai_Heavy_Industries_Ulsan_Shipyard_from_Jujeon_Beacon_Mound_-_2023-07-24.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/de/Port_Terminal_Of_Ulsan.JPG",
+        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=1400",
+    ],
+    "event": [
+        "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=1400",
+        "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=1400",
+        "https://upload.wikimedia.org/wikipedia/commons/7/76/Shade_Of_Taehwagang_%2871978891%29.jpeg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/dd/Ulsan_taehwaru.jpg",
+    ],
+    "scenic": [
+        "https://upload.wikimedia.org/wikipedia/commons/1/1f/%EA%B0%84%EC%A0%88%EA%B3%B6%ED%92%8D%EA%B2%BD_-_panoramio.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/76/Shade_Of_Taehwagang_%2871978891%29.jpeg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/dd/Ulsan_taehwaru.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/29/Bangudae_Petroglyphs_from_Ulsan_%285329613206%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/3a/Ulsan_129.30972E_35.52012N.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/de/Port_Terminal_Of_Ulsan.JPG",
+    ],
+}
+
+def select_image_pool(group: str, category: str, title: str) -> list[str]:
+    if "공영주차장" in title or "주차" in title:
+        return IMAGE_POOLS["parking"]
+    if "야간약국" in title or "약국" in title:
+        return IMAGE_POOLS["pharmacy"]
+    if category == "복지":
+        return IMAGE_POOLS["welfare"]
+    if category == "경제":
+        return IMAGE_POOLS["economy"]
+    if category == "행사":
+        return IMAGE_POOLS["event"]
+    if group == "ulsan" or category == "명소":
+        return IMAGE_POOLS["scenic"]
+    return IMAGE_POOLS["parking"]
+
+def build_image_block(title: str, group: str, category: str) -> str:
+    images = select_image_pool(group, category, title)
+    return "\n".join(
+        f"![{title} {index + 1}]({url})" for index, url in enumerate(images[:6])
+    )
 
 used_titles = set()
 for p in POSTS_DIR.glob("*.md"):
@@ -86,12 +158,7 @@ tags:
   - 자동생성
 ---
 
-![{title} 1](https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1400)
-![{title} 2](https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1400)
-![{title} 3](https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?auto=format&fit=crop&q=80&w=1400)
-![{title} 4](https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&q=80&w=1400)
-![{title} 5](https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&q=80&w=1400)
-![{title} 6](https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=1400)
+{image_block}
 
 ## 핵심 요약
 {title}에 대해 울산 시민 기준으로 꼭 알아야 할 내용만 먼저 정리했습니다.
@@ -139,6 +206,7 @@ for group, category, title, summary in picked:
             pubDate=today,
             summary=summary,
             category=category,
+            image_block=build_image_block(title, group, category),
         ),
         encoding="utf-8",
     )
