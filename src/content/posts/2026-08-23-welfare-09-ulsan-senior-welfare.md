@@ -9,12 +9,12 @@ tags:
   - 자동생성
 ---
 
-![울산 어르신 복지 혜택, 지금 확인해야 할 내용 1](https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1400)
-![울산 어르신 복지 혜택, 지금 확인해야 할 내용 2](https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=1400)
-![울산 어르신 복지 혜택, 지금 확인해야 할 내용 3](https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=1400)
-![울산 어르신 복지 혜택, 지금 확인해야 할 내용 4](https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&q=80&w=1400)
-![울산 어르신 복지 혜택, 지금 확인해야 할 내용 5](https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&q=80&w=1400)
-![울산 어르신 복지 혜택, 지금 확인해야 할 내용 6](https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=1400)
+![울산 어르신 복지 혜택, 지금 확인해야 할 내용 1](https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&q=80&w=1400)
+![울산 어르신 복지 혜택, 지금 확인해야 할 내용 2](https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=1400)
+![울산 어르신 복지 혜택, 지금 확인해야 할 내용 3](https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=1400)
+![울산 어르신 복지 혜택, 지금 확인해야 할 내용 4](https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1400)
+![울산 어르신 복지 혜택, 지금 확인해야 할 내용 5](https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1400)
+![울산 어르신 복지 혜택, 지금 확인해야 할 내용 6](https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&q=80&w=1400)
 
 ## 핵심 요약
 울산 어르신 복지 혜택, 지금 확인해야 할 내용은 어르신 본인뿐 아니라 가족이 함께 확인하면 도움이 됩니다. 기초연금, 돌봄, 교통, 건강, 일자리처럼 분야가 나뉘어 있어 필요한 혜택을 항목별로 보는 것이 좋습니다.

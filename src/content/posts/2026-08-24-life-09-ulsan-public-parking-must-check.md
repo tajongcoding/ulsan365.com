@@ -9,12 +9,12 @@ tags:
   - 자동생성
 ---
 
-![울산 공영주차장 이용 전 꼭 확인할 것 1](https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?auto=format&fit=crop&q=80&w=1400)
-![울산 공영주차장 이용 전 꼭 확인할 것 2](https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&q=80&w=1400)
-![울산 공영주차장 이용 전 꼭 확인할 것 3](https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&q=80&w=1400)
-![울산 공영주차장 이용 전 꼭 확인할 것 4](https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1400)
-![울산 공영주차장 이용 전 꼭 확인할 것 5](https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&q=80&w=1400)
-![울산 공영주차장 이용 전 꼭 확인할 것 6](https://upload.wikimedia.org/wikipedia/commons/3/3a/Ulsan_129.30972E_35.52012N.jpg)
+![울산 공영주차장 이용 전 꼭 확인할 것 1](https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=1400)
+![울산 공영주차장 이용 전 꼭 확인할 것 2](https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&q=80&w=1400)
+![울산 공영주차장 이용 전 꼭 확인할 것 3](https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&q=80&w=1400)
+![울산 공영주차장 이용 전 꼭 확인할 것 4](https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?auto=format&fit=crop&q=80&w=1400)
+![울산 공영주차장 이용 전 꼭 확인할 것 5](https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=1400)
+![울산 공영주차장 이용 전 꼭 확인할 것 6](https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&q=80&w=1400)
 
 ## 핵심 요약
 울산 공영주차장 이용 전 꼭 확인할 것은 목적지 근처 주차장만 찾는 것보다 요금, 운영시간, 감면 기준, 혼잡 시간을 함께 확인하는 것이 중요합니다. 병원, 전통시장, 관공서, 태화강 주변처럼 방문 목적이 뚜렷한 곳은 공영주차장과 민영주차장의 차이를 먼저 구분하면 헛걸음을 줄일 수 있습니다.

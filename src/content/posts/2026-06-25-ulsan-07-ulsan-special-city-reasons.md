@@ -9,7 +9,7 @@ tags:
   - 자동생성
 ---
 
-![울산이 특별한 도시로 불리는 이유 1](https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=1400)
+![울산이 특별한 도시로 불리는 이유 1](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1600&crop=entropy)
 ![울산이 특별한 도시로 불리는 이유 2](https://upload.wikimedia.org/wikipedia/commons/1/1f/%EA%B0%84%EC%A0%88%EA%B3%B6%ED%92%8D%EA%B2%BD_-_panoramio.jpg)
 ![울산이 특별한 도시로 불리는 이유 3](https://upload.wikimedia.org/wikipedia/commons/7/76/Shade_Of_Taehwagang_%2871978891%29.jpeg)
 ![울산이 특별한 도시로 불리는 이유 4](https://upload.wikimedia.org/wikipedia/commons/d/dd/Ulsan_taehwaru.jpg)
