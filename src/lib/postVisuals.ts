@@ -21,6 +21,114 @@ const ulsanLocalPhotos = {
   ganjeolgot: 'https://upload.wikimedia.org/wikipedia/commons/1/1f/%EA%B0%84%EC%A0%88%EA%B3%B6%ED%92%8D%EA%B2%BD_-_panoramio.jpg',
 };
 
+const topicImageRules: Array<{ categories?: string[]; keywords: string[]; image: string }> = [
+  {
+    categories: ['복지'],
+    keywords: ['어르신', '노인', '시니어', 'elderly', 'senior'],
+    image: 'https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&q=80&w=1400',
+  },
+  {
+    categories: ['복지'],
+    keywords: ['의료', '건강', '장애', '병원', '진료', 'medical', 'disabled'],
+    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1400',
+  },
+  {
+    categories: ['복지'],
+    keywords: ['출산', '보육', '양육', '아이', '한부모', '가족돌봄', '돌봄', 'childcare', 'birth'],
+    image: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=1400',
+  },
+  {
+    categories: ['복지', '경제'],
+    keywords: ['지원금', '복지', '신청', '혜택', '보조금', '급여', 'support'],
+    image: 'https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=1400',
+  },
+  {
+    categories: ['경제'],
+    keywords: ['소상공인', '창업', '사업', '시장', '상권', 'business', 'startup'],
+    image: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=1400',
+  },
+  {
+    categories: ['경제'],
+    keywords: ['청년', '일자리', '취업', '채용', 'job', 'youth'],
+    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1400',
+  },
+  {
+    categories: ['경제'],
+    keywords: ['세금', '납부', '금융', '대출', '자금', '회계', 'money', 'finance'],
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1400',
+  },
+  {
+    categories: ['경제', '명소'],
+    keywords: ['산업', '공장', '제조', '현대', '조선소', 'industry'],
+    image: ulsanLocalPhotos.industry,
+  },
+  {
+    categories: ['생활'],
+    keywords: ['주차', '교통', '버스', '차량', '주정차', 'parking', 'traffic', 'bus'],
+    image: 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&q=80&w=1400',
+  },
+  {
+    categories: ['생활'],
+    keywords: ['약국', '야간약국', '병원', '의료', '약', 'pharmacy', 'clinic'],
+    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=1400',
+  },
+  {
+    categories: ['생활'],
+    keywords: ['폐기물', '쓰레기', '분리수거', '배출', '재활용', 'waste', 'recycle'],
+    image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=1400',
+  },
+  {
+    categories: ['생활'],
+    keywords: ['도서관', '책', '회원증', 'library', 'book'],
+    image: 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&q=80&w=1400',
+  },
+  {
+    categories: ['생활'],
+    keywords: ['수도', '요금', '납부', '상하수도', 'water'],
+    image: 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&q=80&w=1400',
+  },
+  {
+    categories: ['생활'],
+    keywords: ['민원', '전입', '신고', '분실물', '발급', '서류', 'document'],
+    image: 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&q=80&w=1400',
+  },
+  {
+    categories: ['행사'],
+    keywords: ['공연', '음악', '콘서트', '무대', '문화', 'concert', 'performance'],
+    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=1400',
+  },
+  {
+    categories: ['행사'],
+    keywords: ['축제', '행사', '주말', '나들이', '가족', 'festival', 'event'],
+    image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1400',
+  },
+  {
+    categories: ['명소', '행사'],
+    keywords: ['태화강', '국가정원', 'river'],
+    image: ulsanLocalPhotos.taehwagang,
+  },
+  {
+    categories: ['명소'],
+    keywords: ['간절곶', '해맞이', 'sunrise'],
+    image: ulsanLocalPhotos.ganjeolgot,
+  },
+  {
+    categories: ['명소'],
+    keywords: ['반구대', '암각화', 'petroglyph'],
+    image: ulsanLocalPhotos.bangudae,
+  },
+  {
+    categories: ['명소'],
+    keywords: ['항구', '항만', '바다', '해변', 'port'],
+    image: ulsanLocalPhotos.port,
+  },
+  {
+    categories: ['명소'],
+    keywords: ['도시', '시내', '야경', '현지인', '숨은', 'city'],
+    image: ulsanLocalPhotos.city,
+  },
+];
+
 const categoryThemes: Record<string, CategoryTheme> = {
   복지: {
     label: '복지 정보',
@@ -776,6 +884,19 @@ function getStableSeed(value: string) {
   return value.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
 }
 
+function getTopicMatchedImage(post: PostMeta) {
+  const haystack = [post.slug, post.title, post.summary, ...(post.tags || [])]
+    .join(' ')
+    .toLowerCase();
+
+  return topicImageRules.find((rule) => {
+    const matchesCategory = !rule.categories || rule.categories.includes(post.category);
+    const matchesKeyword = rule.keywords.some((keyword) => haystack.includes(keyword.toLowerCase()));
+
+    return matchesCategory && matchesKeyword;
+  })?.image || null;
+}
+
 function uniqueImages(images: Array<string | null | undefined>) {
   return images.filter((image, index, source): image is string => Boolean(image) && source.indexOf(image) === index);
 }
@@ -790,8 +911,9 @@ export function getPostVisuals(post: PostMeta) {
   const seedKey = post.slug || post.title || category;
   const imageIndex = getStableSeed(seedKey) % theme.images.length;
   const fallbackImage = theme.images[imageIndex] || categoryThemes['기타'].images[0];
-  const heroImage = LOCAL_IMAGES[post.slug] || post.thumbnailUrl || fallbackImage;
-  const galleryImages = uniqueImages([heroImage, ...theme.images, fallbackImage]).slice(0, 4);
+  const topicImage = getTopicMatchedImage(post);
+  const heroImage = LOCAL_IMAGES[post.slug] || topicImage || post.thumbnailUrl || fallbackImage;
+  const galleryImages = uniqueImages([heroImage, topicImage, ...theme.images, fallbackImage]).slice(0, 4);
 
   return {
     ...theme,
@@ -812,6 +934,8 @@ export function getPostVisualsForList(posts: PostMeta[]) {
     const theme = categoryThemes[category] || categoryThemes['기타'];
     const listPool = listImagePools[category] || listImagePools['명소'] || [];
     const categoryCandidates = uniqueImages([
+      visuals.heroImage,
+      ...visuals.galleryImages,
       ...listPool,
       ...theme.images,
       visuals.fallbackImage,
