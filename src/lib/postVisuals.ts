@@ -911,8 +911,9 @@ export function getPostVisuals(post: PostMeta) {
   const seedKey = post.slug || post.title || category;
   const imageIndex = getStableSeed(seedKey) % theme.images.length;
   const fallbackImage = theme.images[imageIndex] || categoryThemes['기타'].images[0];
+  const explicitImage = LOCAL_IMAGES[post.slug] || null;
   const topicImage = getTopicMatchedImage(post);
-  const heroImage = LOCAL_IMAGES[post.slug] || topicImage || post.thumbnailUrl || fallbackImage;
+  const heroImage = explicitImage || topicImage || post.thumbnailUrl || fallbackImage;
   const galleryImages = uniqueImages([heroImage, topicImage, ...theme.images, fallbackImage]).slice(0, 4);
 
   return {
@@ -922,6 +923,7 @@ export function getPostVisuals(post: PostMeta) {
     fallbackImage,
     galleryImages,
     coverImage: heroImage,
+    hasExplicitImage: Boolean(explicitImage),
   };
 }
 
@@ -960,10 +962,12 @@ export function getPostVisualsForList(posts: PostMeta[]) {
       ...fallbackCandidates.slice(fallbackOffset),
       ...fallbackCandidates.slice(0, fallbackOffset),
     ];
-    const heroImage = (!usedImages.has(visuals.heroImage) ? visuals.heroImage : undefined)
-      || orderedPrimaryCandidates.find((image) => !usedImages.has(image))
-      || orderedFallbackCandidates.find((image) => !usedImages.has(image))
-      || visuals.heroImage;
+    const heroImage = visuals.hasExplicitImage
+      ? visuals.heroImage
+      : (!usedImages.has(visuals.heroImage) ? visuals.heroImage : undefined)
+        || orderedPrimaryCandidates.find((image) => !usedImages.has(image))
+        || orderedFallbackCandidates.find((image) => !usedImages.has(image))
+        || visuals.heroImage;
 
     usedImages.add(heroImage);
 
