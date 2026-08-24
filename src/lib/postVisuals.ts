@@ -130,6 +130,21 @@ const categoryThemes: Record<string, CategoryTheme> = {
 };
 
 const LOCAL_IMAGES: Record<string, string> = {
+  '2026-08-13-life-10-ulsan-public-parking-must-check': 'https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-13-life-09-ulsan-public-parking-must-check': 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-13-event-10-ulsan-weekly-event': 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-12-welfare-10-ulsan-senior-welfare': 'https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-12-ulsan-10-ulsan-hidden-spots-story': ulsanLocalPhotos.taehwaru,
+  '2026-08-12-life-09-ulsan-night-pharmacy-fast-guide': 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-12-event-09-ulsan-family-event': ulsanLocalPhotos.taehwagang,
+  '2026-08-11-ulsan-09-ulsan-hidden-spots-story': ulsanLocalPhotos.bangudae,
+  '2026-08-11-life-10-ulsan-public-parking-must-check': 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-11-event-10-ulsan-weekly-event': 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-11-economy-09-ulsan-smallbiz-support-key-points': 'https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-10-ulsan-11-ulsan-hidden-spots-story-11': ulsanLocalPhotos.ganjeolgot,
+  '2026-08-10-ulsan-10-ulsan-hidden-spots-story': ulsanLocalPhotos.taehwagang,
+  '2026-08-10-life-09-ulsan-public-parking-must-check': 'https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&q=80&w=1400',
+  '2026-08-10-event-09-ulsan-weekly-event': 'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=1400',
   '2026-08-17-life-09-ulsan-public-parking-must-check': 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&q=80&w=1400',
   '2026-08-17-economy-10-ulsan-youth-support-summary': 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1400',
   '2026-08-16-welfare-09-ulsan-senior-welfare': 'https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&q=80&w=1400',
