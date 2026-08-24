@@ -34,6 +34,9 @@
 - 명소 / city: src/content/posts/2026-08-23-ulsan-09-ulsan-special-city-reasons.md
 - 명소 / scenic: src/content/posts/2026-08-21-ulsan-10-ulsan-hidden-spots-story.md
 
+배포 재트리거:
+- 2026-08-24 12:26 KST: 최신 본문 보강 상태가 Cloudflare Pages에 다시 올라가도록 main push를 추가 실행했습니다.
+
 다음 작업:
 - 같은 기준으로 다음 15개 묶음 처리
 - 반복 제목 글의 중복 노출 여부 점검
