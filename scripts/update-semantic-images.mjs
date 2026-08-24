@@ -76,7 +76,7 @@ function buildImageBlock(title, images) {
 function replaceMarkdownImages(content, title, images) {
   const block = buildImageBlock(title, images);
   let count = 0;
-  const next = content.replace(/!\[[^\]]*\]\([^)]+\]/g, () => {
+  const next = content.replace(/!\[[^\]]*\]\([^)]+\)/g, () => {
     count += 1;
     return count === 1 ? block : '';
   }).replace(/\n{3,}/g, '\n\n');
