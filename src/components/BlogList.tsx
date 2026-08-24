@@ -50,9 +50,12 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
   const displayedListPosts = showAllList
     ? listPosts
     : listPosts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
-  const displayedListColumns = showAllList
-    ? [displayedListPosts]
-    : [displayedListPosts.slice(0, 5), displayedListPosts.slice(5, 10)];
+  const displayedListGroups = showAllList
+    ? Array.from({ length: Math.ceil(displayedListPosts.length / itemsPerPage) }, (_, groupIndex) => {
+        const groupPosts = displayedListPosts.slice(groupIndex * itemsPerPage, (groupIndex + 1) * itemsPerPage);
+        return [groupPosts.slice(0, 5), groupPosts.slice(5, 10)];
+      })
+    : [[displayedListPosts.slice(0, 5), displayedListPosts.slice(5, 10)]];
   const listTitle = showAllList ? '카테고리 전체보기' : '목록 리스트';
   const displayTitle = categoryFilter ? getCategoryLabel(categoryFilter) : '울산 생활정보 모음';
   const displaySubtitle = categoryFilter
@@ -147,7 +150,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
                   <h2 className="text-[22px] md:text-[26px] font-black text-[#0F1A2B]">{listTitle}</h2>
                   <p className="mt-1 text-[13px] font-semibold text-slate-500">
                     {showAllList
-                      ? '현재 카테고리의 모든 글을 한 화면에서 확인하세요.'
+                      ? '현재 카테고리의 모든 글을 10개 단위로 좌우 5개씩 확인하세요.'
                       : '10개씩 좌우 5개로 나눠 확인하고, 전체보기 버튼으로 한 번에 펼쳐보세요.'}
                   </p>
                 </div>
@@ -168,9 +171,11 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
                 </div>
               </div>
 
-              <div className={showAllList ? 'flex flex-col gap-2.5' : 'grid grid-cols-1 lg:grid-cols-2 gap-2.5 lg:gap-4'}>
-                {displayedListColumns.map((columnPosts, columnIndex) => (
-                  <div key={columnIndex} className="flex flex-col gap-2.5">
+              <div className="flex flex-col gap-4">
+                {displayedListGroups.map((groupColumns, groupIndex) => (
+                  <div key={groupIndex} className="grid grid-cols-1 lg:grid-cols-2 gap-2.5 lg:gap-4">
+                    {groupColumns.map((columnPosts, columnIndex) => (
+                      <div key={columnIndex} className="flex flex-col gap-2.5">
                     {columnPosts.map((post) => { const { heroImage, fallbackImage, badgeClass } = post;
 
                       return (
@@ -180,19 +185,17 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
                           className="group overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm hover:-translate-y-0.5 hover:border-[#C9A857] hover:shadow-md transition-all"
                         >
                           <div className="flex flex-col sm:flex-row">
-                            {!showAllList && (
-                              <div className="relative h-[88px] sm:h-[92px] sm:w-[128px] sm:min-w-[128px] overflow-hidden bg-slate-100">
-                                <SafeImage
-                                  src={heroImage}
-                                  fallbackSrc={fallbackImage}
-                                  alt={post.title}
-                                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                />
-                                <span className={`absolute left-2 top-2 inline-flex rounded-full px-1.5 py-0.5 text-[9px] font-black shadow-sm ${badgeClass}`}>
-                                  {post.category}
-                                </span>
-                              </div>
-                            )}
+                            <div className="relative h-[88px] sm:h-[92px] sm:w-[128px] sm:min-w-[128px] overflow-hidden bg-slate-100">
+                              <SafeImage
+                                src={heroImage}
+                                fallbackSrc={fallbackImage}
+                                alt={post.title}
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                              />
+                              <span className={`absolute left-2 top-2 inline-flex rounded-full px-1.5 py-0.5 text-[9px] font-black shadow-sm ${badgeClass}`}>
+                                {post.category}
+                              </span>
+                            </div>
 
                             <div className="flex-1 p-2.5 sm:p-3">
                               <div className="flex flex-wrap items-center gap-1 mb-1.5 text-[10px] text-slate-500">
@@ -216,6 +219,8 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
                           </div>
                         </Link>
                       ); })}
+                      </div>
+                    ))}
                   </div>
                 ))}
               </div>
