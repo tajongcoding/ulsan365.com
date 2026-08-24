@@ -962,12 +962,10 @@ export function getPostVisualsForList(posts: PostMeta[]) {
       ...fallbackCandidates.slice(fallbackOffset),
       ...fallbackCandidates.slice(0, fallbackOffset),
     ];
-    const heroImage = visuals.hasExplicitImage
-      ? visuals.heroImage
-      : (!usedImages.has(visuals.heroImage) ? visuals.heroImage : undefined)
-        || orderedPrimaryCandidates.find((image) => !usedImages.has(image))
-        || orderedFallbackCandidates.find((image) => !usedImages.has(image))
-        || visuals.heroImage;
+    const heroImage = (!usedImages.has(visuals.heroImage) ? visuals.heroImage : undefined)
+      || orderedPrimaryCandidates.find((image) => !usedImages.has(image))
+      || orderedFallbackCandidates.find((image) => !usedImages.has(image))
+      || visuals.heroImage;
 
     usedImages.add(heroImage);
 
