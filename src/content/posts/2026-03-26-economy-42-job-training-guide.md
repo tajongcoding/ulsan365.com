@@ -6,6 +6,13 @@ summary: "울산 직업훈련 프로그램 신청 가이드"
 draft: false
 ---
 
+![울산 직업훈련 프로그램 신청 가이드 1](https://upload.wikimedia.org/wikipedia/commons/e/eb/Hyundai_Heavy_Industries_Ulsan_Shipyard_from_Jujeon_Beacon_Mound_-_2023-07-24.jpg)
+![울산 직업훈련 프로그램 신청 가이드 2](https://upload.wikimedia.org/wikipedia/commons/d/de/Port_Terminal_Of_Ulsan.JPG)
+![울산 직업훈련 프로그램 신청 가이드 3](https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1400)
+![울산 직업훈련 프로그램 신청 가이드 4](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1400)
+![울산 직업훈련 프로그램 신청 가이드 5](https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&q=80&w=1400)
+![울산 직업훈련 프로그램 신청 가이드 6](https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=1400)
+
 ## 왜 중요한가
 
 울산 직업훈련 프로그램 신청 가이드는 울산 시민이 실제 생활에서 자주 찾는 정보입니다. 필요한 시점에 빠르게 확인하면 시간과 비용을 줄이는 데 도움이 됩니다.
