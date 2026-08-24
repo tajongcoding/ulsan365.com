@@ -69,7 +69,7 @@ function formatArchiveDate(index: number): string {
 }
 
 function formatKoreanMonthDay(date: string): string {
-  const [, month, day] = date.match(/^(\d{4})-(\d{2})-(\d{2})$/) || [];
+  const [, , month, day] = date.match(/^(\d{4})-(\d{2})-(\d{2})$/) || [];
 
   if (!month || !day) {
     return '최신';
