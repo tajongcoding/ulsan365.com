@@ -100,9 +100,10 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
     .filter((item) => item.slug !== post.slug && item.category === post.category)
     .slice(0, 3);
   const visuals = getPostVisuals(post);
+  const bodyGalleryImages = visuals.galleryImages.filter((image) => image !== visuals.heroImage);
   const renderedContent = replacePostImagesWithMatchedGallery(
     post.content,
-    visuals.galleryImages.length ? visuals.galleryImages : [visuals.heroImage],
+    bodyGalleryImages,
     post.title,
   );
 
