@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
-import { Suspense, useEffect, useMemo, useState } from 'react';
+import { Suspense, useMemo, useState } from 'react';
 import { getCategoryLabel, getPostVisualsForList } from '@/lib/postVisuals';
 import CoupangBanner from './CoupangBanner';
 import GoogleAdSlot from './GoogleAdSlot';
@@ -21,7 +21,6 @@ interface PostMeta { slug: string;
 function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchParams = useSearchParams();
   const categoryFilter = searchParams.get('category') || '';
   const [searchTerm, setSearchTerm] = useState('');
-  const [currentPage, setCurrentPage] = useState(1);
 
   const posts = useMemo(() => { const normalized = searchTerm.trim().toLowerCase();
 
@@ -36,26 +35,12 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
       return matchesCategory && matchesSearch; }); }, [allPosts, categoryFilter, searchTerm]);
 
   const featuredPosts = useMemo(() => getPostVisualsForList(posts.slice(0, 8)), [posts]);
-  const listPosts = posts.slice(8);
-  const itemsPerPage = 5;
-  const pageWindowSize = 10;
-  const totalListPages = Math.ceil(listPosts.length / itemsPerPage);
-  const pageWindowStart = Math.floor((currentPage - 1) / pageWindowSize) * pageWindowSize + 1;
-  const visiblePageNumbers = Array.from(
-    { length: Math.min(pageWindowSize, Math.max(totalListPages - pageWindowStart + 1, 0)) },
-    (_, index) => pageWindowStart + index,
-  );
-  const paginatedRawListPosts = listPosts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
-  const paginatedListPosts = useMemo(
-    () => getPostVisualsForList(paginatedRawListPosts),
-    [paginatedRawListPosts],
-  );
+  const listPosts = useMemo(() => getPostVisualsForList(posts.slice(8)), [posts]);
+  const listTitle = categoryFilter ? '카테고리 전체보기' : '전체 리스트';
   const displayTitle = categoryFilter ? getCategoryLabel(categoryFilter) : '울산 생활정보 모음';
   const displaySubtitle = categoryFilter
-    ? `${getCategoryLabel(categoryFilter)} 대표 글 8개와 하단 목록을 페이지별로 확인하세요.`
-    : '울산광역시의 유용한 생활·복지·행사 정보를 대표 글 8개와 페이지형 목록으로 정리했습니다.';
-
-  useEffect(() => { setCurrentPage(1); }, [categoryFilter, searchTerm]);
+    ? `${getCategoryLabel(categoryFilter)} 대표 글 8개와 전체 목록을 한 번에 확인하세요.`
+    : '울산광역시의 유용한 생활·복지·행사 정보를 대표 글 8개와 전체 목록으로 정리했습니다.';
 
   return (
     <div className="flex flex-col">
@@ -135,12 +120,20 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
 
           {listPosts.length > 0 && (
             <section>
-              <div className="mb-5 border-b border-slate-200 pb-3">
-                <h2 className="text-[22px] md:text-[26px] font-black text-[#0F1A2B]">목록 리스트</h2>
+              <div className="mb-5 flex flex-wrap items-end justify-between gap-2 border-b border-slate-200 pb-3">
+                <div>
+                  <h2 className="text-[22px] md:text-[26px] font-black text-[#0F1A2B]">{listTitle}</h2>
+                  <p className="mt-1 text-[13px] font-semibold text-slate-500">
+                    대표 글 아래의 모든 글을 한 화면에서 확인하세요.
+                  </p>
+                </div>
+                <span className="rounded-full bg-slate-100 px-3 py-1 text-[12px] font-black text-slate-600">
+                  총 {listPosts.length}개
+                </span>
               </div>
 
               <div className="flex flex-col gap-2.5">
-                {paginatedListPosts.map((post) => { const { heroImage, fallbackImage, badgeClass } = post;
+                {listPosts.map((post) => { const { heroImage, fallbackImage, badgeClass } = post;
 
                   return (
                     <Link
@@ -184,41 +177,6 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
                     </Link>
                   ); })}
               </div>
-
-              {totalListPages > 1 && (
-                <div className="mt-5 flex flex-wrap items-center justify-center gap-2">
-                  <button
-                    type="button"
-                    onClick={() => setCurrentPage(Math.max(pageWindowStart - pageWindowSize, 1))}
-                    disabled={pageWindowStart === 1}
-                    className="rounded-lg border border-slate-300 px-3 py-1.5 text-[13px] font-bold text-[#0F1A2B] disabled:cursor-not-allowed disabled:opacity-40 hover:bg-slate-50"
-                  >
-                    이전
-                  </button>
-
-                  {visiblePageNumbers.map((pageNumber) => (
-                    <button
-                      key={pageNumber}
-                      type="button"
-                      onClick={() => setCurrentPage(pageNumber)}
-                      className={`rounded-lg px-3 py-1.5 text-[13px] font-bold transition-colors ${ currentPage === pageNumber
-                          ? 'bg-[#0F1A2B] text-white'
-                          : 'border border-slate-300 text-[#0F1A2B] hover:bg-slate-50' }`}
-                    >
-                      {pageNumber}
-                    </button>
-                  ))}
-
-                  <button
-                    type="button"
-                    onClick={() => setCurrentPage(Math.min(pageWindowStart + pageWindowSize, totalListPages))}
-                    disabled={pageWindowStart + pageWindowSize > totalListPages}
-                    className="rounded-lg border border-slate-300 px-3 py-1.5 text-[13px] font-bold text-[#0F1A2B] disabled:cursor-not-allowed disabled:opacity-40 hover:bg-slate-50"
-                  >
-                    다음
-                  </button>
-                </div>
-              )}
             </section>
           )}
         </>

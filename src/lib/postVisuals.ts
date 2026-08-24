@@ -196,6 +196,8 @@ const listImagePools: Record<string, string[]> = {
   ],
 };
 
+const sharedListImagePool = uniqueImages(Object.values(listImagePools).flat());
+
 const LOCAL_IMAGES: Record<string, string> = {
   '2026-08-09-welfare-10-ulsan-senior-welfare': 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&q=80&w=1400',
   '2026-08-09-welfare-09-ulsan-welfare-support': 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1400',
@@ -797,6 +799,7 @@ export function getPostVisualsForList(posts: PostMeta[]) {
       ...listPool,
       ...theme.images,
       ...visuals.galleryImages,
+      ...sharedListImagePool,
       visuals.fallbackImage,
     ]);
 

@@ -47,6 +47,10 @@ function normalizeCategory(category: unknown): string {
   return value || '기타';
 }
 
+function normalizeTitleKey(title: string): string {
+  return title.replace(/\s+/g, ' ').trim().toLowerCase();
+}
+
 // 모든 블로그 글의 메타 정보를 가져오는 함수 (목록 페이지에서 사용)
 export function getAllPosts(): PostMeta[] {
   // 폴더가 없으면 빈 배열 반환
@@ -126,7 +130,22 @@ export function getAllPosts(): PostMeta[] {
     return a.date < b.date ? 1 : -1;
   });
 
-  return posts;
+  const seenTitleKeys = new Set<string>();
+
+  return posts.filter((post) => {
+    const titleKey = normalizeTitleKey(post.title);
+
+    if (!titleKey) {
+      return true;
+    }
+
+    if (seenTitleKeys.has(titleKey)) {
+      return false;
+    }
+
+    seenTitleKeys.add(titleKey);
+    return true;
+  });
 }
 
 // 특정 글의 전체 내용을 가져오는 함수 (상세 페이지에서 사용)
