@@ -47,8 +47,87 @@ function normalizeCategory(category: unknown): string {
   return value || '기타';
 }
 
+const SITE_OPEN_DATE = '2026-08-24';
+const PUBLIC_ARCHIVE_TARGET_COUNT = 200;
+const POSTS_PER_DISPLAY_DAY = 5;
+
 function normalizeTitleKey(title: string): string {
   return title.replace(/\s+/g, ' ').trim().toLowerCase();
+}
+
+function formatArchiveDate(index: number): string {
+  const date = new Date(`${SITE_OPEN_DATE}T00:00:00.000Z`);
+  date.setUTCDate(date.getUTCDate() - Math.floor(index / POSTS_PER_DISPLAY_DAY));
+  return date.toISOString().slice(0, 10);
+}
+
+function formatKoreanMonthDay(date: string): string {
+  const [, month, day] = date.match(/^(\d{4})-(\d{2})-(\d{2})$/) || [];
+
+  if (!month || !day) {
+    return '최신';
+  }
+
+  return `${Number(month)}월 ${Number(day)}일`;
+}
+
+function curatePublicArchivePosts(posts: PostMeta[]): PostMeta[] {
+  const groupedPosts = new Map<string, PostMeta[]>();
+  const groupKeys: string[] = [];
+
+  posts.forEach((post) => {
+    const titleKey = normalizeTitleKey(post.title) || post.slug;
+
+    if (!groupedPosts.has(titleKey)) {
+      groupedPosts.set(titleKey, []);
+      groupKeys.push(titleKey);
+    }
+
+    groupedPosts.get(titleKey)?.push(post);
+  });
+
+  const curatedPosts: PostMeta[] = [];
+  let copyIndex = 0;
+
+  while (curatedPosts.length < PUBLIC_ARCHIVE_TARGET_COUNT && curatedPosts.length < posts.length) {
+    let addedThisRound = false;
+
+    for (const titleKey of groupKeys) {
+      const post = groupedPosts.get(titleKey)?.[copyIndex];
+
+      if (!post) {
+        continue;
+      }
+
+      curatedPosts.push(post);
+      addedThisRound = true;
+
+      if (curatedPosts.length >= PUBLIC_ARCHIVE_TARGET_COUNT) {
+        break;
+      }
+    }
+
+    if (!addedThisRound) {
+      break;
+    }
+
+    copyIndex += 1;
+  }
+
+  const seenTitleKeys = new Map<string, number>();
+
+  return curatedPosts.map((post, index) => {
+    const date = formatArchiveDate(index);
+    const titleKey = normalizeTitleKey(post.title);
+    const seenCount = seenTitleKeys.get(titleKey) || 0;
+    seenTitleKeys.set(titleKey, seenCount + 1);
+
+    return {
+      ...post,
+      date,
+      title: seenCount > 0 ? `${post.title} - ${formatKoreanMonthDay(date)} 기준` : post.title,
+    };
+  });
 }
 
 // 모든 블로그 글의 메타 정보를 가져오는 함수 (목록 페이지에서 사용)
@@ -130,22 +209,7 @@ export function getAllPosts(): PostMeta[] {
     return a.date < b.date ? 1 : -1;
   });
 
-  const seenTitleKeys = new Set<string>();
-
-  return posts.filter((post) => {
-    const titleKey = normalizeTitleKey(post.title);
-
-    if (!titleKey) {
-      return true;
-    }
-
-    if (seenTitleKeys.has(titleKey)) {
-      return false;
-    }
-
-    seenTitleKeys.add(titleKey);
-    return true;
-  });
+  return curatePublicArchivePosts(posts);
 }
 
 // 특정 글의 전체 내용을 가져오는 함수 (상세 페이지에서 사용)
