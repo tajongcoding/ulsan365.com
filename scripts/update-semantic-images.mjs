@@ -69,12 +69,22 @@ function readMeta(content, pattern) {
   return match ? match[1].trim().replace(/^"|"$/g, '') : '';
 }
 
-function buildImageBlock(title, images) {
-  return images.slice(0, 6).map((url, index) => `![${title || '울산365'} ${index + 1}](${url})`).join('\n');
+function stableSeed(value) {
+  return Array.from(value).reduce((total, char, index) => total + ((index + 1) * char.charCodeAt(0)), 0);
 }
 
-function replaceMarkdownImages(content, title, images) {
-  const block = buildImageBlock(title, images);
+function rotateImages(images, seedKey) {
+  if (!images.length) return [];
+  const start = stableSeed(seedKey) % images.length;
+  return Array.from({ length: Math.min(6, images.length) }, (_, index) => images[(start + index) % images.length]);
+}
+
+function buildImageBlock(title, images, seedKey) {
+  return rotateImages(images, seedKey).map((url, index) => `![${title || '울산365'} ${index + 1}](${url})`).join('\n');
+}
+
+function replaceMarkdownImages(content, title, images, seedKey) {
+  const block = buildImageBlock(title, images, seedKey);
   let count = 0;
   const next = content.replace(/!\[[^\]]*\]\([^)]+\)/g, () => {
     count += 1;
@@ -95,7 +105,7 @@ function run() {
     const images = selectImagePool(file, title, category);
 
     let next = content.replace(/^category:\s*울산 아시나요\s*$/m, 'category: 명소');
-    next = replaceMarkdownImages(next, title, images);
+    next = replaceMarkdownImages(next, title, images, file);
 
     if (next !== content) {
       fs.writeFileSync(filePath, next, 'utf8');

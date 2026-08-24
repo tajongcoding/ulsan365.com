@@ -87,10 +87,22 @@ def select_image_pool(group: str, category: str, title: str) -> list[str]:
         return IMAGE_POOLS["scenic"]
     return IMAGE_POOLS["parking"]
 
-def build_image_block(title: str, group: str, category: str) -> str:
-    images = select_image_pool(group, category, title)
+def stable_seed(value: str) -> int:
+    total = 0
+    for index, char in enumerate(value):
+        total += (index + 1) * ord(char)
+    return total
+
+def rotate_images(images: list[str], seed_key: str) -> list[str]:
+    if not images:
+        return []
+    start = stable_seed(seed_key) % len(images)
+    return [images[(start + index) % len(images)] for index in range(min(6, len(images)))]
+
+def build_image_block(title: str, group: str, category: str, seed_key: str) -> str:
+    images = rotate_images(select_image_pool(group, category, title), seed_key)
     return "\n".join(
-        f"![{title} {index + 1}]({url})" for index, url in enumerate(images[:6])
+        f"![{title} {index + 1}]({url})" for index, url in enumerate(images)
     )
 
 used_titles = set()
@@ -206,7 +218,7 @@ for group, category, title, summary in picked:
             pubDate=today,
             summary=summary,
             category=category,
-            image_block=build_image_block(title, group, category),
+            image_block=build_image_block(title, group, category, filename),
         ),
         encoding="utf-8",
     )
