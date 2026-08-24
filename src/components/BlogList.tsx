@@ -224,8 +224,8 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
                 <div className="mt-5 flex flex-wrap items-center justify-center gap-2">
                   <button
                     type="button"
-                    onClick={() => setCurrentPage(Math.max(pageWindowStart - pageWindowSize, 1))}
-                    disabled={pageWindowStart === 1}
+                    onClick={() => setCurrentPage(Math.max(currentPage - 1, 1))}
+                    disabled={currentPage === 1}
                     className="rounded-lg border border-slate-300 px-3 py-1.5 text-[13px] font-bold text-[#0F1A2B] disabled:cursor-not-allowed disabled:opacity-40 hover:bg-slate-50"
                   >
                     이전
@@ -246,8 +246,8 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
 
                   <button
                     type="button"
-                    onClick={() => setCurrentPage(Math.min(pageWindowStart + pageWindowSize, totalListPages))}
-                    disabled={pageWindowStart + pageWindowSize > totalListPages}
+                    onClick={() => setCurrentPage(Math.min(currentPage + 1, totalListPages))}
+                    disabled={currentPage === totalListPages}
                     className="rounded-lg border border-slate-300 px-3 py-1.5 text-[13px] font-bold text-[#0F1A2B] disabled:cursor-not-allowed disabled:opacity-40 hover:bg-slate-50"
                   >
                     다음
