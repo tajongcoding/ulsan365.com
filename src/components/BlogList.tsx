@@ -39,7 +39,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
   const visualPosts = useMemo(() => getPostVisualsForList(posts), [posts]);
   const featuredPosts = visualPosts.slice(0, 8);
   const listPosts = visualPosts;
-  const itemsPerPage = 5;
+  const itemsPerPage = 10;
   const pageWindowSize = 10;
   const totalListPages = Math.ceil(listPosts.length / itemsPerPage);
   const pageWindowStart = Math.floor((currentPage - 1) / pageWindowSize) * pageWindowSize + 1;
@@ -50,6 +50,9 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
   const displayedListPosts = showAllList
     ? listPosts
     : listPosts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+  const displayedListColumns = showAllList
+    ? [displayedListPosts]
+    : [displayedListPosts.slice(0, 5), displayedListPosts.slice(5, 10)];
   const listTitle = showAllList ? '카테고리 전체보기' : '목록 리스트';
   const displayTitle = categoryFilter ? getCategoryLabel(categoryFilter) : '울산 생활정보 모음';
   const displaySubtitle = categoryFilter
@@ -145,7 +148,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
                   <p className="mt-1 text-[13px] font-semibold text-slate-500">
                     {showAllList
                       ? '현재 카테고리의 모든 글을 한 화면에서 확인하세요.'
-                      : '5개씩 페이지로 확인하고, 전체보기 버튼으로 한 번에 펼쳐보세요.'}
+                      : '10개씩 좌우 5개로 나눠 확인하고, 전체보기 버튼으로 한 번에 펼쳐보세요.'}
                   </p>
                 </div>
                 <div className="ml-auto flex items-center gap-2">
@@ -165,52 +168,56 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
                 </div>
               </div>
 
-              <div className="flex flex-col gap-2.5">
-                {displayedListPosts.map((post) => { const { heroImage, fallbackImage, badgeClass } = post;
+              <div className={showAllList ? 'flex flex-col gap-2.5' : 'grid grid-cols-1 lg:grid-cols-2 gap-2.5 lg:gap-4'}>
+                {displayedListColumns.map((columnPosts, columnIndex) => (
+                  <div key={columnIndex} className="flex flex-col gap-2.5">
+                    {columnPosts.map((post) => { const { heroImage, fallbackImage, badgeClass } = post;
 
-                  return (
-                    <Link
-                      key={post.slug}
-                      href={`/blog/${post.slug}`}
-                      className="group overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm hover:-translate-y-0.5 hover:border-[#C9A857] hover:shadow-md transition-all"
-                    >
-                      <div className="flex flex-col sm:flex-row">
-                        {!showAllList && (
-                          <div className="relative h-[88px] sm:h-[92px] sm:w-[128px] sm:min-w-[128px] overflow-hidden bg-slate-100">
-                            <SafeImage
-                              src={heroImage}
-                              fallbackSrc={fallbackImage}
-                              alt={post.title}
-                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                            />
-                            <span className={`absolute left-2 top-2 inline-flex rounded-full px-1.5 py-0.5 text-[9px] font-black shadow-sm ${badgeClass}`}>
-                              {post.category}
-                            </span>
+                      return (
+                        <Link
+                          key={post.slug}
+                          href={`/blog/${post.slug}`}
+                          className="group overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm hover:-translate-y-0.5 hover:border-[#C9A857] hover:shadow-md transition-all"
+                        >
+                          <div className="flex flex-col sm:flex-row">
+                            {!showAllList && (
+                              <div className="relative h-[88px] sm:h-[92px] sm:w-[128px] sm:min-w-[128px] overflow-hidden bg-slate-100">
+                                <SafeImage
+                                  src={heroImage}
+                                  fallbackSrc={fallbackImage}
+                                  alt={post.title}
+                                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
+                                <span className={`absolute left-2 top-2 inline-flex rounded-full px-1.5 py-0.5 text-[9px] font-black shadow-sm ${badgeClass}`}>
+                                  {post.category}
+                                </span>
+                              </div>
+                            )}
+
+                            <div className="flex-1 p-2.5 sm:p-3">
+                              <div className="flex flex-wrap items-center gap-1 mb-1.5 text-[10px] text-slate-500">
+                                <span className="inline-flex rounded-full bg-slate-100 px-2 py-0.5 font-semibold">
+                                  📅 {post.date}
+                                </span>
+                                {(post.tags || []).slice(0, 2).map((tag) => (
+                                  <span key={tag} className="inline-flex rounded-full bg-slate-50 px-1.5 py-0.5 text-[9px] font-medium text-slate-500">
+                                    #{tag}
+                                  </span>
+                                ))}
+                              </div>
+
+                              <h3 className="text-[14px] md:text-[15px] font-black text-[#0F1A2B] leading-snug break-keep line-clamp-2 group-hover:text-[#C9A857] transition-colors">
+                                {post.title}
+                              </h3>
+                              <p className="mt-1 text-[12px] md:text-[13px] text-slate-600 leading-relaxed break-keep line-clamp-2">
+                                {post.summary || '핵심 내용을 보기 쉽게 정리한 생활 정보 안내입니다.'}
+                              </p>
+                            </div>
                           </div>
-                        )}
-
-                        <div className="flex-1 p-2.5 sm:p-3">
-                          <div className="flex flex-wrap items-center gap-1 mb-1.5 text-[10px] text-slate-500">
-                            <span className="inline-flex rounded-full bg-slate-100 px-2 py-0.5 font-semibold">
-                              📅 {post.date}
-                            </span>
-                            {(post.tags || []).slice(0, 2).map((tag) => (
-                              <span key={tag} className="inline-flex rounded-full bg-slate-50 px-1.5 py-0.5 text-[9px] font-medium text-slate-500">
-                                #{tag}
-                              </span>
-                            ))}
-                          </div>
-
-                          <h3 className="text-[14px] md:text-[15px] font-black text-[#0F1A2B] leading-snug break-keep line-clamp-2 group-hover:text-[#C9A857] transition-colors">
-                            {post.title}
-                          </h3>
-                          <p className="mt-1 text-[12px] md:text-[13px] text-slate-600 leading-relaxed break-keep line-clamp-2">
-                            {post.summary || '핵심 내용을 보기 쉽게 정리한 생활 정보 안내입니다.'}
-                          </p>
-                        </div>
-                      </div>
-                    </Link>
-                  ); })}
+                        </Link>
+                      ); })}
+                  </div>
+                ))}
               </div>
 
               {!showAllList && totalListPages > 1 && (
