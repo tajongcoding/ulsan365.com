@@ -38,8 +38,8 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
 
   const visualPosts = useMemo(() => getPostVisualsForList(posts), [posts]);
   const featuredPosts = visualPosts.slice(0, 8);
-  const listPosts = visualPosts.slice(8);
-  const itemsPerPage = 5;
+  const listPosts = visualPosts;
+  const itemsPerPage = 10;
   const pageWindowSize = 10;
   const totalListPages = Math.ceil(listPosts.length / itemsPerPage);
   const pageWindowStart = Math.floor((currentPage - 1) / pageWindowSize) * pageWindowSize + 1;
@@ -50,11 +50,11 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
   const displayedListPosts = showAllList
     ? listPosts
     : listPosts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
-  const listTitle = showAllList && categoryFilter ? '카테고리 전체보기' : '목록 리스트';
+  const listTitle = showAllList ? '카테고리 전체보기' : '목록 리스트';
   const displayTitle = categoryFilter ? getCategoryLabel(categoryFilter) : '울산 생활정보 모음';
   const displaySubtitle = categoryFilter
-    ? `${getCategoryLabel(categoryFilter)} 대표 글 8개와 하단 목록을 페이지별로 확인하세요.`
-    : '울산광역시의 유용한 생활·복지·행사 정보를 대표 글 8개와 페이지형 목록으로 정리했습니다.';
+    ? `${getCategoryLabel(categoryFilter)} 대표 글 8개와 전체 목록을 페이지별로 확인하세요.`
+    : '울산광역시의 유용한 생활·복지·행사 정보를 대표 글 8개와 전체 목록으로 정리했습니다.';
 
   useEffect(() => {
     setCurrentPage(1);
@@ -144,8 +144,8 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
                   <h2 className="text-[22px] md:text-[26px] font-black text-[#0F1A2B]">{listTitle}</h2>
                   <p className="mt-1 text-[13px] font-semibold text-slate-500">
                     {showAllList
-                      ? '대표 글 아래의 모든 글을 한 화면에서 확인하세요.'
-                      : '페이지별로 확인하고, 전체보기 버튼으로 한 번에 펼쳐보세요.'}
+                      ? '현재 카테고리의 모든 글을 한 화면에서 확인하세요.'
+                      : '10개씩 페이지로 확인하고, 전체보기 버튼으로 한 번에 펼쳐보세요.'}
                   </p>
                 </div>
                 <div className="ml-auto flex items-center gap-2">
