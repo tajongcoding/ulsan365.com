@@ -31,7 +31,7 @@ const popularCategoryLabelMap: Record<string, string> = {
   '경제': '경제정보',
   '생활': '생활정보',
   '행사': '행사축제',
-  '명소': '명소관광',
+  '명소': '관광명소',
 };
 
 function splitPopularCategoryLabel(category: string): [string, string] {
