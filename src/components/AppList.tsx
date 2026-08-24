@@ -13,7 +13,7 @@ const apps = [
   },
   {
     name: '왔어 울산?',
-    desc: '울산 관광·명소·여행 코스 정보 보기',
+    desc: '울산 관광명소·여행 코스 정보 보기',
     icon: '🏰',
     link: 'https://play.google.com/store/apps/details?id=com.ulsantourist.whale'
   },
