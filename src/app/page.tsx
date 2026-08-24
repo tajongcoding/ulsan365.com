@@ -48,7 +48,7 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 4);
     { title: '경제 정보', icon: '📈', link: '/blog?category=%EA%B2%BD%EC%A0%9C' },
     { title: '생활 정보', icon: '🏘️', link: '/blog?category=%EC%83%9D%ED%99%9C' },
     { title: '행사·축제', icon: '🎉', link: '/blog?category=%ED%96%89%EC%82%AC' },
-    { title: '관광·명소', icon: '📸', link: '/blog?category=%EB%AA%85%EC%86%8C' },
+    { title: '관광명소', icon: '📸', link: '/blog?category=%EB%AA%85%EC%86%8C' },
     { title: 'FAQ', icon: '🤔', link: '/qna' },
   ];
 
@@ -69,7 +69,7 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 4);
     { label: '야간 약국', href: '/blog?category=%EC%83%9D%ED%99%9C' },
     { label: '대형 폐기물', href: '/blog?category=%EC%83%9D%ED%99%9C' },
     { label: '행사·축제', href: '/blog?category=%ED%96%89%EC%82%AC' },
-    { label: '관광·명소', href: '/blog?category=%EB%AA%85%EC%86%8C' },
+    { label: '관광명소', href: '/blog?category=%EB%AA%85%EC%86%8C' },
   ];
 
   const siteBenefits = [

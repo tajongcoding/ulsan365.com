@@ -27,7 +27,7 @@ function HeaderInner() {
     { name: '경제 정보', path: '/blog?category=%EA%B2%BD%EC%A0%9C' },
     { name: '생활 정보', path: '/blog?category=%EC%83%9D%ED%99%9C' },
     { name: '행사·축제', path: '/blog?category=%ED%96%89%EC%82%AC' },
-    { name: '관광·명소', path: '/blog?category=%EB%AA%85%EC%86%8C' },
+    { name: '관광명소', path: '/blog?category=%EB%AA%85%EC%86%8C' },
     { name: 'FAQ', path: '/qna', highlight: true },
   ];
 
