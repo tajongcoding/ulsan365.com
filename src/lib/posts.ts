@@ -51,16 +51,6 @@ function normalizeTitleKey(title: string): string {
   return title.replace(/\s+/g, ' ').trim().toLowerCase();
 }
 
-function formatTitleDate(date: string): string {
-  const [, month, day] = date.match(/^(\d{4})-(\d{2})-(\d{2})$/) || [];
-
-  if (!month || !day) {
-    return '최신';
-  }
-
-  return `${Number(month)}월 ${Number(day)}일`;
-}
-
 // 모든 블로그 글의 메타 정보를 가져오는 함수 (목록 페이지에서 사용)
 export function getAllPosts(): PostMeta[] {
   // 폴더가 없으면 빈 배열 반환
@@ -140,21 +130,21 @@ export function getAllPosts(): PostMeta[] {
     return a.date < b.date ? 1 : -1;
   });
 
-  const titleCounts = new Map<string, number>();
+  const seenTitleKeys = new Set<string>();
 
-  return posts.map((post) => {
+  return posts.filter((post) => {
     const titleKey = normalizeTitleKey(post.title);
-    const duplicateIndex = titleCounts.get(titleKey) || 0;
-    titleCounts.set(titleKey, duplicateIndex + 1);
 
-    if (!titleKey || duplicateIndex === 0) {
-      return post;
+    if (!titleKey) {
+      return true;
     }
 
-    return {
-      ...post,
-      title: `${post.title} - ${formatTitleDate(post.date)} 기준`,
-    };
+    if (seenTitleKeys.has(titleKey)) {
+      return false;
+    }
+
+    seenTitleKeys.add(titleKey);
+    return true;
   });
 }
 
