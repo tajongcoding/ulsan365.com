@@ -47,17 +47,24 @@ function normalizeCategory(category: unknown): string {
   return value || '기타';
 }
 
-const SITE_OPEN_DATE = '2026-08-24';
+const SITE_OPEN_DATE = '2026-03-01';
+const LATEST_PUBLIC_DATE = '2026-08-24';
 const PUBLIC_ARCHIVE_TARGET_COUNT = 200;
-const POSTS_PER_DISPLAY_DAY = 5;
+const DAY_IN_MS = 24 * 60 * 60 * 1000;
 
 function normalizeTitleKey(title: string): string {
   return title.replace(/\s+/g, ' ').trim().toLowerCase();
 }
 
 function formatArchiveDate(index: number): string {
-  const date = new Date(`${SITE_OPEN_DATE}T00:00:00.000Z`);
-  date.setUTCDate(date.getUTCDate() - Math.floor(index / POSTS_PER_DISPLAY_DAY));
+  const openDate = new Date(`${SITE_OPEN_DATE}T00:00:00.000Z`);
+  const latestDate = new Date(`${LATEST_PUBLIC_DATE}T00:00:00.000Z`);
+  const totalDays = Math.max(Math.round((latestDate.getTime() - openDate.getTime()) / DAY_IN_MS), 0);
+  const maxIndex = Math.max(PUBLIC_ARCHIVE_TARGET_COUNT - 1, 1);
+  const offsetFromLatest = Math.round((index / maxIndex) * totalDays);
+  const date = new Date(latestDate);
+
+  date.setUTCDate(latestDate.getUTCDate() - offsetFromLatest);
   return date.toISOString().slice(0, 10);
 }
 
