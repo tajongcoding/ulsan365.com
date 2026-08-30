@@ -145,7 +145,8 @@ export default function Home() {
                   src={item.heroImage}
                   fallbackSrc={item.fallbackImage}
                   alt={item.title}
-                  className="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-500"
+                  loading="eager"
+                  className="absolute inset-0 w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className={`absolute inset-0 bg-gradient-to-t ${item.overlayClass}`} />
                 <div className="absolute top-3 left-3 right-3 z-10 flex items-center gap-2 flex-wrap">

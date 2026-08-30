@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
-import { Suspense, useEffect, useMemo, useState } from 'react';
+import { Suspense, useMemo, useState } from 'react';
 import { getCategoryLabel, getPostVisuals } from '@/lib/postVisuals';
 import CoupangBanner from './CoupangBanner';
 import GoogleAdSlot from './GoogleAdSlot';
@@ -23,38 +23,25 @@ interface PostMeta {
 function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
   const searchParams = useSearchParams();
   const categoryFilter = searchParams.get('category') || '';
-  const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
 
   const posts = useMemo(() => {
-    const normalized = searchTerm.trim().toLowerCase();
-
     return allPosts.filter((post) => {
       const matchesCategory = categoryFilter ? post.category === categoryFilter : true;
-      const matchesSearch = normalized
-        ? [post.title, post.summary, ...(post.tags || [])]
-            .join(' ')
-            .toLowerCase()
-            .includes(normalized)
-        : true;
-
-      return matchesCategory && matchesSearch;
+      return matchesCategory;
     });
-  }, [allPosts, categoryFilter, searchTerm]);
+  }, [allPosts, categoryFilter]);
 
   const featuredPosts = posts.slice(0, 8);
   const listPosts = posts.slice(8);
   const itemsPerPage = 5;
   const totalListPages = Math.ceil(listPosts.length / itemsPerPage);
-  const paginatedListPosts = listPosts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+  const activePage = Math.min(currentPage, Math.max(totalListPages, 1));
+  const paginatedListPosts = listPosts.slice((activePage - 1) * itemsPerPage, activePage * itemsPerPage);
   const displayTitle = categoryFilter ? getCategoryLabel(categoryFilter) : '울산 생활정보 모음';
   const displaySubtitle = categoryFilter
     ? `${getCategoryLabel(categoryFilter)} 대표 글 8개와 하단 목록을 페이지별로 확인하세요.`
     : '울산광역시의 유용한 생활·복지·행사 정보를 대표 글 8개와 페이지형 목록으로 정리했습니다.';
-
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [categoryFilter, searchTerm]);
 
   return (
     <div className="flex flex-col">
@@ -185,7 +172,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
                   <button
                     type="button"
                     onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-                    disabled={currentPage === 1}
+                    disabled={activePage === 1}
                     className="rounded-lg border border-slate-300 px-3 py-1.5 text-[13px] font-bold text-[#0F1A2B] disabled:cursor-not-allowed disabled:opacity-40 hover:bg-slate-50"
                   >
                     이전
@@ -197,7 +184,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
                       type="button"
                       onClick={() => setCurrentPage(pageNumber)}
                       className={`rounded-lg px-3 py-1.5 text-[13px] font-bold transition-colors ${
-                        currentPage === pageNumber
+                        activePage === pageNumber
                           ? 'bg-[#0F1A2B] text-white'
                           : 'border border-slate-300 text-[#0F1A2B] hover:bg-slate-50'
                       }`}
@@ -209,7 +196,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) {
                   <button
                     type="button"
                     onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalListPages))}
-                    disabled={currentPage === totalListPages}
+                    disabled={activePage === totalListPages}
                     className="rounded-lg border border-slate-300 px-3 py-1.5 text-[13px] font-bold text-[#0F1A2B] disabled:cursor-not-allowed disabled:opacity-40 hover:bg-slate-50"
                   >
                     다음

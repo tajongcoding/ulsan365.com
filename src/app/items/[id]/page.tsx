@@ -3,15 +3,36 @@ import path from 'path';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
+type LocalInfoItem = {
+  id: string | number;
+  name: string;
+  summary: string;
+  category: string;
+  startDate?: string;
+  endDate?: string;
+  location?: string;
+  target?: string;
+  link?: string;
+};
+
+type LocalInfoData = {
+  events?: LocalInfoItem[];
+  benefits?: LocalInfoItem[];
+};
+
+function readItems(dataPath: string): LocalInfoItem[] {
+  const fileContents = fs.readFileSync(dataPath, 'utf8');
+  const data = JSON.parse(fileContents) as LocalInfoData;
+  return [...(data.events || []), ...(data.benefits || [])];
+}
+
 export async function generateStaticParams() {
   const dataPath = path.join(process.cwd(), 'public', 'data', 'local-info.json');
   if (!fs.existsSync(dataPath)) return [];
   
-  const fileContents = fs.readFileSync(dataPath, 'utf8');
-  const data = JSON.parse(fileContents);
-  const items = [...(data.events || []), ...(data.benefits || [])];
+  const items = readItems(dataPath);
   
-  return items.map((item: any) => ({
+  return items.map((item) => ({
     id: item.id.toString(),
   }));
 }
@@ -22,11 +43,10 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const dataPath = path.join(process.cwd(), 'public', 'data', 'local-info.json');
   if (!fs.existsSync(dataPath)) return { title: '정보를 찾을 수 없습니다' };
 
-  const fileContents = fs.readFileSync(dataPath, 'utf8');
-  const data = JSON.parse(fileContents);
+  const items = readItems(dataPath);
   
-  const item = [...(data.events || []), ...(data.benefits || [])].find(
-    (i: any) => i.id.toString() === id
+  const item = items.find(
+    (candidate) => candidate.id.toString() === id
   );
 
   if (!item) return { title: '정보를 찾을 수 없습니다' };
@@ -43,11 +63,10 @@ export default async function ItemDetail({ params }: { params: Promise<{ id: str
   const dataPath = path.join(process.cwd(), 'public', 'data', 'local-info.json');
   if (!fs.existsSync(dataPath)) return notFound();
 
-  const fileContents = fs.readFileSync(dataPath, 'utf8');
-  const data = JSON.parse(fileContents);
+  const items = readItems(dataPath);
   
-  const item = [...(data.events || []), ...(data.benefits || [])].find(
-    (i: any) => i.id.toString() === id
+  const item = items.find(
+    (candidate) => candidate.id.toString() === id
   );
 
   if (!item) {
