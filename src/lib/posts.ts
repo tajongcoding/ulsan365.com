@@ -16,6 +16,7 @@ export type PostMeta = {
   contentExcerpt?: string; // 본문 미리보기 (5줄 정도 용도)
   summaryBox?: string; // 핵심 요약 박스 내용 추출
   thumbnailUrl?: string | null; // 본문 첫 이미지 URL
+  images?: string[]; // frontmatter images 배열
 };
 
 export type Post = PostMeta & {
@@ -186,6 +187,7 @@ export function getAllPosts(): PostMeta[] {
           summary: String(data.summary || data.description || ''),
           category: normalizeCategory(data.category),
           tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
+          images: Array.isArray(data.images) ? data.images.map(String).filter(Boolean) : [],
           contentExcerpt,
           summaryBox,
           thumbnailUrl,
@@ -241,6 +243,7 @@ export function getPostBySlug(slug: string): Post | null {
     summary: data.summary || data.description || '',
     category: normalizeCategory(data.category),
     tags: Array.isArray(data.tags) ? data.tags : [],
+    images: Array.isArray(data.images) ? data.images.map(String).filter(Boolean) : [],
     contentExcerpt,
     thumbnailUrl,
     content,
