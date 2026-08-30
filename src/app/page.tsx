@@ -40,7 +40,7 @@ function splitPopularCategoryLabel(category: string): [string, string] {
   return [label.slice(0, 2), label.slice(2, 4) || label.slice(0, 2)];
 }
 
-export default function Home() { const allPosts = getAllPosts(); const latestPosts = allPosts.slice(0, 4); const latestCardPosts = allPosts.slice(4, 8);
+export default function Home() { const allPosts = getAllPosts(); const latestPosts = allPosts.slice(0, 4); const latestCardPosts = allPosts.slice(4, 8); const recommendedPosts = allPosts.slice(8, 12);
 
   // 6개의 바로가기 링크
   const shortcutCards = [
@@ -52,9 +52,9 @@ export default function Home() { const allPosts = getAllPosts(); const latestPos
     { title: 'FAQ', icon: '🤔', link: '/qna' },
   ];
 
-  const homeVisuals = getPostVisualsForList([...latestPosts, ...latestCardPosts]);
+  const homeVisuals = getPostVisualsForList([...latestPosts, ...latestCardPosts, ...recommendedPosts]);
   const featuredVisuals = homeVisuals.slice(0, latestPosts.length);
-  const latestCardVisuals = homeVisuals.slice(latestPosts.length);
+  const latestCardVisuals = homeVisuals.slice(latestPosts.length, latestPosts.length + latestCardPosts.length); const recommendedVisuals = homeVisuals.slice(latestPosts.length + latestCardPosts.length);
 
   const faqPreviewItems = [
     { question: '울산 청년월세 지원은 어디서 신청하나요?', category: '경제 정보' },
@@ -246,12 +246,12 @@ export default function Home() { const allPosts = getAllPosts(); const latestPos
         
 <section className="mb-8 bg-white border-[2px] border-[#0F1A2B] rounded-2xl p-5 shadow-sm">
   <div className="flex items-center justify-between mb-4">
-    <h2 className="text-[22px] md:text-[24px] font-black text-[#0F1A2B]">🔥 오늘 인기글 TOP4</h2>
-    <span className="text-[13px] font-bold text-slate-500">실시간 관심 콘텐츠</span>
+    <h2 className="text-[22px] md:text-[24px] font-black text-[#0F1A2B]">🔥 추천 정보 TOP4</h2>
+    <span className="text-[13px] font-bold text-slate-500">엄선한 울산 생활정보</span>
   </div>
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-    {featuredVisuals.slice(0, 4).map((post, idx) => {
+    {recommendedVisuals.slice(0, 4).map((post, idx) => {
       const [categoryTop, categoryBottom] = splitPopularCategoryLabel(post.category);
 
       return (
