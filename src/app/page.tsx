@@ -40,7 +40,7 @@ function splitPopularCategoryLabel(category: string): [string, string] {
   return [label.slice(0, 2), label.slice(2, 4) || label.slice(0, 2)];
 }
 
-export default function Home() { const latestPosts = getAllPosts().slice(0, 4);
+export default function Home() { const allPosts = getAllPosts(); const latestPosts = allPosts.slice(0, 4); const latestCardPosts = allPosts.slice(4, 8);
 
   // 6개의 바로가기 링크
   const shortcutCards = [
@@ -52,7 +52,7 @@ export default function Home() { const latestPosts = getAllPosts().slice(0, 4);
     { title: 'FAQ', icon: '🤔', link: '/qna' },
   ];
 
-  const homeVisuals = getPostVisualsForList([...latestPosts, ...latestPosts]);
+  const homeVisuals = getPostVisualsForList([...latestPosts, ...latestCardPosts]);
   const featuredVisuals = homeVisuals.slice(0, latestPosts.length);
   const latestCardVisuals = homeVisuals.slice(latestPosts.length);
 
