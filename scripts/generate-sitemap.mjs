@@ -24,6 +24,7 @@ function getAllPosts() {
 function generateSitemap() {
   const baseUrl = 'https://ulsan365.com';
   const posts = getAllPosts();
+  const latestPostDate = posts.map((post) => post.date).filter(Boolean).sort().at(-1) || "2026-08-30";
 
   const blogUrls = posts.map((post) => `
   <url>
@@ -35,19 +36,19 @@ function generateSitemap() {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>${baseUrl}/</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <lastmod>${latestPostDate}</lastmod>
   </url>
   <url>
     <loc>${baseUrl}/about/</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <lastmod>${latestPostDate}</lastmod>
   </url>
   <url>
     <loc>${baseUrl}/blog/</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <lastmod>${latestPostDate}</lastmod>
   </url>
   <url>
     <loc>${baseUrl}/qna/</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <lastmod>${latestPostDate}</lastmod>
   </url>
 ${blogUrls}
 </urlset>`;
