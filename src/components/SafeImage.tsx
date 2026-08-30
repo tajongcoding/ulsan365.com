@@ -7,9 +7,10 @@ type SafeImageProps = {
   alt: string;
   className?: string;
   fallbackSrc?: string;
+  loading?: 'lazy' | 'eager';
 };
 
-export default function SafeImage({ src, alt, className = '', fallbackSrc }: SafeImageProps) {
+export default function SafeImage({ src, alt, className = '', fallbackSrc, loading = 'lazy' }: SafeImageProps) {
   const initialSrc = useMemo(() => src || fallbackSrc || '', [src, fallbackSrc]);
   const [currentSrc, setCurrentSrc] = useState(initialSrc);
   const [hasFailed, setHasFailed] = useState(false);
@@ -23,7 +24,7 @@ export default function SafeImage({ src, alt, className = '', fallbackSrc }: Saf
       src={currentSrc}
       alt={alt}
       className={className}
-      loading="lazy"
+      loading={loading}
       onError={() => {
         if (fallbackSrc && currentSrc !== fallbackSrc) {
           setCurrentSrc(fallbackSrc);

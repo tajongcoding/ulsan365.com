@@ -23,9 +23,6 @@ export default function GoogleAdSlot({
   const isReady = !!client && client !== '나중에_입력' && !!slot && slot !== '나중에_입력';
   const shouldPreviewPlaceholder = process.env.NODE_ENV !== 'production';
 
-  if (!isReady && !shouldPreviewPlaceholder) {
-    return null;
-  }
 
   useEffect(() => {
     if (!isReady || typeof window === 'undefined') {
@@ -38,6 +35,10 @@ export default function GoogleAdSlot({
       // ignore duplicate push/runtime ad script issues
     }
   }, [isReady, slot]);
+
+    if (!isReady && !shouldPreviewPlaceholder) {
+      return null;
+    }
 
   return (
     <section className={`w-full ${className}`} aria-label="광고 영역">
