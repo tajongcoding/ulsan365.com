@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getAllPosts } from '../lib/posts';
 import { getPostVisualsForList } from '../lib/postVisuals';
@@ -36,7 +36,7 @@ const popularCategoryLabelMap: Record<string, string> = {
 
 function splitPopularCategoryLabel(category: string): [string, string] {
   const label = popularCategoryLabelMap[category] || `${category}정보`;
-
+if (category === '명소') return ['관광·', '명소'];
   return [label.slice(0, 2), label.slice(2, 4) || label.slice(0, 2)];
 }
 
@@ -82,7 +82,7 @@ export default function Home() { const allPosts = getAllPosts(); const homePosts
       desc: '야간약국, 교통, 앱, 대형폐기물 등 자주 찾는 생활 정보를 한곳에서 확인할 수 있습니다.',
       href: '/blog?category=%EC%83%9D%ED%99%9C', },
     { title: '행사·명소 최신 업데이트',
-      category: '행사·관광',
+      category: '행사·축제',
       desc: '주말 나들이와 지역 축제, 관광 코스를 빠르게 모아 보여드립니다.',
       href: '/blog?category=%ED%96%89%EC%82%AC', },
   ];
@@ -450,3 +450,5 @@ export default function Home() { const allPosts = getAllPosts(); const homePosts
       </footer>
     </main>
   ); }
+
+
