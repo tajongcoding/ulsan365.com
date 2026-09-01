@@ -31,7 +31,7 @@ const popularCategoryLabelMap: Record<string, string> = {
   '경제': '경제정보',
   '생활': '생활정보',
   '행사': '행사축제',
-  '명소': '관광명소',
+  '명소': '관광·명소',
 };
 
 function splitPopularCategoryLabel(category: string): [string, string] {
@@ -48,7 +48,7 @@ export default function Home() { const allPosts = getAllPosts(); const homePosts
     { title: '경제 정보', icon: '📈', link: '/blog?category=%EA%B2%BD%EC%A0%9C' },
     { title: '생활 정보', icon: '🏘️', link: '/blog?category=%EC%83%9D%ED%99%9C' },
     { title: '행사·축제', icon: '🎉', link: '/blog?category=%ED%96%89%EC%82%AC' },
-    { title: '관광명소', icon: '📸', link: '/blog?category=%EB%AA%85%EC%86%8C' },
+    { title: '관광·명소', icon: '📸', link: '/blog?category=%EB%AA%85%EC%86%8C' },
     { title: 'FAQ', icon: '🤔', link: '/qna' },
   ];
 
@@ -60,7 +60,7 @@ export default function Home() { const allPosts = getAllPosts(); const homePosts
     { question: '울산 청년월세 지원은 어디서 신청하나요?', category: '경제 정보' },
     { question: '울산 대형폐기물 신고는 어떻게 하나요?', category: '생활 정보' },
     { question: '울산 야간약국은 어디서 찾을 수 있나요?', category: '생활 정보' },
-    { question: '울산 주말 행사는 어디서 확인하나요?', category: '행사 정보' },
+    { question: '울산 주말 행사는 어디서 확인하나요?', category: '행사·축제' },
   ];
 
   const topKeywords = [
@@ -69,7 +69,7 @@ export default function Home() { const allPosts = getAllPosts(); const homePosts
     { label: '야간 약국', href: '/blog?category=%EC%83%9D%ED%99%9C' },
     { label: '대형 폐기물', href: '/blog?category=%EC%83%9D%ED%99%9C' },
     { label: '행사·축제', href: '/blog?category=%ED%96%89%EC%82%AC' },
-    { label: '관광명소', href: '/blog?category=%EB%AA%85%EC%86%8C' },
+    { label: '관광·명소', href: '/blog?category=%EB%AA%85%EC%86%8C' },
   ];
 
   const siteBenefits = [
