@@ -56,13 +56,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 function replacePostImagesWithMatchedGallery(content: string, images: string[], title: string) {
   const contentWithoutLeadingImages = content.replace(/^(?:\s*!\[[^\]]*\]\([^)]+\)\s*)+/, '').trimStart();
-  const hasMarkdownImages = /^!\[[^\]]*\]\((.*?)\)\s*$/gm.test(contentWithoutLeadingImages);
-  const hasHtmlImages = /<img\b[^>]*>/i.test(content);
-
-  // 자동 생성 글의 본문 첫 이미지 묶음은 상단 히어로와 중복되므로 제거한다.
-  if (hasMarkdownImages || hasHtmlImages) {
-    return contentWithoutLeadingImages;
-  }
 
   if (!images.length) {
     return contentWithoutLeadingImages;

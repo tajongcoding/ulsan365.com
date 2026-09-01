@@ -218,7 +218,7 @@ export function getAllPosts(): PostMeta[] {
     return a.date < b.date ? 1 : -1;
   });
 
-  return curatePublicArchivePosts(posts);
+  return posts;
 }
 
 // 특정 글의 전체 내용을 가져오는 함수 (상세 페이지에서 사용)

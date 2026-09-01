@@ -40,7 +40,7 @@ function splitPopularCategoryLabel(category: string): [string, string] {
   return [label.slice(0, 2), label.slice(2, 4) || label.slice(0, 2)];
 }
 
-export default function Home() { const allPosts = getAllPosts(); const latestPosts = allPosts.slice(0, 4); const latestCardPosts = allPosts.slice(4, 8); const recommendedPosts = allPosts.slice(8, 12);
+export default function Home() { const allPosts = getAllPosts(); const homePosts = allPosts.filter(function (post) { return ['2026-08-26-event-09-ulsan-family-event', '2026-08-26-event-10-ulsan-weekly-event', '2026-08-25-welfare-09-ulsan-welfare-support'].indexOf(post.slug) === -1; }); const latestPosts = homePosts.slice(0, 4); const latestCardPosts = homePosts.slice(4, 8); const recommendedPosts = homePosts.slice(8, 12);
 
   // 6개의 바로가기 링크
   const shortcutCards = [

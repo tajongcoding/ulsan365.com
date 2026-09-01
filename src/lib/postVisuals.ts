@@ -944,7 +944,7 @@ export function getPostVisuals(post: PostMeta) {
   const explicitImage = LOCAL_IMAGES[post.slug] || null;
   const topicImage = getTopicMatchedImage(post);
   const heroImage = explicitImage || topicImage || post.thumbnailUrl || fallbackImage;
-  const galleryImages = uniqueImages([heroImage, topicImage, ...theme.images, fallbackImage]).slice(0, 4);
+  const galleryImages = uniqueImages([heroImage, topicImage, ...(listImagePools[category] || []), ...theme.images, fallbackImage]).slice(0, 7);
 
   return {
     ...theme,
@@ -1004,7 +1004,7 @@ export function getPostVisualsForList(posts: PostMeta[]) {
       ...visuals,
       heroImage,
       coverImage: heroImage,
-      galleryImages: uniqueImages([heroImage, ...visuals.galleryImages, ...candidates]).slice(0, 4),
+      galleryImages: uniqueImages([heroImage, ...visuals.galleryImages, ...candidates]).slice(0, 7),
     };
   });
 }
