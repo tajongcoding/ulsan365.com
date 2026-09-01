@@ -54,30 +54,138 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-function replacePostImagesWithMatchedGallery(content: string, images: string[], title: string) {
-  const contentWithoutLeadingImages = content.replace(/^(?:\s*!\[[^\]]*\]\([^)]+\)\s*)+/, '').trimStart();
+function replacePostImagesWithMatchedGallery(
+  content: string,
+  images: string[],
+  title: string,
+  heroImage?: string | null,
+) {
+  const MAX_BODY_IMAGES = 6;
 
-  if (!images.length) {
-    return contentWithoutLeadingImages;
+  const imageIdentity = (src: string) =>
+    src
+      .trim()
+      .replace(/^https?:\/\//, '')
+      .replace(/\?.*$/, '')
+      .replace(/#.*$/, '');
+
+  const used = new Set<string>();
+
+  if (heroImage) {
+    used.add(imageIdentity(heroImage));
   }
 
-  let index = 0;
-  const frameStyles = [
-    'width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; border-radius:16px; margin: 20px 0;',
-    'width:100%; height:auto; aspect-ratio:4/3; object-fit:cover; border-radius:16px; margin: 22px 0;',
-    'width:100%; height:auto; aspect-ratio:3/2; object-fit:cover; border-radius:16px; margin: 18px 0;',
-    'width:100%; height:auto; aspect-ratio:16/10; object-fit:cover; border-radius:16px; margin: 20px 0;',
-  ];
+  const collectedImages: string[] = [];
 
-  const nextMarkup = () => {
-    const selected = images[index % images.length] || images[0];
-    const style = frameStyles[index % frameStyles.length];
-    const alt = `${title} 관련 이미지 ${index + 1}`;
-    index += 1;
-    return `<img src="${selected}" alt="${alt}" style="${style}" />`;
-  };
+  // 기존 Markdown 본문 이미지는 URL을 보존하되 원래 위치에서는 제거한다.
+  // 이후 최대 6장을 본문 흐름에 맞게 다시 분산 배치한다.
+  const standaloneMarkdownImagePattern =
+    /^\s*!\[([^\]]*)\]\(([^)]+)\)\s*$/gm;
 
-  return `${images.map(() => nextMarkup()).join('\n')}\n\n${contentWithoutLeadingImages}`;
+  let cleanedContent = content.replace(
+    standaloneMarkdownImagePattern,
+    (fullMatch: string, _alt: string, src: string) => {
+      const cleanSrc = src.trim();
+      if (!cleanSrc) return '';
+
+      const key = imageIdentity(cleanSrc);
+
+      if (used.has(key)) {
+        return '';
+      }
+
+      used.add(key);
+
+      if (collectedImages.length < MAX_BODY_IMAGES) {
+        collectedImages.push(fullMatch.trim());
+      }
+
+      return '';
+    },
+  );
+
+  cleanedContent = cleanedContent
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+
+  // 기존 Markdown 이미지가 6장보다 부족할 때만 postVisuals 이미지로 보충한다.
+  for (const src of images) {
+    if (collectedImages.length >= MAX_BODY_IMAGES) break;
+    if (!src) continue;
+
+    const key = imageIdentity(src);
+
+    if (used.has(key)) continue;
+
+    used.add(key);
+
+    const imageNumber = collectedImages.length + 1;
+    const safeAlt = `${title} 본문 이미지 ${imageNumber}`
+      .replace(/&/g, '&amp;')
+      .replace(/"/g, '&quot;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+
+    collectedImages.push(
+      `<img src="${src}" alt="${safeAlt}" style="width:100%; max-width:760px; height:auto; margin:32px auto; display:block; border-radius:14px;" />`,
+    );
+  }
+
+  if (!collectedImages.length || !cleanedContent) {
+    return cleanedContent;
+  }
+
+  const blocks = cleanedContent
+    .split(/\n{2,}/)
+    .map((block) => block.trim())
+    .filter(Boolean);
+
+  const stopInsertPattern =
+    /^##\s*(공식\s*상세출처|공식\s*출처|FAQ|자주\s*묻는\s*질문|문의|관련\s*링크|CTA)\b/i;
+
+  const stopIndex = blocks.findIndex((block) =>
+    stopInsertPattern.test(block),
+  );
+
+  const safeBlockCount =
+    stopIndex === -1 ? blocks.length : stopIndex;
+
+  if (safeBlockCount <= 0) {
+    return cleanedContent;
+  }
+
+  const imageCount = collectedImages.length;
+
+  // 같은 위치가 계산되어도 이미지가 덮어써지지 않도록 배열로 보관한다.
+  const insertAfter = new Map<number, string[]>();
+
+  for (let i = 0; i < imageCount; i += 1) {
+    const position = Math.floor(
+      ((i + 1) * safeBlockCount) / (imageCount + 1),
+    );
+
+    const safePosition = Math.min(
+      Math.max(position, 0),
+      safeBlockCount - 1,
+    );
+
+    const existing = insertAfter.get(safePosition) ?? [];
+    existing.push(collectedImages[i]);
+    insertAfter.set(safePosition, existing);
+  }
+
+  const result: string[] = [];
+
+  blocks.forEach((block, index) => {
+    result.push(block);
+
+    const positionedImages = insertAfter.get(index) ?? [];
+    positionedImages.forEach((image) => {
+      result.push(image);
+    });
+  });
+
+  return result.join('\n\n');
 }
 
 export default async function BlogDetailPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -98,6 +206,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
     post.content,
     bodyGalleryImages,
     post.title,
+    visuals.heroImage,
   );
 
   const jsonLd = {
@@ -194,7 +303,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
         <hr className="mb-10 border-slate-200" />
 
         {/* 마크다운 본문 렌더링 - 단락 여백 감소, 요약 박스 테두리 폭발적 디자인, 리스트 점 제거 */}
-        <article className="prose prose-base md:prose-lg prose-blue prose-slate max-w-none prose-p:my-4 prose-p:leading-relaxed prose-headings:font-black prose-headings:text-[#0F1A2B] prose-headings:mt-9 prose-a:text-[#C9A857] prose-blockquote:not-italic prose-blockquote:border-[3px] prose-blockquote:!border-l-[3px] prose-blockquote:border-[#0F1A2B] prose-blockquote:bg-slate-50 prose-blockquote:shadow-sm prose-blockquote:rounded-[20px] prose-blockquote:py-5 prose-blockquote:px-6 prose-blockquote:text-[#1F2937] prose-blockquote:mt-8 prose-ul:list-none prose-ul:pl-0 prose-img:rounded-xl prose-img:w-full break-keep">
+        <article className="prose prose-base md:prose-lg prose-blue prose-slate max-w-none prose-p:my-4 prose-p:leading-relaxed prose-headings:font-black prose-headings:text-[#0F1A2B] prose-headings:mt-9 prose-a:text-[#C9A857] prose-blockquote:not-italic prose-blockquote:border-[3px] prose-blockquote:!border-l-[3px] prose-blockquote:border-[#0F1A2B] prose-blockquote:bg-slate-50 prose-blockquote:shadow-sm prose-blockquote:rounded-[20px] prose-blockquote:py-5 prose-blockquote:px-6 prose-blockquote:text-[#1F2937] prose-blockquote:mt-8 prose-ul:list-none prose-ul:pl-0 prose-img:rounded-xl prose-img:w-full prose-img:max-w-[760px] prose-img:h-auto prose-img:mx-auto break-keep">
           <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
             {renderedContent}
           </ReactMarkdown>
