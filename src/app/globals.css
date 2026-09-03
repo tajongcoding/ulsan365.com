@@ -4,6 +4,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-noto-sans-kr: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 }
 
 @theme inline {
@@ -16,6 +17,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  letter-spacing: -0.02em; /* 폰트 자간을 아주 살짝 줄여 가독성 최적화 */
+  letter-spacing: 0;
 }
-
