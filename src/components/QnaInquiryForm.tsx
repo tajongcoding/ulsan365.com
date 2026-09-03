@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from 'react';
-import { buttonClass, buttonLabels } from '@/lib/buttonLabels';
-import { siteConfig } from '@/lib/site';
 
 export default function QnaInquiryForm() {
   const [name, setName] = useState('');
@@ -18,22 +16,22 @@ export default function QnaInquiryForm() {
       return;
     }
 
-    const subject = encodeURIComponent(`[울산365 문의·제보] ${name}님의 질문`);
+    const subject = encodeURIComponent(`[아시나요 울산 문의] ${name}님의 질문`);
     const body = encodeURIComponent(
-      `이름: ${name}\n이메일: ${email}\n\n문의·제보 내용:\n${message}\n\n--\n울산365 문의 폼에서 전송됨`
+      `이름: ${name}\n이메일: ${email}\n\n문의 내용:\n${message}\n\n--\n아시나요 울산 문의 폼에서 전송됨`
     );
 
-    window.location.href = `mailto:${siteConfig.email}?subject=${subject}&body=${body}`;
-    setNotice(`이메일 앱이 열리지 않으면 ${siteConfig.email} 로 직접 보내주세요.`);
+    window.location.href = `mailto:help@asinayo.org?subject=${subject}&body=${body}`;
+    setNotice('이메일 앱이 열리지 않으면 help@asinayo.org 로 직접 보내주세요.');
   };
 
   return (
-    <form id="inquiry" onSubmit={handleSubmit} className="bg-white rounded-[24px] border-[2px] border-[#0F1A2B] p-6 md:p-8 shadow-sm scroll-mt-24">
+    <form onSubmit={handleSubmit} className="bg-white rounded-[24px] border-[2px] border-[#0F1A2B] p-6 md:p-8 shadow-sm">
       <div className="mb-5">
         <p className="text-[14px] font-bold text-[#C9A857] tracking-widest uppercase mb-2">Contact Form</p>
-        <h2 className="text-[24px] md:text-[28px] font-black text-[#0F1A2B] mb-2">문의·제보 남기기</h2>
+        <h2 className="text-[24px] md:text-[28px] font-black text-[#0F1A2B] mb-2">문의 남기기</h2>
         <p className="text-slate-500 break-keep">
-          궁금한 내용이나 수정이 필요한 정보를 이메일로 바로 보낼 수 있습니다.
+          궁금한 내용을 남겨주시면 이메일로 바로 문의를 보낼 수 있습니다.
         </p>
       </div>
 
@@ -64,12 +62,12 @@ export default function QnaInquiryForm() {
       </div>
 
       <label className="mt-4 flex flex-col gap-2 text-[14px] font-semibold text-[#0F1A2B]">
-        문의·제보 내용
+        문의 내용
         <textarea
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           rows={6}
-          placeholder="예: 울산 청년 지원금 신청 조건이 궁금합니다. / 링크 수정이 필요합니다."
+          placeholder="예: 울산 청년 지원금 신청 조건이 궁금합니다."
           className="rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-[#C9A857] focus:ring-2 focus:ring-[#C9A857]/20 resize-y"
         />
       </label>
@@ -80,9 +78,9 @@ export default function QnaInquiryForm() {
         </p>
         <button
           type="submit"
-          className={buttonClass.primary}
+          className="inline-flex items-center justify-center rounded-xl bg-[#0F1A2B] px-5 py-3 font-bold text-white hover:bg-[#C9A857] hover:text-[#0F1A2B] transition-colors"
         >
-          {buttonLabels.inquiry}
+          이메일로 문의 보내기
         </button>
       </div>
 
