@@ -17,6 +17,8 @@ export type PostMeta = {
   summaryBox?: string; // 핵심 요약 박스 내용 추출
   thumbnailUrl?: string | null; // 본문 첫 이미지 URL
   images?: string[]; // frontmatter images 배열
+  applicationStart?: string; // 접수 시작 시각 (ISO 8601)
+  applicationEnd?: string; // 접수 종료 시각 (ISO 8601)
 };
 
 export type Post = PostMeta & {
@@ -188,6 +190,8 @@ export function getAllPosts(): PostMeta[] {
           category: normalizeCategory(data.category),
           tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
           images: Array.isArray(data.images) ? data.images.map(String).filter(Boolean) : [],
+          applicationStart: data.applicationStart ? String(data.applicationStart) : undefined,
+          applicationEnd: data.applicationEnd ? String(data.applicationEnd) : undefined,
           contentExcerpt,
           summaryBox,
           thumbnailUrl,
@@ -244,6 +248,8 @@ export function getPostBySlug(slug: string): Post | null {
     category: normalizeCategory(data.category),
     tags: Array.isArray(data.tags) ? data.tags : [],
     images: Array.isArray(data.images) ? data.images.map(String).filter(Boolean) : [],
+    applicationStart: data.applicationStart ? String(data.applicationStart) : undefined,
+    applicationEnd: data.applicationEnd ? String(data.applicationEnd) : undefined,
     contentExcerpt,
     thumbnailUrl,
     content,

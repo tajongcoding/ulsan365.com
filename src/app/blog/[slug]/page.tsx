@@ -8,6 +8,7 @@ import CoupangBanner from '@/components/CoupangBanner';
 import Link from 'next/link';
 import { getPostVisuals } from '@/lib/postVisuals';
 import { absoluteUrl, buildPostSeoTitle, siteConfig } from '@/lib/site';
+import { getApplicationStatus } from '@/lib/applicationStatus';
 
 // 빌드 시 존재하는 모든 slug를 미리 생성 (정적 페이지 생성)
 export async function generateStaticParams() {
@@ -201,6 +202,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
     .filter((item) => item.slug !== post.slug && item.category === post.category)
     .slice(0, 3);
   const visuals = getPostVisuals(post);
+  const applicationStatus = getApplicationStatus(post);
   const bodyGalleryImages = visuals.galleryImages.filter((image) => image !== visuals.heroImage);
   const renderedContent = replacePostImagesWithMatchedGallery(
     post.content,
@@ -277,6 +279,11 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
             <span className="inline-flex items-center text-[15px] md:text-[16px] font-bold text-blue-700 bg-blue-50 border border-blue-200 px-4 py-1.5 rounded-full">
               {post.category}
             </span>
+            {applicationStatus && (
+              <span className={`inline-flex items-center border px-4 py-1.5 rounded-full text-[15px] md:text-[16px] font-extrabold ${applicationStatus.className}`}>
+                {applicationStatus.label}
+              </span>
+            )}
           </div>
 
           <div className="flex flex-wrap items-center gap-2 text-[13px] text-gray-500 mb-6">
