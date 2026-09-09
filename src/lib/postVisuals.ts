@@ -354,6 +354,13 @@ const listImagePools: Record<string, string[]> = {
 const sharedListImagePool = uniqueImages(Object.values(listImagePools).flat());
 
 const LOCAL_IMAGES: Record<string, string> = {
+  '2026-09-11-event-ulsan-jonggatjip-library-magic-bubble-show': '/images/info/2026-09-11/2026-09-11-event-ulsan-jonggatjip-library-magic-bubble-show-01.webp',
+  '2026-09-10-education-ulju-student-record-special-lecture': '/images/info/2026-09-10/2026-09-10-education-ulju-student-record-special-lecture-01.webp',
+  '2026-09-10-event-ulju-songpyeon-hangawi-class': '/images/info/2026-09-10/2026-09-10-event-ulju-songpyeon-hangawi-class-01.webp',
+  '2026-09-09-life-ulsan-library-senior-generative-ai-class': '/images/info/2026-09-09/senior-generative-ai-01.webp',
+  '2026-09-09-event-ulsan-library-lifecycle-reading-program': '/images/info/2026-09-09/library-lifecycle-reading-01.webp',
+  '2026-09-08-event-ulsan-museum-university-food-history': '/images/info/2026-09-08/museum-food-history-01.webp',
+  '2026-09-08-event-ulsan-petroglyph-museum-workshop': '/images/info/2026-09-08/petroglyph-workshop-01.webp',
   '2026-08-09-welfare-10-ulsan-senior-welfare': 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&q=80&w=1400',
   '2026-08-09-welfare-09-ulsan-welfare-support': 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1400',
   '2026-08-09-ulsan-10-ulsan-hidden-spots-story': ulsanLocalPhotos.bangudae,
