@@ -51,7 +51,7 @@ function normalizeCategory(category: unknown): string {
 }
 
 const SITE_OPEN_DATE = '2026-03-17';
-const LATEST_PUBLIC_DATE = '2026-08-24';
+const LATEST_PUBLIC_DATE = '2026-09-11';
 const PUBLIC_ARCHIVE_TARGET_COUNT = 200;
 const DAY_IN_MS = 24 * 60 * 60 * 1000;
 
