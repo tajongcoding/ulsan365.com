@@ -74,7 +74,7 @@ function HeaderInner() {
                       : 'text-white hover:text-[#FFE08A]'
                   }`}
                 >
-                  {item.highlight && <span className="text-[12px] font-black">✨</span>}
+                  {item.highlight && <span className="inline-flex h-4 w-4 items-center justify-center rounded-full border border-current text-[10px] font-black">?</span>}
                   {item.name}
                   <span className={`absolute bottom-4 left-0 h-[3px] bg-[#C9A857] shadow-[0_0_10px_rgba(201,168,87,0.5)] transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover/item:w-full'}`}></span>
                 </Link>
@@ -91,9 +91,6 @@ function HeaderInner() {
             aria-label="구글 첫 화면 열기"
             className="ml-1 relative inline-flex h-11 w-11 md:h-12 md:w-12 items-center justify-center rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(255,224,138,0.22),rgba(21,32,51,0.96)_58%)] text-[#FFE08A] shadow-[0_0_18px_rgba(201,168,87,0.28),0_8px_20px_rgba(0,0,0,0.2)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[radial-gradient(circle_at_30%_30%,rgba(255,240,180,0.34),rgba(26,41,66,1)_58%)] hover:text-[#FFF4BF] hover:shadow-[0_0_26px_rgba(255,224,138,0.45),0_12px_28px_rgba(0,0,0,0.24)]"
           >
-            <span className="absolute right-1 top-1 text-[10px] text-[#FFF4BF] drop-shadow-[0_0_6px_rgba(255,224,138,0.8)] animate-[pulse_1.2s_ease-in-out_infinite]">
-              ✨
-            </span>
             <svg className="w-5.5 h-5.5 md:w-6.5 md:h-6.5 animate-[pulse_1.4s_ease-in-out_infinite] drop-shadow-[0_0_8px_rgba(255,224,138,0.5)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3.2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
@@ -125,7 +122,7 @@ function HeaderInner() {
             <div key={idx} className="flex flex-col">
               <div className={`py-4 text-[20px] font-bold border-b border-slate-800/50 flex justify-between items-center group active:text-[#C9A857] ${item.highlight ? 'text-[#C9A857]' : 'text-white'}`}>
                 <Link href={item.path} onClick={() => setIsMobileMenuOpen(false)} className={`flex items-center gap-2 ${item.highlight ? 'px-3 py-1 rounded-full bg-[#C9A857]/10' : ''}`}>
-                  {item.highlight && <span className="text-[12px]">✨</span>}
+                  {item.highlight && <span className="inline-flex h-4 w-4 items-center justify-center rounded-full border border-current text-[10px] font-black">?</span>}
                   {item.name}
                 </Link>
                 {item.highlight && <span className="text-[12px] text-[#C9A857]">빠른 확인</span>}

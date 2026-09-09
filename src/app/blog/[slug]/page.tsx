@@ -151,6 +151,7 @@ function buildContentSections(
   images: string[],
   title: string,
   heroImage?: string | null,
+  bodyImageLimit = 6,
 ): ContentSection[] {
   const used = new Set<string>();
 
@@ -164,7 +165,7 @@ function buildContentSections(
     .filter(Boolean)
     .filter((src, index, source) => source.indexOf(src) === index)
     .filter((src) => !used.has(imageIdentity(src)))
-    .slice(0, MAX_BODY_IMAGES);
+    .slice(0, bodyImageLimit);
 
   let fallbackIndex = 0;
   const pendingImages: ContentImage[] = [];
@@ -203,7 +204,7 @@ function buildContentSections(
     if (parsedImage) {
       const key = imageIdentity(parsedImage.src);
 
-      if (!used.has(key) && bodyImageCount < MAX_BODY_IMAGES) {
+      if (!used.has(key) && bodyImageCount < bodyImageLimit) {
         used.add(key);
         bodyImageCount += 1;
 
@@ -232,7 +233,7 @@ function buildContentSections(
     sections[sections.length - 1].image = pendingImages.shift();
   }
 
-  sections.forEach((section) => {
+  sections.filter(shouldReceiveFallbackImage).slice(0, bodyImageLimit).forEach((section) => {
     if (section.image || !shouldReceiveFallbackImage(section)) {
       return;
     }
@@ -291,6 +292,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
     bodyGalleryImages,
     post.title,
     visuals.heroImage,
+    post.date < '2026-08-26' ? 5 : 6,
   );
 
   const jsonLd = {
@@ -402,11 +404,11 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
               }`}
             >
               {section.image && (
-                <figure className="mb-4 overflow-hidden rounded-xl border border-slate-200 bg-slate-50 md:mb-0">
+                <figure className="mb-4 aspect-[4/3] w-full overflow-hidden rounded-xl border-2 border-slate-200 bg-slate-50 md:mb-0">
                   <img
                     src={section.image.src}
                     alt={section.image.alt}
-                    className="w-full h-auto max-h-[440px] object-contain"
+                    className="h-full w-full object-contain"
                     loading="lazy"
                   />
                 </figure>
