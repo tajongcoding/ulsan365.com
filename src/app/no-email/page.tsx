@@ -19,7 +19,7 @@ export default function NoEmailPage() {
 
         <div className="prose prose-slate max-w-none text-[16px] leading-relaxed space-y-4 text-[#1F2937]">
           <p>
-            울산365(ulsan365.com)에 게시된 이메일 주소(help@asinayo.org)는 오직 이용자 문의 및 서비스 안내를 목적으로 공개됩니다.
+            울산365(ulsan365.com)에 게시된 이메일 주소(help@ulsan365.com)는 오직 이용자 문의 및 서비스 안내를 목적으로 공개됩니다.
           </p>
           <p>
             스팸성 광고·홍보 메일, 무단 수집을 통한 이메일 발송은 &lsquo;정보통신망 이용촉진 및 정보보호 등에 관한 법률&rsquo; 제50조 이하의 규정에 의해 처벌받을 수 있습니다.

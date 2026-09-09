@@ -175,7 +175,7 @@ export default function QnaBoard() {
 
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="mailto:help@asinayo.org"
+                href="mailto:help@ulsan365.com"
                 className="inline-flex items-center justify-center rounded-xl bg-[#C9A857] px-5 py-3 font-bold text-[#0F1A2B] hover:brightness-105 transition"
               >
                 이메일 문의하기

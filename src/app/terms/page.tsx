@@ -55,7 +55,7 @@ export default function TermsPage() {
 
           <section>
             <h2 className="text-[20px] font-bold text-[#0F1A2B] mb-2">문의</h2>
-            <p className="font-semibold text-[#0F1A2B]">이메일: help@asinayo.org</p>
+            <p className="font-semibold text-[#0F1A2B]">이메일: help@ulsan365.com</p>
           </section>
         </div>
 

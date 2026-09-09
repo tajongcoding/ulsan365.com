@@ -81,6 +81,21 @@ function formatKoreanMonthDay(date: string): string {
   return `${Number(month)}월 ${Number(day)}일`;
 }
 
+function uniqueStrings(values: string[]) {
+  return values.filter((value, index, source) => Boolean(value) && source.indexOf(value) === index);
+}
+
+function extractContentImages(content: string) {
+  const htmlImages = Array.from(content.matchAll(/<img[^>]+src=["']([^"']+)["'][^>]*>/gi))
+    .map((match) => match[1]?.trim())
+    .filter((src): src is string => Boolean(src));
+  const markdownImages = Array.from(content.matchAll(/!\[[^\]]*\]\(([^)]+)\)/g))
+    .map((match) => match[1]?.trim())
+    .filter((src): src is string => Boolean(src));
+
+  return uniqueStrings([...htmlImages, ...markdownImages]);
+}
+
 function curatePublicArchivePosts(posts: PostMeta[]): PostMeta[] {
   const groupedPosts = new Map<string, PostMeta[]>();
   const groupKeys: string[] = [];
@@ -179,8 +194,10 @@ export function getAllPosts(): PostMeta[] {
         const contentExcerpt = rawText.slice(0, 200) + '...';
 
         // 3. 본문 내의 첫 번째 이미지 추출
-        const imgMatch = content.match(/<img[^>]+src=["']([^"']+)["']/i) || content.match(/!\[.*?\]\((.*?)\)/);
-        const thumbnailUrl = imgMatch ? imgMatch[1] : null;
+        const frontmatterImages = Array.isArray(data.images) ? data.images.map(String).filter(Boolean) : [];
+        const contentImages = extractContentImages(content);
+        const postImages = uniqueStrings([...frontmatterImages, ...contentImages]);
+        const thumbnailUrl = postImages[0] || null;
 
         return {
           slug,
@@ -189,7 +206,7 @@ export function getAllPosts(): PostMeta[] {
           summary: String(data.summary || data.description || ''),
           category: normalizeCategory(data.category),
           tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
-          images: Array.isArray(data.images) ? data.images.map(String).filter(Boolean) : [],
+          images: postImages,
           applicationStart: data.applicationStart ? String(data.applicationStart) : undefined,
           applicationEnd: data.applicationEnd ? String(data.applicationEnd) : undefined,
           contentExcerpt,
@@ -235,8 +252,10 @@ export function getPostBySlug(slug: string): Post | null {
 
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
-  const imgMatch = content.match(/<img[^>]+src=["']([^"']+)["']/i) || content.match(/!\[.*?\]\((.*?)\)/);
-  const thumbnailUrl = imgMatch ? imgMatch[1] : null;
+  const frontmatterImages = Array.isArray(data.images) ? data.images.map(String).filter(Boolean) : [];
+  const contentImages = extractContentImages(content);
+  const postImages = uniqueStrings([...frontmatterImages, ...contentImages]);
+  const thumbnailUrl = postImages[0] || null;
   const rawText = content.replace(/[#*>\-`]/g, '').replace(/\s+/g, ' ').trim();
   const contentExcerpt = rawText ? `${rawText.slice(0, 160)}...` : '';
 
@@ -247,7 +266,7 @@ export function getPostBySlug(slug: string): Post | null {
     summary: data.summary || data.description || '',
     category: normalizeCategory(data.category),
     tags: Array.isArray(data.tags) ? data.tags : [],
-    images: Array.isArray(data.images) ? data.images.map(String).filter(Boolean) : [],
+    images: postImages,
     applicationStart: data.applicationStart ? String(data.applicationStart) : undefined,
     applicationEnd: data.applicationEnd ? String(data.applicationEnd) : undefined,
     contentExcerpt,

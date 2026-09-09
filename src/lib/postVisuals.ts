@@ -917,6 +917,15 @@ const LOCAL_IMAGES: Record<string, string> = {
   '2026-02-22-life-01-bus-transfer-guide': 'https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?auto=format&fit=crop&q=80&w=1400',
 };
 
+const LIST_IMAGES: Record<string, string> = {
+  '2026-09-11-event-ulsan-jonggatjip-library-magic-bubble-show': '/images/info/2026-09-11/2026-09-11-event-ulsan-jonggatjip-library-magic-bubble-show-05.webp',
+  '2026-09-10-education-ulju-student-record-special-lecture': '/images/info/2026-09-10/2026-09-10-education-ulju-student-record-special-lecture-06.webp',
+  '2026-09-09-life-ulsan-library-senior-generative-ai-class': '/images/info/2026-09-09/senior-generative-ai-07.webp',
+  '2026-09-09-event-ulsan-library-lifecycle-reading-program': '/images/info/2026-09-09/library-lifecycle-reading-02.webp',
+  '2026-09-08-event-ulsan-museum-university-food-history': '/images/info/2026-09-08/museum-food-history-04.webp',
+  '2026-09-08-event-ulsan-petroglyph-museum-workshop': '/images/info/2026-09-08/petroglyph-workshop-02.webp',
+};
+
 function getStableSeed(value: string) {
   return value.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
 }
@@ -949,14 +958,17 @@ export function getPostVisuals(post: PostMeta) {
   const imageIndex = getStableSeed(seedKey) % theme.images.length;
   const fallbackImage = theme.images[imageIndex] || categoryThemes['기타'].images[0];
   const explicitImage = LOCAL_IMAGES[post.slug] || null;
+  const listImage = LIST_IMAGES[post.slug] || null;
+  const contentImages = post.images || [];
   const topicImage = getTopicMatchedImage(post);
   const heroImage = explicitImage || topicImage || post.thumbnailUrl || fallbackImage;
-  const galleryImages = uniqueImages([heroImage, topicImage, ...(listImagePools[category] || []), ...theme.images, fallbackImage]).slice(0, 7);
+  const galleryImages = uniqueImages([heroImage, ...contentImages, listImage, topicImage, ...(listImagePools[category] || []), ...theme.images, fallbackImage]).slice(0, 7);
 
   return {
     ...theme,
     categoryLabel: theme.label,
     heroImage,
+    listImage: listImage || heroImage,
     fallbackImage,
     galleryImages,
     coverImage: heroImage,
@@ -972,7 +984,9 @@ export function getPostVisualsForList(posts: PostMeta[]) {
     const category = post.category || '기타';
     const theme = categoryThemes[category] || categoryThemes['기타'];
     const listPool = listImagePools[category] || listImagePools['명소'] || [];
+    const preferredListImage = visuals.listImage || visuals.heroImage;
     const categoryCandidates = uniqueImages([
+      preferredListImage,
       visuals.heroImage,
       ...visuals.galleryImages,
       ...listPool,
@@ -982,6 +996,7 @@ export function getPostVisualsForList(posts: PostMeta[]) {
     const fallbackCandidates = uniqueImages([
       ...sharedListImagePool,
       ...visuals.galleryImages,
+      preferredListImage,
       visuals.heroImage,
     ]);
     const candidates = uniqueImages([
@@ -999,7 +1014,8 @@ export function getPostVisualsForList(posts: PostMeta[]) {
       ...fallbackCandidates.slice(fallbackOffset),
       ...fallbackCandidates.slice(0, fallbackOffset),
     ];
-    const heroImage = (!usedImages.has(visuals.heroImage) ? visuals.heroImage : undefined)
+    const heroImage = (!usedImages.has(preferredListImage) ? preferredListImage : undefined)
+      || (!usedImages.has(visuals.heroImage) ? visuals.heroImage : undefined)
       || orderedPrimaryCandidates.find((image) => !usedImages.has(image))
       || orderedFallbackCandidates.find((image) => !usedImages.has(image))
       || visuals.heroImage;

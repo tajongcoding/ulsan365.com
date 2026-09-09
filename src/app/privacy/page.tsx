@@ -49,7 +49,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-[20px] font-bold text-[#0F1A2B] mb-2">5. 개인정보보호 책임자</h2>
             <p>개인정보 처리 관련 문의는 아래 이메일로 연락하여 주시기 바랍니다.</p>
-            <p className="mt-1 font-semibold text-[#0F1A2B]">이메일: help@asinayo.org</p>
+            <p className="mt-1 font-semibold text-[#0F1A2B]">이메일: help@ulsan365.com</p>
           </section>
         </div>
 

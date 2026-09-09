@@ -21,8 +21,8 @@ export default function QnaInquiryForm() {
       `이름: ${name}\n이메일: ${email}\n\n문의 내용:\n${message}\n\n--\n아시나요 울산 문의 폼에서 전송됨`
     );
 
-    window.location.href = `mailto:help@asinayo.org?subject=${subject}&body=${body}`;
-    setNotice('이메일 앱이 열리지 않으면 help@asinayo.org 로 직접 보내주세요.');
+    window.location.href = `mailto:help@ulsan365.com?subject=${subject}&body=${body}`;
+    setNotice('이메일 앱이 열리지 않으면 help@ulsan365.com 로 직접 보내주세요.');
   };
 
   return (

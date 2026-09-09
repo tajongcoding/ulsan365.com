@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
-import { Suspense, useEffect, useMemo, useState } from 'react';
+import { Suspense, useMemo, useState } from 'react';
 import { getCategoryLabel, getPostVisualsForList } from '@/lib/postVisuals';
 import CoupangBanner from './CoupangBanner';
 import GoogleAdSlot from './GoogleAdSlot';
@@ -20,7 +20,12 @@ interface PostMeta { slug: string;
 // 실제 리스트를 보여주는 내부 컴포넌트
 function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchParams = useSearchParams();
   const categoryFilter = searchParams.get('category') || '';
-  const [searchTerm, setSearchTerm] = useState('');
+
+  return <BlogListResults key={categoryFilter} allPosts={allPosts} categoryFilter={categoryFilter} />;
+}
+
+function BlogListResults({ allPosts, categoryFilter }: { allPosts: PostMeta[]; categoryFilter: string }) {
+  const searchTerm = '';
   const [currentPage, setCurrentPage] = useState(1);
   const [showAllList, setShowAllList] = useState(false);
 
@@ -62,11 +67,6 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
     ? `${getCategoryLabel(categoryFilter)} 대표 글 8개와 전체 목록을 페이지별로 확인하세요.`
     : '울산광역시의 유용한 생활·복지·행사 정보를 대표 글 8개와 전체 목록으로 정리했습니다.';
 
-  useEffect(() => {
-    setCurrentPage(1);
-    setShowAllList(false);
-  }, [categoryFilter, searchTerm]);
-
   return (
     <div className="flex flex-col">
       <div className="mb-7 border-b-2 border-[#0F1A2B] pb-5 max-w-4xl">
@@ -105,7 +105,7 @@ function BlogListContent({ allPosts }: { allPosts: PostMeta[] }) { const searchP
                         src={heroImage}
                         fallbackSrc={fallbackImage}
                         alt={post.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-95"
                       />
                       <div className={`absolute inset-0 bg-gradient-to-t ${overlayClass} pointer-events-none`}></div>
                     </div>
