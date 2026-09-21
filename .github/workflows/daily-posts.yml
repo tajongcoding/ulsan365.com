@@ -1,14 +1,38 @@
-name: Daily Auto Posts (Disabled)
+name: Daily Date-Based Deploy
 
 on:
+  schedule:
+    - cron: "10 15 * * *"
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  disabled:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Autopost disabled
-        run: echo "Daily automatic posting is disabled."
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Hide future posts
+        shell: bash
+        run: |
+          TODAY=$(TZ=Asia/Seoul date +%F)
+          mkdir -p /tmp/future-posts
+          for f in src/content/posts/*.md; do
+            d=$(basename "$f" | cut -c1-10)
+            if [[ "$d" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] && [[ "$d" > "$TODAY" ]]; then
+              mv "$f" /tmp/future-posts/
+            fi
+          done
+
+      - run: npm ci
+      - run: npm run build
+      - run: npx wrangler pages deploy out --project-name=my-local-info
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
