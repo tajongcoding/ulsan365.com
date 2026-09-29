@@ -2,7 +2,6 @@ import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import FaqSearchBoard from '@/components/FaqSearchBoard';
-import QnaInquiryForm from '@/components/QnaInquiryForm';
 import { absoluteUrl, siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -265,8 +264,6 @@ export default function QnaBoard() {
           ))}
         </section>
 
-        <QnaInquiryForm />
-
         <section className="bg-[#0F1A2B] text-white rounded-2xl p-5 md:p-6 border border-[#C9A857]/20 shadow-sm">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
             <div>
@@ -275,17 +272,17 @@ export default function QnaBoard() {
                 원하는 답변이 없으신가요?
               </h2>
               <p className="text-slate-300 break-keep leading-relaxed">
-                문의 폼 또는 이메일로 남겨주시면 확인 후 순차적으로 안내해 드립니다.
+                간단 문의게시판 또는 이메일로 남겨주시면 확인 후 순차적으로 안내해 드립니다.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3">
-              <a
-                href={`mailto:${siteConfig.email}`}
+              <Link
+                href="/inquiry"
                 className="inline-flex items-center justify-center rounded-xl bg-[#C9A857] px-5 py-3 font-bold text-[#0F1A2B] hover:brightness-105 transition"
               >
-                직접 이메일 보내기
-              </a>
+                간단 문의 남기기
+              </Link>
               <Link
                 href="/blog"
                 className="inline-flex items-center justify-center rounded-xl border border-white/20 px-5 py-3 font-bold text-white hover:bg-white/10 transition"
