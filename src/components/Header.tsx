@@ -56,7 +56,7 @@ function HeaderInner() {
           </div>
         </Link>
         
-        <nav className="hidden lg:flex flex-1 items-center justify-between gap-3">
+        <nav className="hidden lg:flex flex-1 items-center justify-center gap-[12px] xl:gap-[16px]">
           {menuItems.map((item, idx) => {
             const itemCategory = item.path.includes('category=') ? decodeURIComponent(item.path.split('category=')[1]) : '';
             const isActive = item.path === '/qna' || item.path === '/inquiry'
