@@ -174,7 +174,8 @@ export default function FaqSearchBoard({ items }: { items: readonly FaqItem[] })
 
       <div className="p-4 md:p-6 space-y-4">
         {filteredItems.length > 0 ? (
-          filteredItems.map((item, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {filteredItems.map((item, index) => (
             <details
               key={`${item.question}-${selectedCategory}-${selectedDistrict}-${query}`}
               open={index === 0 && !query}
@@ -216,7 +217,8 @@ export default function FaqSearchBoard({ items }: { items: readonly FaqItem[] })
                 </div>
               </div>
             </details>
-          ))
+            ))}
+          </div>
         ) : (
           <div className="rounded-[22px] border border-dashed border-slate-300 bg-slate-50 px-5 py-10 text-center">
             <p className="text-[18px] font-black text-[#0F1A2B]">검색 결과가 없습니다</p>
