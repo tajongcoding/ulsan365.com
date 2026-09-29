@@ -6,6 +6,7 @@ import { absoluteUrl } from '@/lib/site';
 export const metadata: Metadata = {
   title: '울산365 간단 문의·제보',
   description: '울산365에 문의하거나 잘못된 정보, 변경 정보, 새 울산 정보를 간단히 남길 수 있는 게시판입니다.',
+  keywords: ['울산 문의', '울산 정보 제보', '간단 문의게시판'],
   alternates: { canonical: absoluteUrl('/inquiry') },
 };
 
