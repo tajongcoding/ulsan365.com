@@ -130,11 +130,11 @@ const faqGuideCards = [
 ];
 
 const districtGuideCards = [
-  { name: '남구', desc: '청년정책, 행사, 생활 밀집 정보 확인', icon: '🏙️' },
-  { name: '중구', desc: '행정민원, 복지, 생활 편의 정보', icon: '🏛️' },
-  { name: '동구', desc: '교통, 산업생활, 지역 실용 정보', icon: '⚓' },
-  { name: '북구', desc: '가정·복지·주거 관련 정보 체크', icon: '🌿' },
-  { name: '울주군', desc: '관광, 나들이, 생활 행정 정보', icon: '⛰️' },
+  { name: '남구', desc: '청년정책, 행사, 생활 밀집 정보 확인', logo: 'https://www.ulsannamgu.go.kr/images/namgu_img/namgu_logo.png' },
+  { name: '중구', desc: '행정민원, 복지, 생활 편의 정보', logo: 'https://www.junggu.ulsan.kr/images/domain/junggu/file/symbol.jpg' },
+  { name: '동구', desc: '교통, 산업생활, 지역 실용 정보', logo: 'https://www.donggu.ulsan.kr/images/main/donggu_logo.png' },
+  { name: '북구', desc: '가정·복지·주거 관련 정보 체크', logo: 'https://www.bukgu.ulsan.kr/images/header/logo.svg' },
+  { name: '울주군', desc: '관광, 나들이, 생활 행정 정보', logo: 'https://www.ulju.ulsan.kr/ulju/img/common/logo.svg' },
 ];
 
 const faqJsonLd = {
@@ -242,7 +242,7 @@ export default function QnaBoard() {
                 className="group rounded-2xl border border-slate-200 bg-slate-50/70 p-4 hover:border-[#C9A857] hover:bg-white hover:-translate-y-0.5 transition-all"
               >
                 <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-white text-[22px] shadow-sm border border-slate-200 group-hover:border-[#C9A857]/50">
-                  {district.icon}
+                  <img src={district.logo} alt={`${district.name} 로고`} className="h-9 w-12 object-contain" />
                 </div>
                 <h3 className="text-[16px] font-black text-[#0F1A2B]">{district.name}</h3>
                 <p className="mt-1 text-[13px] text-slate-500 leading-relaxed break-keep">{district.desc}</p>
