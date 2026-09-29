@@ -29,6 +29,7 @@ function HeaderInner() {
     { name: '행사·축제', path: '/blog?category=%ED%96%89%EC%82%AC' },
     { name: '관광·명소', path: '/blog?category=%EB%AA%85%EC%86%8C' },
     { name: 'FAQ', path: '/qna', highlight: true },
+    { name: '문의·제보', path: '/inquiry' },
   ];
 
   return (
@@ -58,8 +59,8 @@ function HeaderInner() {
         <nav className="hidden lg:flex flex-1 items-center justify-center gap-[24px] xl:gap-[30px]">
           {menuItems.map((item, idx) => {
             const itemCategory = item.path.includes('category=') ? decodeURIComponent(item.path.split('category=')[1]) : '';
-            const isActive = item.path === '/qna'
-              ? pathname === '/qna'
+            const isActive = item.path === '/qna' || item.path === '/inquiry'
+              ? pathname === item.path
               : item.path.startsWith('/blog')
                 ? pathname.startsWith('/blog') && itemCategory === currentCategory
                 : pathname === item.path;
