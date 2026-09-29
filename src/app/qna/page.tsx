@@ -230,9 +230,9 @@ export default function QnaBoard() {
 
         <section className="bg-white rounded-[24px] shadow-sm border border-slate-200 p-5 md:p-6">
           <div className="mb-4">
-            <p className="text-[14px] font-bold text-[#C9A857] tracking-widest uppercase mb-2">District Guide</p>
-            <h2 className="text-[24px] md:text-[28px] font-black text-[#0F1A2B]">지역별로 FAQ 보기</h2>
-            <p className="mt-2 text-slate-500 break-keep">남구, 중구, 동구, 북구, 울주군 기준으로 자주 찾는 정보를 함께 분류했습니다.</p>
+            <p className="text-[14px] font-bold text-[#C9A857] tracking-widest uppercase mb-2">ULSAN DISTRICT FAQ</p>
+            <h2 className="text-[24px] md:text-[28px] font-black text-[#0F1A2B]">울산 전체·구·군별 FAQ 보기</h2>
+            <p className="mt-2 text-slate-500 break-keep">울산 전체와 남구·중구·동구·북구·울주군 기준으로 자주 찾는 정보를 확인하세요.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-3">
             {districtGuideCards.map((district) => (
