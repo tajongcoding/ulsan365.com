@@ -13,7 +13,7 @@ type FaqItem = {
 };
 
 const districtMeta: Record<string, { icon: string; desc: string }> = {
-  전체: { icon: '🗂️', desc: '전체 FAQ 한 번에 보기' },
+  전체: { icon: '🗂️', desc: '울산 전체 FAQ 한 번에 보기' },
   남구: { icon: '🏙️', desc: '청년정책·행사·생활 밀집 정보' },
   중구: { icon: '🏛️', desc: '행정민원·복지·생활 편의 정보' },
   동구: { icon: '⚓', desc: '교통·산업생활·실용 정보' },
@@ -115,7 +115,7 @@ export default function FaqSearchBoard({ items }: { items: readonly FaqItem[] })
             </div>
 
             <div>
-              <p className="mb-2 text-[13px] font-bold text-slate-500">지역 탭:</p>
+              <p className="mb-2 text-[13px] font-bold text-slate-500">울산 전체·구·군별 보기:</p>
               <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3">
                 {districts.map((district) => {
                   const isActive = selectedDistrict === district;
@@ -164,8 +164,8 @@ export default function FaqSearchBoard({ items }: { items: readonly FaqItem[] })
 
           {selectedDistrict !== '전체' ? (
             <div className="rounded-[18px] border border-[#C9A857]/40 bg-[#FFF9EC] px-4 py-3">
-              <p className="text-[13px] font-black tracking-[0.16em] text-[#8A6A1F] uppercase">현재 선택 지역</p>
-              <p className="mt-1 text-[16px] font-black text-[#0F1A2B]">{selectedDistrict} FAQ 모아보기</p>
+              <p className="text-[13px] font-black tracking-[0.16em] text-[#8A6A1F] uppercase">현재 선택 구·군</p>
+              <p className="mt-1 text-[16px] font-black text-[#0F1A2B]">{selectedDistrict} FAQ 보기</p>
               <p className="mt-1 text-[13px] text-slate-600 break-keep">{districtMeta[selectedDistrict]?.desc} 중심으로 질문을 빠르게 볼 수 있습니다.</p>
             </div>
           ) : null}
