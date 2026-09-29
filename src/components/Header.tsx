@@ -75,7 +75,6 @@ function HeaderInner() {
                       : 'text-white hover:text-[#FFE08A]'
                   }`}
                 >
-                  {item.highlight && <span className="inline-flex h-4 w-4 items-center justify-center rounded-full border border-current text-[10px] font-black">?</span>}
                   {item.name}
                   <span className={`absolute bottom-4 left-0 h-[3px] bg-[#C9A857] shadow-[0_0_10px_rgba(201,168,87,0.5)] transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover/item:w-full'}`}></span>
                 </Link>
@@ -123,7 +122,6 @@ function HeaderInner() {
             <div key={idx} className="flex flex-col">
               <div className={`py-4 text-[20px] font-bold border-b border-slate-800/50 flex justify-between items-center group active:text-[#C9A857] ${item.highlight ? 'text-[#C9A857]' : 'text-white'}`}>
                 <Link href={item.path} onClick={() => setIsMobileMenuOpen(false)} className={`flex items-center gap-2 ${item.highlight ? 'px-3 py-1 rounded-full bg-[#C9A857]/10' : ''}`}>
-                  {item.highlight && <span className="inline-flex h-4 w-4 items-center justify-center rounded-full border border-current text-[10px] font-black">?</span>}
                   {item.name}
                 </Link>
                 {item.highlight && <span className="text-[12px] text-[#C9A857]">빠른 확인</span>}
