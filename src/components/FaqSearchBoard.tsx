@@ -12,13 +12,13 @@ type FaqItem = {
   href: string;
 };
 
-const districtMeta: Record<string, { icon: string; desc: string }> = {
-  전체: { icon: '🗂️', desc: '울산 전체 FAQ 한 번에 보기' },
-  남구: { icon: '🏙️', desc: '청년정책·행사·생활 밀집 정보' },
-  중구: { icon: '🏛️', desc: '행정민원·복지·생활 편의 정보' },
-  동구: { icon: '⚓', desc: '교통·산업생활·실용 정보' },
-  북구: { icon: '🌿', desc: '가정·복지·주거 관련 정보' },
-  울주군: { icon: '⛰️', desc: '관광·나들이·생활 행정 정보' },
+const districtMeta: Record<string, { logo: string; desc: string }> = {
+  전체: { logo: '/ulsan_logo.png', desc: '울산 전체 FAQ 한 번에 보기' },
+  남구: { logo: 'https://www.ulsannamgu.go.kr/images/namgu_img/namgu_logo.png', desc: '청년정책·행사·생활 밀집 정보' },
+  중구: { logo: 'https://www.junggu.ulsan.kr/images/domain/junggu/file/symbol.jpg', desc: '행정민원·복지·생활 편의 정보' },
+  동구: { logo: 'https://www.donggu.ulsan.kr/images/main/donggu_logo.png', desc: '교통·산업생활·실용 정보' },
+  북구: { logo: 'https://www.bukgu.ulsan.kr/images/header/logo.svg', desc: '가정·복지·주거 관련 정보' },
+  울주군: { logo: 'https://www.ulju.ulsan.kr/ulju/img/common/logo.svg', desc: '관광·나들이·생활 행정 정보' },
 };
 
 export default function FaqSearchBoard({ items }: { items: readonly FaqItem[] }) {
@@ -134,7 +134,7 @@ export default function FaqSearchBoard({ items }: { items: readonly FaqItem[] })
                       }`}
                     >
                       <div className="mb-2 flex items-center justify-between gap-2">
-                        <span className="text-[20px]">{meta.icon}</span>
+                        <img src={meta.logo} alt={`${district} 로고`} className="h-8 w-14 object-contain object-left" />
                         <span className={`rounded-full px-2 py-0.5 text-[11px] font-black ${isActive ? 'bg-[#0F1A2B] text-white' : 'bg-slate-100 text-slate-600'}`}>
                           {count}건
                         </span>
