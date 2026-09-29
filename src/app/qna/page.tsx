@@ -200,7 +200,7 @@ export default function QnaBoard() {
               <h2 className="text-[24px] md:text-[28px] font-black text-[#0F1A2B]">많이 찾는 주제 바로가기</h2>
               <p className="mt-2 text-slate-500 break-keep">필요한 메뉴부터 바로 들어가 최신 안내 글을 확인해 보세요.</p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-3">
+            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3">
               {quickLinks.map((link) => (
                 <Link
                   key={link.label}
@@ -234,7 +234,7 @@ export default function QnaBoard() {
             <h2 className="text-[24px] md:text-[28px] font-black text-[#0F1A2B]">울산 전체·구·군별 FAQ 보기</h2>
             <p className="mt-2 text-slate-500 break-keep">울산 전체와 남구·중구·동구·북구·울주군 기준으로 자주 찾는 정보를 확인하세요.</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-3">
+          <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3">
             {districtGuideCards.map((district) => (
               <Link
                 key={district.name}
