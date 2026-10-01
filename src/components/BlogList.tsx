@@ -87,6 +87,7 @@ function BlogListResults({ allPosts, categoryFilter }: { allPosts: PostMeta[]; c
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {featuredPosts.map((post) => { 
                 const { heroImage, fallbackImage, badgeClass, overlayClass } = post;
+                const preservePoster = post.slug === '2026-09-history-exam-80-cancelled-seats' || post.slug === '2026-09-lotte-youth-entrepreneur-award';
                 const promoText =
                   post.category === '복지' ? '놓치면 손해' :
                   post.category === '생활' ? '오늘 꼭 확인' :
@@ -105,7 +106,7 @@ function BlogListResults({ allPosts, categoryFilter }: { allPosts: PostMeta[]; c
                         src={heroImage}
                         fallbackSrc={fallbackImage}
                         alt={post.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-95"
+                        className={"w-full h-full " + (preservePoster ? "object-contain bg-[#0F1A2B]" : "object-cover group-hover:scale-105") + " transition-transform duration-500 opacity-95"}
                       />
                       <div className={`absolute inset-0 bg-gradient-to-t ${overlayClass} pointer-events-none`}></div>
                     </div>
@@ -176,7 +177,7 @@ function BlogListResults({ allPosts, categoryFilter }: { allPosts: PostMeta[]; c
                   <div key={groupIndex} className="grid grid-cols-1 lg:grid-cols-2 gap-2.5 lg:gap-4">
                     {groupColumns.map((columnPosts, columnIndex) => (
                       <div key={columnIndex} className="flex flex-col gap-2.5">
-                    {columnPosts.map((post) => { const { heroImage, fallbackImage, badgeClass } = post;
+                    {columnPosts.map((post) => { const { heroImage, fallbackImage, badgeClass } = post; const preservePoster = post.slug === '2026-09-history-exam-80-cancelled-seats' || post.slug === '2026-09-lotte-youth-entrepreneur-award';
 
                       return (
                         <Link
@@ -190,7 +191,7 @@ function BlogListResults({ allPosts, categoryFilter }: { allPosts: PostMeta[]; c
                                 src={heroImage}
                                 fallbackSrc={fallbackImage}
                                 alt={post.title}
-                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                className={"w-full h-full " + (preservePoster ? "object-contain bg-[#0F1A2B]" : "object-cover group-hover:scale-105") + " transition-transform duration-500"}
                               />
                               <span className={`absolute left-2 top-2 inline-flex rounded-full px-1.5 py-0.5 text-[9px] font-black shadow-sm ${badgeClass}`}>
                                 {post.category}

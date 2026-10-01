@@ -20,7 +20,7 @@ export default function InquiryPage() {
           <p className="mt-4 break-keep text-lg leading-relaxed text-slate-300">궁금한 점, 잘못된 정보, 변경된 정보, 새 울산 정보를 이름 없이 남겨 주세요.</p>
         </div>
       </section>
-      <div className="mx-auto max-w-4xl px-4 pt-8 md:px-5">
+      <div className="mx-auto max-w-6xl px-4 pt-8 md:px-6">
         <QnaInquiryForm />
         <div className="mt-6 text-center">
           <Link href="/qna" className="text-sm font-bold text-slate-500 hover:text-[#0F1A2B]">FAQ 먼저 보기 →</Link>
