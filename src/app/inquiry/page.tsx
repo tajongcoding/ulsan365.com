@@ -23,7 +23,7 @@ export default function InquiryPage() {
       <div className="mx-auto max-w-6xl px-4 pt-8 md:px-6">
         <QnaInquiryForm />
         <div className="mt-6 text-center">
-          <Link href="/qna" className="text-sm font-bold text-slate-500 hover:text-[#0F1A2B]">FAQ 먼저 보기 →</Link>
+          <Link href="/qna" className="text-base font-bold text-slate-500 hover:text-[#0F1A2B]">FAQ 먼저 보기 →</Link>
         </div>
       </div>
     </main>

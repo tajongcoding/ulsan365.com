@@ -13,7 +13,7 @@ images:
   - "/images/info/2026-09-29/2026-09-history-exam-80-cancelled-seats-02.webp"
   - "/images/info/2026-09-29/2026-09-history-exam-80-cancelled-seats-03.webp"
   - "/images/info/2026-09-29/2026-09-history-exam-80-cancelled-seats-04.webp"
-  - "/images/info/2026-09-29/2026-09-history-exam-80-cancelled-seats-05.webp"
+  - "/images/info/2026-09-29/2026-09-history-exam-80-cancelled-seats-05-v2.webp"
   - "/images/info/2026-09-29/2026-09-history-exam-80-cancelled-seats-06.webp"
 ---
 # 제80회 한국사능력검정시험 취소좌석 접수, 9월 29일 오전 10시 시작
@@ -54,7 +54,7 @@ images:
 
 취소좌석 접수는 **전 지역 접수 가능**이라는 뜻이지 모든 지역·시험장의 좌석을 보장한다는 뜻이 아닙니다. 또한 이번 제80회는 **심화만 시행**합니다. 시험 응시요강과 사진·시험장 관련 안내를 읽고, 실제 접수 완료 여부를 확인하세요. 9월 29일 당일 잔여석은 현재 미확인 상태입니다.
 
-![유의사항을 표현한 편집 일러스트](/images/info/2026-09-29/2026-09-history-exam-80-cancelled-seats-05.webp)
+![유의사항을 표현한 편집 일러스트](/images/info/2026-09-29/2026-09-history-exam-80-cancelled-seats-05-v2.webp)
 
 ## 6. 공식 안내·문의
 

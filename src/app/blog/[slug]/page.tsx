@@ -344,7 +344,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
           />
           <div className={`px-5 py-4 bg-gradient-to-r ${visuals.surfaceClass} border-t border-slate-200`}>
             <div className="flex flex-wrap items-center gap-2 mb-1.5">
-              <span className={`inline-flex rounded-full px-2.5 py-1 text-[11px] font-black ${visuals.badgeClass}`}>
+              <span className={`inline-flex rounded-full px-2.5 py-1 text-[13px] font-black ${visuals.badgeClass}`}>
                 {post.category}
               </span>
             </div>
@@ -371,7 +371,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
             )}
           </div>
 
-          <div className="flex flex-wrap items-center gap-2 text-[13px] text-gray-500 mb-6">
+          <div className="flex flex-wrap items-center gap-2 text-[15px] text-gray-500 mb-6">
             <span className="inline-flex items-center gap-1 bg-gray-100 text-gray-600 font-semibold px-3 py-1 rounded-full">
               📅 {post.date}
             </span>
@@ -384,7 +384,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
 
           {post.summary && (
             <div className="bg-slate-50 border-l-4 border-[#0F1A2B] rounded-r-xl px-6 py-4 shadow-sm hover:border-[#C9A857] transition-colors mb-4">
-              <p className="text-[18px] font-medium text-[#374151] leading-relaxed break-keep m-0">
+              <p className="text-[20px] font-medium text-[#374151] leading-relaxed break-keep m-0">
                 {post.summary}
               </p>
             </div>
@@ -400,7 +400,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
             <section
               key={section.key}
               className={`rounded-2xl border border-slate-200 bg-white p-4 md:p-5 shadow-sm ${
-                section.image ? 'md:grid md:grid-cols-[minmax(240px,0.42fr)_1fr] md:items-start md:gap-6' : ''
+                section.image ? 'md:grid md:grid-cols-[minmax(300px,0.5fr)_1fr] md:items-start md:gap-6' : ''
               }`}
             >
               {section.image && (
@@ -414,7 +414,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                 </figure>
               )}
 
-              <div className="min-w-0 prose prose-base md:prose-lg prose-blue prose-slate max-w-none prose-p:my-4 prose-p:leading-relaxed prose-headings:font-black prose-headings:text-[#0F1A2B] prose-headings:mt-0 prose-headings:mb-4 prose-a:text-[#C9A857] prose-blockquote:not-italic prose-blockquote:border-[3px] prose-blockquote:!border-l-[3px] prose-blockquote:border-[#0F1A2B] prose-blockquote:bg-slate-50 prose-blockquote:shadow-sm prose-blockquote:rounded-[20px] prose-blockquote:py-5 prose-blockquote:px-6 prose-blockquote:text-[#1F2937] prose-blockquote:mt-5 prose-ul:list-none prose-ul:pl-0 prose-img:rounded-xl prose-img:w-full prose-img:h-auto break-keep">
+              <div className="min-w-0 prose prose-lg md:prose-xl prose-blue prose-slate max-w-none prose-p:my-4 prose-p:leading-relaxed prose-headings:font-black prose-headings:text-[#0F1A2B] prose-headings:mt-0 prose-headings:mb-4 prose-a:text-[#C9A857] prose-blockquote:not-italic prose-blockquote:border-[3px] prose-blockquote:!border-l-[3px] prose-blockquote:border-[#0F1A2B] prose-blockquote:bg-slate-50 prose-blockquote:shadow-sm prose-blockquote:rounded-[20px] prose-blockquote:py-5 prose-blockquote:px-6 prose-blockquote:text-[#1F2937] prose-blockquote:mt-5 prose-ul:list-none prose-ul:pl-0 prose-img:rounded-xl prose-img:w-full prose-img:h-auto break-keep">
                 <MarkdownContent content={section.body} />
               </div>
             </section>
