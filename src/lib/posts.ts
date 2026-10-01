@@ -19,6 +19,7 @@ export type PostMeta = {
   images?: string[]; // frontmatter images 배열
   applicationStart?: string; // 접수 시작 시각 (ISO 8601)
   applicationEnd?: string; // 접수 종료 시각 (ISO 8601)
+  bodyImagesPending?: boolean; // 본문 이미지를 사용자가 보류한 상태
 };
 
 export type Post = PostMeta & {
@@ -209,6 +210,7 @@ export function getAllPosts(): PostMeta[] {
           images: postImages,
           applicationStart: data.applicationStart ? String(data.applicationStart) : undefined,
           applicationEnd: data.applicationEnd ? String(data.applicationEnd) : undefined,
+          bodyImagesPending: data.bodyImagesPending === true,
           contentExcerpt,
           summaryBox,
           thumbnailUrl,
@@ -269,6 +271,7 @@ export function getPostBySlug(slug: string): Post | null {
     images: postImages,
     applicationStart: data.applicationStart ? String(data.applicationStart) : undefined,
     applicationEnd: data.applicationEnd ? String(data.applicationEnd) : undefined,
+    bodyImagesPending: data.bodyImagesPending === true,
     contentExcerpt,
     thumbnailUrl,
     content,

@@ -8,6 +8,7 @@ on:
       - '.github/workflows/deploy.yml'
       - 'src/content/posts/**'
       - 'src/lib/**'
+      - 'src/app/**'
       - 'public/images/info/**'
   workflow_dispatch:
 

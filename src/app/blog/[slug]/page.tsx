@@ -283,10 +283,12 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
 
   const relatedPosts = getAllPosts()
     .filter((item) => item.slug !== post.slug && item.category === post.category)
-    .slice(0, 3);
+    .slice(0, 4);
   const visuals = getPostVisuals(post);
   const applicationStatus = getApplicationStatus(post);
-  const bodyGalleryImages = visuals.galleryImages.filter((image) => image !== visuals.heroImage);
+  const bodyGalleryImages = post.bodyImagesPending
+    ? []
+    : visuals.galleryImages.filter((image) => image !== visuals.heroImage);
   const contentSections = buildContentSections(
     post.content,
     bodyGalleryImages,
@@ -326,10 +328,10 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
     ],
   };
 
-  const contentWidthClass = 'mx-auto w-full max-w-[1040px]';
+  const contentWidthClass = 'mx-auto w-full';
 
   return (
-    <main className="max-w-5xl mx-auto px-4 sm:px-5 md:px-6 py-7 md:py-9">
+    <main className="max-w-6xl mx-auto px-4 sm:px-5 md:px-6 py-7 md:py-9">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       
