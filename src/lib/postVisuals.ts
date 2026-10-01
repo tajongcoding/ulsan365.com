@@ -354,6 +354,14 @@ const listImagePools: Record<string, string[]> = {
 const sharedListImagePool = uniqueImages(Object.values(listImagePools).flat());
 
 const LOCAL_IMAGES: Record<string, string> = {
+  '2026-09-waste-holiday-collection': '/images/info/2026-09-24/2026-09-waste-holiday-collection-00.webp',
+  '2026-09-youth-local-up': '/images/info/2026-09-25/2026-09-youth-local-up-00.webp',
+  '2026-09-just-dream-food-support': '/images/info/2026-09-26/2026-09-just-dream-food-support-00.webp',
+  '2026-09-youth-single-parent-support': '/images/info/2026-09-27/2026-09-youth-single-parent-support-00.webp',
+  '2026-09-flower-nursery-group-class': '/images/info/2026-09-28/2026-09-flower-nursery-group-class-00.webp',
+  '2026-09-history-exam-80-cancelled-seats': '/images/info/2026-09-29/2026-09-history-exam-80-cancelled-seats-00.webp',
+  '2026-09-lotte-youth-entrepreneur-award': '/images/info/2026-09-30/2026-09-lotte-youth-entrepreneur-award-00.webp',
+
   '2026-09-11-event-ulsan-jonggatjip-library-magic-bubble-show': '/images/info/2026-09-11/2026-09-11-event-ulsan-jonggatjip-library-magic-bubble-show-01.webp',
   '2026-09-10-education-ulju-student-record-special-lecture': '/images/info/2026-09-10/2026-09-10-education-ulju-student-record-special-lecture-01.webp',
   '2026-09-10-event-ulju-songpyeon-hangawi-class': '/images/info/2026-09-10/2026-09-10-event-ulju-songpyeon-hangawi-class-01.webp',
