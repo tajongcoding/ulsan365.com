@@ -9,6 +9,7 @@ on:
       - 'src/content/posts/**'
       - 'src/lib/**'
       - 'src/app/**'
+      - 'functions/**'
       - 'public/images/info/**'
   workflow_dispatch:
 
