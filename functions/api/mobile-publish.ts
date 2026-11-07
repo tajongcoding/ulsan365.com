@@ -1,4 +1,5 @@
 import { load } from 'js-yaml';
+import { authorize, json } from '../_lib/publish-access';
 
 type Env = {
   PUBLISH_ACCESS_KEY?: string;
@@ -10,18 +11,6 @@ type Addition = { path: string; contents: string };
 const repository = 'tajongcoding/ulsan365.com';
 const categories = ['복지 정보', '경제 정보', '생활 정보', '행사·축제', '관광·명소'];
 const MiB = 1024 * 1024;
-const json = (data: object, status = 200) => Response.json(data, {
-  status,
-  headers: { 'Cache-Control': 'no-store' },
-});
-
-function equal(left: string, right: string) {
-  if (left.length !== right.length) return false;
-  let difference = 0;
-  for (let i = 0; i < right.length; i++) difference |= left.charCodeAt(i) ^ right.charCodeAt(i);
-  return difference === 0;
-}
-
 async function digest(bytes: ArrayBuffer) {
   return [...new Uint8Array(await crypto.subtle.digest('SHA-256', bytes))]
     .map(byte => byte.toString(16).padStart(2, '0')).join('');
@@ -60,10 +49,8 @@ export async function onRequestPost({ request, env }: Context) {
   if (!key || key.length < 32 || !token || !branch) {
     return json({ error: '발행 서버 설정이 필요합니다.' }, 503);
   }
-  if (request.headers.get('Origin') !== new URL(request.url).origin ||
-      !equal(request.headers.get('Authorization') ?? '', `Bearer ${key}`)) {
-    return json({ error: '발행 접근 키를 확인해 주세요.' }, 403);
-  }
+  const denied = authorize(request, env);
+  if (denied) return denied;
   const size = Number(request.headers.get('Content-Length'));
   if (!Number.isSafeInteger(size) || size <= 0 || size > 16 * MiB) return json({ error: '전체 업로드는 16 MiB 이하여야 합니다.' }, 413);
 
@@ -118,8 +105,8 @@ export async function onRequestPost({ request, env }: Context) {
       const asset = assets.find(file => file instanceof File && `/images/info/${date}/${file.name}` === imagePath);
       const prefix = `${slug}-0${index}.`;
       if (!(asset instanceof File) || !asset.name.startsWith(prefix) ||
-          !asset.size || asset.size > 2 * MiB) {
-        return json({ error: `${index + 1}번째 이미지의 이름, 경로 또는 크기(최대 2 MiB)를 확인해 주세요.` }, 400);
+          !asset.size || asset.size > 4 * MiB) {
+        return json({ error: `${index + 1}번째 이미지의 이름, 경로 또는 크기(최대 4 MiB)를 확인해 주세요.` }, 400);
       }
       const imageBytes = await asset.arrayBuffer();
       const bytes = new Uint8Array(imageBytes);
