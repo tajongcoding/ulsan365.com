@@ -29,6 +29,8 @@ export default function PublishForm() {
   const [preview, setPreview] = useState<Preview>();
   const [published, setPublished] = useState<Published>();
   const [approved, setApproved] = useState(false);
+  const [coverReviewed, setCoverReviewed] = useState(false);
+  const [coverRatioValid, setCoverRatioValid] = useState<boolean>();
   const [busy, setBusy] = useState<'check' | 'publish' | 'zip' | 'drive'>();
   const [error, setError] = useState('');
   const [packageName, setPackageName] = useState('');
@@ -44,6 +46,8 @@ export default function PublishForm() {
 
   function invalidate() {
     setPreview(undefined);
+    setCoverReviewed(false);
+    setCoverRatioValid(undefined);
     setApproved(false);
     setPublished(undefined);
     setError('');
@@ -138,7 +142,10 @@ export default function PublishForm() {
       form.set('action', action);
       form.set('manuscript', manuscript);
       for (const image of images) form.append('images', image);
-      if (action === 'publish' && preview) form.set('receipt', preview.receipt);
+      if (action === 'publish' && preview) {
+        form.set('receipt', preview.receipt);
+        if (coverReviewed && coverRatioValid) form.set('coverReviewed', 'true');
+      }
       const response = await fetch('/api/mobile-publish', {
         method: 'POST',
         headers: { Authorization: `Bearer ${accessKey}` },
@@ -256,7 +263,8 @@ export default function PublishForm() {
           <p>{preview.summary}</p>
           {/* File URLs exist only in this browser session. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img className="h-auto w-full rounded-lg" src={imageUrl(preview.paths[0])} alt="대표 이미지" />
+          <img className="h-auto w-full rounded-lg" src={imageUrl(preview.paths[0])} alt="대표 이미지"
+            onLoad={({ currentTarget: image }) => setCoverRatioValid(image.naturalWidth * 9 === image.naturalHeight * 16)} />
           <article className="prose max-w-none break-words">
             <ReactMarkdown remarkPlugins={[remarkGfm]} skipHtml components={{
               img: ({ src, alt }) => {
@@ -268,12 +276,19 @@ export default function PublishForm() {
           </article>
           {!published && (
             <>
+              {coverRatioValid === false && <p role="alert" className="text-red-800">대표 이미지를 16:9 비율로 교체해 주세요.</p>}
+              <label className="flex items-start gap-2">
+                <input className="mt-1 size-5" type="checkbox" checked={coverReviewed}
+                  disabled={!!busy || coverRatioValid !== true}
+                  onChange={event => setCoverReviewed(event.target.checked)} />
+                <span>대표 이미지를 별도로 검수했습니다. 제목·일정·대상·혜택·장소를 공식 자료와 대조하고 모바일에서 문구가 읽히며 잘리지 않는지 확인했습니다.</span>
+              </label>
               <label className="flex items-start gap-2">
                 <input className="mt-1 size-5" type="checkbox" checked={approved} disabled={!!busy}
                   onChange={event => setApproved(event.target.checked)} />
                 <span>원고와 이미지 및 발행 대상을 확인했습니다.</span>
               </label>
-              <button className={button} type="button" disabled={!approved || !!busy}
+              <button className={button} type="button" disabled={!approved || !coverReviewed || !coverRatioValid || !!busy}
                 onClick={() => void submit('publish')}>
                 {preview.branch === 'main' ? '공개 승인 및 발행' : '테스트 발행 승인'}
               </button>

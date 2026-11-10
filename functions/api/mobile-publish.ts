@@ -150,6 +150,9 @@ export async function onRequestPost({ request, env }: Context) {
     if (action === 'check') {
       return json({ receipt, slug, branch, title: data.title, date, summary: data.summary, content, paths });
     }
+    if (form.get('coverReviewed') !== 'true') {
+      return json({ error: '대표 이미지 검수를 먼저 완료해 주세요.' }, 400);
+    }
     if (form.get('receipt') !== receipt) {
       return json({ error: '원고, 이미지 또는 브랜치가 바뀌었습니다. 다시 검사해 주세요.' }, 409);
     }
