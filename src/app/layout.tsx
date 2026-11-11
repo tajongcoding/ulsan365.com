@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import AdminPublishLink from "@/components/AdminPublishLink";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
 const notoSansKr = Noto_Sans_KR({
@@ -168,6 +169,7 @@ export default function RootLayout({
         <div className="flex-1 bg-[#f8f9fa]">
           {children}
         </div>
+        <AdminPublishLink />
       </body>
     </html>
   );

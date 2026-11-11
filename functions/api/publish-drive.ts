@@ -73,7 +73,7 @@ async function inFolder(token: string, file: DriveFile) {
 }
 
 export async function onRequestPost({ request, env }: { request: Request; env: Env }) {
-  const denied = authorize(request, env);
+  const denied = await authorize(request, env);
   if (denied) return denied;
   if (!env.PUBLISH_DRIVE_SERVICE_ACCOUNT) {
     return json({ error: '공용보관함 연결 설정이 필요합니다. 휴대폰의 ZIP 선택으로도 검사할 수 있습니다.' }, 503);

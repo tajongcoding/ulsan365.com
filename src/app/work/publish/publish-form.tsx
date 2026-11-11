@@ -23,6 +23,7 @@ const button = 'w-full rounded-lg bg-blue-800 px-4 py-3 font-semibold text-white
 
 export default function PublishForm() {
   const [accessKey, setAccessKey] = useState('');
+  const [authenticated, setAuthenticated] = useState(false);
   const [manuscript, setManuscript] = useState<File>();
   const [images, setImages] = useState<File[]>([]);
   const [imageUrls, setImageUrls] = useState<Map<string, string>>(new Map());
@@ -39,6 +40,30 @@ export default function PublishForm() {
   const [driveTrail, setDriveTrail] = useState<DriveFolder[]>([]);
   const [driveCursor, setDriveCursor] = useState<string>();
 
+  useEffect(() => {
+    async function refresh() {
+      try {
+        const response = await fetch('/api/publish-session', {cache:'no-store'});
+        const signedIn = response.ok && (await response.json()).authenticated === true;
+        setAuthenticated(signedIn);
+        if (!signedIn) { setPreview(undefined); setApproved(false); setCoverReviewed(false); }
+      } catch { setAuthenticated(false); }
+    }
+    void refresh();
+    window.addEventListener('ulsan-admin-session',refresh);
+    window.addEventListener('focus',refresh);
+    return ()=>{window.removeEventListener('ulsan-admin-session',refresh);window.removeEventListener('focus',refresh);};
+  }, []);
+  async function login() {
+    if (authenticated) return;
+    const response = await fetch('/api/publish-session', {
+      method:'POST', headers:{Authorization:`Bearer ${accessKey}`},
+    });
+    const result = await response.json();
+    if (!response.ok) throw new Error(result.error || '관리자 로그인에 실패했습니다.');
+    setAuthenticated(true); setAccessKey('');
+    window.dispatchEvent(new Event('ulsan-admin-session'));
+  }
   useEffect(() => {
     const urls = new Map(images.map(file => [file.name, URL.createObjectURL(file)]));
     setImageUrls(urls);
@@ -113,6 +138,7 @@ export default function PublishForm() {
   }
 
   async function driveRequest(input: object) {
+    await login();
     const response = await fetch('/api/publish-drive', {
       method: 'POST',
       headers: { Authorization: `Bearer ${accessKey}`, 'Content-Type': 'application/json' },
@@ -165,6 +191,7 @@ export default function PublishForm() {
     setBusy(action);
     setError('');
     try {
+      await login();
       if (action === 'check') {
         await Promise.all(images.map(async file => {
           const url = URL.createObjectURL(file);
@@ -222,7 +249,7 @@ export default function PublishForm() {
       <p>공용보관함 또는 휴대폰에서 ZIP 하나를 선택한 뒤 검사 → 미리보기 → 공개 승인 순서로 진행하세요.</p>
       <form className="space-y-4" onSubmit={event => { event.preventDefault(); void submit('check'); }}>
         <fieldset className="space-y-4" disabled={!!busy}>
-          <label className="block space-y-1">
+          {authenticated ? <p role="status" className="rounded-lg bg-green-50 p-3 text-green-900">관리자 로그인 중 · 7일간 유지</p> : <label className="block space-y-1">
             <span>발행 접근 키</span>
             <input className={field} type="password" autoComplete="off" required value={accessKey}
               onChange={event => {
@@ -232,10 +259,12 @@ export default function PublishForm() {
                 setDriveTrail([]);
                 setDriveCursor(undefined);
               }} />
-          </label>
+          </label>}
+          {!authenticated && <button className={button} type="button" disabled={!!busy || (!authenticated && accessKey.length < 32)}
+            onClick={()=>{setError('');void login().catch(cause=>setError(cause instanceof Error ? cause.message : '로그인 실패'));}}>관리자 로그인</button>}
           <section className="space-y-3 rounded-xl border border-slate-300 p-3">
             <h2 className="text-lg font-bold">공용보관함</h2>
-            <button className={button} type="button" disabled={!!busy || accessKey.length < 32}
+            <button className={button} type="button" disabled={!!busy || (!authenticated && accessKey.length < 32)}
               onClick={() => void browse()}>최종 WORK용 열기</button>
             {driveTrail.length > 0 && (
               <div className="space-y-2">

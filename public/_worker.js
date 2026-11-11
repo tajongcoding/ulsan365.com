@@ -1,3 +1,5 @@
+import { onRequest as publishSession } from '../functions/api/publish-session.ts';
+import { sessionCookie } from '../functions/_lib/publish-access.ts';
 import { onRequestPost as publish } from '../functions/api/mobile-publish.ts';
 import { onRequestPost as browseDrive } from '../functions/api/publish-drive.ts';
 
@@ -11,12 +13,19 @@ const publishHandlers = new Map([
 const worker = {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.pathname === '/api/publish-session') return publishSession({ request, env });
     const handler = publishHandlers.get(url.pathname);
     if (handler) {
       if (request.method !== 'POST') {
         return new Response(null, { status: 405, headers: { Allow: 'POST' } });
       }
-      return handler({ request, env });
+      const response = await handler({ request, env });
+      if (response.ok && request.headers.get('Authorization')?.startsWith('Bearer ')) {
+        const result = new Response(response.body, response);
+        result.headers.set('Set-Cookie', await sessionCookie(request, env));
+        return result;
+      }
+      return response;
     }
 
     const inquiry = url.pathname.startsWith('/api/') ? await api(request, env, url) : null;

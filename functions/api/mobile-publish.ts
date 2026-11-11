@@ -46,7 +46,7 @@ export async function onRequestPost({ request, env }: Context) {
   if (!key || key.length < 32 || !token || !branch) {
     return json({ error: '발행 서버 설정이 필요합니다.' }, 503);
   }
-  const denied = authorize(request, env);
+  const denied = await authorize(request, env);
   if (denied) return denied;
   const size = Number(request.headers.get('Content-Length'));
   if (!Number.isSafeInteger(size) || size <= 0 || size > 16 * MiB) return json({ error: '전체 업로드는 16 MiB 이하여야 합니다.' }, 413);
