@@ -68,8 +68,14 @@ export async function onRequestPost({ request, env }: Context) {
     if (!Number.isFinite(+parsedDate) || parsedDate.toISOString().slice(0, 10) !== date || date > today) {
       return json({ error: '게시일은 실제 날짜이며 한국 시간 기준 오늘까지여야 합니다.' }, 400);
     }
-    const source = await manuscript.arrayBuffer();
-    const markdown = new TextDecoder('utf-8', { fatal: true }).decode(source);
+    let source = await manuscript.arrayBuffer();
+    let markdown = new TextDecoder('utf-8', { fatal: true }).decode(source);
+    const notice = 'AI 생성 설명 이미지이며 실제 행사 장면·공식 예약 화면이 아닙니다.';
+    const noticeLines = /^(?:AI 생성 설명 이미지이며 실제 행사 장면·공식 예약 화면이 아닙니다\.|AI 제작 홍보 이미지\. 실제 시설·행사 현장 사진이 아닙니다\.)[ \t]*$/gm;
+    if (noticeLines.test(markdown)) {
+      markdown = markdown.replace(noticeLines, '').trimEnd() + '\n\n' + notice + '\n';
+      source = new TextEncoder().encode(markdown).buffer;
+    }
     const header = markdown.match(/^---[ \t]*\r?\n([\s\S]*?)\r?\n---[ \t]*(?:\r?\n|$)/);
     if (!header) return json({ error: '원고 상단에 YAML 메타데이터가 필요합니다.' }, 400);
     const parsed = load(header[1]);
