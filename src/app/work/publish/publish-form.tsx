@@ -43,7 +43,7 @@ export default function PublishForm() {
   useEffect(() => {
     async function refresh() {
       try {
-        const response = await fetch('/api/publish-session', {cache:'no-store'});
+        const response = await fetch('/api/publish-session', {cache:'no-store', signal: AbortSignal.timeout(10000)});
         const signedIn = response.ok && (await response.json()).authenticated === true;
         setAuthenticated(signedIn);
         if (!signedIn) { setPreview(undefined); setApproved(false); setCoverReviewed(false); }
@@ -57,7 +57,7 @@ export default function PublishForm() {
   async function login() {
     if (authenticated) return;
     const response = await fetch('/api/publish-session', {
-      method:'POST', headers:{Authorization:`Bearer ${accessKey}`},
+      method:'POST', headers:{Authorization:`Bearer ${accessKey}`}, signal: AbortSignal.timeout(10000),
     });
     const result = await response.json();
     if (!response.ok) throw new Error(result.error || '관리자 로그인에 실패했습니다.');
@@ -131,7 +131,7 @@ export default function PublishForm() {
       setImages(selected.images);
       setPackageName(zip.name);
     } catch (cause) {
-      setError(cause instanceof Error ? cause.message : 'ZIP을 읽지 못했습니다.');
+      setError(cause instanceof Error && (cause.name === 'TimeoutError' || cause.name === 'AbortError') ? '응답 시간이 초과됐습니다. 다시 시도해 주세요. 공개 작업이었다면 먼저 저장 여부를 확인하세요.' : cause instanceof Error ? cause.message : 'ZIP을 읽지 못했습니다.');
     } finally {
       setBusy(undefined);
     }
@@ -143,6 +143,7 @@ export default function PublishForm() {
       method: 'POST',
       headers: { Authorization: `Bearer ${accessKey}`, 'Content-Type': 'application/json' },
       body: JSON.stringify(input),
+      signal: AbortSignal.timeout(35000),
     });
     if (!response.ok) {
       const result = await response.json().catch(() => ({}));
@@ -218,6 +219,7 @@ export default function PublishForm() {
         method: 'POST',
         headers: { Authorization: `Bearer ${accessKey}` },
         body: form,
+        signal: AbortSignal.timeout(action === 'publish' ? 120000 : 60000),
       });
       if (!response.headers.get('Content-Type')?.includes('application/json')) {
         const message = await response.text();

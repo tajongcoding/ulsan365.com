@@ -14,7 +14,17 @@ function encoded(bytes: Uint8Array) {
   return btoa(text).replace(/=/g, '').replace(/\+/g, '-').replace(/\//g, '_');
 }
 
+let tokenCache: { credentials: string; token: string; expiresAt: number } | undefined;
+let tokenFlight: { credentials: string; promise: Promise<string> } | undefined;
 async function accessToken(credentials: string) {
+  if (tokenCache?.credentials === credentials && tokenCache.expiresAt > Date.now()) return tokenCache.token;
+  if (tokenFlight?.credentials === credentials) return tokenFlight.promise;
+  const promise = createAccessToken(credentials);
+  tokenFlight = { credentials, promise };
+  try { return await promise; }
+  finally { if (tokenFlight?.promise === promise) tokenFlight = undefined; }
+}
+async function createAccessToken(credentials: string) {
   const account = JSON.parse(credentials) as { client_email?: string; private_key?: string };
   if (!account.client_email || !account.private_key) throw new Error('credentials');
   const now = Math.floor(Date.now() / 1000);
@@ -42,8 +52,10 @@ async function accessToken(credentials: string) {
     signal: AbortSignal.timeout(15000),
   });
   if (!response.ok) throw new Error('credentials');
-  const result = await response.json() as { access_token?: string };
+  const result = await response.json() as { access_token?: string; expires_in?: number };
   if (!result.access_token) throw new Error('credentials');
+  const seconds = Math.min(3600, Math.max(0, Number(result.expires_in) || 3600));
+  tokenCache = { credentials, token: result.access_token, expiresAt: Date.now() + Math.max(0, seconds - 120) * 1000 };
   return result.access_token;
 }
 
@@ -67,6 +79,7 @@ async function inFolder(token: string, file: DriveFile) {
     if (file.trashed || file.shortcutDetails) return false;
     if (file.id === root) return file.mimeType === folderType;
     if (file.parents?.length !== 1) return false;
+    if (file.parents[0] === root) return true;
     file = await metadata(token, file.parents[0]);
   }
   return false;
