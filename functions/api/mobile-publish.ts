@@ -160,17 +160,29 @@ export async function onRequestPost({ request, env }: Context) {
       return json({ error: '원고, 이미지 또는 브랜치가 바뀌었습니다. 다시 검사해 주세요.' }, 409);
     }
 
-    const { createCommitOnBranch } = await github<{ createCommitOnBranch: { commit: { url: string; oid: string } } }>(
-      token,
-      'mutation($input: CreateCommitOnBranchInput!) { createCommitOnBranch(input:$input) { commit { oid url } } }',
-      { input: {
-        branch: { repositoryNameWithOwner: repository, branchName: branch },
-        expectedHeadOid: head,
-        message: { headline: `Publish ULSAN365 post: ${slug}` },
-        fileChanges: { additions },
-      } },
-    );
-    return json({ commit: createCommitOnBranch.commit, branch, slug });
+    async function rest(path: string, method: string, body?: object) {
+      const response = await fetch('https://api.github.com/repos/' + repository + path, {
+        method, headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json',
+          'Content-Type': 'application/json', 'User-Agent': 'ULSAN365-Mobile-Publish' },
+        ...(body ? { body: JSON.stringify(body) } : {}),
+      });
+      if (!response.ok) throw new Error(`GitHub 저장에 실패했습니다 (HTTP ${response.status}). 다시 검사해 주세요.`);
+      return await response.json() as Record<string, any>;
+    }
+    const tree = [];
+    for (const addition of additions) {
+      const blob = await rest('/git/blobs', 'POST', { encoding: 'base64', content: addition.contents });
+      tree.push({ path: addition.path, mode: '100644', type: 'blob', sha: blob.sha });
+      addition.contents = '';
+    }
+    const parent = await rest('/git/commits/' + head, 'GET');
+    const nextTree = await rest('/git/trees', 'POST', { base_tree: parent.tree.sha, tree });
+    const commit = await rest('/git/commits', 'POST', {
+      message: `Publish ULSAN365 post: ${slug}`, tree: nextTree.sha, parents: [head],
+    });
+    // A concurrent commit makes this non-fast-forward and GitHub rejects it.
+    await rest('/git/refs/heads/' + encodeURIComponent(branch), 'PATCH', { sha: commit.sha, force: false });
+    return json({ commit: { oid: commit.sha, url: `https://github.com/${repository}/commit/${commit.sha}` }, branch, slug });
   } catch (error) {
     const message = error instanceof Error ? error.message : '';
     if (message.startsWith('GitHub') || message.startsWith('브랜치')) return json({ error: message }, 502);
