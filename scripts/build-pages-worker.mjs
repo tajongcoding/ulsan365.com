@@ -6,5 +6,6 @@ await build({
   bundle: true,
   format: 'esm',
   platform: 'browser',
+  external: ['node:buffer'],
   target: 'es2022',
 });

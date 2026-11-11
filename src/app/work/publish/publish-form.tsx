@@ -193,7 +193,9 @@ export default function PublishForm() {
         body: form,
       });
       if (!response.headers.get('Content-Type')?.includes('application/json')) {
-        throw new Error('발행 서버에 연결할 수 없습니다.');
+        const message = await response.text();
+        const code = message.match(/(?:Error code|error code|error)[:\s]*(\d{4})/i)?.[1];
+        throw new Error(`발행 서버 오류 (HTTP ${response.status}${code ? ` · Cloudflare ${code}` : ''}). 저장 여부를 확인한 뒤 다시 검사해 주세요.`);
       }
       const result = await response.json();
       if (!response.ok) throw new Error(result.error);

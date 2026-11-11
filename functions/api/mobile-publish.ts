@@ -1,3 +1,4 @@
+import { Buffer } from 'node:buffer';
 import { load } from 'js-yaml';
 import { authorize, json } from '../_lib/publish-access';
 
@@ -17,11 +18,7 @@ async function digest(bytes: ArrayBuffer) {
 }
 
 function base64(bytes: Uint8Array) {
-  const chunks: string[] = [];
-  for (let i = 0; i < bytes.length; i += 8192) {
-    chunks.push(String.fromCharCode(...bytes.subarray(i, i + 8192)));
-  }
-  return btoa(chunks.join(''));
+  return Buffer.from(bytes.buffer, bytes.byteOffset, bytes.byteLength).toString('base64');
 }
 
 async function github<T>(token: string, query: string, variables: object): Promise<T> {
