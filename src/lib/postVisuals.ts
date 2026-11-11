@@ -971,7 +971,9 @@ export function getPostVisuals(post: PostMeta) {
   const listImage = LIST_IMAGES[post.slug] || null;
   const contentImages = post.images || [];
   const topicImage = getTopicMatchedImage(post);
-  const heroImage = explicitImage || topicImage || post.thumbnailUrl || fallbackImage;
+  const hasPackageImages = contentImages.length === 7 && contentImages.every((image) => image.startsWith('/images/info/'));
+  const packageCover = hasPackageImages ? contentImages[0] : null;
+  const heroImage = packageCover || explicitImage || topicImage || post.thumbnailUrl || fallbackImage;
   const galleryImages = uniqueImages([heroImage, ...contentImages, listImage, topicImage, ...(listImagePools[category] || []), ...theme.images, fallbackImage]).slice(0, 7);
 
   return {
@@ -982,7 +984,8 @@ export function getPostVisuals(post: PostMeta) {
     fallbackImage,
     galleryImages,
     coverImage: heroImage,
-    hasExplicitImage: Boolean(explicitImage),
+    hasExplicitImage: Boolean(packageCover || explicitImage),
+    hasPackageImages,
   };
 }
 

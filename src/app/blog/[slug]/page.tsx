@@ -294,7 +294,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
     bodyGalleryImages,
     post.title,
     visuals.heroImage,
-    post.date < '2026-08-26' ? 5 : 6,
+    post.date < '2026-08-26' && !visuals.hasPackageImages ? 5 : 6,
   );
 
   const jsonLd = {
