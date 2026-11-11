@@ -28,6 +28,7 @@ export default function PublishForm() {
   const [imageUrls, setImageUrls] = useState<Map<string, string>>(new Map());
   const [preview, setPreview] = useState<Preview>();
   const [published, setPublished] = useState<Published>();
+  const [liveStatus, setLiveStatus] = useState<'waiting' | 'verified' | 'pending'>('waiting');
   const [approved, setApproved] = useState(false);
   const [coverReviewed, setCoverReviewed] = useState(false);
   const [coverRatioValid, setCoverRatioValid] = useState<boolean>();
@@ -43,6 +44,46 @@ export default function PublishForm() {
     setImageUrls(urls);
     return () => urls.forEach(url => URL.revokeObjectURL(url));
   }, [images]);
+
+  useEffect(() => {
+    if (!published || !preview || published.branch !== 'main') return;
+    const controller = new AbortController();
+    setLiveStatus('waiting');
+    async function verify() {
+      for (let attempt = 0; attempt < 24 && !controller.signal.aborted; attempt++) {
+        try {
+          const response = await fetch(`/blog/${published!.slug}/?verify=${published!.commit.oid}`, {
+            cache: 'no-store', signal: controller.signal,
+          });
+          const doc = new DOMParser().parseFromString(await response.text(), 'text/html');
+          const metadata = [...doc.querySelectorAll('script[type="application/ld+json"]')]
+            .map(script => { try { return JSON.parse(script.textContent ?? '{}'); } catch { return {}; } });
+          const heading = metadata.find(item => item['@type'] === 'BlogPosting')?.headline;
+          const imagePaths = [...doc.querySelectorAll('main img')].map(image => image.getAttribute('src'));
+          const ready = response.ok && heading === preview?.title &&
+            preview!.paths.every(path => imagePaths.includes(path));
+          if (ready) {
+            const checks = await Promise.all(preview!.paths.map(path => fetch(path, {
+              method: 'HEAD', cache: 'no-store', signal: controller.signal,
+            })));
+            if (checks.every(result => result.ok)) {
+              if (!controller.signal.aborted) setLiveStatus('verified');
+              return;
+            }
+          }
+        } catch {
+          if (controller.signal.aborted) return;
+        }
+        await new Promise<void>(resolve => {
+          const timer = setTimeout(resolve, 5000);
+          controller.signal.addEventListener('abort', () => { clearTimeout(timer); resolve(); }, { once: true });
+        });
+      }
+      if (!controller.signal.aborted) setLiveStatus('pending');
+    }
+    void verify();
+    return () => controller.abort();
+  }, [published, preview]);
 
   function invalidate() {
     setPreview(undefined);
@@ -193,7 +234,7 @@ export default function PublishForm() {
           <section className="space-y-3 rounded-xl border border-slate-300 p-3">
             <h2 className="text-lg font-bold">공용보관함</h2>
             <button className={button} type="button" disabled={!!busy || accessKey.length < 32}
-              onClick={() => void browse()}>공용보관함 열기</button>
+              onClick={() => void browse()}>최종 WORK용 열기</button>
             {driveTrail.length > 0 && (
               <div className="space-y-2">
                 <p>{driveTrail.map(folder => folder.name).join(' / ')}</p>
@@ -264,7 +305,7 @@ export default function PublishForm() {
           {/* File URLs exist only in this browser session. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img className="h-auto w-full rounded-lg" src={imageUrl(preview.paths[0])} alt="대표 이미지"
-            onLoad={({ currentTarget: image }) => setCoverRatioValid(image.naturalWidth * 9 === image.naturalHeight * 16)} />
+            onLoad={({ currentTarget: image }) => setCoverRatioValid(Math.abs(image.naturalWidth / image.naturalHeight - 16 / 9) < 0.01)} />
           <article className="prose max-w-none break-words">
             <ReactMarkdown remarkPlugins={[remarkGfm]} skipHtml components={{
               img: ({ src, alt }) => {
@@ -301,7 +342,8 @@ export default function PublishForm() {
           <p>원고와 이미지 7장 저장 완료 · {published.branch}</p>
           <a className="text-blue-800 underline" href={published.commit.url}>저장된 커밋 확인</a>
           {published.branch === 'main' && (
-            <p>배포 완료 여부는 <a className="text-blue-800 underline" href={`/blog/${published.slug}/`}>공개 글 주소</a>에서 확인하세요.</p>
+            <p>{liveStatus === 'verified' ? '공개 확인 완료 · 원고와 이미지 7장' :
+              liveStatus === 'waiting' ? '홈페이지 배포 확인 중…' : '배포 확인 대기 · 공개 주소를 확인해 주세요.'} <a className="text-blue-800 underline" href={`/blog/${published.slug}/`}>공개 글 주소</a></p>
           )}
         </section>
       )}

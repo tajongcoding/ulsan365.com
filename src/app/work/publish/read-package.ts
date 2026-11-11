@@ -45,6 +45,69 @@ function archiveRecords(bytes: Uint8Array) {
   return records;
 }
 
+
+function htmlPackage(files: Map<string, Uint8Array<ArrayBuffer>>, zipName: string) {
+  const manuscripts = [...files.keys()].filter(name => /\.html?$/i.test(name));
+  if (manuscripts.length !== 1) throw new Error('ZIP에 발행할 HTML 원고가 정확히 1개 필요합니다.');
+  const dateMatch = zipName.match(/^(\d{2})(\d{2})(\d{2})_/);
+  const categories = [
+    ['복지정보', '복지 정보'], ['경제정보', '경제 정보'], ['생활정보', '생활 정보'],
+    ['행사축제', '행사·축제'], ['관광명소', '관광·명소'],
+  ];
+  const category = categories.find(([name]) => zipName.includes(name))?.[1];
+  if (!dateMatch || !category) throw new Error('HTML ZIP 이름에 기준일(YYMMDD)과 메뉴명이 필요합니다.');
+  const date = `20${dateMatch[1]}-${dateMatch[2]}-${dateMatch[3]}`;
+  const doc = new DOMParser().parseFromString(new TextDecoder('utf-8', { fatal: true }).decode(files.get(manuscripts[0])), 'text/html');
+  const article = doc.querySelector('article') ?? doc.body;
+  const title = article.querySelector('h1')?.textContent?.trim();
+  const summary = article.querySelector('p')?.textContent?.trim();
+  if (!title || !summary) throw new Error('HTML 원고의 제목과 요약 문단을 확인해 주세요.');
+  const pictures = [...article.querySelectorAll('img')];
+  if (pictures.length !== 7) throw new Error('HTML에는 대표 1장과 본문 6장의 이미지 연결이 필요합니다.');
+  const paths = pictures.map((picture, index) => {
+    const path = picture.getAttribute('src') ?? '';
+    const filename = path.split('/').at(-1) ?? '';
+    if (!new RegExp(`^0${index}\\.(png|jpe?g|webp)$`, 'i').test(filename) ||
+        ![...files.keys()].some(name => name.split('/').at(-1) === filename)) {
+      throw new Error('HTML 이미지가 00~06 순서의 ZIP 파일과 연결되어야 합니다.');
+    }
+    return path;
+  });
+  const escape = (text: string) => text.replace(/[\\`*_[\]<>]/g, '\\$&');
+  function markdown(node: Node): string {
+    if (node.nodeType === 3) return escape(node.textContent ?? '');
+    if (!(node instanceof Element)) return '';
+    const children = () => [...node.childNodes].map(markdown).join('');
+    switch (node.tagName) {
+      case 'SCRIPT': case 'STYLE': case 'H1': return '';
+      case 'IMG': {
+        const index = pictures.indexOf(node as HTMLImageElement);
+        return index === 0 ? '' : `\n\n![${escape(node.getAttribute('alt') ?? '본문 이미지')}](${paths[index]})\n\n`;
+      }
+      case 'A': {
+        const href = node.getAttribute('href') ?? '';
+        return /^https?:\/\//i.test(href) ? `[${children()}](${href.replace(/\(/g, '%28').replace(/\)/g, '%29')})` : children();
+      }
+      case 'STRONG': case 'B': return `**${children()}**`;
+      case 'EM': case 'I': return `*${children()}*`;
+      case 'BR': return '\n';
+      case 'H2': return `\n\n## ${children()}\n\n`;
+      case 'H3': return `\n\n### ${children()}\n\n`;
+      case 'LI': return `\n- ${children()}\n`;
+      case 'P': case 'SECTION': case 'FIGURE': case 'UL': case 'OL':
+      case 'DIV': case 'ARTICLE': return `\n\n${children()}\n\n`;
+      default: return children();
+    }
+  }
+  // A title-derived stable ASCII name keeps retries on the same publication path.
+  let hash = 2166136261;
+  for (const char of title) hash = Math.imul(hash ^ char.charCodeAt(0), 16777619) >>> 0;
+  const name = `${date}-work-${hash.toString(16)}.md`;
+  const body = markdown(article).replace(/\n{3,}/g, '\n\n').trim();
+  const source = `---\n${JSON.stringify({ title, date, summary, category, tags: [], images: paths }, null, 2)}\n---\n\n${body}\n`;
+  files.set(name, new TextEncoder().encode(source));
+}
+
 export async function readPackage(zip: File) {
   if (!/\.zip$/i.test(zip.name) || !zip.size || zip.size > maxTotal) {
     throw new Error('16 MiB 이하의 ZIP 파일을 선택해 주세요.');
@@ -67,8 +130,8 @@ export async function readPackage(zip: File) {
     }
     names.add(file.name);
     if (file.name.startsWith('__MACOSX/') || file.name.split('/').some(part => part.startsWith('.')) ||
-        !/\.(md|png|jpe?g|webp)$/i.test(file.name)) return;
-    const limit = /\.md$/i.test(file.name) ? 256 * 1024 : 4 * MiB;
+        !/\.(md|html?|png|jpe?g|webp)$/i.test(file.name)) return;
+    const limit = /\.(md|html?)$/i.test(file.name) ? 256 * 1024 : 4 * MiB;
     if ((file.originalSize ?? 0) > limit) throw new Error(`${file.name} 파일이 허용 크기를 넘습니다.`);
     started++;
     let size = 0;
@@ -106,6 +169,7 @@ export async function readPackage(zip: File) {
     if (i % (256 * 1024) === 0) await new Promise<void>(resolve => setTimeout(resolve, 0));
   }
   if (entries !== records.size || completed !== started) throw new Error('ZIP 파일이 중간에 끊겼습니다.');
+  if (![...files.keys()].some(name => /\.md$/i.test(name))) htmlPackage(files, zip.name);
   const manuscripts = [...files.keys()].filter(name => /\/\d{4}-\d{2}-\d{2}-.+\.md$|^\d{4}-\d{2}-\d{2}-.+\.md$/i.test(name));
   if (manuscripts.length !== 1) throw new Error('ZIP에는 날짜로 시작하는 발행용 원고(.md)가 정확히 1개 있어야 합니다.');
   const name = manuscripts[0].split('/').at(-1)!;

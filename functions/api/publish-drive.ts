@@ -2,7 +2,7 @@ import { authorize, json, type PublishAccessEnv } from '../_lib/publish-access';
 
 type Env = PublishAccessEnv & { PUBLISH_DRIVE_SERVICE_ACCOUNT?: string };
 type DriveFile = { id: string; name: string; mimeType: string; size?: string; parents?: string[]; trashed?: boolean; shortcutDetails?: unknown };
-const root = '1X8TCcIaUAjDndqdtrOioXIcAKRd_pJ8e';
+const root = '1sAYEGK5B0aksoXblmykZylje-d5ykZYI';
 const folderType = 'application/vnd.google-apps.folder';
 const maxSize = 16 * 1024 * 1024;
 const fileFields = 'id,name,mimeType,size,parents,trashed,shortcutDetails';
