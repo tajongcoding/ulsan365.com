@@ -1,5 +1,7 @@
 name = "my-local-info"
 pages_build_output_dir = "out"
+compatibility_date = "2026-03-19"
+compatibility_flags = ["formdata_parser_supports_files"]
 
 [vars]
 PUBLISH_BRANCH = "main"
