@@ -1,7 +1,14 @@
 import { spawn } from 'node:child_process';
 
 // Never print request headers, cookies, bodies, environment bindings or tail URLs.
-const child = spawn('npx', ['wrangler', 'pages', 'deployment', 'tail', '--project-name', 'my-local-info', '--environment', 'production', '--format', 'json', '--method', 'POST'], { stdio: ['ignore', 'pipe', 'pipe'] });
+const response = await fetch(`https://api.cloudflare.com/client/v4/accounts/${process.env.CLOUDFLARE_ACCOUNT_ID}/pages/projects/my-local-info`, {
+  headers: { Authorization: `Bearer ${process.env.CLOUDFLARE_API_TOKEN}` },
+});
+if (!response.ok) throw new Error(`Cannot identify production deployment (HTTP ${response.status}).`);
+const project = await response.json();
+const deployment = project.result?.canonical_deployment?.id;
+if (typeof deployment !== 'string' || !/^[a-f0-9-]{36}$/.test(deployment)) throw new Error('Production deployment identifier is unavailable.');
+const child = spawn('npx', ['wrangler', 'pages', 'deployment', 'tail', deployment, '--project-name', 'my-local-info', '--format', 'json', '--method', 'POST'], { detached: true, stdio: ['ignore', 'pipe', 'pipe'] });
 let current = '', depth = 0, inString = false, escaped = false, observed = 0;
 function clean(value) {
   let text = String(value);
@@ -42,6 +49,6 @@ child.stdout.on('data', chunk => {
   }
 });
 console.log('Listening for a publishing connection check; only sanitized outcomes and exceptions are recorded.');
-const timer = setTimeout(() => child.kill('SIGTERM'), 90000);
+const timer = setTimeout(() => { try { process.kill(-child.pid, 'SIGTERM'); } catch { child.kill('SIGTERM'); } }, 90000);
 child.on('error', error => { clearTimeout(timer); console.log('Tail process:', clean(error.message)); process.exitCode = 1; });
 child.on('close', code => { clearTimeout(timer); console.log('Publishing requests observed:', observed); if (code && code !== 143) process.exitCode = code; });
