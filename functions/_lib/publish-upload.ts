@@ -67,7 +67,16 @@ async function github(env: Env, path: string, method = 'GET', body?: object) {
     ...(body ? { body: JSON.stringify(body) } : {}),
     signal: AbortSignal.timeout(20000),
   });
-  if (!response.ok) throw new Error(`GitHub 저장 단계에서 오류가 발생했습니다 (HTTP ${response.status}). 저장 여부를 확인한 뒤 다시 검사해 주세요.`);
+  if (!response.ok) {
+    const detail = await response.json().catch(() => ({})) as { message?: unknown };
+    const message = typeof detail.message === 'string' ? detail.message : '';
+    const reason = /resource not accessible/i.test(message) ? '운영 연결키의 저장소 쓰기 권한이 부족합니다.' :
+      /rate limit/i.test(message) ? 'GitHub 요청 한도에 도달했습니다.' :
+      /bad credentials/i.test(message) ? '운영 저장소 연결키가 유효하지 않습니다.' :
+      /not found/i.test(message) ? '운영 연결키의 저장소 접근 범위를 확인해 주세요.' :
+      '저장 여부를 확인한 뒤 다시 검사해 주세요.';
+    throw new Error(`GitHub 저장 단계에서 오류가 발생했습니다 (HTTP ${response.status}). ${reason}`);
+  }
   return await response.json() as { sha?: string; object?: { sha: string }; tree?: { sha: string } };
 }
 function sha(value: unknown): asserts value is string {
