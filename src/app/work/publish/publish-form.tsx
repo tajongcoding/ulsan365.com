@@ -7,6 +7,7 @@ import { readPackage } from './read-package';
 
 type Preview = {
   receipt: string;
+  ticket: string;
   slug: string;
   branch: string;
   title: string;
@@ -33,7 +34,9 @@ export default function PublishForm() {
   const [approved, setApproved] = useState(false);
   const [coverReviewed, setCoverReviewed] = useState(false);
   const [coverRatioValid, setCoverRatioValid] = useState<boolean>();
-  const [busy, setBusy] = useState<'check' | 'publish' | 'zip' | 'drive'>();
+  const [busy, setBusy] = useState<'check' | 'publish' | 'zip' | 'drive' | 'probe'>();
+  const [uploadProgress, setUploadProgress] = useState(0);
+  const [storageChecked, setStorageChecked] = useState(false);
   const [error, setError] = useState('');
   const [packageName, setPackageName] = useState('');
   const [driveItems, setDriveItems] = useState<DriveItem[]>([]);
@@ -117,6 +120,7 @@ export default function PublishForm() {
     setApproved(false);
     setPublished(undefined);
     setError('');
+    setUploadProgress(0);
   }
 
   async function selectZip(zip: File) {
@@ -207,38 +211,68 @@ export default function PublishForm() {
           }
         }));
       }
+      if (action === 'publish') {
+        if (!preview?.ticket || !approved || !coverReviewed || !coverRatioValid) {
+          throw new Error('원고를 다시 검사하고 대표 이미지와 발행 대상을 확인해 주세요.');
+        }
+        const proofs: string[] = [];
+        const assets = [manuscript, ...preview.paths.map(path => images.find(file => file.name === path.split('/').at(-1)))];
+        if (assets.length !== 8 || assets.some(file => !file)) throw new Error('원고와 이미지 7장을 다시 선택해 주세요.');
+        setUploadProgress(0);
+        for (const [index, asset] of assets.entries()) {
+          const upload = new FormData();
+          upload.set('action', 'upload');
+          upload.set('ticket', preview.ticket);
+          upload.set('index', String(index));
+          upload.set('asset', asset!);
+          const result = await publicationRequest<{ proof: string }>(upload, 60000);
+          proofs.push(result.proof);
+          setUploadProgress(index + 1);
+        }
+        const result = await publicationRequest<Published>({ action: 'commit', ticket: preview.ticket, proofs, coverReviewed: true }, 120000);
+        setPublished(result);
+        setApproved(false);
+        return;
+      }
       const form = new FormData();
       form.set('action', action);
       form.set('manuscript', manuscript);
       for (const image of images) form.append('images', image);
-      if (action === 'publish' && preview) {
-        form.set('receipt', preview.receipt);
-        if (coverReviewed && coverRatioValid) form.set('coverReviewed', 'true');
-      }
-      const response = await fetch('/api/mobile-publish', {
-        method: 'POST',
-        headers: { Authorization: `Bearer ${accessKey}` },
-        body: form,
-        signal: AbortSignal.timeout(action === 'publish' ? 120000 : 60000),
-      });
-      if (!response.headers.get('Content-Type')?.includes('application/json')) {
-        const message = await response.text();
-        const code = message.match(/(?:Error code|error code|error)[:\s]*(\d{4})/i)?.[1];
-        throw new Error(`발행 서버 오류 (HTTP ${response.status}${code ? ` · Cloudflare ${code}` : ''}). 저장 여부를 확인한 뒤 다시 검사해 주세요.`);
-      }
-      const result = await response.json();
-      if (!response.ok) throw new Error(result.error);
-      if (action === 'check') setPreview(result);
-      else {
-        setPublished(result);
-        setApproved(false);
-      }
+      setPreview(await publicationRequest<Preview>(form, 60000));
     } catch (cause) {
       if (action === 'publish') invalidate();
       setError(cause instanceof Error ? cause.message : '처리 중 오류가 발생했습니다.');
     } finally {
       setBusy(undefined);
     }
+  }
+
+  async function publicationRequest<T>(body: FormData | object, timeout: number): Promise<T> {
+    const multipart = body instanceof FormData;
+    const response = await fetch('/api/mobile-publish', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${accessKey}`, ...(!multipart ? { 'Content-Type': 'application/json' } : {}) },
+      body: multipart ? body : JSON.stringify(body), signal: AbortSignal.timeout(timeout),
+    });
+    if (!response.headers.get('Content-Type')?.includes('application/json')) {
+      const message = await response.text();
+      const code = message.match(/(?:Error code|error code|error)[:\s]*(\d{4})/i)?.[1];
+      throw new Error(`발행 서버 오류 (HTTP ${response.status}${code ? ` · Cloudflare ${code}` : ''}). 저장 여부를 확인한 뒤 다시 검사해 주세요.`);
+    }
+    const result = await response.json();
+    if (!response.ok) throw new Error(result.error || '발행 요청을 처리하지 못했습니다. 다시 검사해 주세요.');
+    return result as T;
+  }
+
+  async function verifyStorage() {
+    setBusy('probe'); setError(''); setStorageChecked(false);
+    try {
+      await login();
+      const result = await publicationRequest<{ ok: boolean }>({ action: 'storage-check' }, 60000);
+      if (!result.ok) throw new Error('저장 연결을 확인하지 못했습니다.');
+      setStorageChecked(true);
+    } catch (cause) { setError(cause instanceof Error ? cause.message : '저장 연결을 확인하지 못했습니다.'); }
+    finally { setBusy(undefined); }
   }
 
   function imageUrl(path: string) {
@@ -264,6 +298,11 @@ export default function PublishForm() {
           </label>}
           {!authenticated && <button className={button} type="button" disabled={!!busy || (!authenticated && accessKey.length < 32)}
             onClick={()=>{setError('');void login().catch(cause=>setError(cause instanceof Error ? cause.message : '로그인 실패'));}}>관리자 로그인</button>}
+          {authenticated && <details className="space-y-2">
+            <summary className="cursor-pointer p-2">연결 점검</summary>
+            <button className={button} type="button" disabled={!!busy} onClick={() => void verifyStorage()}>저장 연결 점검</button>
+            {storageChecked && <p role="status" className="text-green-900">저장 연결 정상 · 게시글 공개 없이 확인했습니다.</p>}
+          </details>}
           <section className="space-y-3 rounded-xl border border-slate-300 p-3">
             <h2 className="text-lg font-bold">공용보관함</h2>
             <button className={button} type="button" disabled={!!busy || (!authenticated && accessKey.length < 32)}
@@ -326,8 +365,8 @@ export default function PublishForm() {
           <button className={button} disabled={!!busy || !manuscript || images.length !== 7} type="submit">검사 및 미리보기</button>
         </fieldset>
       </form>
-      {busy && <p role="status">{busy === 'check' ? '업로드 및 검사 중…' : busy === 'zip' ? 'ZIP 원고와 이미지 연결 중…' :
-        busy === 'drive' ? '공용보관함에서 불러오는 중…' : 'GitHub에 저장 중…'}</p>}
+      {busy && <p role="status">{busy === 'probe' ? '저장 연결 점검 중…' : busy === 'check' ? '업로드 및 검사 중…' : busy === 'zip' ? 'ZIP 원고와 이미지 연결 중…' :
+        busy === 'drive' ? '공용보관함에서 불러오는 중…' : uploadProgress < 8 ? `파일 저장 중 · ${uploadProgress}/8` : '공개 확정 중…'}</p>}
       {error && <p role="alert" className="text-red-800">{error}</p>}
       {preview && (
         <section className="space-y-4 rounded-xl border border-slate-300 p-4">
@@ -383,3 +422,4 @@ export default function PublishForm() {
     </main>
   );
 }
+
