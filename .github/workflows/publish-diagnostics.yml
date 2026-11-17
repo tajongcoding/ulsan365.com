@@ -1,11 +1,6 @@
 name: Publishing connection diagnostics
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/publish-diagnostics.yml'
-      - 'scripts/tail-publish-diagnostics.mjs'
 permissions:
   contents: read
 jobs:

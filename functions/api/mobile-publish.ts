@@ -195,7 +195,11 @@ export async function onRequestPost({ request, env }: Context) {
     return json({ commit: { oid: commit.sha, url: `https://github.com/${repository}/commit/${commit.sha}` }, branch, slug });
   } catch (error) {
     const message = error instanceof Error ? error.message : '';
-    if (message.startsWith('GitHub') || message.startsWith('브랜치')) return json({ error: message }, 502);
+    if (message.startsWith('브랜치')) return json({ error: message }, 409);
+    if (message.startsWith('GitHub')) {
+      console.error('ULSAN365 publishing dependency failure:', message);
+      return json({ error: message }, 424);
+    }
     if (error instanceof Error && ['TimeoutError', 'AbortError'].includes(error.name)) {
       return json({ error: '저장 서버 응답이 늦어 중단했습니다. 저장 여부를 확인한 뒤 다시 검사해 주세요.' }, 504);
     }
