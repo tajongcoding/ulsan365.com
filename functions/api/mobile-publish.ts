@@ -1,6 +1,7 @@
 import { Buffer } from 'node:buffer';
 import { load } from 'js-yaml';
 import { authorize, json } from '../_lib/publish-access';
+import { issueUploadTicket, normalizeManuscript, uploadFile, commitUpload, checkStorage } from '../_lib/publish-upload';
 
 type Env = {
   PUBLISH_ACCESS_KEY?: string;
@@ -52,8 +53,19 @@ export async function onRequestPost({ request, env }: Context) {
   if (!Number.isSafeInteger(size) || size <= 0 || size > 16 * MiB) return json({ error: '전체 업로드는 16 MiB 이하여야 합니다.' }, 413);
 
   try {
+    if (request.headers.get('Content-Type')?.includes('application/json')) {
+      if (size > 16384) return json({ error: '발행 확정 요청이 너무 큽니다.' }, 413);
+      const input = await request.json() as { action?: string; ticket?: unknown; proofs?: unknown; coverReviewed?: unknown };
+      if (input.action === 'storage-check') return json(await checkStorage(env));
+      if (input.action !== 'commit') return json({ error: '발행 요청을 확인해 주세요.' }, 400);
+      return json(await commitUpload(input, env));
+    }
     const form = await request.formData();
     const action = form.get('action');
+    if (action === 'upload') {
+      if (size > 4 * MiB + 16384) return json({ error: '파일당 최대 4 MiB까지 저장할 수 있습니다.' }, 413);
+      return json(await uploadFile(form, env));
+    }
     const manuscript = form.get('manuscript');
     if ((action !== 'check' && action !== 'publish') || !(manuscript instanceof File) ||
         !manuscript.size || manuscript.size > 256 * 1024 ||
@@ -69,13 +81,8 @@ export async function onRequestPost({ request, env }: Context) {
       return json({ error: '게시일은 실제 날짜이며 한국 시간 기준 오늘까지여야 합니다.' }, 400);
     }
     let source = await manuscript.arrayBuffer();
-    let markdown = new TextDecoder('utf-8', { fatal: true }).decode(source);
-    const notice = 'AI 생성 설명 이미지이며 실제 행사 장면·공식 예약 화면이 아닙니다.';
-    const noticeLines = /^(?:AI 생성 설명 이미지이며 실제 행사 장면·공식 예약 화면이 아닙니다\.|AI 제작 홍보 이미지\. 실제 시설·행사 현장 사진이 아닙니다\.)[ \t]*$/gm;
-    if (noticeLines.test(markdown)) {
-      markdown = markdown.replace(noticeLines, '').trimEnd() + '\n\n' + notice + '\n';
-      source = new TextEncoder().encode(markdown).buffer;
-    }
+    const markdown = normalizeManuscript(new TextDecoder('utf-8', { fatal: true }).decode(source));
+    source = new TextEncoder().encode(markdown).buffer;
     const header = markdown.match(/^---[ \t]*\r?\n([\s\S]*?)\r?\n---[ \t]*(?:\r?\n|$)/);
     if (!header) return json({ error: '원고 상단에 YAML 메타데이터가 필요합니다.' }, 400);
     const parsed = load(header[1]);
@@ -151,7 +158,8 @@ export async function onRequestPost({ request, env }: Context) {
 
     const receipt = await digest(new TextEncoder().encode([head, slug, ...hashes].join(':')).buffer);
     if (action === 'check') {
-      return json({ receipt, slug, branch, title: data.title, date, summary: data.summary, content, paths });
+      const ticket = await issueUploadTicket({ head, slug, branch, paths: filePaths, hashes }, key);
+      return json({ receipt, ticket, slug, branch, title: data.title, date, summary: data.summary, content, paths });
     }
     if (form.get('coverReviewed') !== 'true') {
       return json({ error: '대표 이미지 검수를 먼저 완료해 주세요.' }, 400);
@@ -186,6 +194,14 @@ export async function onRequestPost({ request, env }: Context) {
   } catch (error) {
     const message = error instanceof Error ? error.message : '';
     if (message.startsWith('GitHub') || message.startsWith('브랜치')) return json({ error: message }, 502);
+    if (error instanceof Error && ['TimeoutError', 'AbortError'].includes(error.name)) {
+      return json({ error: '저장 서버 응답이 늦어 중단했습니다. 저장 여부를 확인한 뒤 다시 검사해 주세요.' }, 504);
+    }
+    if (message.startsWith('검사') || message.startsWith('발행 대상') || message.startsWith('저장할 파일') ||
+        message.startsWith('대표 이미지') || message.startsWith('원고와 이미지') || message.startsWith('같은 파일')) {
+      return json({ error: message }, 400);
+    }
     return json({ error: '업로드를 읽을 수 없습니다. UTF-8 Markdown과 이미지 파일을 확인해 주세요.' }, 400);
   }
 }
+
