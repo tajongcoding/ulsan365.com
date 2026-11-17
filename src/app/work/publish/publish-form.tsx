@@ -266,12 +266,17 @@ export default function PublishForm() {
 
   async function verifyStorage() {
     setBusy('probe'); setError(''); setStorageChecked(false);
+    let phase = '발행 서버 응답';
     try {
       await login();
+      await publicationRequest<{ ok: boolean }>({ action: 'storage-ping' }, 15000);
+      phase = '저장소 읽기';
+      await publicationRequest<{ ok: boolean }>({ action: 'storage-read' }, 60000);
+      phase = '저장소 쓰기';
       const result = await publicationRequest<{ ok: boolean }>({ action: 'storage-check' }, 60000);
       if (!result.ok) throw new Error('저장 연결을 확인하지 못했습니다.');
       setStorageChecked(true);
-    } catch (cause) { setError(cause instanceof Error ? cause.message : '저장 연결을 확인하지 못했습니다.'); }
+    } catch (cause) { setError(`${phase}: ${cause instanceof Error ? cause.message : '저장 연결을 확인하지 못했습니다.'}`); }
     finally { setBusy(undefined); }
   }
 

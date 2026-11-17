@@ -56,6 +56,8 @@ export async function onRequestPost({ request, env }: Context) {
     if (request.headers.get('Content-Type')?.includes('application/json')) {
       if (size > 16384) return json({ error: '발행 확정 요청이 너무 큽니다.' }, 413);
       const input = await request.json() as { action?: string; ticket?: unknown; proofs?: unknown; coverReviewed?: unknown };
+      if (input.action === 'storage-ping') return json({ ok: true, protocol: 'staged-v1' });
+      if (input.action === 'storage-read') return json(await checkStorage(env, false));
       if (input.action === 'storage-check') return json(await checkStorage(env));
       if (input.action !== 'commit') return json({ error: '발행 요청을 확인해 주세요.' }, 400);
       return json(await commitUpload(input, env));

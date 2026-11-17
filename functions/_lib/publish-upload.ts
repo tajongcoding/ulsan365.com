@@ -75,9 +75,10 @@ function sha(value: unknown): asserts value is string {
 }
 
 // A detached text blob verifies write access without creating or changing a public post.
-export async function checkStorage(env: Env) {
+export async function checkStorage(env: Env, write = true) {
   const ref = await github(env, '/git/ref/heads/' + encodeURIComponent(env.PUBLISH_BRANCH!));
   sha(ref.object?.sha);
+  if (!write) return { ok: true, protocol: 'staged-v1' };
   const blob = await github(env, '/git/blobs', 'POST', {
     encoding: 'utf-8', content: 'ULSAN365 publishing connection check. No public post.\n',
   });
