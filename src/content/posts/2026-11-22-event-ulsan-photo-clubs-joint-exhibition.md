@@ -60,11 +60,11 @@
 
 ![방문 전 확인할 점 — 설명용 생성 이미지](/images/info/2026-11-22/2026-11-22-event-ulsan-photo-clubs-joint-exhibition-05.webp)
 
-## 마무리
+## 사진으로 돌아보는 울산
 
 울산을 알고 있다고 생각해도 사진 속 울산은 낯설고 새롭게 다가올 수 있습니다. 11월 마지막 주, 지역 사진가들이 발견한 도시의 다양한 표정을 만나보세요.
 
-![마무리 — 설명용 생성 이미지](/images/info/2026-11-22/2026-11-22-event-ulsan-photo-clubs-joint-exhibition-06.webp)
+![사진으로 돌아보는 울산 — 설명용 생성 이미지](/images/info/2026-11-22/2026-11-22-event-ulsan-photo-clubs-joint-exhibition-06.webp)
 
 ## 공식 안내와 출처
 
